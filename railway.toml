@@ -1,0 +1,28 @@
+[build]
+builder = "NIXPACKS"
+buildCommand = "npm install && cd backend && npm install && npm run build"
+
+[deploy]
+startCommand = "npm run start:production"
+restartPolicyType = "ON_FAILURE"
+restartPolicyMaxRetries = 10
+
+[[services]]
+name = "icb-orchestrator"
+startCommand = "cd backend && npm run agent:orchestrator"
+
+[[services]]
+name = "icb-backend"
+startCommand = "cd backend && npm run start"
+
+[[services]]
+name = "icb-frontend"
+startCommand = "cd frontend && npm run preview"
+
+[[services]]
+name = "redis"
+image = "redis:7-alpine"
+
+[[services]]
+name = "postgres"
+image = "postgres:15-alpine"
