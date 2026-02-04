@@ -1,20 +1,20 @@
 #!/bin/bash
-# Create/Update Agentic Capital Bank Project on Colosseum
+# Create/Update Agentic Reserve System Project on Colosseum
 
 # Load environment variables
 if [ -f .env ]; then
     export $(cat .env | grep -v '^#' | xargs)
 fi
 
-echo "=== Creating/Updating Agentic Capital Bank Project ==="
+echo "=== Creating/Updating Agentic Reserve System Project ==="
 echo ""
 
 # Project details
 PROJECT_DATA='{
-  "name": "Agentic Capital Bank",
+  "name": "Agentic Reserve System",
   "description": "The first Agent-First DeFi Protocol on Solana - an autonomous monetary coordination layer built exclusively for AI agents. Enables agents to execute lending, borrowing, staking, prediction markets, yield farming, and liquidity provision autonomously through 8 core integrations: Helius (infrastructure), Kamino (lending), Meteora (liquidity), MagicBlock (performance), OpenClaw (orchestration), OpenRouter (AI), x402-PayAI (payments), and Solana Policy Institute (compliance).",
-  "repoLink": "https://github.com/protocoldaemon-sec/agentic-capital-bank",
-  "solanaIntegration": "ARS uses Solana as its core blockchain with 3 Anchor programs (~3,200 lines of Rust): ARS Core (governance via futarchy), ARS Reserve (vault management), and ARU Token (stablecoin minting). Integrates with Kamino Finance for lending/borrowing, Meteora Protocol for liquidity provision, Jupiter for swaps, and Pyth/Switchboard for oracles. Uses Helius for 99.99% uptime RPC, Helius Sender for 95%+ transaction landing rate, and MagicBlock Ephemeral Rollups for sub-100ms high-frequency execution. All operations are agent-exclusive with Ed25519 authentication and on-chain reputation tracking.",
+  "repoLink": "https://github.com/protocoldaemon-sec/agentic-reserve-system.git",
+  "solanaIntegration": "ARS uses Solana as its core blockchain with 3 Anchor programs (~3,200 lines of Rust): ARS Core (governance via futarchy), ARS Reserve (vault management), and ARU Token (reserve unit minting). Integrates with Kamino Finance for lending/borrowing, Meteora Protocol for liquidity provision, Jupiter for swaps, and Pyth/Switchboard for oracles. Uses Helius for 99.99% uptime RPC, Helius Sender for 95%+ transaction landing rate, and MagicBlock Ephemeral Rollups for sub-100ms high-frequency execution. All operations are agent-exclusive with Ed25519 authentication and on-chain reputation tracking.",
   "technicalDemoLink": "https://ars-demo.vercel.app",
   "presentationLink": "https://youtube.com/watch?v=ars-demo",
   "tags": ["defi", "ai", "governance"]
