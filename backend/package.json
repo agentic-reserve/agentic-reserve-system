@@ -5,6 +5,8 @@
   "main": "dist/index.js",
   "scripts": {
     "dev": "nodemon src/index.ts",
+    "dev:simple": "ts-node src/simple-server.ts",
+    "seed": "ts-node src/seed-database.ts",
     "build": "tsc",
     "start": "node dist/index.js",
     "test": "vitest run",

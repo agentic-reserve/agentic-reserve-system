@@ -100,8 +100,8 @@ export class PolicyAgent extends EventEmitter {
       const aggregator = getOracleAggregator();
 
       // Get aggregated price data
-      const solPrice = await aggregator.getAggregatedPrice('SOL/USD');
-      const usdcPrice = await aggregator.getAggregatedPrice('USDC/USD');
+      const solPrice = await aggregator.aggregatePrice('SOL/USD');
+      const usdcPrice = await aggregator.aggregatePrice('USDC/USD');
 
       // Get DeFi metrics from inputs
       const { metrics } = inputs;
