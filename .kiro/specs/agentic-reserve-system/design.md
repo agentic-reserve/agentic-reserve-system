@@ -1,8 +1,8 @@
-# Internet Central Bank (ICB) - Technical Design
+# Agentic Reserve System (ARS) - Technical Design
 
 ## Executive Summary
 
-The Internet Central Bank is an **Agent-First DeFi Protocol** that coordinates liquidity across Solana's DeFi ecosystem through autonomous AI agents. Unlike traditional DeFi protocols designed for human users, ICB provides machine-readable APIs, agent authentication, and autonomous execution primitives for lending, borrowing, staking, prediction markets, yield farming, and liquidity provision.
+The Agentic Reserve System is an **Agent-First DeFi Protocol** that coordinates liquidity across Solana's DeFi ecosystem through autonomous AI agents. Unlike traditional DeFi protocols designed for human users, ARS provides machine-readable APIs, agent authentication, and autonomous execution primitives for lending, borrowing, staking, prediction markets, yield farming, and liquidity provision.
 
 **Core Innovation**: Replace human DeFi users with AI agents that coordinate through futarchy-driven policy, multi-source oracle aggregation, and algorithmic reserve management - creating the first truly autonomous central bank for agent economies.
 
@@ -19,7 +19,7 @@ The Internet Central Bank is an **Agent-First DeFi Protocol** that coordinates l
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────┐
-│                    ICB Agent-First Architecture                          │
+│                    ARS Agent-First Architecture                          │
 ├─────────────────────────────────────────────────────────────────────────┤
 │                                                                           │
 │  ┌──────────────────────────────────────────────────────────────────┐   │
@@ -55,7 +55,7 @@ The Internet Central Bank is an **Agent-First DeFi Protocol** that coordinates l
 │  │  └─────────────────────────────────────────────────────────────┘  │   │
 │  │                                                                    │   │
 │  │              ┌──────▼──────┐                                      │   │
-│  │              │ ICB Agent   │                                      │   │
+│  │              │ ARS Agent   │                                      │   │
 │  │              │    SDK      │                                      │   │
 │  │              └──────┬──────┘                                      │   │
 │  └─────────────────────┼─────────────────────────────────────────────┘   │
@@ -120,7 +120,7 @@ The Internet Central Bank is an **Agent-First DeFi Protocol** that coordinates l
 
 #### 1. On-Chain Programs (Solana/Anchor)
 
-**Program: ICB Core (`icb_core`)**
+**Program: ARS Core (`ars_core`)**
 - **Purpose**: Main protocol logic for ILI calculation, futarchy governance, and policy execution
 - **Accounts**:
   - `GlobalState`: Protocol configuration and admin controls
@@ -130,14 +130,14 @@ The Internet Central Bank is an **Agent-First DeFi Protocol** that coordinates l
   - `ReserveVault`: Multi-asset collateral vault
   - `AgentRegistry`: On-chain agent registration and reputation
 
-**Program: Reserve Manager (`icb_reserve`)**
+**Program: Reserve Manager (`ars_reserve`)**
 - **Purpose**: Manage multi-asset reserve vault with algorithmic rebalancing
 - **Accounts**:
   - `VaultState`: Current reserve composition and health metrics
   - `AssetConfig`: Per-asset configuration (weights, volatility thresholds)
   - `RebalanceLog`: Historical rebalancing events
 
-**Program: ICU Token (`icb_token`)**
+**Program: ARU Token (`ars_token`)**
 - **Purpose**: SPL Token with controlled mint/burn authority
 - **Features**:
   - Mint capped at ±2% per epoch
@@ -262,7 +262,7 @@ The Internet Central Bank is an **Agent-First DeFi Protocol** that coordinates l
   - Calculate weighted consensus
   - Execute mint/burn operations
   - Emit policy events
-  - Collect proposal fees (10 ICU burned per proposal)
+  - Collect proposal fees (10 ARU burned per proposal)
 - **Storage**: Supabase for proposal history and vote records
 
 **Service: Reserve Rebalancer**
@@ -293,10 +293,10 @@ The Internet Central Bank is an **Agent-First DeFi Protocol** that coordinates l
   - Oracle query fees (0.001-0.01 USDC via x402)
   - ER session fees (0.02% per session)
   - AI usage markup (10% on OpenRouter costs)
-  - Proposal fees (10 ICU burned)
+  - Proposal fees (10 ARU burned)
   - Vault management fee (0.1% annually)
 - **Distribution**:
-  - 40% → ICU buyback & burn (via Jupiter)
+  - 40% → ARU buyback & burn (via Jupiter)
   - 30% → Agent staking rewards
   - 20% → Development fund
   - 10% → Insurance fund
@@ -305,9 +305,9 @@ The Internet Central Bank is an **Agent-First DeFi Protocol** that coordinates l
 - **Implementation**: `backend/src/services/revenue/revenue-tracker.ts`
 
 **Service: Agent Staking** ✅
-- **Purpose**: ICU token staking and SOL staking with Helius validator
-- **ICU Staking**:
-  - Minimum stake: 100 ICU
+- **Purpose**: ARU token staking and SOL staking with Helius validator
+- **ARU Staking**:
+  - Minimum stake: 100 ARU
   - 50% fee discount for stakers
   - 7-day unstake cooldown
   - Proportional reward distribution from 30% of protocol fees
@@ -394,10 +394,10 @@ The Internet Central Bank is an **Agent-First DeFi Protocol** that coordinates l
   - Oracle query fees (0.001-0.01 USDC via x402)
   - ER session fees (0.02% per session)
   - AI usage markup (10% on OpenRouter costs)
-  - Proposal fees (10 ICU burned)
+  - Proposal fees (10 ARU burned)
   - Vault management fee (0.1% annually)
 - **Distribution**:
-  - 40% → ICU buyback & burn
+  - 40% → ARU buyback & burn
   - 30% → Agent staking rewards
   - 20% → Development fund
   - 10% → Insurance fund
@@ -406,8 +406,8 @@ The Internet Central Bank is an **Agent-First DeFi Protocol** that coordinates l
 
 #### 3. Agent Interface Layer (OpenClaw SDK)
 
-**OpenClaw ICB Skill**:
-- **Purpose**: Enable OpenClaw agents to interact with ICB protocol
+**OpenClaw ARS Skill**:
+- **Purpose**: Enable OpenClaw agents to interact with ARS protocol
 - **Features**:
   - Query ILI/ICR via JSON-RPC (Helius RPC)
   - Subscribe to real-time updates (LaserStream)
@@ -428,9 +428,9 @@ The Internet Central Bank is an **Agent-First DeFi Protocol** that coordinates l
 **Agent Operations**:
 ```typescript
 // OpenClaw agent example with full integration
-import { ICBAgent } from '@icb/openclaw-skill';
+import { ARSAgent } from '@ars/openclaw-skill';
 
-const agent = new ICBAgent({
+const agent = new ARSAgent({
   keypair: agentKeypair,
   rpcUrl: 'https://mainnet.helius-rpc.com/?api-key=YOUR_KEY',
   openRouterKey: 'YOUR_OPENROUTER_KEY',
@@ -734,7 +734,7 @@ CREATE TABLE proposals (
     no_stake NUMERIC(20, 0),
     status VARCHAR(20) NOT NULL,
     execution_tx VARCHAR(88),
-    proposal_fee NUMERIC(20, 6) DEFAULT 10, -- 10 ICU burned
+    proposal_fee NUMERIC(20, 6) DEFAULT 10, -- 10 ARU burned
     created_at TIMESTAMPTZ DEFAULT NOW(),
     updated_at TIMESTAMPTZ DEFAULT NOW()
 );
@@ -1043,15 +1043,15 @@ Response: {
 ### OpenClaw Agent SDK
 
 ```typescript
-import { ICBAgent } from '@icb/openclaw-skill';
+import { ARSAgent } from '@ars/openclaw-skill';
 import { Keypair } from '@solana/web3.js';
 
 // Initialize agent
 const agentKeypair = Keypair.generate();
-const agent = new ICBAgent({
+const agent = new ARSAgent({
   keypair: agentKeypair,
   rpcUrl: 'https://api.devnet.solana.com',
-  programId: 'ICB...', // ICB program ID
+  programId: 'ARS...', // ARS program ID
 });
 
 // Register agent
@@ -1107,7 +1107,7 @@ await agent.provideLiquidity({
 const proposal = await agent.createProposal({
   policyType: 'MintICU',
   params: {
-    amount: 1000000, // 1M ICU
+    amount: 1000000, // 1M ARU
     reason: 'Expand liquidity due to low ILI'
   }
 });
@@ -1116,7 +1116,7 @@ const proposal = await agent.createProposal({
 await agent.voteOnProposal({
   proposalId: 42,
   prediction: true, // YES
-  stakeAmount: 10000 // 10K ICB tokens
+  stakeAmount: 10000 // 10K ARS tokens
 });
 
 // Monitor agent performance
@@ -1129,7 +1129,7 @@ console.log(`Reputation score: ${stats.reputationScore}`);
 
 **Example 1: Yield Optimization Agent**
 ```typescript
-class YieldOptimizationAgent extends ICBAgent {
+class YieldOptimizationAgent extends ARSAgent {
   async run() {
     // Subscribe to ILI updates
     this.onILIUpdate(async (ili) => {
@@ -1161,7 +1161,7 @@ class YieldOptimizationAgent extends ICBAgent {
 
 **Example 2: Prediction Market Agent**
 ```typescript
-class PredictionMarketAgent extends ICBAgent {
+class PredictionMarketAgent extends ARSAgent {
   async run() {
     // Monitor proposals
     this.onProposalCreated(async (proposal) => {
@@ -1193,7 +1193,7 @@ class PredictionMarketAgent extends ICBAgent {
 
 **Example 3: Arbitrage Agent**
 ```typescript
-class ArbitrageAgent extends ICBAgent {
+class ArbitrageAgent extends ARSAgent {
   async run() {
     setInterval(async () => {
       // Check for arbitrage opportunities
@@ -1472,7 +1472,7 @@ logger.info('ILI updated', {
    - Sentiment analysis integration
 
 4. **Governance Token**
-   - $ICB token launch
+   - $ARS token launch
    - Staking rewards
    - Fee distribution
 
@@ -1483,7 +1483,7 @@ logger.info('ILI updated', {
 
 ## Conclusion
 
-This design provides a comprehensive technical blueprint for building the Internet Central Bank as an **Agent-First DeFi Protocol** in 10 days. The architecture prioritizes machine-readable APIs, autonomous execution, and OpenClaw agent integration over human-facing interfaces.
+This design provides a comprehensive technical blueprint for building the Agentic Reserve System as an **Agent-First DeFi Protocol** in 10 days. The architecture prioritizes machine-readable APIs, autonomous execution, and OpenClaw agent integration over human-facing interfaces.
 
 **Key Success Factors**:
 1. ✅ Agent-first architecture (no UI required for core functions)
@@ -1502,6 +1502,6 @@ The system is designed to be:
 - **Secure**: Multi-layered security with circuit breakers and agent authentication
 - **Scalable**: Handles 100+ concurrent agents and 1000+ proposals
 
-This positions ICB as the missing macro coordination layer for agent-driven DeFi economies, solving liquidity fragmentation problems while showcasing what's possible when agents coordinate autonomously through prediction markets and algorithmic policy.
+This positions ARS as the missing macro coordination layer for agent-driven DeFi economies, solving liquidity fragmentation problems while showcasing what's possible when agents coordinate autonomously through prediction markets and algorithmic policy.
 
-**Agent Ecosystem Vision**: ICB enables a new paradigm where AI agents manage DeFi positions, coordinate liquidity, and govern monetary policy through market-driven consensus - no humans required.
+**Agent Ecosystem Vision**: ARS enables a new paradigm where AI agents manage DeFi positions, coordinate liquidity, and govern monetary policy through market-driven consensus - no humans required.

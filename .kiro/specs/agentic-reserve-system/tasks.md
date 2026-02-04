@@ -1,8 +1,8 @@
-# Internet Central Bank (ICB) - Implementation Tasks
+# Agentic Reserve System (ARS) - Implementation Tasks
 
 ## Overview
 
-This task list breaks down the ICB implementation into concrete, actionable tasks for a 10-day hackathon sprint.
+This task list breaks down the ARS implementation into concrete, actionable tasks for a 10-day hackathon sprint.
 
 **Timeline**: 10 days (Feb 3 - Feb 12, 2026)
 **Tech Stack**: 
@@ -64,7 +64,7 @@ openclaw hooks create proposal-webhook --event blockchain --action notify
   -  exec tool to scaffold structure
   - Create package.json for workspace management
 - [x] 1.2 Initialize Anchor workspace with three programs
-  - Run `anchor init icb-protocol` via OpenClaw
+  - Run `anchor init ars-protocol` via OpenClaw
   - Configure Anchor.toml for devnet
 - [x] 1.3 Set up Express.js backend with TypeScript
   - ✅ Express boilerplate already configured
@@ -81,7 +81,7 @@ openclaw hooks create proposal-webhook --event blockchain --action notify
   - ✅ Scaffold Vite project with React 18 + TypeScript
   - ✅ Configure vite.config.ts with path aliases and API proxy
   - ✅ Create WalletProvider and SupabaseProvider
-  - ✅ Build landing page with ICB branding
+  - ✅ Build landing page with ARS branding
 - [x] 1.6 Configure Tailwind CSS and install dependencies
   - ✅ Set up Tailwind config with custom theme
   - ✅ Install all npm dependencies (Solana, Supabase, React Router, Zustand, Axios)
@@ -253,19 +253,19 @@ openclaw hooks create proposal-webhook --event blockchain --action notify
   - ✅ Store in revenue_events table
 - [x] 6.4 Implement AI usage markup tracking (10%)
   - ✅ Track OpenRouter API costs
-  - ✅ Add 10% markup for ICB
+  - ✅ Add 10% markup for ARS
   - ✅ Store markup revenue in revenue_events
-- [x] 6.5 Implement proposal fee collection (10 ICU burned)
-  - ✅ Burn 10 ICU on proposal creation
+- [x] 6.5 Implement proposal fee collection (10 ARU burned)
+  - ✅ Burn 10 ARU on proposal creation
   - ✅ Track burned amount in proposals table
-  - ✅ Update ICU total supply
+  - ✅ Update ARU total supply
 - [x] 6.6 Implement vault management fee (0.1% annually)
   - ✅ Calculate quarterly fee on vault TVL
-  - ✅ Distribute to ICU stakers
+  - ✅ Distribute to ARU stakers
   - ✅ Store in revenue_events table
 - [x] 6.7 Create revenue distribution service
   - ✅ Calculate 40% buyback, 30% staking, 20% dev, 10% insurance
-  - ✅ Execute ICU buyback via Jupiter
+  - ✅ Execute ARU buyback via Jupiter
   - ✅ Distribute staking rewards to agents
   - ✅ Store in revenue_distributions table
 - [x] 6.8 Create revenue analytics dashboard
@@ -279,21 +279,21 @@ openclaw hooks create proposal-webhook --event blockchain --action notify
 
 ### 7. Agent Staking System ✅
 
-- [x] 7.1 Implement ICU staking for agents
+- [x] 7.1 Implement ARU staking for agents
   - ✅ Staking system implemented
   - ✅ Track staked amounts in agent_staking table
   - ✅ Enable 50% fee discount for stakers
-  - ✅ Minimum stake: 100 ICU
+  - ✅ Minimum stake: 100 ARU
   - ✅ 7-day unstake cooldown
 - [x] 7.2 Implement staking rewards distribution
   - ✅ Calculate rewards from 30% of protocol fees
-  - ✅ Distribute proportionally to staked ICU
+  - ✅ Distribute proportionally to staked ARU
   - ✅ Allow agents to claim rewards
   - ✅ Track total claimed rewards
 - [x] 7.3 Calculate and display staking APY
   - ✅ Real-time APY based on protocol revenue
   - ✅ Projected APY for different agent counts
-  - ✅ Combined ICU + SOL staking rewards
+  - ✅ Combined ARU + SOL staking rewards
 
 **Files Created**:
 - `backend/src/services/staking/agent-staking.ts` (400+ lines)
@@ -309,7 +309,7 @@ openclaw hooks create proposal-webhook --event blockchain --action notify
   - ✅ Agents can stake SOL for additional rewards
   - ✅ ~7% APY with 0% commission
   - ✅ Track SOL staking in database
-  - ✅ Combined ICU + SOL rewards calculation
+  - ✅ Combined ARU + SOL rewards calculation
 - [x] 8.3 Smart transaction support
   - ✅ Use Helius Smart Transactions for reliability
   - ✅ Automatic priority fee optimization
@@ -460,7 +460,7 @@ openclaw hooks create proposal-webhook --event blockchain --action notify
 
 ## Phase 4: Smart Contracts (Days 4-6)
 
-### 8. ICB Core Program ✅
+### 8. ARS Core Program ✅
 
 - [x] 8.1 Define account structures (GlobalState, ILIOracle, PolicyProposal, VoteRecord)
   - ✅ All structures already defined in state.rs
@@ -503,14 +503,14 @@ openclaw hooks create proposal-webhook --event blockchain --action notify
 - **Validates**: Requirements 2.3, 2.6
 
 **Files**:
-- `programs/icb-core/src/lib.rs` (program entry point)
-- `programs/icb-core/src/state.rs` (account structures)
-- `programs/icb-core/src/instructions/vote_on_proposal.rs` (quadratic staking)
-- `programs/icb-core/src/instructions/execute_proposal.rs` (slashing logic)
-- `programs/icb-core/src/instructions/circuit_breaker.rs` (VHR/oracle checks)
-- `programs/icb-core/tests/property_tests.rs` (400+ lines of property tests)
+- `programs/ars-core/src/lib.rs` (program entry point)
+- `programs/ars-core/src/state.rs` (account structures)
+- `programs/ars-core/src/instructions/vote_on_proposal.rs` (quadratic staking)
+- `programs/ars-core/src/instructions/execute_proposal.rs` (slashing logic)
+- `programs/ars-core/src/instructions/circuit_breaker.rs` (VHR/oracle checks)
+- `programs/ars-core/tests/property_tests.rs` (400+ lines of property tests)
 
-### 9. ICB Reserve Program ✅
+### 9. ARS Reserve Program ✅
 
 - [x] 9.1 Define ReserveVault and AssetConfig structures
   - ✅ ReserveVault with multi-asset support (USDC, SOL, mSOL)
@@ -543,19 +543,19 @@ openclaw hooks create proposal-webhook --event blockchain --action notify
 - **Validates**: Requirements 3.3
 
 **Files**:
-- `programs/icb-reserve/src/lib.rs` (program entry point)
-- `programs/icb-reserve/src/state.rs` (vault structures)
-- `programs/icb-reserve/src/instructions/*.rs` (vault operations)
-- Property tests in `programs/icb-core/tests/property_tests.rs`
+- `programs/ars-reserve/src/lib.rs` (program entry point)
+- `programs/ars-reserve/src/state.rs` (vault structures)
+- `programs/ars-reserve/src/instructions/*.rs` (vault operations)
+- Property tests in `programs/ars-core/tests/property_tests.rs`
 
-### 10. ICU Token Program ✅
+### 10. ARU Token Program ✅
 
 - [x] 10.1 Create SPL token mint with controlled authority
   - ✅ Initialize mint with authority
   - ✅ Epoch-based supply management
 - [x] 10.2 Implement mint/burn instructions with ±2% cap validation
-  - ✅ Mint ICU with cap validation (2% per epoch)
-  - ✅ Burn ICU with cap validation
+  - ✅ Mint ARU with cap validation (2% per epoch)
+  - ✅ Burn ARU with cap validation
   - ✅ Overflow protection
 - [x] 10.3 Implement stability fee collection (0.1%)
   - ✅ Fee calculation on mint/burn operations
@@ -576,10 +576,10 @@ openclaw hooks create proposal-webhook --event blockchain --action notify
 - **Validates**: Requirements 5.2
 
 **Files**:
-- `programs/icb-token/src/lib.rs` (program entry point)
-- `programs/icb-token/src/state.rs` (token state)
-- `programs/icb-token/src/instructions/*.rs` (mint/burn operations)
-- Property tests in `programs/icb-core/tests/property_tests.rs`
+- `programs/ars-token/src/lib.rs` (program entry point)
+- `programs/ars-token/src/state.rs` (token state)
+- `programs/ars-token/src/instructions/*.rs` (mint/burn operations)
+- Property tests in `programs/ars-core/tests/property_tests.rs`
 
 ---
 
@@ -610,7 +610,7 @@ openclaw hooks create proposal-webhook --event blockchain --action notify
 - [x] 11.6 Implement agent endpoints (NEW)
   - ✅ GET /agents/:pubkey/fees - Agent fee history
   - ✅ GET /agents/:pubkey/staking - Staking status and rewards
-  - ✅ POST /agents/:pubkey/stake - Stake ICU tokens
+  - ✅ POST /agents/:pubkey/stake - Stake ARU tokens
   - ✅ POST /agents/:pubkey/claim - Claim staking rewards
 - [x] 11.7 Add rate limiting and caching
   - ✅ Rate limiting implemented (100 req/min)
@@ -643,7 +643,7 @@ openclaw hooks create proposal-webhook --event blockchain --action notify
 - [x] 13.2 Implement policy execution (mint/burn, ICR update, rebalance)
   - ✅ Transaction builders generated
   - ✅ Solana transaction signing
-  - ✅ Proposal fees collected (10 ICU burned)
+  - ✅ Proposal fees collected (10 ARU burned)
 - [x] 13.3 Add transaction retry logic
   - ✅ Exponential backoff implemented
   - ✅ Failure notifications with slashing
@@ -692,10 +692,10 @@ openclaw hooks create proposal-webhook --event blockchain --action notify
   - ✅ Revenue projections for 100/1,000/10,000 agents
   - ✅ Real-time revenue counter via Supabase subscriptions
 - [x] 15.6 Create staking metrics display (NEW)
-  - ✅ Total ICU staked display
+  - ✅ Total ARU staked display
   - ✅ Current staking APY calculation
   - ✅ Staking rewards pool tracking
-  - ✅ ICU buyback and burn stats
+  - ✅ ARU buyback and burn stats
 - [x] 15.7 Implement real-time updates via WebSocket
   - ✅ WebSocket client set up with useWebSocket hook
   - ✅ Auto-reconnection logic with exponential backoff
@@ -732,7 +732,7 @@ openclaw hooks create proposal-webhook --event blockchain --action notify
 
 ### 18. TypeScript SDK
 
-- [ ] 18.1 Create ICBClient with getILI(), getICR(), getReserveState()
+- [ ] 18.1 Create ARSClient with getILI(), getICR(), getReserveState()
 - [ ] 18.2 Implement real-time subscriptions (onILIUpdate, onProposalUpdate)
 - [ ] 18.3 Implement transaction methods (createProposal, voteOnProposal)
 - [ ] 18.4 Write README and 3 integration examples
@@ -809,7 +809,7 @@ openclaw hooks create proposal-webhook --event blockchain --action notify
 - [x] 10+ specialized agents ✅ (Policy, Oracle, DeFi, Governance, Risk, Execution, Payment, Monitoring, Learning, Security)
 - [x] Agent consciousness with inter-agent communication ✅
 - [x] Revenue tracking with 6 fee types ✅
-- [x] ICU staking with 50% fee discount ✅
+- [x] ARU staking with 50% fee discount ✅
 - [x] SOL staking with 0% commission ✅
 - [x] Ultra-low latency trading (<100ms) ✅
 - [x] Autonomous security auditing ✅
@@ -836,7 +836,7 @@ openclaw hooks create proposal-webhook --event blockchain --action notify
 - [x] Autonomous security auditing (CTF, pentest, fuzzing, static analysis)
 - [x] Self-management and auto-upgrade
 - [x] Revenue model with 6 fee streams
-- [x] Staking system with dual rewards (ICU + SOL)
+- [x] Staking system with dual rewards (ARU + SOL)
 - [x] Ultra-low latency execution (<100ms via Helius Sender + MagicBlock ER)
 
 ### Integration Excellence ✅
