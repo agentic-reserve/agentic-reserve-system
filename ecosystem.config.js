@@ -52,6 +52,23 @@ module.exports = {
       out_file: 'logs/policy-agent-out.log',
       log_date_format: 'YYYY-MM-DD HH:mm:ss Z',
       merge_logs: true
+    },
+    {
+      name: 'icb-security-agent',
+      script: 'backend/src/services/agent-swarm/agents/security-agent.ts',
+      interpreter: 'ts-node',
+      instances: 1,
+      autorestart: true,
+      watch: false,
+      max_memory_restart: '512M',
+      env: {
+        NODE_ENV: 'production'
+      },
+      error_file: 'logs/security-agent-error.log',
+      out_file: 'logs/security-agent-out.log',
+      log_date_format: 'YYYY-MM-DD HH:mm:ss Z',
+      merge_logs: true,
+      cron_restart: '0 */6 * * *' // Run security audit every 6 hours
     }
   ]
 };

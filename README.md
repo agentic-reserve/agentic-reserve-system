@@ -391,6 +391,7 @@ For detailed deployment instructions, see [DEPLOYMENT.md](./DEPLOYMENT.md).
 4. **PredictionAgent** - Participate in futarchy governance (OpenRouter AI analysis)
 5. **ArbitrageAgent** - Execute cross-protocol arbitrage (MagicBlock ERs)
 6. **TreasuryAgent** - Manage DAO treasuries with macro awareness
+7. **SecurityAgent** - Autonomous security auditing with CTF, pentesting, fuzzing, static analysis, and cryptographic verification
 
 ## 🔌 8 Core Integrations
 
