@@ -93,7 +93,6 @@ openclaw hooks create proposal-webhook --event blockchain --action notify
   -  generate Helius client wrapper
   - Add retry logic and error handling
   - Configure Priority Fee API integration
-  - Set up LaserStream gRPC connection
 - [ ] 2.2 Integrate Pyth oracle for SOL, USDC, mSOL prices
   -  scaffold Pyth integration
   - Set up cron job for price updates (every 5 min)
@@ -112,7 +111,6 @@ openclaw hooks create proposal-webhook --event blockchain --action notify
 - [ ] 2.6 Create oracle health monitoring service
   -  cron to schedule health checks
   - Set up webhook alerts for failures
-  - Use Helius LaserStream for real-time monitoring
 - [ ] 2.7 Write property-based test for median calculation resistance
   -  generate fast-check tests
   - Validate manipulation resistance
