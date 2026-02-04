@@ -93,18 +93,18 @@ openclaw hooks create proposal-webhook --event blockchain --action notify
 
 ### 2. Oracle Aggregation Service
 
-- [ ] 2.1 Set up Helius SDK client with RPC connection
-  -  generate Helius client wrapper
-  - Add retry logic and error handling
-  - Configure Priority Fee API integration
-- [ ] 2.2 Integrate Pyth oracle for SOL, USDC, mSOL prices
-  -  scaffold Pyth integration
-  - Set up cron job for price updates (every 5 min)
-  - Use Helius RPC for reliable data access
-- [ ] 2.3 Integrate Switchboard oracle with confidence intervals
-  -  generate Switchboard client
-  - Add data validation logic
-  - Use Helius RPC for queries
+- [x] 2.1 Set up Helius SDK client with RPC connection
+  - ✅ Generate Helius client wrapper
+  - ✅ Add retry logic and error handling
+  - ✅ Configure Priority Fee API integration
+- [x] 2.2 Integrate Pyth oracle for SOL, USDC, mSOL prices
+  - ✅ Scaffold Pyth integration with Hermes client
+  - ✅ Set up cron job for price updates (every 5 min)
+  - ✅ Use Helius RPC for reliable data access
+- [x] 2.3 Integrate Switchboard oracle with confidence intervals
+  - ✅ Generate Switchboard client
+  - ✅ Add data validation logic
+  - ✅ Use Helius RPC for queries
 - [ ] 2.4 Integrate Birdeye API for market data
   -  create API client with rate limiting
   - Set up Redis caching

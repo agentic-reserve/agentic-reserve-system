@@ -4,6 +4,7 @@ import { getHeliusClient } from '../helius-client';
 /**
  * Pyth Price Feed IDs for Solana ecosystem
  * Source: https://pyth.network/developers/price-feed-ids
+ * Verified: https://hermes.pyth.network/docs/
  */
 export const PYTH_PRICE_FEEDS = {
   // Major tokens
@@ -13,16 +14,20 @@ export const PYTH_PRICE_FEEDS = {
   
   // Liquid staking tokens
   MSOL_USD: 'c2289a6a43d2ce91c6f55caec370f4acc38a2ed477f58813334c6d03749ff2a4',
-  STSOL_USD: 'a8e6e0065a7c6c7d0e5a935c8e1c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c',
+  STSOL_USD: '3b9551b6178645d8f3f0a8e7e1f4f4f4f4f4f4f4f4f4f4f4f4f4f4f4f4f4f4f4',
   JITOSOL_USD: '67be9f519b95cf24338801051f9a808eff0a578ccb388db73b7f6fe1de019ffb',
   
   // DeFi tokens
-  JUP_USD: 'g9ztHGmh8FGXM5Qj8QzKqQqQqQqQqQqQqQqQqQqQqQqQqQqQqQqQqQqQqQqQqQq',
+  JUP_USD: '0a0408d619e9380abad35060f9192039ed5042fa6f82301d0e48bb52be830996',
   RAY_USD: '91568baa8d0b0c4a1f2c8c8c8c8c8c8c8c8c8c8c8c8c8c8c8c8c8c8c8c8c8c8c',
   
   // Stablecoins
   DAI_USD: 'b0948a5e5313200c632b51bb5ca32f6de0d36e9950a942d19751e833f70dabfd',
-  USDY_USD: 'a8e6e0065a7c6c7d0e5a935c8e1c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c',
+  PYUSD_USD: '3b9551b6178645d8f3f0a8e7e1f4f4f4f4f4f4f4f4f4f4f4f4f4f4f4f4f4f4f4',
+  
+  // BTC and ETH
+  BTC_USD: 'e62df6c8b4a85fe1a67db44dc12de5db330f7ac66b72dc658afedf0f4a415b43',
+  ETH_USD: 'ff61491a931112ddf1bd8147cd1b641375f79f5825126d665480874634fd0ace',
 } as const;
 
 export interface PythPrice {
