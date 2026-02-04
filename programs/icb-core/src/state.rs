@@ -12,6 +12,9 @@ pub struct GlobalState {
     pub stability_fee_bps: u16,     // 10 = 0.1%
     pub vhr_threshold: u16,         // 15000 = 150%
     pub circuit_breaker_active: bool,
+    pub proposal_counter: u64,      // FIX #1: Monotonic counter for proposal IDs
+    pub circuit_breaker_requested_at: i64, // FIX #7: Timelock for circuit breaker
+    pub last_update_slot: u64,      // FIX #9: Slot-based validation
     pub bump: u8,
 }
 
@@ -26,6 +29,9 @@ impl GlobalState {
         2 +  // stability_fee_bps
         2 +  // vhr_threshold
         1 +  // circuit_breaker_active
+        8 +  // proposal_counter (FIX #1)
+        8 +  // circuit_breaker_requested_at (FIX #7)
+        8 +  // last_update_slot (FIX #9)
         1;   // bump
 }
 
@@ -37,6 +43,7 @@ pub struct ILIOracle {
     pub last_update: i64,
     pub update_interval: i64,       // 300 seconds (5 min)
     pub snapshot_count: u16,
+    pub last_update_slot: u64,      // FIX #9: Slot-based validation
     pub bump: u8,
 }
 
@@ -47,6 +54,7 @@ impl ILIOracle {
         8 +  // last_update
         8 +  // update_interval
         2 +  // snapshot_count
+        8 +  // last_update_slot (FIX #9)
         1;   // bump
 }
 
@@ -73,6 +81,7 @@ pub struct PolicyProposal {
     pub no_stake: u64,
     pub status: ProposalStatus,
     pub execution_tx: Option<[u8; 64]>,
+    pub passed_at: i64,             // FIX #3: Track when proposal passed for execution delay
     pub bump: u8,
 }
 
@@ -89,6 +98,7 @@ impl PolicyProposal {
         8 +  // no_stake
         1 +  // status
         1 + 64 + // execution_tx (option + signature)
+        8 +  // passed_at (FIX #3)
         1;   // bump
 }
 

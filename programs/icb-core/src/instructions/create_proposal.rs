@@ -7,6 +7,7 @@ use crate::errors::ICBError;
 #[instruction(policy_type: PolicyType, policy_params: Vec<u8>, duration: i64)]
 pub struct CreateProposal<'info> {
     #[account(
+        mut, // FIX #1: Need mut to update proposal_counter
         seeds = [GLOBAL_STATE_SEED],
         bump = global_state.bump,
         constraint = !global_state.circuit_breaker_active @ ICBError::CircuitBreakerActive
@@ -17,7 +18,7 @@ pub struct CreateProposal<'info> {
         init,
         payer = proposer,
         space = PolicyProposal::LEN,
-        seeds = [PROPOSAL_SEED, &proposal_id.to_le_bytes()],
+        seeds = [PROPOSAL_SEED, &global_state.proposal_counter.to_le_bytes()], // FIX #4: Use counter from global_state
         bump
     )]
     pub proposal: Account<'info, PolicyProposal>,
@@ -44,11 +45,15 @@ pub fn handler(
         ICBError::InvalidStakeAmount
     );
     
+    let global_state = &mut ctx.accounts.global_state;
     let proposal = &mut ctx.accounts.proposal;
     let clock = Clock::get()?;
     
-    // Generate proposal ID from timestamp
-    let proposal_id = clock.unix_timestamp as u64;
+    // FIX #1: Use monotonic counter instead of timestamp
+    let proposal_id = global_state.proposal_counter;
+    global_state.proposal_counter = proposal_id
+        .checked_add(1)
+        .ok_or(ICBError::CounterOverflow)?;
     
     proposal.id = proposal_id;
     proposal.proposer = ctx.accounts.proposer.key();
@@ -60,6 +65,7 @@ pub fn handler(
     proposal.no_stake = 0;
     proposal.status = ProposalStatus::Active;
     proposal.execution_tx = None;
+    proposal.passed_at = 0; // FIX #3: Initialize passed_at
     proposal.bump = ctx.bumps.proposal;
     
     msg!("Proposal created: {}", proposal_id);

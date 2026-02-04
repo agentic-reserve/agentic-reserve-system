@@ -30,3 +30,17 @@ pub const MAX_VOTING_PERIOD: i64 = 604800;
 
 /// Slashing penalty for failed predictions (10%)
 pub const SLASHING_PENALTY_BPS: u16 = 1000;
+
+// FIX #3: Execution delay (24 hours)
+pub const EXECUTION_DELAY: i64 = 86400;
+
+// FIX #6: Oracle validation limits
+pub const MAX_ILI_VALUE: u64 = 1_000_000_000_000; // 1 trillion (scaled by 1e6)
+pub const MAX_YIELD_BPS: u32 = 100_000; // 1000% max APY
+pub const MAX_VOLATILITY_BPS: u32 = 100_000; // 1000% max volatility
+
+// FIX #7: Circuit breaker timelock (24 hours)
+pub const CIRCUIT_BREAKER_DELAY: i64 = 86400;
+
+// FIX #9: Minimum slot buffer for clock manipulation protection
+pub const MIN_SLOT_BUFFER: u64 = 100; // ~40 seconds at 400ms/slot
