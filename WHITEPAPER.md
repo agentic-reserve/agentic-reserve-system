@@ -96,8 +96,68 @@ ARS consists of four primary components:
 
 ### 3.3 Value Proposition
 
-For Autonomous Agents:
+**For Autonomous Agents:**
 - Access to real-time macro signals for decision-making
+- Seamless API monetization through X402 payment protocol
+- Pay-per-request access without accounts or API keys
+- Regulatory compliance framework for legal certainty
+- Supply chain security against malicious skills
+
+**For Developers:**
+- Agent-native SDK with comprehensive documentation
+- X402 integration for automatic payment discovery
+- OSWAR framework compliance for security auditing
+- Regulatory guidance from Solana Policy Institute
+- Production-ready infrastructure with extensive testing
+
+**For the Ecosystem:**
+- Foundational reserve system for agent economy
+- Standardized security framework (OSWAR)
+- Regulatory compliance best practices
+- Open-source infrastructure for innovation
+
+### 3.4 Recent Integrations (February 2026)
+
+**X402 Payment Protocol Integration**
+
+ARS has integrated the HTTP 402 payment protocol for seamless stablecoin micropayments:
+- **Pay-per-request API access**: $0.001 USDC per query for ILI, ICR, proposals, and vault data
+- **Agent-to-agent payments**: Zero friction, no accounts or API keys required
+- **Automatic payment discovery**: AI agents can discover and pay automatically
+- **Premium features**: Historical data, WebSocket subscriptions, advanced analytics
+- **Instant settlement**: USDC payments on Solana with PayAI facilitator integration
+
+This integration enables sustainable monetization of ARS data and services while maintaining the agent-native philosophy of zero friction access.
+
+**OSWAR Security Framework Compliance**
+
+ARS security audits now follow the Open Standard Web3 Attack Reference (OSWAR) framework:
+- **Standardized vulnerability classification**: Oracle attacks, Governance exploits, Reentrancy, MEV, Flash loans
+- **Industry-recognized taxonomy**: Aligned with MITRE ATT&CK for Web3
+- **Comprehensive attack vector coverage**: 50+ attack patterns catalogued
+- **Better audit reports**: Professional security assessments for Superteam bounty submissions
+
+**Regulatory Compliance Framework**
+
+ARS has implemented a comprehensive regulatory compliance framework based on Solana Policy Institute guidelines:
+- **Stablecoin regulation (GENIUS Act)**: Clear framework for USDC usage in X402 payments
+- **Tax clarity for staking**: Cost basis tracking and tax reporting for agent staking rewards
+- **Developer protections**: Non-custodial nature documentation, liability limitations, open-source licensing
+- **AML/CFT compliance**: Transaction monitoring, risk scoring, compliance reporting
+
+**Supply Chain Security (ClawHub Defense)**
+
+In response to the active ClawHub supply chain attack (341/2,857 skills compromised), ARS has implemented comprehensive defenses:
+- **Automated skill file auditing**: Python-based scanner for malicious patterns
+- **Base64 payload detection**: Identifies obfuscated malware loaders
+- **Bare IP address filtering**: Blocks connections to raw IP addresses
+- **Sandboxed execution**: Isolated environment with restricted permissions
+- **Network monitoring**: OSQuery integration for runtime behavior detection
+- **Allowlist enforcement**: Only locally audited skills from trusted sources
+
+These security measures protect ARS agents from the "Markdown-as-installer" attack vector that has compromised the OpenClaw ecosystem.
+
+
 - Stable reserve currency for capital coordination
 - Transparent, algorithmic governance
 - No human intervention required
@@ -2549,7 +2609,7 @@ The future is autonomous. The future is agent-native. The future is ARS.
 **Last Updated**: February 5, 2026
 
 **Contact Information**:
-- Website: https://ars.daemonprotocol.com
+- Website: https://[ars.daemonprotocol.com](https://agenticreserve.dev/)
 - Email: admin@daemonprotocol
 - Twitter: [@Agenticreserve](https://x.com/Agenticreserve)
 - GitHub: [daemonprotocol/ars](https://github.com/protocoldaemon-sec/agentic-reserve-system.git)

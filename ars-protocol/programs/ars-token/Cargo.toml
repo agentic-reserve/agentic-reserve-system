@@ -1,0 +1,24 @@
+[package]
+name = "ars-token"
+version = "0.1.0"
+description = "ARS Token Program - ARU token lifecycle and epoch-based supply control"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "ars_token"
+
+[features]
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+cpi = ["no-entrypoint"]
+default = []
+
+[dependencies]
+anchor-lang = { workspace = true }
+anchor-spl = { workspace = true }
+
+[dev-dependencies]
+proptest = { workspace = true }
+solana-program-test = { workspace = true }

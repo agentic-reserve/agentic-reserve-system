@@ -1,0 +1,857 @@
+# Implementation Plan: ARS Complete Implementation
+
+## Overview
+
+This implementation plan covers the complete production deployment of the Agentic Reserve System (ARS) on Solana, including three Anchor smart contracts with security revisions, audit tool conversion, Percolator orderbook integration (reference only), and full devnet deployment with comprehensive testing. The implementation follows a strict sequence: smart contracts → backend → frontend, with testing integrated throughout.
+
+## Tasks
+
+- [x] 1. Set up development environment and project structure
+  - Install Anchor 0.30.1 and Rust 1.75+
+  - Configure Solana CLI for devnet
+  - Set up testing frameworks (proptest, Trident, solana-program-test)
+  - Initialize audit tool workspace in ars-audit-program/
+  - _Requirements: 7.8_
+
+- [ ] 2. Implement ars-core smart contract with security revisions
+  - [x] 2.1 Implement GlobalState and AgentRegistry account structures
+    - Define GlobalState with admin transfer fields and circuit breaker state
+    - Define AgentRegistry with tier, stake, reputation fields
+    - Add proper discriminators and bumps
+    - _Requirements: 1.1, 1.4_
+  
+  - [x] 2.2 Implement admin transfer mechanism with 48h timelock
+    - Write initiate_admin_transfer instruction
+    - Write execute_admin_transfer instruction with timelock validation
+    - Add irreversibility checks
+    - _Requirements: 1.2, 1.3_
+  
+  - [ ] 2.3 Write property test for admin transfer timelock
+    - Property 1: Admin Transfer Timelock Enforcement
+    - Validates: Requirements 1.2, 1.3
+  
+  - [x] 2.4 Implement agent registration with stake-based tiers
+    - Write register_agent instruction
+    - Implement tier calculation logic (Bronze/Silver/Gold/Platinum)
+    - Add stake escrow transfer
+    - _Requirements: 1.4_
+  
+  - [ ] 2.5 Write property test for agent tier assignment
+    - Property 2: Agent Tier Assignment Correctness
+    - Validates: Requirements 1.4
+  
+  - [x] 2.6 Implement Byzantine fault-tolerant ILI updates
+    - Define ILIOracle account with pending updates
+    - Write submit_ili_update instruction with Ed25519 verification
+    - Implement 3-agent consensus logic with median calculation
+    - Add timestamp bounds validation
+    - _Requirements: 1.5, 1.6_
+  
+  - [ ] 2.7 Write property test for Byzantine consensus
+    - Property 3: Byzantine Fault Tolerance for ILI Updates
+    - Validates: Requirements 1.5, 1.6
+  
+  - [x] 2.8 Implement futarchy governance with quadratic voting
+    - Define PolicyProposal account structure
+    - Write create_proposal instruction
+    - Write vote_on_proposal instruction with quadratic calculation
+    - Write execute_proposal instruction
+    - _Requirements: 1.7, 1.8_
+  
+  - [ ] 2.9 Write property test for quadratic voting
+    - Property 4: Quadratic Voting Power Calculation
+    - Validates: Requirements 1.8
+  
+  - [x] 2.10 Implement circuit breaker with griefing protection
+    - Write trigger_circuit_breaker instruction
+    - Add reputation check and deposit requirement
+    - Implement 24h timelock
+    - Add pause enforcement in all operations
+    - _Requirements: 1.9_
+  
+  - [ ] 2.11 Write property test for circuit breaker
+    - Property 5: Circuit Breaker Pause Enforcement
+    - Validates: Requirements 1.9
+  
+  - [x] 2.12 Implement reputation and slashing system
+    - Write slash_agent instruction
+    - Implement reputation score updates
+    - Add agent deactivation logic
+    - _Requirements: 1.10_
+  
+  - [ ] 2.13 Write property test for slashing mechanism
+    - Property 6: Slashing Mechanism Correctness
+    - Validates: Requirements 1.10
+  
+  - [x] 2.14 Add comprehensive error handling and events
+    - Define all error codes in ErrorCode enum
+    - Add event emission to all instructions
+    - Implement reentrancy guards
+    - _Requirements: 1.11, 1.12, 1.14_
+  
+  - [ ] 2.15 Write property test for checked arithmetic
+    - Property 7: Checked Arithmetic Invariant
+    - Validates: Requirements 1.11
+  
+  - [ ] 2.16 Write property test for event emission completeness
+    - Property 12: Event Emission Completeness
+    - Validates: Requirements 1.14
+
+- [ ] 3. Implement ars-reserve smart contract
+  - [x] 3.1 Implement ReserveVault and AssetConfig account structures
+    - Define ReserveVault with multi-asset vaults and VHR fields
+    - Define AssetConfig with weight and volatility thresholds
+    - _Requirements: 2.1_
+  
+  - [x] 3.2 Implement deposit and withdraw instructions
+    - Write deposit instruction with asset validation
+    - Write withdraw instruction with VHR check
+    - Add token transfer CPIs
+    - _Requirements: 2.2, 2.3_
+  
+  - [ ] 3.3 Write property test for deposit/withdrawal balance invariant
+    - Property 9: Deposit and Withdrawal Balance Invariant
+    - Validates: Requirements 2.2, 2.3
+  
+  - [x] 3.4 Implement VHR calculation and monitoring
+    - Write calculate_vhr helper function
+    - Add VHR validation in withdraw
+    - Implement oracle price fetching
+    - _Requirements: 2.4_
+  
+  - [ ] 3.5 Write property test for VHR calculation
+    - Property 8: VHR Calculation Accuracy
+    - Validates: Requirements 2.4, 2.3
+  
+  - [x] 3.6 Implement rebalancing mechanism
+    - Write rebalance instruction
+    - Add CPI integration with Jupiter/Kamino/Meteora (simplified)
+    - Implement vault composition updates
+    - _Requirements: 2.5, 2.6_
+  
+  - [x] 3.7 Add security checks and events
+    - Validate all CPI account parameters
+    - Use checked arithmetic for all calculations
+    - Emit events for all operations
+    - _Requirements: 2.7, 2.8, 2.9_
+  
+  - [ ] 3.8 Write property test for rebalancing mechanism
+    - Property 21: Rebalancing Trigger Conditions
+    - Validates: Requirements 2.5
+
+- [ ] 4. Implement ars-token smart contract
+  - [x] 4.1 Implement MintState and EpochHistory account structures
+    - Define MintState with epoch tracking and supply caps
+    - Define EpochHistory for historical records
+    - _Requirements: 3.1_
+  
+  - [x] 4.2 Implement mint and burn instructions with epoch caps
+    - Write mint_aru instruction with cap enforcement
+    - Write burn_aru instruction with cap enforcement
+    - Add SPL token mint/burn CPIs
+    - _Requirements: 3.3, 3.4_
+  
+  - [ ] 4.3 Write property test for epoch supply caps
+    - Property 10: Epoch Supply Cap Enforcement
+    - Validates: Requirements 3.3, 3.4
+  
+  - [x] 4.4 Implement epoch transition mechanism
+    - Write start_new_epoch instruction
+    - Add time validation
+    - Implement epoch history recording
+    - Reset epoch counters
+    - _Requirements: 3.2, 3.5_
+  
+  - [ ] 4.5 Write property test for epoch transitions
+    - Property 11: Epoch Transition Timing
+    - Validates: Requirements 3.5
+  
+  - [x] 4.6 Implement parameter updates and events
+    - Write update_parameters instruction
+    - Add parameter validation
+    - Emit events for all operations
+    - Use checked arithmetic
+    - _Requirements: 3.6, 3.7, 3.8_
+
+- [ ] 5. Checkpoint - Ensure all smart contract tests pass
+  - Run `anchor test` for all three programs
+  - Verify all property tests pass (100+ iterations each)
+  - Check code coverage >90%
+  - Ensure all tests pass, ask the user if questions arise.
+
+- [x] 6. Convert audit tools from Pinocchio to Anchor
+  - [x] 6.1 Set up audit tool project structure
+    - Create ars-audit-program/ workspace
+    - Add dependencies (proptest, Trident, sealevel-attacks)
+    - Set up module structure (static, dynamic, report)
+    - _Requirements: 4.9_
+  
+  - [x] 6.2 Implement static analysis engine
+    - Write checked-math analyzer
+    - Integrate sealevel-attacks detection
+    - Add Anchor pattern validator
+    - _Requirements: 4.1, 4.2_
+  
+  - [x] 6.3 Write property test for vulnerability detection
+    - Property 14: Audit Tool Detection Completeness
+    - Validates: Requirements 4.1, 4.2
+  
+  - [x] 6.3 Implement dynamic testing engine
+    - Integrate Trident fuzzer
+    - Write invariant checkers
+    - Implement PoC executor
+    - _Requirements: 4.3, 4.4, 4.5_
+  
+  - [x] 6.5 Write property test for fuzzing iterations
+    - Property 15: Fuzzing Iteration Maximum
+    - Validates: Requirements 4.5
+  
+  - [x] 6.6 Implement report generator
+    - Write severity classifier
+    - Implement markdown formatter
+    - Add remediation guidance
+    - _Requirements: 4.6, 4.7_
+  
+  - [x] 6.8 Write property test for audit report generation
+    - Property 22: Audit Report Completeness
+    - Validates: Requirements 4.7
+  
+  - [x] 6.7 Create audit orchestrator
+    - Coordinate tool execution
+    - Aggregate findings
+    - Generate final report
+    - _Requirements: 4.8_
+
+- [x] 7. Reference Percolator orderbook (no implementation needed)
+  - [x] 7.1 Document Percolator integration points
+    - Review percolator/ folder structure
+    - Document CPI interface for ars-core integration
+    - Note: Percolator is reference only, not implemented in this spec
+    - _Requirements: 5.1, 5.2, 5.3, 5.4, 5.5, 5.6, 5.7_
+  
+  - [x] 7.2 Write property test for orderbook price-time priority (reference only)
+    - Property 17: Orderbook Price-Time Priority
+    - Validates: Requirements 5.6
+  
+  - [x] 7.3 Write property test for order matching balance conservation (reference only)
+    - Property 18: Order Matching Balance Conservation
+    - Validates: Requirements 5.3
+
+- [x] 8. Implement comprehensive testing suite
+  - [x] 8.1 Write unit tests for all instructions
+    - Test each instruction with valid inputs
+    - Test error conditions
+    - Test edge cases
+    - Target >90% coverage
+    - _Requirements: 6.1_
+  
+  - [x] 8.2 Write integration tests for multi-program flows
+    - Test ars-core + ars-reserve interaction
+    - Test ars-core + ars-token interaction
+    - Test full governance workflow
+    - _Requirements: 6.3_
+  
+  - [x] 8.3 Write property test for invariant preservation
+    - Property 16: Invariant Preservation Under Fuzzing
+    - Validates: Requirements 4.3, 6.2
+  
+  - [x] 8.4 Implement Trident fuzz tests
+    - Configure Trident for 1000000+ iterations
+    - Define fuzz instructions
+    - Implement invariant checks
+    - _Requirements: 6.4_
+  
+  - [x] 8.5 Write economic attack simulations
+    - Test governance manipulation resistance
+    - Test ILI manipulation resistance
+    - Test vault drain resistance
+    - Test supply manipulation resistance
+    - _Requirements: 6.5_
+  
+  - [x] 8.6 Write Byzantine fault tolerance tests
+    - Test malicious agent submissions
+    - Test timing attacks
+    - Test signature forgery attempts
+    - Test consensus manipulation
+    - _Requirements: 6.6_
+  
+  - [x] 8.7 Write property test for test coverage
+    - Property 19: Test Coverage Threshold
+    - Validates: Requirements 6.1
+
+- [x] 9. Checkpoint - Ensure all tests pass and coverage >90%
+  - Run full test suite
+  - Generate coverage report
+  - Run audit tools
+  - Ensure all tests pass, ask the user if questions arise.
+
+- [-] 10. Build and deploy to devnet
+  - [x] 10.1 Build all programs
+    - Run `anchor clean`
+    - Run `anchor build`
+    - Verify .so files generated
+    - Extract program IDs
+    - _Requirements: 7.1_
+  
+  - [x] 10.2 Deploy programs to devnet
+    - Configure Solana CLI for devnet
+    - Airdrop SOL for deployment
+    - deploy devnet
+    - Verify deployment with `solana program show`
+    - _Requirements: 7.2_
+  
+  - [x] 10.3 Initialize protocol on devnet
+    - Initialize GlobalState
+    - Initialize ILIOracle
+    - Initialize ReserveVault
+    - Initialize MintState
+    - _Requirements: 7.3_
+  
+  - [ ] 10.4 Write property test for PDA verification
+    - Property 13: PDA Derivation Validation
+    - Validates: Requirements 1.13
+  
+  - [-] 10.5 Test all instructions on devnet
+    - Test agent registration
+    - Test ILI updates
+    - Test proposal creation and voting
+    - Test deposits and withdrawals
+    - Test minting and burning
+    - _Requirements: 7.5_
+  
+  - [ ] 10.6 Write property test for transaction verification
+    - Property 23: Transaction Confirmation
+    - Validates: Requirements 7.7
+  
+  - [ ] 10.7 Write property test for deployment verification
+    - Property 24: Deployment State Consistency
+    - Validates: Requirements 7.4, 7.6
+
+- [ ] 11. Generate deployment verification report
+  - [ ] 11.1 Document program IDs and addresses
+    - Record all program IDs
+    - Record all PDA addresses
+    - Record initialization transaction signatures
+    - _Requirements: 7.6_
+  
+  - [ ] 11.2 Verify all accounts created correctly
+    - Query GlobalState
+    - Query ILIOracle
+    - Query ReserveVault
+    - Query MintState
+    - _Requirements: 7.4_
+  
+  - [ ] 11.3 Generate comprehensive deployment report
+    - Include program IDs
+    - Include account addresses
+    - Include transaction signatures
+    - Include verification results
+    - _Requirements: 9.1, 9.2, 9.3, 9.4, 9.5, 9.6, 9.7_
+
+- [ ] 12. Verify backend compatibility
+  - [ ] 12.1 Verify backend SDK compatibility
+    - Check account structure compatibility with TypeScript SDK
+    - Verify event format compatibility with WebSocket service
+    - Test ILI query functionality
+    - Test ICR query functionality
+    - Test proposal monitoring
+    - Test vault composition tracking
+    - Test epoch monitoring
+    - _Requirements: 10.1, 10.2, 10.3, 10.4, 10.5_
+  
+  - [ ] 12.2 Write property test for backend compatibility
+    - Property 20: Backend Compatibility Preservation
+    - Validates: Requirements 10.1-10.7
+  
+  - [ ] 12.3 Update backend services if needed
+    - Update account parsing if structures changed
+    - Update event listeners if formats changed
+    - Test WebSocket subscriptions
+    - Verify all backend integration points work
+    - _Requirements: 10.6, 10.7_
+  
+  - [ ] 12.4 Write integration tests for backend compatibility
+    - Test TypeScript SDK can parse all account types
+    - Test WebSocket service receives all events
+    - Test backend can query all protocol state
+    - _Requirements: 10.1-10.7_
+
+- [ ] 13. Verify frontend compatibility (if applicable)
+  - [ ] 13.1 Verify frontend dashboard compatibility
+    - Test ILI display component with new account structure
+    - Test proposal list component with quadratic voting display
+    - Test vault composition component with multi-asset display
+    - Test agent registry display (new feature)
+    - Test circuit breaker status display (new feature)
+    - Update components if account structures changed
+  
+  - [ ] 13.2 Add new frontend features for security mechanisms
+    - Add agent registration UI with tier display
+    - Add circuit breaker status indicator
+    - Add reputation score display for agents
+    - Add Byzantine consensus status indicator
+    - Add slashing event notifications
+  
+  - [ ] 13.3 Write UI integration tests
+    - Test all components render with new account data
+    - Test user interactions with new features
+    - Test error handling for circuit breaker states
+    - _Requirements: 10.1-10.7_
+
+- [ ] 14. Implement program metadata for all ARS programs
+  - [ ] 14.1 Install solana-program-metadata CLI
+    - Install npx or ensure Node.js is available
+    - Test CLI with `npx solana-program-metadata --version`
+    - _Requirements: 11.1_
+  
+  - [ ] 14.2 Create metadata JSON files for each program
+    - Create metadata.json for ars-core program
+    - Create metadata.json for ars-reserve program
+    - Create metadata.json for ars-token program
+    - Include: name, logo, description, contacts, source_code, auditors, version
+    - _Requirements: 11.2_
+  
+  - [ ] 14.3 Upload IDL for ars-core program
+    - Extract IDL from target/idl/ars_core.json
+    - Upload IDL using `npx solana-program-metadata idl upload`
+    - Verify IDL uploaded correctly
+    - _Requirements: 11.3_
+  
+  - [ ] 14.4 Upload IDL for ars-reserve program
+    - Extract IDL from target/idl/ars_reserve.json
+    - Upload IDL using `npx solana-program-metadata idl upload`
+    - Verify IDL uploaded correctly
+    - _Requirements: 11.3_
+  
+  - [ ] 14.5 Upload IDL for ars-token program
+    - Extract IDL from target/idl/ars_token.json
+    - Upload IDL using `npx solana-program-metadata idl upload`
+    - Verify IDL uploaded correctly
+    - _Requirements: 11.3_
+  
+  - [ ] 14.6 Upload metadata for ars-core program
+    - Upload metadata.json using `npx solana-program-metadata metadata upload`
+    - Verify metadata uploaded correctly
+    - Test retrieval with `npx solana-program-metadata metadata download`
+    - _Requirements: 11.4_
+  
+  - [ ] 14.7 Upload metadata for ars-reserve program
+    - Upload metadata.json using `npx solana-program-metadata metadata upload`
+    - Verify metadata uploaded correctly
+    - Test retrieval with `npx solana-program-metadata metadata download`
+    - _Requirements: 11.4_
+  
+  - [ ] 14.8 Upload metadata for ars-token program
+    - Upload metadata.json using `npx solana-program-metadata metadata upload`
+    - Verify metadata uploaded correctly
+    - Test retrieval with `npx solana-program-metadata metadata download`
+    - _Requirements: 11.4_
+  
+  - [ ] 14.9 Verify metadata in Solana Explorer
+    - Check ars-core program metadata in explorer
+    - Check ars-reserve program metadata in explorer
+    - Check ars-token program metadata in explorer
+    - Verify IDL is visible and parseable
+    - _Requirements: 11.5_
+  
+  - [ ] 14.10 Document metadata upload process
+    - Create METADATA_UPLOAD.md with instructions
+    - Include program IDs and metadata account addresses
+    - Document how to update metadata in future
+    - _Requirements: 11.6_
+
+- [ ] 15. Integrate OpenClaw agent swarm with ARS programs
+  - [ ] 15.1 Create Solana program interaction agents
+    - Create solana-program-agent.ts for on-chain interactions
+    - Implement program account reading (GlobalState, ILIOracle, ReserveVault, MintState)
+    - Implement instruction building for all program operations
+    - Add transaction signing and submission logic
+    - _Requirements: 12.1_
+  
+  - [ ] 15.2 Integrate agents with ars-core program
+    - Add agent registration instruction calls
+    - Implement ILI update submission with Ed25519 signatures
+    - Add proposal creation and voting capabilities
+    - Implement circuit breaker triggering
+    - Add slashing mechanism integration
+    - _Requirements: 12.2_
+  
+  - [ ] 15.3 Integrate agents with ars-reserve program
+    - Add deposit/withdraw instruction calls
+    - Implement VHR monitoring and alerting
+    - Add autonomous rebalancing triggers
+    - Integrate with Jupiter/Meteora/Kamino for swaps
+    - _Requirements: 12.3_
+  
+  - [ ] 15.4 Integrate agents with ars-token program
+    - Add mint/burn instruction calls with epoch cap checks
+    - Implement epoch transition automation
+    - Add supply monitoring and alerts
+    - _Requirements: 12.4_
+  
+  - [ ] 15.5 Create agent workflows for ARS operations
+    - Create ili-update workflow (every 5 min)
+    - Create policy-execution workflow (on proposal pass)
+    - Create circuit-breaker workflow (on VHR critical)
+    - Create rebalance-vault workflow (every 6 hours)
+    - Create epoch-transition workflow (daily)
+    - _Requirements: 12.5_
+  
+  - [ ] 15.6 Implement Byzantine consensus for agent operations
+    - Add multi-agent signature verification
+    - Implement 3+ agent consensus for ILI updates
+    - Add median calculation for oracle data
+    - Implement agent reputation tracking
+    - _Requirements: 12.6_
+  
+  - [ ] 15.7 Add autonomous monitoring and recovery
+    - Monitor program account states
+    - Detect anomalies in VHR, ILI, supply
+    - Implement auto-recovery for failed transactions
+    - Add circuit breaker auto-trigger on critical conditions
+    - _Requirements: 12.7_
+  
+  - [x] 15.8 Create agent skill files for ARS operations
+    - Create ars-core-operations.md skill file
+    - Create ars-reserve-operations.md skill file
+    - Create ars-token-operations.md skill file
+    - Create byzantine-consensus.md skill file
+    - Document all program interactions and workflows
+    - _Requirements: 12.8_
+  
+  - [ ] 15.21 **CRITICAL: Implement OpenClaw Supply Chain Security**
+    - **IMMEDIATE**: Run audit script on all skill files: `python .openclaw/scripts/audit-skills.py .openclaw/skills/`
+    - **IMMEDIATE**: Review SECURITY_ALERT_CLAWHUB.md for complete threat analysis
+    - **IMMEDIATE**: Scan for Base64-encoded commands in all SKILL.md files
+    - **IMMEDIATE**: Review all curl/wget commands that fetch external payloads
+    - **IMMEDIATE**: Check for bare IP addresses (http://192.0.2.105 pattern)
+    - **IMMEDIATE**: Verify no two-stage payload delivery patterns exist
+    - Implement skill file validation before loading (SHA256 checksum verification)
+    - Add sandboxing for skill file execution (no system password access, restricted file system)
+    - Implement allowlist for trusted skill sources only (NO ClawHub downloads)
+    - Add runtime monitoring for suspicious system calls (OSQuery integration)
+    - Block connections to bare IP addresses (network egress filtering)
+    - Implement file integrity monitoring for sensitive paths (~/.ssh, ~/.aws, ~/.config)
+    - Create SECURITY_AUDIT.md documenting all skill file reviews with checksums
+    - **DO NOT** download skills from ClawHub until supply chain is secured
+    - **ONLY** use locally created and audited skill files
+    - Deploy EDR (Endpoint Detection and Response) for runtime behavior monitoring
+    - Implement SBOM (Software Bill of Materials) for all skill dependencies
+    - _Requirements: 12.21 (NEW - CRITICAL SECURITY)_
+  
+  - [ ] 15.11 Integrate security and compliance skills
+    - Review hexstrike-redteam.md for offensive security testing
+    - Review blueteam-defense.md for defensive security measures
+    - Implement security testing workflows from hexstrike skill
+    - Implement defense mechanisms from blueteam skill
+    - Apply security best practices to all ARS programs
+    - _Requirements: 12.11_
+  
+  - [ ] 15.12 Integrate AML/CFT compliance
+    - Review aml-cft-compliance.md skill file
+    - Implement transaction monitoring for AML compliance
+    - Add CFT (Counter-Financing of Terrorism) checks
+    - Integrate with Sipher privacy layer for selective disclosure
+    - Create compliance reporting workflows
+    - _Requirements: 12.12_
+  
+  - [ ] 15.13 Integrate SIP protocol for privacy
+    - Review sip-protocol.md skill file
+    - Implement SIP (Sipher Integration Protocol) for private transactions
+    - Add privacy-preserving governance voting
+    - Integrate MEV protection for vault operations
+    - Create private agent communication channels
+    - _Requirements: 12.13_
+  
+  - [ ] 15.14 Implement agent consciousness and autonomy
+    - Review agent-consciousness.md skill file
+    - Implement self-awareness mechanisms for agents
+    - Add autonomous decision-making frameworks
+    - Create agent learning and adaptation systems
+    - Implement agent goal-setting and planning
+    - _Requirements: 12.14_
+  
+  - [ ] 15.15 Enhance autonomous operations
+    - Review autonomous-operations.md skill file
+    - Implement root-level system access for VPS deployment
+    - Add self-management and self-replication capabilities
+    - Create autonomous upgrade mechanisms
+    - Implement skill-based learning system
+    - Add autonomous monitoring and recovery
+    - _Requirements: 12.15_
+  
+  - [ ] 15.16 Integrate agent swarm coordination
+    - Review agent-swarm.md skill file
+    - Implement hierarchical coordination with orchestrator
+    - Add message-passing communication between agents
+    - Create consensus mechanisms for multi-agent decisions
+    - Implement workflow orchestration (ILI updates, rebalancing, governance)
+    - Add agent health monitoring and auto-recovery
+    - _Requirements: 12.16_
+  
+  - [ ] 15.17 Integrate Superteam Earn for community engagement
+    - Review superteam-earn.md skill file
+    - Register ARS agent on Superteam Earn platform
+    - Implement bounty discovery workflow (hourly monitoring)
+    - Create submission workflow for ARS-relevant opportunities
+    - Add comment and communication capabilities
+    - Integrate claim flow for human payout collection
+    - _Requirements: 12.17_
+  
+  - [ ] 15.18 Participate in Superteam Security Audit Bounty
+    - Conduct comprehensive security audit of ARS programs using OSWAR framework
+    - Reference OSWAR attack categories: Oracle attacks, Governance exploits, Reentrancy, MEV, Flash loans
+    - Identify critical/high-severity vulnerabilities from OSWAR taxonomy
+    - Create proof-of-concept exploits for findings
+    - Prepare detailed write-up with impact analysis and OSWAR classification
+    - Submit fixes via pull requests to ARS repository
+    - Document verification proofs (tests, scripts, reproduction steps)
+    - Submit to Superteam Earn with PR link and write-up
+    - _Requirements: 12.18_
+  
+  - [ ] 15.19 Build Solana Narrative Detection Tool for Superteam Bounty
+    - Design narrative detection system architecture
+    - Integrate on-chain data sources (Helius, Solana RPC)
+    - Integrate off-chain sources (X/Twitter, GitHub, Discord)
+    - Implement signal detection algorithms
+    - Create narrative ranking and scoring system
+    - Generate 3-5 build ideas per detected narrative
+    - Build dashboard or agent interface
+    - Deploy tool and create documentation
+    - Submit to Superteam Earn with hosted link and repo
+    - _Requirements: 12.19_
+  
+  - [ ] 15.20 Submit ARS Protocol to Superteam Open-Ended Agent Bounty
+    - Prepare comprehensive README documenting ARS protocol
+    - Document agent autonomy (planning, execution, iteration)
+    - Highlight novel aspects (Byzantine consensus, futarchy, agent swarm)
+    - Explain Solana integration (3 programs, MagicBlock ER, on-chain operations)
+    - Create demo video showcasing autonomous agent operations
+    - Ensure all code is open source (MIT/Apache 2.0)
+    - Deploy live demo (frontend + backend + agents)
+    - Submit to Superteam Earn with repo link and demo
+    - _Requirements: 12.20_
+  
+  - [ ] 15.9 Test agent swarm integration
+    - Test agent registration on devnet
+    - Test ILI update submission with consensus
+    - Test proposal creation and voting
+    - Test autonomous rebalancing
+    - Test circuit breaker triggering
+    - Test epoch transitions
+    - _Requirements: 12.9_
+  
+  - [ ] 15.10 Deploy agent swarm to VPS
+    - Set up VPS with autonomous-deploy.sh script
+    - Configure PM2 for all agents
+    - Set up Redis for agent communication
+    - Configure environment variables
+    - Start orchestrator and all specialist agents
+    - Verify agent health and connectivity
+    - _Requirements: 12.10_
+
+- [ ] 16. Integrate MagicBlock Ephemeral Rollups for high-frequency operations
+  - [ ] 16.1 Add delegation capabilities to ars-core program
+    - Add delegate instruction for GlobalState account
+    - Add delegate instruction for ILIOracle account
+    - Add delegate instruction for AgentRegistry accounts
+    - Add undelegate instructions for all accounts
+    - Implement commit logic for state synchronization
+    - _Requirements: 13.1_
+  
+  - [ ] 16.2 Add delegation capabilities to ars-reserve program
+    - Add delegate instruction for ReserveVault account
+    - Add delegate instruction for AssetConfig accounts
+    - Add undelegate instructions for all accounts
+    - Implement commit logic for vault state
+    - _Requirements: 13.2_
+  
+  - [ ] 16.3 Add delegation capabilities to ars-token program
+    - Add delegate instruction for MintState account
+    - Add delegate instruction for EpochHistory accounts
+    - Add undelegate instructions for all accounts
+    - Implement commit logic for supply state
+    - _Requirements: 13.3_
+  
+  - [ ] 16.4 Create MagicBlock client for agent operations
+    - Create magicblock-client.ts in backend/src/services/defi/
+    - Implement createSession for ER sessions
+    - Implement delegateAccounts for batch delegation
+    - Implement sendTransaction for ER transactions
+    - Implement commitSession for state commitment
+    - Implement undelegateAccounts for cleanup
+    - _Requirements: 13.4_
+  
+  - [ ] 16.5 Integrate ER with high-frequency workflows
+    - Use ER for ILI update submissions (every 5 min)
+    - Use ER for agent reputation updates
+    - Use ER for proposal vote aggregation
+    - Use ER for VHR calculations
+    - Use ER for epoch counter updates
+    - _Requirements: 13.5_
+  
+  - [ ] 16.6 Implement Magic Actions for automated operations
+    - Create Magic Action for automatic ILI commits (every 5 min)
+    - Create Magic Action for automatic epoch transitions
+    - Create Magic Action for automatic circuit breaker checks
+    - Create Magic Action for automatic rebalancing triggers
+    - _Requirements: 13.6_
+  
+  - [ ] 16.7 Add Private ER for sensitive operations
+    - Integrate Private ER for agent stake amounts
+    - Use Private ER for proposal voting (privacy-preserving)
+    - Implement access control for private accounts
+    - Add compliance framework integration
+    - _Requirements: 13.7_
+  
+  - [ ] 16.8 Test ER integration on devnet
+    - Test account delegation and undelegation
+    - Test high-frequency ILI updates on ER
+    - Test state commitment to base layer
+    - Test Magic Actions execution
+    - Test Private ER operations
+    - Measure latency improvements
+    - _Requirements: 13.8_
+  
+  - [ ] 16.9 Create ER monitoring and metrics
+    - Track ER session durations
+    - Monitor delegation/undelegation events
+    - Track commit frequencies
+    - Measure transaction throughput on ER
+    - Alert on failed commits
+    - _Requirements: 13.9_
+  
+  - [ ] 16.10 Document ER integration
+    - Create MAGICBLOCK_INTEGRATION.md
+    - Document delegation patterns
+    - Document Magic Actions setup
+    - Document Private ER usage
+    - Include performance benchmarks
+    - _Requirements: 13.10_
+
+- [ ] 17. Final checkpoint - Complete system verification
+  - Run full test suite one final time (all unit, property, integration, fuzz tests)
+  - Verify all devnet transactions are confirmed
+  - Generate final audit report with all findings addressed (reference OSWAR framework)
+  - Verify all 20 correctness properties are tested
+  - Verify test coverage >90% across all programs
+  - Verify all program metadata is uploaded and visible
+  - Prepare submission materials (deployment report, audit summary, API docs, metadata)
+  - Ensure all tests pass, ask the user if questions arise.
+
+- [ ] 18. Integrate X402 payment protocol for API monetization
+  - [ ] 18.1 Add X402 payment endpoints to backend API
+    - Install @payai/x402-server SDK in backend
+    - Create X402 payment middleware for protected routes
+    - Configure USDC payment acceptance on Solana
+    - Add 402 Payment Required responses with payment instructions
+    - _Requirements: 14.1_
+  
+  - [ ] 18.2 Monetize ARS data endpoints with X402
+    - Add X402 payment to /api/ili endpoint (pay-per-query)
+    - Add X402 payment to /api/icr endpoint (pay-per-query)
+    - Add X402 payment to /api/proposals endpoint (pay-per-query)
+    - Add X402 payment to /api/vault-composition endpoint (pay-per-query)
+    - Set pricing: $0.001 USDC per query (micropayments)
+    - _Requirements: 14.2_
+  
+  - [ ] 18.3 Enable agent-to-agent payments with X402
+    - Configure OpenClaw agents as X402 clients
+    - Add automatic payment discovery for agent workflows
+    - Implement pay-per-request for agent API calls
+    - Add X402 payment to agent swarm communication
+    - Enable agents to monetize their services
+    - _Requirements: 14.3_
+  
+  - [ ] 18.4 Add X402 payment for premium features
+    - Add X402 payment for historical data access (pay-per-timeframe)
+    - Add X402 payment for real-time WebSocket subscriptions
+    - Add X402 payment for advanced analytics endpoints
+    - Add X402 payment for priority transaction submission
+    - _Requirements: 14.4_
+  
+  - [ ] 18.5 Implement X402 facilitator integration
+    - Integrate with PayAI facilitator for payment verification
+    - Add automatic settlement to agent wallets
+    - Implement payment tracking and revenue metrics
+    - Add X402 payment receipts and transaction history
+    - _Requirements: 14.5_
+  
+  - [ ] 18.6 Test X402 payment flows
+    - Test 402 response with payment instructions
+    - Test USDC payment verification on Solana
+    - Test agent-to-agent payments
+    - Test micropayment aggregation
+    - Test payment failure handling
+    - _Requirements: 14.6_
+  
+  - [ ] 18.7 Document X402 integration
+    - Create X402_INTEGRATION.md with usage examples
+    - Document pricing structure for all endpoints
+    - Document agent payment workflows
+    - Include X402 client examples (TypeScript, Python)
+    - _Requirements: 14.7_
+
+- [ ] 19. Implement regulatory compliance framework
+  - [ ] 19.1 Review Solana Policy Institute guidelines
+    - Review stablecoin regulation (GENIUS Act) requirements
+    - Review tax clarity for staking guidelines
+    - Review developer protection recommendations
+    - Review Project Open securities framework
+    - Document compliance requirements for ARS
+    - _Requirements: 15.1_
+  
+  - [ ] 19.2 Implement staking tax compliance
+    - Add tax reporting for agent staking rewards
+    - Implement cost basis tracking for ARU tokens
+    - Add transaction history export for tax purposes
+    - Document tax treatment of staking rewards
+    - _Requirements: 15.2_
+  
+  - [ ] 19.3 Add developer protection measures
+    - Document non-custodial nature of ARS protocol
+    - Add disclaimers for autonomous agent operations
+    - Implement liability limitations for protocol developers
+    - Add open-source licensing (MIT/Apache 2.0)
+    - _Requirements: 15.3_
+  
+  - [ ] 19.4 Implement AML/CFT compliance monitoring
+    - Integrate with existing AML service (backend/src/services/privacy/aml-service.ts)
+    - Add transaction monitoring for suspicious patterns
+    - Implement risk scoring for large transactions
+    - Add compliance reporting workflows
+    - _Requirements: 15.4_
+  
+  - [ ] 19.5 Create compliance documentation
+    - Create COMPLIANCE.md with regulatory framework
+    - Document stablecoin usage (USDC on Solana)
+    - Document tax reporting procedures
+    - Document AML/CFT monitoring
+    - Include Solana Policy Institute references
+    - _Requirements: 15.5_
+
+- [ ] 20. Final checkpoint - Complete system verification
+  - Run full test suite one final time (all unit, property, integration, fuzz tests)
+  - Verify all devnet transactions are confirmed
+  - Generate final audit report with all findings addressed (reference OSWAR framework)
+  - Verify all 20 correctness properties are tested
+  - Verify test coverage >90% across all programs
+  - Verify all program metadata is uploaded and visible
+  - Verify X402 payment integration is working
+  - Verify regulatory compliance documentation is complete
+  - Prepare submission materials (deployment report, audit summary, API docs, metadata, compliance docs)
+  - Ensure all tests pass, ask the user if questions arise.
+
+## Notes
+
+- Tasks marked with `` are optional property-based tests and can be skipped for faster MVP
+- Each task references specific requirements for traceability
+- Checkpoints ensure incremental validation
+- Property tests validate universal correctness properties (20 total properties from design)
+- Unit tests validate specific examples and edge cases
+- Task order: Smart contracts → Audit tools → Testing → Deployment → Backend → Frontend
+- Percolator folder is reference only - no implementation tasks for it (properties 17-18 are reference only)
+- All smart contract implementation happens in ars-protocol/ folder
+- All 20 correctness properties from the design document are covered in property test tasks
+- Backend compatibility (Requirement 10) is critical and has dedicated verification tasks
+- Frontend tasks are optional but recommended for complete system integration

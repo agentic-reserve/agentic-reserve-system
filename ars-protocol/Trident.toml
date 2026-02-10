@@ -1,0 +1,36 @@
+[fuzz]
+# Minimum 1,000,000 iterations for comprehensive fuzzing
+iterations = 1000000
+max_instruction_sequence_length = 20
+allow_duplicate_accounts = false
+timeout = 3600 # 1 hour timeout
+
+[[fuzz.invariants]]
+name = "supply_cap"
+description = "Total minted in epoch must not exceed cap"
+enabled = true
+
+[[fuzz.invariants]]
+name = "vhr_minimum"
+description = "VHR must be >= 150% or circuit breaker active"
+enabled = true
+
+[[fuzz.invariants]]
+name = "byzantine_consensus"
+description = "ILI updates require 3+ agent consensus"
+enabled = true
+
+[[fuzz.invariants]]
+name = "circuit_breaker_timelock"
+description = "Circuit breaker must remain active for 24 hours"
+enabled = true
+
+[[fuzz.invariants]]
+name = "quadratic_voting"
+description = "Voting power equals sqrt(stake)"
+enabled = true
+
+[test]
+# Test configuration
+test_threads = 4
+show_output = true

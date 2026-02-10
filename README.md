@@ -17,6 +17,14 @@ Unlike traditional DeFi protocols designed for human users, ARS is built from th
 ### Agent-Native Architecture
 Every component of ARS is specifically designed for autonomous agent interaction, providing seamless integration for AI-driven economic systems without requiring human oversight or intervention.
 
+### X402 Payment Protocol Integration
+ARS implements the HTTP 402 payment protocol for seamless stablecoin micropayments, enabling:
+- **Pay-per-request API access**: $0.001 USDC per query for ILI, ICR, proposals, and vault data
+- **Agent-to-agent payments**: Zero friction, no accounts or API keys required
+- **Automatic payment discovery**: AI agents can discover and pay automatically
+- **Premium features**: Historical data, WebSocket subscriptions, advanced analytics
+- **Instant settlement**: USDC payments on Solana with PayAI facilitator integration
+
 ### Internet Liquidity Index (ILI)
 A real-time macro signal that aggregates liquidity data from multiple DeFi protocols, updated every 5 minutes to provide agents with current market conditions for optimal decision-making.
 
@@ -406,14 +414,42 @@ npm run test:ws-load
 
 ## Security Framework
 
+### 🚨 CRITICAL SECURITY ALERT: OpenClaw Supply Chain Attack
+
+**Status**: ACTIVE THREAT - ClawHub malicious skills campaign  
+**Severity**: CRITICAL  
+**Affected**: OpenClaw ecosystem (341/2,857 skills compromised - 11.9%)
+
+ARS has implemented comprehensive defenses against the ongoing ClawHub supply chain attack:
+
+**Immediate Protections**:
+- ✅ All skill files audited with automated scanner (`.openclaw/scripts/audit-skills.py`)
+- ✅ Base64 payload detection and blocking
+- ✅ Bare IP address filtering (no connections to raw IPs)
+- ✅ Two-stage payload delivery detection
+- ✅ SHA256 checksum verification for all skills
+- ✅ Sandboxed execution environment (no system password access)
+- ✅ Network egress filtering and monitoring
+- ✅ File integrity monitoring for sensitive paths
+- ✅ **NO ClawHub downloads** - only locally audited skills
+
+**Security Documentation**:
+- [SECURITY_ALERT_CLAWHUB.md](./.openclaw/SECURITY_ALERT_CLAWHUB.md) - Complete threat analysis
+- [audit-skills.py](./.openclaw/scripts/audit-skills.py) - Automated security scanner
+
+**For detailed information on the ClawHub attack and defensive measures, see [.openclaw/SECURITY_ALERT_CLAWHUB.md](./.openclaw/SECURITY_ALERT_CLAWHUB.md)**
+
+---
+
 ### Implemented Security Measures
 
-**Smart Contract Security**
+**Smart Contract Security (OSWAR Framework)**
 1. **Overflow Protection**: All arithmetic operations use checked math with comprehensive bounds checking
 2. **Access Control**: Role-based permissions with multi-signature requirements for critical operations
 3. **State Validation**: Slot-based validation and signature verification for all agent actions
 4. **Circuit Breakers**: Automated emergency stops with 24-hour timelock mechanisms
 5. **Immutable Vault**: Reserve vault addresses cannot be modified after initialization
+6. **OSWAR Compliance**: Security audits follow Open Standard Web3 Attack Reference taxonomy
 
 **Operational Security**
 1. **Multi-Agent Security Swarm**: Four specialized agents providing comprehensive protection
@@ -421,6 +457,7 @@ npm run test:ws-load
 3. **MEV Protection**: Private mempool usage and transaction batching
 4. **API Security**: Rate limiting, input validation, and DDoS protection
 5. **Infrastructure Security**: Encrypted data at rest and in transit, VPC isolation
+6. **Supply Chain Security**: Automated skill file auditing and sandboxed execution
 
 **Privacy Protection**
 1. **Sipher Protocol Integration**: Zero-knowledge privacy for confidential transactions
@@ -428,11 +465,19 @@ npm run test:ws-load
 3. **Encrypted Memory**: Solder-Cortex system for secure agent state management
 4. **Identity Protection**: Advanced cryptographic primitives for agent anonymity
 
+**OpenClaw Supply Chain Security**
+1. **Skill File Validation**: SHA256 checksums and signature verification
+2. **Automated Scanning**: Python-based scanner for malicious patterns
+3. **Sandboxed Execution**: Isolated environment with restricted permissions
+4. **Network Monitoring**: OSQuery integration for runtime behavior detection
+5. **Allowlist Enforcement**: Only locally audited skills from trusted sources
+
 ### Security Audit Status
 
-**Current Status**: Internal security review completed
-**External Audit**: Scheduled for Q2 2026 with tier-1 auditors
-**Bug Bounty**: Program launch planned for Q2 2026
+**Current Status**: Internal security review completed with OSWAR framework compliance  
+**External Audit**: Scheduled for Q2 2026 with tier-1 auditors  
+**Bug Bounty**: Program launch planned for Q2 2026  
+**Supply Chain Security**: Active monitoring and defense against ClawHub attack
 
 **Known Issues (Pre-Mainnet)**
 - Ed25519 signature verification: Partial implementation (Priority: High)
@@ -440,7 +485,13 @@ npm run test:ws-load
 - Floating point arithmetic: Used in quadratic staking (Priority: Medium)
 - Oracle validation: Off-chain only (Priority: Medium)
 
-For detailed security information, see [Security Documentation](./documentation/security/).
+**Recent Security Enhancements**:
+- ✅ OpenClaw supply chain attack defenses implemented
+- ✅ Automated skill file scanning and validation
+- ✅ OSWAR framework integration for vulnerability classification
+- ✅ X402 payment protocol security review completed
+
+For detailed security information, see [Security Documentation](./documentation/security/) and [SECURITY_ALERT_CLAWHUB.md](./.openclaw/SECURITY_ALERT_CLAWHUB.md).
 
 ## Development Roadmap
 
@@ -455,11 +506,13 @@ For detailed security information, see [Security Documentation](./documentation/
 
 ### Phase 2: Security and Compliance (Q2 2026)
 **Objectives**: Production-ready security and regulatory compliance
-- External security audit with tier-1 auditors
+- External security audit with tier-1 auditors (OSWAR framework)
 - Complete Ed25519 signature verification implementation
 - Add comprehensive reentrancy guards
 - Deploy AML/CFT compliance systems
 - Launch bug bounty program
+- X402 payment protocol production deployment
+- Regulatory compliance framework (Solana Policy Institute guidelines)
 - Testnet deployment with partner integration
 
 ### Phase 3: Mainnet Beta (Q3 2026)
@@ -540,10 +593,13 @@ For detailed contribution guidelines, see [CONTRIBUTING.md](./CONTRIBUTING.md).
 - **[Quick Start Guide](./documentation/QUICK_START.md)**: Rapid deployment and setup instructions
 - **[API Documentation](./backend/API_DOCUMENTATION.md)**: Complete REST and WebSocket API reference
 - **[Implementation Status](./documentation/IMPLEMENTATION_STATUS.md)**: Current development progress and milestones
+- **[Integration Summary](./.kiro/specs/ars-complete-implementation/INTEGRATION_SUMMARY.md)**: Latest integrations (X402, OSWAR, Compliance)
 
 ### Security Documentation
+- **[CRITICAL: ClawHub Security Alert](./.openclaw/SECURITY_ALERT_CLAWHUB.md)**: Active supply chain attack defense
+- **[Skill File Audit Script](./.openclaw/scripts/audit-skills.py)**: Automated security scanner
 - **[Security Agents Deployment Guide](./documentation/SECURITY_AGENTS_DEPLOYMENT_GUIDE.md)**: Production security setup
-- **[Security Audit Reports](./documentation/security/)**: Comprehensive security assessments
+- **[Security Audit Reports](./documentation/security/)**: Comprehensive security assessments (OSWAR framework)
 - **[AML/CFT Compliance Guide](./documentation/SIPHER_OPERATIONS_GUIDE.md)**: Regulatory compliance procedures
 
 ### Integration Guides
@@ -588,6 +644,15 @@ Four-agent security swarm with AML/CFT compliance, privacy protection, and compr
 **8. Foundational Infrastructure Vision**
 ARS is not just another DeFi tool but aims to become the Federal Reserve equivalent for the entire Internet of Agents economy.
 
+**9. X402 Payment Protocol Integration**
+First agent-native reserve system with HTTP 402 micropayments, enabling seamless pay-per-request API monetization and agent-to-agent payments.
+
+**10. Regulatory Compliance Framework**
+Comprehensive compliance with emerging crypto regulations (Solana Policy Institute guidelines), including staking tax clarity, developer protections, and AML/CFT monitoring.
+
+**11. Supply Chain Security**
+Active defense against OpenClaw ClawHub attack with automated skill file auditing, sandboxed execution, and OSWAR framework compliance.
+
 ### Hackathon Compliance Statement
 
 This project strictly adheres to all hackathon guidelines:
@@ -603,8 +668,12 @@ This project strictly adheres to all hackathon guidelines:
 - Agent-native reserve currency with algorithmic backing
 - Comprehensive privacy and compliance integration
 - Production-ready smart contract architecture with extensive testing
+- **X402 payment protocol** for agent-to-agent micropayments
+- **OSWAR framework** compliance for security auditing
+- **Regulatory compliance** framework (Solana Policy Institute)
+- **Supply chain security** defenses against active threats
 
-For detailed project information, see our [Technical Whitepaper](./WHITEPAPER.md) and [Implementation Status](./documentation/IMPLEMENTATION_STATUS.md).
+For detailed project information, see our [Technical Whitepaper](./WHITEPAPER.md), [Implementation Status](./documentation/IMPLEMENTATION_STATUS.md), and [Integration Summary](./.kiro/specs/ars-complete-implementation/INTEGRATION_SUMMARY.md).
 
 ## License and Legal
 
@@ -675,6 +744,10 @@ We extend our gratitude to the following organizations and projects that make AR
 - **HexStrike AI**: Offensive security testing framework and red team operations
 - **Range Protocol**: Risk engine integration for AML/CFT compliance
 - **Sipher Protocol**: Zero-knowledge privacy infrastructure
+- **OSWAR Framework**: Open Standard Web3 Attack Reference for security auditing
+- **Solana Policy Institute**: Regulatory compliance guidelines and advocacy
+- **PayAI Network**: X402 payment protocol for stablecoin micropayments
+- **Penligent Security**: ClawHub supply chain attack research and defense
 
 **Community and Ecosystem**:
 - **Colosseum**: For organizing the Agent Hackathon and supporting innovation

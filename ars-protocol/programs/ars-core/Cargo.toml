@@ -1,0 +1,25 @@
+[package]
+name = "ars-core"
+version = "0.1.0"
+description = "ARS Core Program - Main protocol logic for ILI calculation and futarchy governance"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "ars_core"
+
+[features]
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+cpi = ["no-entrypoint"]
+default = []
+
+[dependencies]
+anchor-lang = { workspace = true }
+anchor-spl = { workspace = true }
+solana-program = { workspace = true }
+
+[dev-dependencies]
+proptest = { workspace = true }
+solana-program-test = { workspace = true }

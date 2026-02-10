@@ -1,13 +1,31 @@
 [workspace]
 members = [
-    "programs/*"
+    "programs/ars-core",
+    "programs/ars-reserve",
+    "programs/ars-token"
 ]
 resolver = "2"
+
+[workspace.dependencies]
+# Anchor Framework - Proven Solana development framework
+anchor-lang = "0.30.1"
+anchor-spl = "0.30.1"
+
+# Solana SDK
+solana-program = "1.18.26"
+
+# Force compatible version of constant_time_eq for Solana toolchain
+constant_time_eq = "=0.3.1"
+
+# Testing
+proptest = { version = "1.4", default-features = false, features = ["alloc"] }
+solana-program-test = "1.18.26"
 
 [profile.release]
 overflow-checks = true
 lto = "fat"
 codegen-units = 1
+
 [profile.release.build-override]
 opt-level = 3
 incremental = false
