@@ -27,6 +27,7 @@ REGISTRATION_SUCCESS.md
 
 # Rust build artifacts
 target/
+**/target/
 **/*.rs.bk
 *.pdb
 
@@ -57,3 +58,4 @@ target/
 tmp/
 temp/
 *.tmp
+
