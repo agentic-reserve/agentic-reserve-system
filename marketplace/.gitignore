@@ -1,0 +1,33 @@
+# Anchor
+.anchor
+target/
+**/*.rs.bk
+test-ledger/
+
+# Node
+node_modules/
+dist/
+*.log
+.env
+.env.local
+
+# IDL
+*.json
+
+# Build artifacts
+*.so
+*.wasm
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Test artifacts
+coverage/
+.nyc_output/

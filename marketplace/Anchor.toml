@@ -1,0 +1,53 @@
+[toolchain]
+anchor_version = "0.30.1"
+
+[features]
+resolution = true
+skip-lint = false
+
+[programs.localnet]
+agent_registry = "36hKHAUzNGTTwBCWPzNbz1zNJeSsTW6aAcpXsjVY6xrv"
+service_marketplace = "76f4XeUP316CpeyASAqpGW6dxQDWw8Uw5gzzeZEpkdsV"
+escrow_manager = "7NczKPkt6hRjKX1R9GYVNUS3XVQiyvfHQcACbJV4FEfN"
+
+[programs.devnet]
+agent_registry = "36hKHAUzNGTTwBCWPzNbz1zNJeSsTW6aAcpXsjVY6xrv"
+service_marketplace = "76f4XeUP316CpeyASAqpGW6dxQDWw8Uw5gzzeZEpkdsV"
+escrow_manager = "7NczKPkt6hRjKX1R9GYVNUS3XVQiyvfHQcACbJV4FEfN"
+
+[programs.mainnet]
+agent_registry = "36hKHAUzNGTTwBCWPzNbz1zNJeSsTW6aAcpXsjVY6xrv"
+service_marketplace = "76f4XeUP316CpeyASAqpGW6dxQDWw8Uw5gzzeZEpkdsV"
+escrow_manager = "7NczKPkt6hRjKX1R9GYVNUS3XVQiyvfHQcACbJV4FEfN"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "Localnet"
+wallet = "~/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
+
+[test]
+startup_wait = 10000
+
+[test.validator]
+url = "https://api.devnet.solana.com"
+
+[[test.validator.clone]]
+address = "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+
+[[test.validator.clone]]
+address = "ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL"
+
+# Clone ARS protocol programs for integration
+[[test.validator.clone]]
+address = "ARSFehdYbZhSgoQ2p82cHxPLGKrutXezJbYgDwJJA5My"
+
+[[test.validator.clone]]
+address = "ARS7PfJZeYAhsYGvR68ccZEpoXWHLYvJ3YbKoG5GHb5o"
+
+[[test.validator.clone]]
+address = "ARSM8uCNGUDYCVJPNnoKenBNTzKbJANyJS3KpbUVEmQb"

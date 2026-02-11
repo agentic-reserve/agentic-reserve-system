@@ -7,18 +7,18 @@ skip-lint = false
 
 [programs.localnet]
 ars_core = "ARSFehdYbZhSgoQ2p82cHxPLGKrutXezJbYgDwJJA5My"
-ars_reserve = "ARSRvLt8K9xZhSgoQ2p82cHxPLGKrutXezJbYgDwJJA5My"
-ars_token = "ARSTkn8K9xZhSgoQ2p82cHxPLGKrutXezJbYgDwJJA5My"
+ars_reserve = "ARS7PfJZeYAhsYGvR68ccZEpoXWHLYvJ3YbKoG5GHb5o"
+ars_token = "ARSM8uCNGUDYCVJPNnoKenBNTzKbJANyJS3KpbUVEmQb"
 
 [programs.devnet]
 ars_core = "ARSFehdYbZhSgoQ2p82cHxPLGKrutXezJbYgDwJJA5My"
-ars_reserve = "ARSRvLt8K9xZhSgoQ2p82cHxPLGKrutXezJbYgDwJJA5My"
-ars_token = "ARSTkn8K9xZhSgoQ2p82cHxPLGKrutXezJbYgDwJJA5My"
+ars_reserve = "ARS7PfJZeYAhsYGvR68ccZEpoXWHLYvJ3YbKoG5GHb5o"
+ars_token = "ARSM8uCNGUDYCVJPNnoKenBNTzKbJANyJS3KpbUVEmQb"
 
 [programs.mainnet]
 ars_core = "ARSFehdYbZhSgoQ2p82cHxPLGKrutXezJbYgDwJJA5My"
-ars_reserve = "ARSRvLt8K9xZhSgoQ2p82cHxPLGKrutXezJbYgDwJJA5My"
-ars_token = "ARSTkn8K9xZhSgoQ2p82cHxPLGKrutXezJbYgDwJJA5My"
+ars_reserve = "ARS7PfJZeYAhsYGvR68ccZEpoXWHLYvJ3YbKoG5GHb5o"
+ars_token = "ARSM8uCNGUDYCVJPNnoKenBNTzKbJANyJS3KpbUVEmQb"
 
 [registry]
 url = "https://api.apr.dev"
