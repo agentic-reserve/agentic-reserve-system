@@ -1,0 +1,99 @@
+# MagicBlock Documentation
+
+## Docs
+
+- [getAccountInfo](https://docs.magicblock.gg/api-reference/er-api/getAccountInfo.md): Get AccountInfo for a single account.
+- [getBlockhashForAccounts](https://docs.magicblock.gg/api-reference/er-api/getBlockhashForAccounts.md): Get blockhash for multiple account addresses.
+- [getDelegationStatus](https://docs.magicblock.gg/api-reference/er-api/getDelegationStatus.md): Get delegation status for a single account from Magic Router.
+- [getIdentity](https://docs.magicblock.gg/api-reference/er-api/getIdentity.md): Get the identity information of the current ER Validator
+- [getRoutes](https://docs.magicblock.gg/api-reference/er-api/getRoutes.md): Get available ephemeral rollup nodes from the Magic Router
+- [getSignatureStatuses](https://docs.magicblock.gg/api-reference/er-api/getSignatureStatuses.md): Returns the confirmation status for one or more signatures
+- [Introduction](https://docs.magicblock.gg/api-reference/er-api/introduction.md): Ephemeral Rollup API Documentation
+- [Delegate Ephemeral ATA](https://docs.magicblock.gg/api-reference/per-spl-api/delegate-ephemeral-ata.md)
+- [Deposit SPL Tokens](https://docs.magicblock.gg/api-reference/per-spl-api/deposit-spl-tokens.md)
+- [Get Config](https://docs.magicblock.gg/api-reference/per-spl-api/get-config.md)
+- [Initialize Ephemeral ATA](https://docs.magicblock.gg/api-reference/per-spl-api/initialize-ephemeral-ata.md)
+- [Initialize Global Vault](https://docs.magicblock.gg/api-reference/per-spl-api/initialize-global-vault.md)
+- [Introduction](https://docs.magicblock.gg/api-reference/per-spl-api/introduction.md): Private Ephemeral SPL Token API Documentation
+- [Root](https://docs.magicblock.gg/api-reference/per-spl-api/root.md)
+- [Undelegate Ephemeral ATA](https://docs.magicblock.gg/api-reference/per-spl-api/undelegate-ephemeral-ata.md)
+- [Withdraw SPL Tokens](https://docs.magicblock.gg/api-reference/per-spl-api/withdraw-spl-tokens.md)
+- [Local Development](https://docs.magicblock.gg/pages/ephemeral-rollups-ers/how-to-guide/local-development.md): Run and test your Native Rust or Anchor programs with full customization on your local host and Ephemeral Rollups minimizing network latency and rate limit risk.
+- [Quickstart](https://docs.magicblock.gg/pages/ephemeral-rollups-ers/how-to-guide/quickstart.md): Any Solana program can be upgraded with Ephemeral Rollups by adding delegation capabilities.
+- [Solana Program](https://docs.magicblock.gg/pages/ephemeral-rollups-ers/how-to-guide/rust-program.md): Learn how to write a simple Rust program that delegates and increments a counter on Solana
+- [Test Your Program](https://docs.magicblock.gg/pages/ephemeral-rollups-ers/how-to-guide/rust-tests.md): Learn how to test a simple Rust program
+- [Delegation, Commitment & Undelegation](https://docs.magicblock.gg/pages/ephemeral-rollups-ers/introduction/ephemeral-rollup.md): Execute Transactions, Synchronize States, all in real-time.
+- [FAQ](https://docs.magicblock.gg/pages/ephemeral-rollups-ers/introduction/faq.md): Execute Transactions, Synchronize States, all in real-time.
+- [Magic Router](https://docs.magicblock.gg/pages/ephemeral-rollups-ers/introduction/magic-router.md): Learn how Magicblock's Magic Router accelerates transactions by routing them to the right execution environment.
+- [Ephemeral Rollup](https://docs.magicblock.gg/pages/ephemeral-rollups-ers/introduction/why.md): The high-performance engine for real-time applications on Solana
+- [Client Implementation](https://docs.magicblock.gg/pages/ephemeral-rollups-ers/magic-actions/client.md): Client-side guide to building with Magic Actions
+- [Program Implementation](https://docs.magicblock.gg/pages/ephemeral-rollups-ers/magic-actions/implementation.md): Program-side guide to building with Magic Actions
+- [Introduction](https://docs.magicblock.gg/pages/ephemeral-rollups-ers/magic-actions/overview.md): Automatically execute base-layer actions while Delegated
+- [Troubleshooting](https://docs.magicblock.gg/pages/ephemeral-rollups-ers/magic-actions/troubleshooting.md): Diagnose common issues with Magic Actions
+- [Pricing](https://docs.magicblock.gg/pages/overview/additional-information/pricing.md): MagicBlock’s pricing is modeled after decentralized cloud infrastructure. The goal is to keep computing costs **predictable for developers**, while still providing **flexibility for enterprises** that need priority access or dedicated resources.
+- [Request For Products](https://docs.magicblock.gg/pages/overview/additional-information/request-for-products.md): Go beyond tutorials by working on real-world problems and community challenges. The Request for Products (RFPs) showcase open ideas and challenges waiting for contributors like you.
+- [Security & Audits](https://docs.magicblock.gg/pages/overview/additional-information/security-and-audits.md): At MagicBlock, security is a top priority. All our core programs have undergone professional audits to ensure robustness and safety for our users.
+- [Systems Status](https://docs.magicblock.gg/pages/overview/additional-information/system-status.md)
+- [Whitepaper](https://docs.magicblock.gg/pages/overview/additional-information/whitepaper.md): Ephemeral Rollups Are All You Need (https://arxiv.org/abs/2311.02650)
+- [Products](https://docs.magicblock.gg/pages/overview/products.md): Explore the core products of MagicBlock and learn how to leverage them in your projects
+- [Access Control](https://docs.magicblock.gg/pages/private-ephemeral-rollups-pers/how-to-guide/access-control.md): Learn how to manage fine-grained access control and member permissions in Private Ephemeral Rollups.
+- [Private SPL Token API](https://docs.magicblock.gg/pages/private-ephemeral-rollups-pers/how-to-guide/private-spl-token-api.md)
+- [Quickstart](https://docs.magicblock.gg/pages/private-ephemeral-rollups-pers/how-to-guide/quickstart.md): Enable privacy in any Solana program state account through MagicBlock's ER and Trusted Execution Environment on Intel TDX.
+- [Authorization](https://docs.magicblock.gg/pages/private-ephemeral-rollups-pers/introduction/authorization.md): Customize authorized access through onchain restrictions on account level for user groups.
+- [Compliance Framework](https://docs.magicblock.gg/pages/private-ephemeral-rollups-pers/introduction/compliance-framework.md): MagicBlock enables confidential execution without compromising performance, compliance, or control.
+- [Onchain Privacy](https://docs.magicblock.gg/pages/private-ephemeral-rollups-pers/introduction/onchain-privacy.md): The high-performance engine for real-time applications that require privacy and compliance on Solana
+- [Counter](https://docs.magicblock.gg/pages/templates/counter.md)
+- [Onchain Dice](https://docs.magicblock.gg/pages/templates/onchain-dice.md)
+- [Private Payments](https://docs.magicblock.gg/pages/templates/private-payments.md)
+- [Random Character Generator](https://docs.magicblock.gg/pages/templates/random-character-generator.md)
+- [Real-Time Price Feed](https://docs.magicblock.gg/pages/templates/real-time-price-feed.md)
+- [Create a Component](https://docs.magicblock.gg/pages/tools/bolt/getting-started/create-component.md):  
+- [Create a System](https://docs.magicblock.gg/pages/tools/bolt/getting-started/create-system.md):  
+- [Hello Bolt](https://docs.magicblock.gg/pages/tools/bolt/getting-started/hello-bolt.md): Scaffolding
+- [Setup / Installation](https://docs.magicblock.gg/pages/tools/bolt/getting-started/installation.md): Setup your environment and install BOLT
+- [World Program Overview](https://docs.magicblock.gg/pages/tools/bolt/getting-started/world-program.md):  
+- [Framework](https://docs.magicblock.gg/pages/tools/bolt/introduction.md): Building your game logic onchain
+- [Mapping and State listening](https://docs.magicblock.gg/pages/tools/bolt/mapping.md): Integrating BOLT with different clients
+- [Implementation](https://docs.magicblock.gg/pages/tools/crank/implementation.md): Learn how to implement cranks in your Solana program using MagicBlock Ephemeral Rollups
+- [Introduction](https://docs.magicblock.gg/pages/tools/crank/introduction.md): Automated, time-based execution of on-chain instructions
+- [Introduction](https://docs.magicblock.gg/pages/tools/introduction.md): Utilize existing SDKs and Frameworks to accelerate your development process
+- [SOAR](https://docs.magicblock.gg/pages/tools/open-source-programs/SOAR.md): Solana On-Chain Achievement & Ranking
+- [Implementation](https://docs.magicblock.gg/pages/tools/oracle/implementation.md): Derive the Pyth Lazer price feed account and decode its bytes
+- [Introduction](https://docs.magicblock.gg/pages/tools/oracle/introduction.md): Real-time onchain data with MagicBlock Ephemeral Rollups
+- [How do Session Keys work?](https://docs.magicblock.gg/pages/tools/session-keys/how-do-session-keys-work.md): What are Session Keys?
+- [Installation](https://docs.magicblock.gg/pages/tools/session-keys/installation.md): Step-by-step guide on setting up and integrating the session wallet management system into your dApp
+- [Integrating Sessions in your Program](https://docs.magicblock.gg/pages/tools/session-keys/integrating-sessions-in-your-program.md): Integrate and manage sessions in your Solana Programs
+- [Introduction](https://docs.magicblock.gg/pages/tools/session-keys/introduction.md): What are Session Keys?
+- [Security](https://docs.magicblock.gg/pages/tools/session-keys/security.md): Key management and security model
+- [Session Provider & Context](https://docs.magicblock.gg/pages/tools/session-keys/session-provider-and-context.md): Understand the usage of the SessionWalletProvider and the context it provides, enabling easy access to the session wallet functionalities across your application components?
+- [Usage Example](https://docs.magicblock.gg/pages/tools/session-keys/usage-examples.md): Learn how to interact with your dApp using the useSessionKeyManager and SessionWalletProvider through various practical examples
+- [Use session key manager](https://docs.magicblock.gg/pages/tools/session-keys/use-sessionkey-manager.md): A custom React hook that manages the creation and revocation of session tokens, and provides essential methods for signing and sending transactions in a secure and user-friendly way
+- [Contribution Guide](https://docs.magicblock.gg/pages/tools/solana-unity-sdk/contribution-guide.md): Thank you for your interest in contributing to the Solana.Unity-SDK! This is an open-source community project and all contributions are welcomed, no matter how big or small. Contributions might include (but is not limited to) filing issues, adding documentation, fixing bugs, creating examples, and/or implementing features.
+- [Add Signature](https://docs.magicblock.gg/pages/tools/solana-unity-sdk/core-concepts/add-signature.md): Learn about Signatures on the official Solana [documentation](https://docs.solana.com/developing/programming-model/accounts#signers)
+- [Associated Token Account](https://docs.magicblock.gg/pages/tools/solana-unity-sdk/core-concepts/associated-token-account.md): Associated Token Account Program defines the convention and provides the mechanism for mapping the user's wallet address to the associated token accounts they hold.
+- [Staking](https://docs.magicblock.gg/pages/tools/solana-unity-sdk/core-concepts/staking.md): SOL token holders can earn rewards and help secure the network by staking tokens to one or more validators. Rewards for staked tokens are based on the current inflation rate, total number of SOL staked on the network, and an individual validator’s uptime and commission (fee).
+- [Transaction Builder](https://docs.magicblock.gg/pages/tools/solana-unity-sdk/core-concepts/transaction-builder.md): Learn about Transactions on the official Anchor [documentation](https://www.anchor-lang.com/docs/intro-to-solana)
+- [Transfer Token](https://docs.magicblock.gg/pages/tools/solana-unity-sdk/core-concepts/transfer-token.md): The Token program defines a common implementation for Fungible and Non Fungible tokens.
+- [Configurations](https://docs.magicblock.gg/pages/tools/solana-unity-sdk/getting-started/configuration.md): Learn how to configure your preferred wallet
+- [Installation](https://docs.magicblock.gg/pages/tools/solana-unity-sdk/getting-started/installation.md)
+- [Sample scene](https://docs.magicblock.gg/pages/tools/solana-unity-sdk/getting-started/sample-scene.md): Play around with the sample scene
+- [Additional Examples](https://docs.magicblock.gg/pages/tools/solana-unity-sdk/guides/additional-examples.md)
+- [DEX integration with Orca](https://docs.magicblock.gg/pages/tools/solana-unity-sdk/guides/dex-integration.md): Orca is natively supported in the SDK. Utility methods are provided to easily build the transactions needed to make swaps, open positions, manage cash and interact with Whirlpools.
+- [Host Your Game on Github Pages](https://docs.magicblock.gg/pages/tools/solana-unity-sdk/guides/host-your-game.md): Host your game for free using Github pages
+- [Jupiter V6 integration](https://docs.magicblock.gg/pages/tools/solana-unity-sdk/guides/jupiter.md): Integrate Jupiter v6 API in your game
+- [Minting an NFT](https://docs.magicblock.gg/pages/tools/solana-unity-sdk/guides/mint-an-nft.md): For minting an NFT we will interact with the [Token Metadata](https://docs.metaplex.com/programs/token-metadata/) program, see the metaplex [documentation](https://docs.metaplex.com/) for a comprehensive overview.
+- [Publish Your Game as an Xnft](https://docs.magicblock.gg/pages/tools/solana-unity-sdk/guides/publishing-a-game.md)
+- [Introduction](https://docs.magicblock.gg/pages/tools/solana-unity-sdk/overview.md): Open-Source Unity-Solana SDK with NFT support & Full RPC coverage.
+- [Overview](https://docs.magicblock.gg/pages/tools/wallets-and-onramp/overview.md): Accelerate user onboarding with existing wallet and onramp solutions
+- [Best Practices](https://docs.magicblock.gg/pages/verifiable-randomness-functions-vrfs/how-to-guide/best-practices.md): Guidelines for integrating verifiable randomness
+- [Quickstart](https://docs.magicblock.gg/pages/verifiable-randomness-functions-vrfs/how-to-guide/quickstart.md): Learn how to request and consume verifiable randomness onchain using the MagicBlock VRF SDK on Solana.
+- [FAQ](https://docs.magicblock.gg/pages/verifiable-randomness-functions-vrfs/introduction/faq.md): Common questions about verifiable randomness
+- [Security](https://docs.magicblock.gg/pages/verifiable-randomness-functions-vrfs/introduction/security.md): MagicBlock's VRF program is audited and generates verifiable randomness
+- [Technical Details](https://docs.magicblock.gg/pages/verifiable-randomness-functions-vrfs/introduction/technical-details.md): How MagicBlock integrates verifiable randomness
+- [Why Verifiable Onchain Randomness?](https://docs.magicblock.gg/pages/verifiable-randomness-functions-vrfs/introduction/why-verifiable-randomness-onchain.md): Verifiable randomness ensures that random outcomes in decentralized applications are **fair, transparent, and tamper-proof**
+
+
+## Optional
+
+- [Tutorials](https://www.youtube.com/@Magicblock-Labs)
+- [Community](https://discord.com/invite/zHFtdVMA6e)

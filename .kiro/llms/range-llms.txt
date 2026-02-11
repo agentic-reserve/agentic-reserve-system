@@ -1,0 +1,222 @@
+# Range Docs
+
+## Docs
+
+- [Get Address Balance Changes Day wise](https://docs.range.org/api-reference/address-information/get-address-balance-changes-day-wise.md): Returns a list of balance changes associated with the specified address.
+- [Get Address Counterparties](https://docs.range.org/api-reference/address-information/get-address-counterparties.md): Returns a list of addresses that the specified address has interacted with.
+- [Get Address Information](https://docs.range.org/api-reference/address-information/get-address-information.md): Returns information about the specified address, including the network and labels associated with it.
+- [Get Address Payments](https://docs.range.org/api-reference/address-information/get-address-payments.md): Returns a list of transactions associated with the specified address.
+- [Get Address Statistics](https://docs.range.org/api-reference/address-information/get-address-statistics.md): Returns date of last and first interaction of this address with the network.
+- [Get Address Transactions](https://docs.range.org/api-reference/address-information/get-address-transactions.md): Returns a list of transactions associated with the specified address.
+- [Get Current Token Balances of an Address](https://docs.range.org/api-reference/address-information/get-current-token-balances-of-an-address.md): Returns a list of token balances of given address.
+- [Get Payment](https://docs.range.org/api-reference/address-information/get-payment.md): Returns a payment transaction associated with the specified hash.
+- [Get Transaction Counts for the specified addresses](https://docs.range.org/api-reference/address-information/get-transaction-counts-for-the-specified-addresses.md): Returns a list of transaction counts aggregated by day.
+- [Get Transaction Details](https://docs.range.org/api-reference/address-information/get-transaction-details.md): Returns details of a transactions associated with the specified hash.
+- [Get Transactions Count](https://docs.range.org/api-reference/address-information/get-transactions-count.md): Returns a list of counts of transactions associated with the specified address.
+- [Search Address Details](https://docs.range.org/api-reference/address-information/search-address-details.md): Returns a list of addresses that match the specified search term.
+- [Search Address Labels](https://docs.range.org/api-reference/address-information/search-address-labels.md): Returns a list of addresses that match the specified search term.
+- [List chains](https://docs.range.org/api-reference/chains/list-chains.md): 
+Returns an array of all blockchain networks supported by the Faraday API.
+
+Each object in the response describes one supported network and includes:
+- `slug`: canonical short identifier for the chain
+- `label`: human-readable display name
+- `kind`: network family (`evm`, `solana`, or `cosmos`)
+- `aliases`: alternative strings accepted in API requests
+
+> **Note:** You may use either the `slug` or one of its `aliases` as the value for
+> `from_chain` or `to_chain` when submitting quote or transaction requests.
+
+This endpoint does not require authentication.
+
+- [Search Entity Details](https://docs.range.org/api-reference/entity-information/search-entity-details.md): Returns a list of entities that match the specified search term.
+- [Get Active Accounts within time range](https://docs.range.org/api-reference/network-information/get-active-accounts-within-time-range.md): Returns total active accounts for network within time range.
+- [Get Address Balances for a given network](https://docs.range.org/api-reference/network-information/get-address-balances-for-a-given-network.md): Returns addresses with maximum balances in the network
+- [Get Address Balances for a given network](https://docs.range.org/api-reference/network-information/get-address-balances-for-a-given-network-1.md): Returns addresses with maximum balances in the network
+- [Get Aggregated Payment field grouped by address](https://docs.range.org/api-reference/network-information/get-aggregated-payment-field-grouped-by-address.md): Returns addresses with maximum aggregated field value in the network
+- [Get all payments by network](https://docs.range.org/api-reference/network-information/get-all-payments-by-network.md): Returns a list of payments for the specified network. Supports both traditional pagination and scroll API for large datasets.
+- [Get all transactions by network](https://docs.range.org/api-reference/network-information/get-all-transactions-by-network.md): Returns a list of transactions for the specified network. Supports both traditional pagination and scroll API for large datasets.
+- [Get Balance Changes Day wise By Network](https://docs.range.org/api-reference/network-information/get-balance-changes-day-wise-by-network.md): Returns a list of balance changes associated with the specified address.
+- [Get ibc and cctp transfers with highest volume within the last 120 minutes](https://docs.range.org/api-reference/network-information/get-ibc-and-cctp-transfers-with-highest-volume-within-the-last-120-minutes.md): Returns a list of high volume cross chain transfers.
+- [Get latest cross chain transfers for a specific network and a specific protocol](https://docs.range.org/api-reference/network-information/get-latest-cross-chain-transfers-for-a-specific-network-and-a-specific-protocol.md): Returns a list of cross chain transfers.
+- [Get msg types in a network](https://docs.range.org/api-reference/network-information/get-msg-types-in-a-network.md): Returns a list of msg types associated with the transactions of a network.
+- [Get Net Flow Day wise By Protocol](https://docs.range.org/api-reference/network-information/get-net-flow-day-wise-by-protocol.md): Returns a list net flow amounts associated with the specified protocol.
+- [Get network volume aggregated by interval](https://docs.range.org/api-reference/network-information/get-network-volume-aggregated-by-interval.md): Returns a list of aggregated volumes for each network.
+- [Get network volume within time range](https://docs.range.org/api-reference/network-information/get-network-volume-within-time-range.md): Returns a aggregated volume for network within time range.
+- [Get payments for a transaction](https://docs.range.org/api-reference/network-information/get-payments-for-a-transaction.md): Returns a list of payments associated with the specified transaction.
+- [Get Search Results](https://docs.range.org/api-reference/network-information/get-search-results.md): Retrieves a list of transactions along with their metadata that correspond to the specified search string.
+- [Get Transaction Count by address](https://docs.range.org/api-reference/network-information/get-transaction-count-by-address.md): Returns a transaction count for given time range and network grouped by address.
+- [Get Transaction Count by time range](https://docs.range.org/api-reference/network-information/get-transaction-count-by-time-range.md): Returns a transaction count for given time range and network.
+- [Get Transaction Counts](https://docs.range.org/api-reference/network-information/get-transaction-counts.md): Returns a list of transaction counts for each specified interval across all requested networks.
+- [Get Transaction Errors](https://docs.range.org/api-reference/network-information/get-transaction-errors.md): Returns aggregated error information in batches of one hour.
+- [Get Whale Moves](https://docs.range.org/api-reference/network-information/get-whale-moves.md): Returns addresses with maximum transfer volumes in the network
+- [Create a person](https://docs.range.org/api-reference/persons/create-a-person.md): 
+Creates a new IVMS101-compliant person entity.
+
+The payload must be either a `natural` or `legal` person structure, and must include:
+- Person core information
+- Name identifiers
+- National identifiers
+- Account numbers
+- Addresses
+
+On success this endpoint returns the full assembled `PersonRecord`.
+
+### Specification
+See the [IVMS101 standard](https://www.intervasp.org/) for full field definitions and compliance details.
+
+### Validation
+- If the input fails schema or custom validation, returns 422.
+
+### Errors
+- Any database or internal failure results in a 500 error.
+
+- [Delete a person](https://docs.range.org/api-reference/persons/delete-a-person.md): Deletes the IVMS101-compliant person entity corresponding to the given UUID. Returns 204 if the deletion is successful, or 404 if the person does not exist.
+- [Get a person](https://docs.range.org/api-reference/persons/get-a-person.md): Fetches a full IVMS101 person entity by its unique identifier. Returns 404 if the person is not found.
+- [Get a person by blockchain address](https://docs.range.org/api-reference/persons/get-a-person-by-blockchain-address.md): Retrieves the IVMS101-compliant person entity linked to the given blockchain address. This may include Ethereum, Solana, Cosmos, or other supported address formats.
+- [List persons](https://docs.range.org/api-reference/persons/list-persons.md): Retrieves a list of all registered IVMS101-compliant natural and legal person entities, including all associated identity fields and metadata.
+- [Update a person](https://docs.range.org/api-reference/persons/update-a-person.md): Fully replaces an IVMS101-compliant person entity by ID. The provided payload must be complete and include all fields for either a natural or legal person.
+- [Get all cross-chain transactions](https://docs.range.org/api-reference/protocols/get-all-cross-chain-transactions.md): Returns a list of cross-chain transactions with filters
+- [Get cross-chain transaction by hash](https://docs.range.org/api-reference/protocols/get-cross-chain-transaction-by-hash.md): Returns a single cross-chain transaction by its hash
+- [Get protocol statistics for a given time range](https://docs.range.org/api-reference/protocols/get-protocol-statistics-for-a-given-time-range.md)
+- [List providers](https://docs.range.org/api-reference/providers/list-providers.md): 
+Returns a list of quote providers supported by Faraday.
+
+- [Get token transfer by ID](https://docs.range.org/api-reference/token-transfers/get-token-transfer-by-id.md): Returns a token transfer that matches the specified ID.
+- [Get token transfers](https://docs.range.org/api-reference/token-transfers/get-token-transfers.md): Returns a list of token transfers that match the specified search term.
+- [List tokens](https://docs.range.org/api-reference/tokens/list-tokens.md): 
+Returns a list of tokens supported by Faraday.
+
+- [List tokens for a network](https://docs.range.org/api-reference/tokens/list-tokens-for-a-network.md): 
+Returns a list of tokens supported by Faraday filtered by Network.
+
+- [Create a transaction](https://docs.range.org/api-reference/transactions/create-a-transaction.md): 
+  Submits a signed transaction for broadcast.
+
+  Faraday routes the transaction based on the `from_network` key from the quote. 
+
+  - The transaction must already be signed by the sender before submission.
+  - The endpoint will broadcast the transaction to the selected blockchain
+  network and return the result.
+  - This endpoint does not modify or re-sign the provided transaction — it
+  broadcasts exactly what is submitted.
+
+- [Get a quote](https://docs.range.org/api-reference/transactions/get-a-quote.md): 
+Retrieves a best price quote from multiple quote providers:
+
+The service selects the best available route based on price and execution
+parameters.
+
+Along with the quote, the response includes:
+
+- An unsigned transaction ready for signing.
+- A risk report generated by Range's Machine Learning models, designed to
+help mitigate fraud and compliance risks.
+
+If travel_rule_compliant is true, Faraday will verify that both the sender
+and recipient have valid IVMS101 person records stored. If these records are
+missing or invalid, the request will fail with a validation error (422).
+
+- [Get a transaction](https://docs.range.org/api-reference/transactions/get-a-transaction.md): 
+Retrieves a single processed transaction by its unique transaction hash.
+
+Note transactions must be submitted via the Faraday API to be available on this endpoint. 
+
+### Response
+Includes:
+- Transaction hash
+- Network (e.g., Solana, Ethereum)
+- Amount (in base units)
+- Travel Rule compliance status
+- Timestamp of creation or observation
+- Full IVMS101 sender and recipient records, if available
+
+### Notes
+- If IVMS101 records are missing, `sender` or `recipient` will be `null`.
+- Use this endpoint to audit a transaction or verify compliance.
+
+- [Get quotes](https://docs.range.org/api-reference/transactions/get-quotes.md): 
+ Retrieves all available quotes from from quote providers
+
+- Uses the same address/amount inputs for all providers.
+- Risk assessment is computed once (same inputs) and attached to the response.
+- If `travel_rule_compliant` is true, verifies IVMS101 records for sender & recipient before quoting.
+
+- [List transactions](https://docs.range.org/api-reference/transactions/list-transactions.md): 
+Returns a list of processed transactions with associated sender and recipient IVMS101 records, if available.
+
+### Response
+Each transaction includes:
+- **Transaction hash**
+- **Amount** (in base units)
+- **Travel Rule compliance flag**
+- **Timestamps**
+- Full **sender** and **recipient** records, if present
+
+### Notes
+- Transactions are returned in **descending order of creation** (most recent first).
+- If IVMS101 records are not found, `sender` or `recipient` fields may be `null`.
+
+- [Track transaction status](https://docs.range.org/api-reference/transactions/track-transaction-status.md): 
+Returns the status of a transaction by hash.  
+
+The `status` key of the response provides a status of the transaction which is one of
+
+- submitted
+- pending
+- completed
+- failed
+- abandoned
+- unknown
+
+The `raw` key provides the full response from the provider, which may provide additional information including links to block explorers and intermediary transactions. As each provider response is different it is up to clients to parse raw provider responses to use them. 
+
+### Query Parameters
+Clients that did not submit their transaction via the Faraday API can still use this endpoint by providing:
+
+- **tx_hash** *(required, path)* — The transaction hash on the source chain.
+- **quote_id** *(optional, query string)* — If the transaction originated from a Faraday quote, include the quote UUID to link to the original quote record.
+
+- [Getting Started](https://docs.range.org/data-api/api-reference-introduction.md): Make your first API call in under 5 minutes. Query blockchain data across 18+ networks with simple REST endpoints.
+- [Authentication](https://docs.range.org/data-api/authentication.md): Secure your API requests with Authorization header authentication.
+- [Data API](https://docs.range.org/data-api/data-introduction.md): Enterprise-grade blockchain intelligence with unified access to addresses, networks, protocols, and stablecoin analytics across 18+ chains.
+- [Faraday API Reference](https://docs.range.org/faraday-api/api-introduction.md): Complete API documentation for stablecoin transfers, compliance, and transaction monitoring
+- [Technical Architecture](https://docs.range.org/faraday-api/architecture/architecture.md): Understand how Faraday routes, validates, and executes stablecoin transfers across chains
+- [Frequently Asked Questions](https://docs.range.org/faraday-api/architecture/faq.md): Common questions about Faraday's features, pricing, and integration
+- [Compliance Record Keeping](https://docs.range.org/faraday-api/integration/compliance-record-keeping.md): How to store interVASP sender and beneficiary records using Faraday
+- [Getting a Quote](https://docs.range.org/faraday-api/integration/getting-a-quote.md): How to get quotes for a Faraday stablecoin transfer
+- [Integrating with Faraday](https://docs.range.org/faraday-api/integration/index.md)
+- [Test Environment Setup](https://docs.range.org/faraday-api/integration/setup.md): Everything you need to test out Faraday
+- [Testing a Solana Transaction](https://docs.range.org/faraday-api/integration/testing-a-solana-transaction.md)
+- [Testing an EVM Transaction](https://docs.range.org/faraday-api/integration/testing-an-evm-transaction.md)
+- [Faraday API](https://docs.range.org/faraday-api/introduction.md): Enterprise stablecoin infrastructure with built-in routing, compliance, and risk management for safe cross-chain transfers.
+- [Insured Transfers](https://docs.range.org/faraday-api/product-info/insured-transfers.md): Premium coverage for Faraday-created transactions.
+- [Supported Chains](https://docs.range.org/faraday-api/product-info/supported-chains.md): Chains supported by Faraday
+- [Supported Quote Providers](https://docs.range.org/faraday-api/product-info/supported-providers.md): Quote providers supported by Faraday
+- [Supported Tokens](https://docs.range.org/faraday-api/product-info/supported-tokens.md): Tokens supported by Faraday
+- [Network Integrations](https://docs.range.org/integrations/explorer-network-integrations.md): Get your chain or asset supported in Range Ecosystem Explorer.
+- [Stablecoin Explorer Integrations](https://docs.range.org/integrations/stablecoin-explorer-integrations.md): Integrate unified stablecoin tracking into your wallet or application.
+- [Welcome to Range](https://docs.range.org/introduction/about-range.md): Enterprise-grade risk, compliance, and intelligence for digital assets. Trusted by industry leaders managing $35B+ in crypto.
+- [Getting Started](https://docs.range.org/introduction/getting-started.md): Set up your Range account and generate your API key in under 60 seconds.
+- [API Quickstart](https://docs.range.org/introduction/quickstart.md): Make your first API call to Range in under 2 minutes.
+- [Changelog](https://docs.range.org/resources/changelog.md): Track the latest updates, features, and improvements to Range APIs and documentation.
+- [Glossary](https://docs.range.org/resources/glossary.md): A comprehensive reference for key terms used throughout Range documentation and the blockchain ecosystem.
+- [SDKs & Libraries](https://docs.range.org/resources/sdks.md): Official SDKs, code libraries, and tools to accelerate your Range integration.
+- [Support & Community](https://docs.range.org/resources/support.md): Get help, connect with other developers, and access Range support resources.
+- [Risk Assessment](https://docs.range.org/risk-api/risk-introduction.md): Comprehensive risk scoring and threat detection for blockchain addresses, transactions, and smart contracts.
+- [Get Address Risk Score](https://docs.range.org/risk-api/risk/get-address-risk-score.md): Returns the **risk score** for a specific blockchain address based on advanced network proximity analysis, machine learning, and behavioral pattern recognition—representing the industry's most comprehensive approach to blockchain threat detection.
+
+- [Get Payment Risk Assessment](https://docs.range.org/risk-api/risk/get-payment-risk-assessment.md): End-to-end risk assessment for payments across and within chains, powered by advanced heuristic rules and machine-learning analysis.
+
+- [Sanctions and Blacklist Check](https://docs.range.org/risk-api/risk/get-sanctions-blacklist-check.md): Check if a blockchain address is blacklisted by stablecoin issuers or listed on OFAC sanctions list.
+
+- [Get Smart Contract Risk (Solana)](https://docs.range.org/risk-api/risk/get-smart-contract-risk.md): This endpoint provides a risk assessment for a given smart contract on the Solana blockchain.
+
+- [Token Risk Assessment (Solana)](https://docs.range.org/risk-api/risk/get-token-risk-assessment.md): Comprehensive risk assessment for Solana tokens using advanced heuristic analysis.
+- [Get Transaction Risk Score](https://docs.range.org/risk-api/risk/get-transaction-risk-score.md): Returns the risk score associated with the specified transaction.
+
+- [Simulate Cosmos Transaction](https://docs.range.org/risk-api/simulator/simulate-cosmos-transaction.md): Simulate a Cosmos SDK based blockchain transaction to get the address balance changes after the transaction is executed.
+- [Simulate Solana Transaction](https://docs.range.org/risk-api/simulator/simulate-solana-transaction.md): Simulate a Solana transaction to get the address balance changes, state updates, and associated risk analysis.
+
+- [Simulate Solana transactions](https://docs.range.org/risk-api/simulator/simulate-solana-transactions.md): Simulate a Solana transaction to get the address balance changes, state updates, and associated risk analysis.
+

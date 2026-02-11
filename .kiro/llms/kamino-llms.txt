@@ -1,0 +1,3185 @@
+# https://docs.kamino.finance/ llms-full.txt
+
+## Kamino Finance Overview
+### [hashtag](https://docs.kamino.finance/\#what-is-kamino-finance)    What is Kamino Finance?
+
+Kamino Finance was originally created to offer users the easiest possible way of providing liquidity and earning yield on-chain.
+
+The protocol's one-click, auto-compounding concentrated liquidity strategies quickly became the **most popular LP products on Solana**, and laid the foundation for what Kamino is now.
+
+Today, Kamino is the largest borrowing and lending protocol on Solana, powering a significant share of the network’s DeFi activity.
+
+Kamino offers a capital-efficient platform for both institutional and individual participants, delivering innovative yield strategies and deep on-chain liquidity across a diverse product suite.
+
+### [hashtag](https://docs.kamino.finance/\#our-products)    Our Products
+
+![Cover](https://docs.kamino.finance/~gitbook/image?url=https%3A%2F%2F741543836-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDGxGrFuaWUFzMv9IjZMP%252Fuploads%252F6MJJaH5Cq3eJumrC5Ij4%252FBorrow%2520%2526%2520Lend%2520-%2520Card.jpg%3Falt%3Dmedia%26token%3Dce1ea4d2-6ace-49d9-9fff-df88c1a4f064&width=490&dpr=3&quality=100&sign=45ceebc2&sv=2)
+
+[Earn Interest and Borrowarrow-up-right](https://kamino.com/)
+
+![Cover](https://docs.kamino.finance/~gitbook/image?url=https%3A%2F%2F741543836-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDGxGrFuaWUFzMv9IjZMP%252Fuploads%252FrZvdH2nmv2fOOTwhzLRW%252FMultiply%2520Vaults%2520-%2520Card.jpg%3Falt%3Dmedia%26token%3D39c5117a-c4b0-4c22-9ac4-4e3ff8cbfbd2&width=490&dpr=3&quality=100&sign=bc7b906c&sv=2)
+
+[Boosted Yieldsarrow-up-right](https://kamino.com/multiply)
+
+![Cover](https://docs.kamino.finance/~gitbook/image?url=https%3A%2F%2F741543836-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDGxGrFuaWUFzMv9IjZMP%252Fuploads%252Fnwli5t1AaTynQcfZqas3%252FShort%2520Vaults%2520-%2520Card.jpg%3Falt%3Dmedia%26token%3Dd6882eb9-5ac8-4589-aa38-d097efbc87ef&width=490&dpr=3&quality=100&sign=9529689a&sv=2)
+
+[Increase Your Exposurearrow-up-right](https://kamino.com/leverage)
+
+![Cover](https://docs.kamino.finance/~gitbook/image?url=https%3A%2F%2F741543836-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDGxGrFuaWUFzMv9IjZMP%252Fuploads%252F0u0TF46ZY02dgavNN7zv%252FLiquidity%2520Vaults%2520-%2520Card.jpg%3Falt%3Dmedia%26token%3Da75fd044-2641-4e7b-9e98-3a7f3ddf04b2&width=490&dpr=3&quality=100&sign=ec26e687&sv=2)
+
+[Automated Liquidity Vaultsarrow-up-right](https://kamino.com/liquidity)
+
+### [hashtag](https://docs.kamino.finance/\#dive-in)    Dive in
+
+This portal consists of the Kamino Lend Litepaper, extensive technical documentation, how-to protocol guides, and live risk and analytics dashboards.
+
+Join [Kamino's Community Discordarrow-up-right](https://discord.gg/kaminofinance/) if you need any help building on Kamino, or using the protocol.
+
+[NextKamino Lend Litepaperchevron-right](https://docs.kamino.finance/kamino-lend-litepaper)
+
+Last updated 1 month ago
+
+## KMNO Token Overview
+## [hashtag](https://docs.kamino.finance/kmno/token-info\#id-70f6)    Planned Distribution Overview
+
+- Ticker: KMNO
+
+- Total Supply: 10,000,000,000
+
+- Estimated Initial Circulating Supply: 1,000,000,000
+
+- Initial Community Distribution: 750,000,000
+
+- TGE: April 30th, 2024
+
+
+![](https://docs.kamino.finance/~gitbook/image?url=https%3A%2F%2F741543836-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDGxGrFuaWUFzMv9IjZMP%252Fuploads%252FoSp2MJ2eQGeJOii0h95c%252Fimage.png%3Falt%3Dmedia%26token%3Dfb6b95cd-b31a-49e0-9bb5-62ffc2a75085&width=768&dpr=3&quality=100&sign=a3aeebe3&sv=2)
+
+KMNO Distribution Info
+
+## [hashtag](https://docs.kamino.finance/kmno/token-info\#cd9a)    Community & Grants
+
+Kamino has one of the largest communities in Solana DeFi, as well as numerous projects already building on Kamino’s infrastructure. The goal is for Kamino to further grow as a foundational layer, powering credit and liquidity across the Solana network.
+
+In pursuit of this, 35% of the KMNO supply is allocated to Kamino growth initiatives, which may include builder grants or community incentives. This will be directed via the Kamino treasury.
+
+### [hashtag](https://docs.kamino.finance/kmno/token-info\#id-6d96)    Genesis Allocation
+
+7.5% of KMNO will be distributed via the KMNO Genesis event on April 30th. This aims to reward existing and long-time users of the platform, other than Restricted Persons.
+
+## [hashtag](https://docs.kamino.finance/kmno/token-info\#id-6f03)    Liquidity & Treasury — 10%
+
+10% of the supply is allocated to growing liquidity for the KMNO token across various venues throughout the lifecycle of the token. This will be directed via the Kamino treasury.
+
+## [hashtag](https://docs.kamino.finance/kmno/token-info\#id-0e6f)    Core Contributors — 20%
+
+Kamino’s core group of contributors has been allocated 20% of the supply. These contributors work to develop Kamino, covering numerous focus areas such as product, engineering, risk management, growth, and operations.
+
+The contributor allocation will be locked up for 12 months, after which it will vest linearly over 24 months.
+
+## [hashtag](https://docs.kamino.finance/kmno/token-info\#id-9d5b)    Key Stakeholders & Advisors — 35%
+
+Kamino is fortunate to have a strong network of stakeholders and advisors, consisting of investors as well as thought leaders and founders from across the industry. The strategic insights and support from this network have been invaluable to Kamino’s growth over the past 2 years.
+
+35% of the KMNO supply is reserved for these key stakeholders and advisors. This allocation will be locked for 12 months, after which it will vest linearly over 24 months.
+
+## [hashtag](https://docs.kamino.finance/kmno/token-info\#id-9725)    KMNO Utility
+
+### [hashtag](https://docs.kamino.finance/kmno/token-info\#id-603e)    Staking
+
+Kamino holders will be able to [stake their KMNO](https://docs.kamino.finance/kmno/token-info#id-603e) natively on Kamino — this can enable users to earn staking boosts, which will boost their current points earnings.
+
+### [hashtag](https://docs.kamino.finance/kmno/token-info\#id-16c7)    Governance
+
+Should Kamino establish protocol governance, the KMNO token can be implemented as the primary token to engage in specific parts of the protocol’s decision-making. This could include voting on user reward campaigns, protocol grants, revenue allocations, or certain aspects of protocol risk management.
+
+### [hashtag](https://docs.kamino.finance/kmno/token-info\#documents)    Documents
+
+file-pdf
+
+138KB
+
+[Kamino Finance - MiCA Whitepaper.pdf](https://741543836-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FDGxGrFuaWUFzMv9IjZMP%2Fuploads%2Fm9ds89xUVNdbsOYr76pd%2FKamino%20Finance%20-%20MiCA%20Whitepaper.pdf?alt=media&token=0ded2ae9-af5d-4670-8bfc-3a6ad4e078a7)
+
+PDF
+
+downloadDownload [arrow-up-right-from-squareOpen](https://741543836-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FDGxGrFuaWUFzMv9IjZMP%2Fuploads%2Fm9ds89xUVNdbsOYr76pd%2FKamino%20Finance%20-%20MiCA%20Whitepaper.pdf?alt=media&token=0ded2ae9-af5d-4670-8bfc-3a6ad4e078a7)
+
+[PreviousUsing Squadschevron-left](https://docs.kamino.finance/products/using-squads) [NextStakingchevron-right](https://docs.kamino.finance/kmno/staking)
+
+Last updated 1 month ago
+
+## Kamino Finance Overview
+https://docs.kamino.finance12025-12-29T20:02:18.281Zhttps://docs.kamino.finance/kamino-lend-litepaper12023-10-23T20:44:24.467Zhttps://docs.kamino.finance/products/overview0.842024-08-08T06:07:31.797Zhttps://docs.kamino.finance/products/multiply0.842025-02-03T13:34:04.331Zhttps://docs.kamino.finance/products/multiply/how-it-works0.72025-05-21T18:42:06.147Zhttps://docs.kamino.finance/products/multiply/opening-a-position0.72025-02-03T20:46:31.978Zhttps://docs.kamino.finance/products/multiply/managing-a-position0.72024-07-01T08:19:13.119Zhttps://docs.kamino.finance/products/multiply/unwinding-a-position0.72025-02-03T20:56:17.595Zhttps://docs.kamino.finance/products/multiply/unwinding-a-position/unwinding-sol-multiply0.592025-02-03T20:40:23.542Zhttps://docs.kamino.finance/products/multiply/unwinding-a-position/unwinding-jlp-multiply0.592025-02-03T20:42:22.397Zhttps://docs.kamino.finance/products/multiply/risks0.72025-02-03T20:55:57.980Zhttps://docs.kamino.finance/products/multiply/managing-risk0.72025-02-03T20:53:32.897Zhttps://docs.kamino.finance/products/borrow-lend0.842024-08-08T06:07:31.797Zhttps://docs.kamino.finance/products/borrow-lend/position-risk-and-liquidations0.72025-12-02T15:17:32.453Zhttps://docs.kamino.finance/products/borrow-lend/position-risk-and-liquidations/position-risk0.592024-03-18T21:54:14.951Zhttps://docs.kamino.finance/products/borrow-lend/position-risk-and-liquidations/borrow-factors0.592024-03-18T21:49:41.212Zhttps://docs.kamino.finance/products/borrow-lend/fees0.72025-07-23T12:50:22.378Zhttps://docs.kamino.finance/products/borrow-lend/cross-and-isolated-modes0.72024-10-10T15:42:49.132Zhttps://docs.kamino.finance/products/borrow-lend/supplying-assets0.72024-09-30T14:59:51.629Zhttps://docs.kamino.finance/products/borrow-lend/borrowing-assets0.72024-09-30T15:00:55.498Zhttps://docs.kamino.finance/products/borrow-lend/borrowing-assets/borrow-incentives0.592025-10-01T14:44:15.776Zhttps://docs.kamino.finance/products/borrow-lend/borrowing-assets/borrow-incentives/cash-borrow-incentives0.52025-10-02T16:43:55.565Zhttps://docs.kamino.finance/products/borrow-lend/borrowing-assets/borrow-incentives/cbbtc-usdc-borrow-incentives0.52025-10-01T14:41:14.425Zhttps://docs.kamino.finance/products/long-short0.84https://docs.kamino.finance/products/liquidity0.842023-10-23T21:58:53.325Zhttps://docs.kamino.finance/products/using-squads0.842025-03-14T12:40:30.487Zhttps://docs.kamino.finance/kmno/token-info0.842025-12-29T19:49:19.995Zhttps://docs.kamino.finance/kmno/staking0.842024-04-30T09:58:09.710Zhttps://docs.kamino.finance/kmno/points0.842024-08-20T12:17:28.001Zhttps://docs.kamino.finance/kmno/points/rates-and-boosts0.72024-08-20T12:17:28.001Zhttps://docs.kamino.finance/kmno/points/seasons0.72024-08-20T12:15:24.148Zhttps://docs.kamino.finance/kmno/points/seasons/season-10.592024-04-23T10:27:11.678Zhttps://docs.kamino.finance/kmno/points/seasons/season-20.592024-04-23T10:32:26.826Zhttps://docs.kamino.finance/build-on-kamino/sdk-and-smart-contracts0.842025-07-09T11:12:14.620Zhttps://docs.kamino.finance/build-on-kamino/developer-documentation0.84https://docs.kamino.finance/build-on-kamino/bug-bounty0.842025-06-05T10:00:29.639Zhttps://docs.kamino.finance/build-on-kamino/brand-assets0.842024-05-21T08:37:31.369Z
+
+## Depeg Risk Overview
+In the case of redeemable tokens, usually stablecoins, liquid staking tokens (LSTs), and wrapped tokens, a depegging event is a major risk. A depeg event is when a pegged asset's price becomes substantially detached from the peg price because the reserves backing the tokens have been drained.
+
+This can happen due to various factors, including a smart contract hack:
+
+- e.g. LST vault is drained, counterparty insolvency
+
+- e.g. Concerns about the collateral backing of the issuer of USDC in March 2023 ( [articlearrow-up-right](https://decrypt.co/123211/usdc-stablecoin-depegs-90-cents-circle-exposure-silicon-valley-bank))
+
+
+Since pegged tokens are typically allowed a much higher LTV due to K-Lend's eMode mechanism, it is crucial that any events that could lead to a depeg be actively monitored.
+
+[PreviousSmart Contract Riskchevron-left](https://docs.kamino.finance/risk/insolvency-risk/asset-risk-framework/smart-contract-risk) [NextCounterparty Riskchevron-right](https://docs.kamino.finance/risk/insolvency-risk/asset-risk-framework/counterparty-risk)
+
+## DeFi Points System
+Our points system is highly customizable, enabling us to reward productive protocol activity. Ultimately, the points system is geared towards users who use Kamino to service their DeFi needs.
+
+## [hashtag](https://docs.kamino.finance/kmno/points/rates-and-boosts\#default-rates)    Default Rates
+
+Default rates are:
+
+- Kamino Lend Supply: 1 point per dollar per day
+
+- Kamino Lend Borrow: 1 point per dollar per day
+
+- Kamino Liquidity Vaults: 1 point per dollar per day
+
+
+## [hashtag](https://docs.kamino.finance/kmno/points/rates-and-boosts\#boosts)    Boosts
+
+Default boosts are shown in the Rates & Boosts tab in the [Points Hubarrow-up-right](https://app.kamino.finance/points)
+
+Your `Avg Boost` displays an overall value across your entire portfolio, calculated as a weighted average across all positions.
+
+Boost = How many points you earn daily per dollar deposited.
+
+#### [hashtag](https://docs.kamino.finance/kmno/points/rates-and-boosts\#example)    Example
+
+$500 USDC Supplied
+
+$1,000 mSOL Supplied
+
+mSOL Rate = 1 point per dollar per day
+
+USDC Rate = 3 points per dollar per day
+
+The system can accommodate boosts for virtually any action on the protocol, including different collateral/debt combinations. There can even be NFT or DeFi-related boosts from beyond the Kamino dApp, rewarding users for certain actions/NFTs across the Solana ecosystem.
+
+We're getting everyone involved!
+
+## [hashtag](https://docs.kamino.finance/kmno/points/rates-and-boosts\#og-points)    OG Points
+
+We wanted to find a solution that was fair to our OG users, the bear market brethren that walked through fire with us on Solana. The best way we could think of was to account for every drop of liquidity provided since launch.
+
+Points were split into two eras: Pre and post-Kamino Lend Beta
+
+All positions from the launch of Kamino in August 2022, up to the Kamino Lend beta launch in October 20th 2023, have been awarded **2x Points per day** for their deposits over that 400+ day period.
+
+## [hashtag](https://docs.kamino.finance/kmno/points/rates-and-boosts\#limitations-on-farming)    Limitations on Farming
+
+Just as we can reward certain actions, we can also limit the point-earning rates of other actions or asset combinations. Ultimately, the points program aims to attract new users who find value in using the product.
+
+Here are the steps we've taken to ensure fairness:
+
+### [hashtag](https://docs.kamino.finance/kmno/points/rates-and-boosts\#lst-lst-or-stable-stable-farming)    LST/LST or Stable/Stable Farming
+
+We limit the points earned by positions with only LSTs on both the collateral & debt side, as well as positions with only stablecoins on both the collateral & debt side.
+
+Positions like these will only earn points on the supply side, and only from the net dollar value, where `net_value = LST_collateral - LST_debt.`
+
+#### [hashtag](https://docs.kamino.finance/kmno/points/rates-and-boosts\#example-1)    **Example**
+
+- $1,000 mSOL Supplied
+
+- $300 bSOL Borrowed
+
+
+Typically this user would earn:
+
+`Supplying: 1 * $1,000 = 1,000 points per day`
+
+`Borrowing: 1 * $300 = 300 points per day`
+
+Thus, at default rates, the user would earn `1,300 points per day`.
+
+With the farming limitation, the position earns:
+
+`1,000 - 300 = 700 points per day`
+
+* * *
+
+### [hashtag](https://docs.kamino.finance/kmno/points/rates-and-boosts\#lst-lst-or-stable-stable-farming-with-other-tokens)    **LST/LST or Stable/Stable Farming With Other Tokens**
+
+The system also limits the points earned by supplying an LST/Stable alongside another collateral asset, and borrowing an LST/Stable against it. In this scenario, the LST/stable supply and borrows are netted out first.
+
+Any remaining LST/stable collateral/debt amount then accrues the standard points per day rate:
+
+### [hashtag](https://docs.kamino.finance/kmno/points/rates-and-boosts\#scenario-1)    **Scenario 1**
+
+If `LST_supplied > LST_borrowed`, the position earns supply points according to the net difference. The position earns no borrow points for the LST debt.
+
+#### [hashtag](https://docs.kamino.finance/kmno/points/rates-and-boosts\#example-1-1)    Example \#1
+
+- $500 mSOL Supplied
+
+- $500 USDC Supplied
+
+- $300 JitoSOL Borrowed
+
+
+Typically this user would earn:
+
+`Supplying mSOL: 1 * $500 = 500 points per day`
+
+`Supplying USDC: 3 * $500 = 1,500 points per day`
+
+`Borrowing JitoSOL: 1 * $300 = 300 points per day`
+
+`= 2,300 points per day`
+
+**With Limitation:**
+
+- Net difference of LSTs in the position is first calculated.
+`net_value = LST_collateral - LST_debt
+= $500 (mSOL_supplied) - $300 (JitoSOL_borrowed) = $200 (net_value)`
+
+- Global Supply Rate: 1 point per dollar per day
+
+- Thus, net value of LSTs in the position earns `1 * $200 = 200 supply points per day`
+
+- No borrow points are awarded for JitoSOL as it has been netted out.
+
+
+**Total Position earns:**`1,500 + 200 = 1,700 points per day`
+
+* * *
+
+### [hashtag](https://docs.kamino.finance/kmno/points/rates-and-boosts\#scenario-2)    **Scenario 2**
+
+If `LST_supplied < LST_borrowed`, the position earns borrow points according to the net difference. The position earns no LST supply points.
+
+#### [hashtag](https://docs.kamino.finance/kmno/points/rates-and-boosts\#example-2)    Example \#2
+
+- $300 mSOL Supplied
+
+- $500 USDC Supplied
+
+- $500 JitoSOL Borrowed
+
+
+Typically this user would earn:
+
+`Supplying mSOL: 1 * $300 = 300 points per day`
+
+`Supplying USDC: 3 * $500 = 1,500 points per day`
+
+`Borrowing JitoSOL: 1 * $500 = 500 points per day`
+
+`= 2,300 points per day`
+
+**With Limitation:**
+
+- Net difference of LSTs in the position is first calculated.
+
+`net_value = LST_debt - LST_collateral
+= $500 (JitoSOL_borrowed) - $300 (mSOL_supplied) = $200 (net_value)
+`
+
+- Global Borrow Rate = 1 points per dollar per day
+
+- Thus, net value of LSTs in the position earns `1 * $200 = 200 borrow points per day`
+
+- Supply points are awarded only for USDC as the mSOL supply has been netted out: 3` * $500 = 1,500 supply points per day`
+
+
+**Total Position earns:**`1,500 + 200 = 1,700 points per day`
+
+[PreviousPointschevron-left](https://docs.kamino.finance/kmno/points) [NextSeasonschevron-right](https://docs.kamino.finance/kmno/points/seasons)
+
+Last updated 1 year ago
+
+## Kamino Risk Management
+https://docs.kamino.finance/risk12024-04-25T16:24:45.400Zhttps://docs.kamino.finance/risk/oracles12025-05-20T10:37:42.786Zhttps://docs.kamino.finance/risk/oracles/lst-oracles0.842025-10-07T08:58:41.568Zhttps://docs.kamino.finance/risk/risk-assessment-framework12024-04-25T16:24:45.326Zhttps://docs.kamino.finance/risk/liquidity-risk/introduction0.84https://docs.kamino.finance/risk/liquidity-risk/interest-rates0.84https://docs.kamino.finance/risk/insolvency-risk/introduction0.84https://docs.kamino.finance/risk/insolvency-risk/asset-risk-framework0.84https://docs.kamino.finance/risk/insolvency-risk/asset-risk-framework/oracle-pricing0.7https://docs.kamino.finance/risk/insolvency-risk/asset-risk-framework/smart-contract-risk0.7https://docs.kamino.finance/risk/insolvency-risk/asset-risk-framework/depeg-risk0.7https://docs.kamino.finance/risk/insolvency-risk/asset-risk-framework/counterparty-risk0.7https://docs.kamino.finance/risk/insolvency-risk/market-risk0.84https://docs.kamino.finance/risk/insolvency-risk/market-risk/token-volatility0.7https://docs.kamino.finance/risk/insolvency-risk/market-risk/token-liquidity0.7https://docs.kamino.finance/risk/insolvency-risk/market-risk/trading-volumes0.7https://docs.kamino.finance/risk/insolvency-risk/market-risk/price-impact-analysis0.7https://docs.kamino.finance/risk/insolvency-risk/market-risk/price-resilience-analysis0.7https://docs.kamino.finance/risk/insolvency-risk/market-risk/market-capitalization0.7https://docs.kamino.finance/risk/insolvency-risk/market-risk/relation-to-other-tokens0.7https://docs.kamino.finance/risk/protocol-mechanisms/automated-deleverage0.842024-04-25T16:24:45.327Zhttps://docs.kamino.finance/risk/protocol-mechanisms/daily-caps0.842024-08-06T20:49:45.904Zhttps://docs.kamino.finance/risk/protocol-mechanisms/e-mode-caps0.842024-08-06T22:09:55.223Zhttps://docs.kamino.finance/risk/insurance-fund12024-04-25T16:26:06.410Z
+
+## Kamino Lend Litepaper
+This litepaper introduces Kamino Lend (K-Lend), a novel peer-to-pool borrowing primitive designed as foundational infrastructure to power complex financial products with leverage and automation, and as a decentralized matchmaker between borrowers and lenders.
+
+K-Lend underpins Kamino 2.0, which is a fully integrated dApp unifying borrowers, lenders, and liquidity providers - allowing users to express more market views than ever before, and enabling them to participate throughout all phases of the market cycle.
+
+#### [hashtag](https://docs.kamino.finance/kamino-lend-litepaper\#k-lend-features)    K-Lend features:
+
+- [Unified Liquidity Market](https://docs.kamino.finance/kamino-lend-litepaper#unified-liquidity-market)
+
+- [Elevation Mode (eMode)](https://docs.kamino.finance/kamino-lend-litepaper#elevation-mode)
+
+- [CLMM LP Tokens as Collateral](https://docs.kamino.finance/kamino-lend-litepaper#clmm-lp-tokens-as-collateral-ktokens)
+
+- [Poly-linear Interest Curve](https://docs.kamino.finance/kamino-lend-litepaper#poly-linear-interest-rate-curve)
+
+- [Protected Collateral](https://docs.kamino.finance/kamino-lend-litepaper#protected-collateral)
+
+- [Auto-deleverage](https://docs.kamino.finance/kamino-lend-litepaper#auto-deleveraging)
+
+- [Asset Tiers](https://docs.kamino.finance/kamino-lend-litepaper#asset-tiers)
+
+- [Real-time Risk Simulator](https://docs.kamino.finance/kamino-lend-litepaper#risk-simulator)
+
+- [Advanced Oracle Risk Engine](https://docs.kamino.finance/kamino-lend-litepaper#oracles)
+
+- [Soft Liquidations](https://docs.kamino.finance/kamino-lend-litepaper#partial-liquidations)
+
+- [Dynamic Liquidations](https://docs.kamino.finance/kamino-lend-litepaper#dynamic-liquidation-penalties)
+
+
+### [hashtag](https://docs.kamino.finance/kamino-lend-litepaper\#unified-liquidity-market)    Unified Liquidity Market
+
+K-Lend features a single liquidity market, rather than a multi-pool design. Within this market, K-Lend introduces an ‘eMode’ mechanism that enables higher leverage when lending/borrowing solely within a certain asset grouping.
+
+Multi-pool designs have shown to be inefficient in lending protocols, fragmenting liquidity and ultimately leading to lower utilizations and lower yields for lenders. In practice, the primary benefit of a multi-pool design is that each isolated pool (i.e. different asset combinations) can have custom parameters, while separating risk from the main liquidity market.
+
+However, K-Lend’s risk engine allows for risk isolation even within a unified liquidity market, while the protocol’s eMode infrastructure enables customized asset parameters within a single market.
+
+### [hashtag](https://docs.kamino.finance/kamino-lend-litepaper\#elevation-mode)    Elevation Mode
+
+Elevation Mode (first introduced in Aave V3 as Efficiency Mode) allows users to borrow highly correlated or soft-pegged assets at a more capital-efficient LTV ratio. Within K-Lend’s unified liquidity market, assets can be grouped into “elevation groups (eGroups)”. Each eGroup can have customized LTV parameters and liquidation thresholds assigned to it, ultimately unlocking higher leverage possibilities, as well as tailored liquidation parameters.
+
+Crucially, elevation groups are built into the main liquidity market. All K-Lend users can thus access the unified liquidity market, while eMode empowers them to attain greater capital efficiency and higher leverage via customized asset parameters.
+
+For instance, if all SOL and SOL LST tokens are grouped into an eGroup with a 95% max LTV, all the tokens will adopt 95% as their new max LTV. Any supply/borrowing within this asset grouping can then be done at this LTV, allowing for increased capital efficiency and leverage between these assets.
+
+![](https://docs.kamino.finance/~gitbook/image?url=https%3A%2F%2F741543836-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDGxGrFuaWUFzMv9IjZMP%252Fuploads%252FHFnEs9lPhK4kcpPtInDO%252FElevation%2520Mode.jpg%3Falt%3Dmedia%26token%3D5464db71-0277-4a51-b023-31f722b5b946&width=768&dpr=3&quality=100&sign=2f3ebfb1&sv=2)![](https://docs.kamino.finance/~gitbook/image?url=https%3A%2F%2F741543836-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDGxGrFuaWUFzMv9IjZMP%252Fuploads%252FeAnsoIIKZcjmdEsTAqWa%252Fimage.png%3Falt%3Dmedia%26token%3Dd68a5128-0a27-4fee-bc6c-f876593494d6&width=768&dpr=3&quality=100&sign=f17a6b26&sv=2)
+
+Elevation Mode Illustration
+
+Combined with Kamino’s automation infrastructure, eMode also enables the platform to offer more powerful looping products than exist anywhere on Solana.
+
+### [hashtag](https://docs.kamino.finance/kamino-lend-litepaper\#clmm-lp-tokens-as-collateral-ktokens)    CLMM LP Tokens as Collateral (kTokens)
+
+The growth of Uni V3 and concentrated liquidity as DeFi’s primary liquidity model has virtually stopped leveraged LPing in its tracks. This is because LP positions from CLMMs are non-fungible, and cannot easily be used as collateral nor levered up.
+
+Kamino’s [automated liquidity infrastructurearrow-up-right](https://app.gitbook.com/s/3T1ncUFCAeF17d5uudxw) already tokenizes CLMM LP positions. These positions, called kTokens, are fungible, easily liquidatable SPL tokens. K-Lend supports these kTokens as collateral, allowing users to use leverage by borrowing against / looping their LP positions.
+
+### [hashtag](https://docs.kamino.finance/kamino-lend-litepaper\#poly-linear-interest-rate-curve)    Poly-linear Interest Rate Curve
+
+Interest rate (IR) curves dictate supply and borrow rates based on an asset’s utilization rate. Interest rates are intended to keep markets at an equilibrium, while ensuring lenders are able to access their liquidity should they wish to withdraw capital. A multi-point IR curve reduces shocks to the system by more gradually increasing or decreasing rates when necessary.
+
+With theoretically up to 11 points on its IR curve, K-Lend provides a major improvement over traditional 3-point curves in other lending markets. This is beneficial to borrowers who are subject to more gradual rate increases before repaying their debt.
+
+![](https://docs.kamino.finance/~gitbook/image?url=https%3A%2F%2F741543836-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDGxGrFuaWUFzMv9IjZMP%252Fuploads%252FQ7Qp0brJjqnB2PZCnv49%252FInterest%2520Rate%2520Curve.jpg%3Falt%3Dmedia%26token%3D84bf4cef-4bdd-4a91-a195-909fa3c8fbbc&width=768&dpr=3&quality=100&sign=7d221f5e&sv=2)![](https://docs.kamino.finance/~gitbook/image?url=https%3A%2F%2F741543836-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDGxGrFuaWUFzMv9IjZMP%252Fuploads%252FM7v99ofJi71wYh9Ka10N%252Fimage.png%3Falt%3Dmedia%26token%3Dfff7a164-186c-4650-9b04-a05e011f4ff8&width=768&dpr=3&quality=100&sign=a10f1493&sv=2)
+
+Poly-linear Interest Rate Curve Illustration
+
+### [hashtag](https://docs.kamino.finance/kamino-lend-litepaper\#protected-collateral)    Protected Collateral
+
+On K-Lend, users can opt to keep their collateral assets from being borrowed by other users, thus protecting their assets from any borrower default risks.
+
+Such assets, referred to as “Protected Collateral”, can still be used as collateral for borrowing by the depositor, but they do not earn interest on these assets. Protected collateral can be withdrawn at any time.
+
+## [hashtag](https://docs.kamino.finance/kamino-lend-litepaper\#risk-management)    Risk Management
+
+### [hashtag](https://docs.kamino.finance/kamino-lend-litepaper\#deposit-caps)    Deposit Caps
+
+Each asset on Kamino Lend is subject to a deposit cap, ensuring that the system contains a safe amount of any asset at any given time based on the asset risk score, which takes into account various risk metrics, such as the available market liquidity, the volatility of the asset, the security risk of the asset etc. These caps are continuously monitored and are subject to readjustments if deemed necessary.
+
+### [hashtag](https://docs.kamino.finance/kamino-lend-litepaper\#borrow-caps)    Borrow Caps
+
+Similarly, borrow caps limit the borrowing of each asset to a certain amount, based on the asset risk score. This is continuously assessed and subject to change if deemed necessary.
+
+### [hashtag](https://docs.kamino.finance/kamino-lend-litepaper\#auto-deleveraging)    Auto-Deleveraging
+
+Kamino’s auto-deleverage mechanism lowers the deposit and/or borrow caps of a certain asset to an amount that is deemed safe considering current market conditions. Lowering the caps thus triggers an automated unwinding event.
+
+If an auto-deleverage event is triggered on USDH deposits for example, users are notified via Kamino’s communication channels, and given a specified period to adjust any positions using USDH as collateral. Once this period elapses, the system begins partial deleveraging of loans backed by USDH, starting with loans closest to liquidation.
+
+Deleveraged loans incur a minor liquidation penalty which escalates continuously up to a maximum, until the target collateral/borrowing amount is achieved. Users subject to deleveraging will see a proportional reduction in the target asset, along with the corresponding tokens in the position, generally resulting in a more healthy Loan-to-Value (LTV) ratio.
+
+![](https://docs.kamino.finance/~gitbook/image?url=https%3A%2F%2F741543836-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDGxGrFuaWUFzMv9IjZMP%252Fuploads%252FAoDl9S5Wnz4SKIWAm3RP%252FAuto-deleverage.jpg%3Falt%3Dmedia%26token%3D624c8f53-d27e-4f86-b263-f11ac9a277be&width=768&dpr=3&quality=100&sign=1fe2f616&sv=2)![](https://docs.kamino.finance/~gitbook/image?url=https%3A%2F%2F741543836-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDGxGrFuaWUFzMv9IjZMP%252Fuploads%252F7MFBruVnnUoVWsnJBXLp%252Fimage.png%3Falt%3Dmedia%26token%3D8ed6b541-3d14-4caa-8126-15057d7eb9d6&width=768&dpr=3&quality=100&sign=d02eb870&sv=2)
+
+Auto-deleverage Illustration
+
+### [hashtag](https://docs.kamino.finance/kamino-lend-litepaper\#asset-tiers)    Asset Tiers
+
+A unified liquidity market offers considerable benefits to borrowers and lenders, but it also presents new challenges to risk management. Risk can easily spill over from one asset to another, ultimately increasing the risk of bad debt on the protocol. K-Lend will introduce Asset Tiers to ensure that users can borrow and lend a wide range of tokens safely, without fracturing liquidity between isolated pools.
+
+A tier-based system allows the protocol to offer permissionless borrowing and lending for any token on Solana, with Kamino’s Risk Council determining the ways an asset can be used on the protocol, grading each asset into one of three categories: Isolated Debt, Isolated Collateral, and General.
+
+#### [hashtag](https://docs.kamino.finance/kamino-lend-litepaper\#isolated-debt)    Isolated Debt
+
+Can be borrowed, but only in isolation from other assets. These assets cannot be used as collateral, but can be supplied for lending yield.
+
+#### [hashtag](https://docs.kamino.finance/kamino-lend-litepaper\#isolated-collateral)    Isolated Collateral
+
+Can only be used as collateral, and only in isolation from other assets. Isolated Debt assets cannot be borrowed against Isolated Collateral.
+
+#### [hashtag](https://docs.kamino.finance/kamino-lend-litepaper\#general)    General
+
+Can be used as collateral to borrow other assets, and can be borrowed alongside other general assets. This will typically represent the most liquid assets on the network.
+
+![](https://docs.kamino.finance/~gitbook/image?url=https%3A%2F%2F741543836-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDGxGrFuaWUFzMv9IjZMP%252Fuploads%252FXAD25F6Av1etmJICVy0R%252Fimage.png%3Falt%3Dmedia%26token%3D074e4f13-9251-4a7a-b76e-b60767fdac47&width=768&dpr=3&quality=100&sign=cd31e595&sv=2)![](https://docs.kamino.finance/~gitbook/image?url=https%3A%2F%2F741543836-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDGxGrFuaWUFzMv9IjZMP%252Fuploads%252FudgVqAdUpUlsAiyHPblB%252FAsset%2520Tiers%2520-%2520Dark.jpeg%3Falt%3Dmedia%26token%3De49c63f1-877e-4df3-aa23-1da24eb2c1f7&width=768&dpr=3&quality=100&sign=1e279f8&sv=2)
+
+Asset Tier Illustration
+
+### [hashtag](https://docs.kamino.finance/kamino-lend-litepaper\#borrow-factors)    Borrow Factors
+
+Borrow factors (BFs) are risk-adjusted borrow values assigned to each asset on K-Lend. This determines the borrowing capacity of a debt asset within a loan, based on its Asset Risk Score.
+
+This is parallel to loan-to-value ratios (LTVs), which indicate borrowing limits from the collateral asset perspective.
+
+K-Lend combines LTV and BF to express a weighted borrowing capacity based on the asset composition of a position. This allows the protocol much more flexibility in assessing the risk of each position on the platform.
+
+For example, let’s assume you want to supply $100 of SOL as collateral and borrow either USDC or BONK:
+
+- SOL is a widely circulating collateral asset, and its maximum LTV ratio = 80%
+
+- USDC is deemed a less risky asset than BONK.
+
+
+
+  - USDC Borrow Factor = 1
+
+  - BONK Borrow Factor = 2
+
+
+- Borrow capacity is expressed as: (Collateral Amount \* Collateral LTV) / Borrow Factor
+
+- USDC borrow capacity against SOL = ($100 \* 80%) / 1 = $80
+
+- For BONK, due to a BF of 2, you can borrow up to $40.
+
+
+Similar to the above expression of risk-adjusted borrowing capacity, the liquidation point of any loan is also calculated as a weighted expression of LTV and borrow factor.
+
+### [hashtag](https://docs.kamino.finance/kamino-lend-litepaper\#risk-simulator)    Risk Simulator
+
+In contrast with TradFi standards, DeFi platforms often provide users with limited tooling to help them understand, model and simulate position risk. Kamino has built a Risk Simulator that allows K-Lend users to view their position risk and simulate market movements.
+
+The simulator shows the impact on portfolio value, LTV, liquidation delta, and more.
+
+## [hashtag](https://docs.kamino.finance/kamino-lend-litepaper\#oracles)    Oracles
+
+Oracles have historically been the most common attack vector for DeFi exploits. K-Lend’s oracle risk engine combines various risk practices such as heuristic and [EWMA pricesarrow-up-right](https://docs.google.com/document/d/1Y-4LShlZRLf4fQmuhYPL3wuJnav32RBsp-B7U_pN_28/edit#heading=h.auzgioo6itdo), while also maintaining its own oracles alongside those from other providers.
+
+### [hashtag](https://docs.kamino.finance/kamino-lend-litepaper\#twap-and-ewma-prices)    TWAP and EWMA Prices
+
+Similar to price bands, Time Weighted Average Prices (TWAP) and Exponentially Weighted Moving Average (EWMA) prices are resistant to price manipulations because they identify the average price of an asset over time.
+
+Since K-Lend uses TWAPs and EWMAs, the protocol is protected from flash loans/flash crashes, as dramatic short term price changes are rejected. Exploiting the protocol via price manipulation is thus expensive, as it requires the exploiter not only to manipulate a price, but to sustain it for some period of time relative to the existing TWAP/EWMA intervals.
+
+### [hashtag](https://docs.kamino.finance/kamino-lend-litepaper\#price-bands)    Price Bands
+
+Each stable or soft-pegged asset in K-Lend has a price range within which the smart contract expects the price to fall within. This is referred to as the price-band, and alongside TWAP/EWMA, also protects the protocol from flash crashes and flash-loan exploits.
+
+For example, USD-pegged stables like USDC and USDH could have a 1% upper or lower band from $1. In this case, if the price is above $1.01, the price would be rejected. For SOL-pegged assets, price bands would be expressed relative to the SOL price.
+
+### [hashtag](https://docs.kamino.finance/kamino-lend-litepaper\#multiple-providers)    Multiple Providers
+
+K-Lend cross-references oracles from both Pyth and Switchboard, as well as its own Switchboard oracles that ingest feeds from various on-chain and off-chain sources.
+
+For kTokens, Kamino computes prices directly on-chain. Each kToken price is calculated atomically, based on various price sources and the current state of the strategy.
+
+## [hashtag](https://docs.kamino.finance/kamino-lend-litepaper\#liquidations)    Liquidations
+
+K-Lend introduces a range of improvements to the liquidation process; from encouraging greater liquidator participation, to softening the burden on borrowers.
+
+### [hashtag](https://docs.kamino.finance/kamino-lend-litepaper\#partial-liquidations)    Partial Liquidations
+
+Instead of liquidations closing a borrower’s position in its entirety, K-Lend enables soft liquidations that settle, for example, 20% of a user’s debt. In this scenario, users who are only slightly over the liquidation LTV are not severely punished - whereas users who far exceed the liquidation LTV can be liquidated to a greater degree.
+
+### [hashtag](https://docs.kamino.finance/kamino-lend-litepaper\#dynamic-liquidation-penalties)    Dynamic Liquidation Penalties
+
+Liquidation penalties have been traditionally high in DeFi to make up for low speeds, high gas fees, and network/market volatility. If a liquidator catches a falling knife and cannot liquidate those assets quickly, then they lose money. As a result, liquidation penalties have typically been 5-10% or more.
+
+On K-Lend, liquidation penalties start at 2% and are capped at 10%. If the most efficient liquidators execute liquidations as soon as possible, borrowers are subject only to a 2% penalty. The liquidation penalty increases as the loan LTV increases, until the loan is liquidated. This system is designed to reward the most efficient liquidators, while simultaneously softening the blow to borrowers.
+
+#### [hashtag](https://docs.kamino.finance/kamino-lend-litepaper\#example-instant-liquidation)    Example: Instant Liquidation
+
+User A’s loan reaches the liquidation LTV of 80%. The liquidator triggers the liquidation shortly after the loan is eligible. The liquidator repays 20% of the debt and receives 20.4% (0.2 \* 0.02) of User A’s collateral. User A now has less collateral, less debt, and a lower LTV, and their loan position remains active.
+
+#### [hashtag](https://docs.kamino.finance/kamino-lend-litepaper\#example-eventual-liquidation)    Example: Eventual Liquidation
+
+User B’s loan reaches the liquidation threshold of 80% LTV. The liquidator doesn't act instantly and the liquidation penalty rises to 10% as the loan reaches a 90% LTV. At that point the liquidator steps in and liquidates the position. He repays 20% of the debt and receives 22% (0.2 \* 0.1) of User B’s collateral.
+
+[PreviousKamino Portalchevron-left](https://docs.kamino.finance/) [NextOverviewchevron-right](https://docs.kamino.finance/products/overview)
+
+Last updated 2 years ago
+
+## Kamino Finance Sitemap
+https://docs.kamino.finance/sitemap-pages.xmlhttps://docs.kamino.finance/risk/sitemap-pages.xmlhttps://docs.kamino.finance/automated-liquidity/sitemap-pages.xml
+
+## Unwinding JLP Multiply
+JLP Multiply positions can be unwound via:
+
+1. Multiply UI
+
+2. Loan Dashboard UI
+
+
+Each interface has a one-click and a manual solution to unwinding. Kamino charges no fees on any of the unwinding solutions mentioned below.
+
+circle-info
+
+When JLP Pool caps are hit, JLP may trade at a premium on the market. This is clearly indicated in the UI via the "oracle price difference" warning
+
+## [hashtag](https://docs.kamino.finance/products/multiply/unwinding-a-position/unwinding-jlp-multiply\#unwind-via-multiply-ui)    Unwind Via Multiply UI
+
+#### [hashtag](https://docs.kamino.finance/products/multiply/unwinding-a-position/unwinding-jlp-multiply\#one-click-solution-adjusting-leverage)    One-Click Solution: Adjusting Leverage
+
+You can unwind your position in the Multiply UI using the `Adjust Leverage`functionality. Moving to a lower leverage amount will simultaneously reduce your debt and collateral, thus lowering your position LTV.
+
+Here's a guide on adjusting leverage:
+
+spaces%2FDGxGrFuaWUFzMv9IjZMP%2Fuploads%2FYNaNNYfUXeFe07puDGkO%2FJLP%20-%20Multiply%20-%20Adjust%20Leverage.mp4
+
+PausePlay
+
+% buffered00:00
+
+00:23
+
+Exit fullscreenEnter fullscreenGo to original URL
+
+Your browser does not support HTML5 videos.
+
+Auto-adjusting JLP Multiply Leverage via Multiply UI
+
+#### [hashtag](https://docs.kamino.finance/products/multiply/unwinding-a-position/unwinding-jlp-multiply\#manual-solution-manage-collateral-and-debt)    Manual Solution: Manage Collateral & Debt
+
+The manual route is to:
+
+- Withdraw collateral
+
+- Swap into debt token
+
+- Repay debt
+
+
+This can be done via the `Manage Collateral` and `Manage Debt` functionalities, and the Swap can be done via Kamino's free, in-app Swap.
+
+Here's a guide:
+
+spaces%2FDGxGrFuaWUFzMv9IjZMP%2Fuploads%2FqsOrG2BlVErZnJLLNl00%2FJLP%20-%20Multiply%20-%20Manual%20Repay.mp4
+
+PausePlay
+
+% buffered00:00
+
+00:43
+
+Exit fullscreenEnter fullscreenGo to original URL
+
+Your browser does not support HTML5 videos.
+
+Manually adjusting JLP Multiply Leverage via Multiply UI
+
+## [hashtag](https://docs.kamino.finance/products/multiply/unwinding-a-position/unwinding-jlp-multiply\#unwind-via-loan-dashboard)    Unwind Via Loan Dashboard
+
+The Loan Dashboard provides an additional interface to manage your Multiply position. As in the Multiply UI, you can unwind via the Loan Dashboard using a one-click solution, or a manual workflow.
+
+To access the Loan Dashboard from Multiply, click on the manage dropdown, and select Loan Dashboard at the bottom.
+
+#### [hashtag](https://docs.kamino.finance/products/multiply/unwinding-a-position/unwinding-jlp-multiply\#one-click-solution-repay-with-collateral)    One-Click Solution: Repay With Collateral
+
+You can unwind your position in the Loan Dashboard using the `Repay With Collateral` functionality. Repaying debt with collateral has the same impact as Adjusting Leverage in the Multiply UI.
+
+To do so, you simply click to manage your debt token, and select to repay with collateral. This will simultaneously reduce your debt and collateral, thus lowering your position LTV.
+
+Here's a guide:
+
+spaces%2FDGxGrFuaWUFzMv9IjZMP%2Fuploads%2Fih14hsFcZtNOGyvuoI2a%2FJLP%20-%20Loan%20Dashboard%20-%20Repay%20w%20Collateral.mp4
+
+PausePlay
+
+% buffered00:00
+
+00:20
+
+Exit fullscreenEnter fullscreenGo to original URL
+
+Your browser does not support HTML5 videos.
+
+Auto-adjusting JLP Multiply Leverage via Loan Dashboard
+
+#### [hashtag](https://docs.kamino.finance/products/multiply/unwinding-a-position/unwinding-jlp-multiply\#manual-solution-manage-collateral-and-debt-1)    Manual Solution: Manage Collateral & Debt
+
+As via the Multiply interface, you can manually unwind via the Loan Dashboard by:
+
+- Withdrawing collateral
+
+- Swapping into the debt token
+
+- Repaying debt
+
+
+When selecting your repay amount, you'll see a simulation of new LTV of your position.
+
+Here's a guide:
+
+spaces%2FDGxGrFuaWUFzMv9IjZMP%2Fuploads%2FS5VjMitVifdqJ0uJOLYJ%2FJLP%20-%20Loan%20Dashboard%20-%20Repay%20Manual.mp4
+
+PausePlay
+
+% buffered00:00
+
+00:48
+
+Exit fullscreenEnter fullscreenGo to original URL
+
+Your browser does not support HTML5 videos.
+
+Manually adjusting JLP Multiply Leverage via Loan Dashboard
+
+[PreviousUnwinding SOL Multiplychevron-left](https://docs.kamino.finance/products/multiply/unwinding-a-position/unwinding-sol-multiply) [NextRiskschevron-right](https://docs.kamino.finance/products/multiply/risks)
+
+Last updated 12 months ago
+
+## K-Lend Risk Overview
+Kamino Lend (K-Lend) is a set of smart contracts that serves as an autonomous, decentralized matchmaker between lenders and borrowers of crypto assets on the Solana blockchain.
+
+K-Lend employs a peer-to-pool model to facilitate borrowing and lending activity. At any time, liquidity needs to be available for borrowers to take debt, and for lenders to reclaim their assets with interest.
+
+K-Lend is built upon a comprehensive risk management framework to ensure the long-term stability of the protocol by protecting against insolvency. This documentation seeks to detail the types of risks faced by the protocol and the mechanisms put in place to mitigate these risks.
+
+circle-info
+
+Linked below is the Live K-Lend Risk Dashboard. Displaying most of the metrics and simulations that will be discussed in this documentation, in real time.
+
+![Cover](https://docs.kamino.finance/~gitbook/image?url=https%3A%2F%2Fcontent.gitbook.com%2Fcontent%2FSulve9LtGE6gYHNNBDV8%2Fblobs%2Fu7E0wh1FdDYmGFD4mbIA%2FSpaces.png&width=752&dpr=3&quality=100&sign=80bd8c&sv=2)
+
+[https://risk.kamino.finance/](https://risk.kamino.finance/)
+
+[NextOracleschevron-right](https://docs.kamino.finance/risk/oracles)
+
+Last updated 1 year ago
+
+## User Rewards System
+Rewards & incentives can be an effective way for Kamino to acquire new users, reward loyalty, and ultimately get our products into the hands of users who will find value in using them.
+
+#### [hashtag](https://docs.kamino.finance/kmno/points\#dynamic-mechanism-design)    Dynamic Mechanism Design
+
+Kamino Points is powered by a robust points system that can award points at an extremely granular level of protocol usage, allowing different points rates & boosts for:
+
+- Collateral Assets
+
+- Debt Asset
+
+- Collateral/Debt Combinations
+
+- Liquidity Vaults
+
+- Automated strategies such as Long/Short & Leveraged Staking (Multiply)
+
+
+### [hashtag](https://docs.kamino.finance/kmno/points\#whats-next)    What's next?
+
+Kamino Points will run concurrently with multiple rounds of $KMNO token drops.
+
+The ultimate goal is to get our products into the hands of users who will find value in using them. The points program aims to attract these users, and incentivize them to stay involved with the protocol.
+
+### [hashtag](https://docs.kamino.finance/kmno/points\#airdrops)    Airdrops
+
+$KMNO will be distributed via multiple airdrops across several months.
+
+The Genesis Drop occurred April 2024, and the Season 2 drop in August 2024.
+
+Join us for Season 3 and beyond!
+
+[PreviousStakingchevron-left](https://docs.kamino.finance/kmno/staking) [NextRates & Boostschevron-right](https://docs.kamino.finance/kmno/points/rates-and-boosts)
+
+Last updated 1 year ago
+
+## Multiply Vault Product
+Multiply is a one-click vault product that enables you to leverage your exposure to yield-bearing assets. Multiply combines underlying K-Lend mechanisms like eMode and kToken collateral to offer powerful yield strategies.
+
+The Multiply vault interface provides rich position information and allows for granular position management.
+
+circle-check
+
+Due to a change in our LST oracle infrastructure, LST depegs can no longer cause liquidations for Multiply positions. Read more here: [LST Oracles](https://docs.kamino.finance/risk/oracles/lst-oracles)
+
+[PreviousOverviewchevron-left](https://docs.kamino.finance/products/overview) [NextHow It Workschevron-right](https://docs.kamino.finance/products/multiply/how-it-works)
+
+Last updated 1 year ago
+
+## Kamino Oracle Infrastructure
+Oracles have historically been the most common attack vector for DeFi exploits. Kamino Lend has developed its own oracle infrastructure from the ground up, enabling us to build a highly sophisticated, robust oracle system that ingests prices from various oracle providers.
+
+### [hashtag](https://docs.kamino.finance/risk/oracles\#multi-price-oracle-system)    Multi-Price Oracle System
+
+This system aggregates pricing from high-quality oracle sources, such as Pyth and Chainlink, continuously checking them against each other in real time.
+
+A multi-price system allows Kamino to:
+
+- Eliminate reliance on any single data provider
+
+- Dynamically choose the freshest prices
+
+- Add self-healing properties to oracles in the case of downtime or deviation
+
+
+The Multi-Price Oracle system has been double-audited by Certora and Offside Labs.
+
+### [hashtag](https://docs.kamino.finance/risk/oracles\#twap-and-ewma-prices)    TWAP and EWMA Prices
+
+Time Weighted Average Prices (TWAP) and Exponentially Weighted Moving Average (EWMA) prices are resistant to price manipulations because they identify the average price of an asset over time.
+
+Since Kamino Lend uses TWAPs and EWMAs, the protocol is protected from flash loans/flash crashes, as dramatic short term price changes are rejected. Exploiting the protocol via price manipulation is thus expensive, as it requires the exploiter not only to manipulate a price, but to sustain it for some period of time relative to the existing TWAP/EWMA intervals.
+
+### [hashtag](https://docs.kamino.finance/risk/oracles\#price-bands)    Price Bands
+
+Each stable or soft-pegged asset in Kamino Lend has a price range within which the smart contract expects the price to fall within. This is referred to as the price-band, and alongside TWAP/EWMA, also protects the protocol from flash crashes and flash-loan exploits.
+
+For example, USD-pegged stables like USDC and USDH could have a 1% upper or lower band from $1. In this case, if the price is above $1.01, the price would be rejected. For SOL-pegged assets, price bands would be expressed relative to the SOL price.
+
+### [hashtag](https://docs.kamino.finance/risk/oracles\#providers)    Providers
+
+For Kamino Vaults, Pyth and Chainlink feeds (alongside other oracle feeds) are used as a reference price to ensure the prices of the pools we deploy into are unmanipulated. These feeds are also used to ensure that the vault rebalancing mechanism swaps at fair prices during liquidity rebalancing.
+
+For Kamino Lend, Pyth and Chainlink feeds are used to identify the relative value of the different assets borrowed or supplied into the protocol.
+
+These feeds are critical for the security of Kamino Lend, as it ensures that loan health ratios are properly computed and refreshed.
+
+[PreviousKamino Lendchevron-left](https://docs.kamino.finance/risk) [NextLST Oracleschevron-right](https://docs.kamino.finance/risk/oracles/lst-oracles)
+
+Last updated 8 months ago
+
+## LST Pricing Mechanism
+Kamino uses the `stake_rate` of an LST to determine a `theoretical_price` for each LST in the platform.
+
+As opposed to using `market_price`, using the theoretical price means the platform does not rely on liquidity in the market to determine the price of an LST.
+
+This means that LST prices on Kamino are not affected by LST price depegs on the market.
+
+### [hashtag](https://docs.kamino.finance/risk/oracles/lst-oracles\#how-it-works)    How It Works
+
+To calculate the price of an LST, we use the following formula:
+
+Copy
+
+```
+LST Stake Pool Price: SOL_staked / LST_minted
+```
+
+Each epoch, the amount of SOL in the pool increases due to 1) SOL Proof of Stake emissions and 2) transaction fees. The LST minted remains stable relative to the SOL increase - thus, each epoch the LST price increases relative to SOL.
+
+### [hashtag](https://docs.kamino.finance/risk/oracles/lst-oracles\#why-this-approach)    Why This Approach?
+
+The amount of LSTs in Solana DeFi far outweighs the liquidity of each LST in DEX pools. This means that market depegs can easily occur and put borrowing positions with LST collateral at risk of liquidation.
+
+Using the stake pool to determine LST prices removes the risk of liquidation due to price depegs. Should a market depeg occur, LST positions such as Multiply, for example, would not be affected. However, should an LST platform suffer a smart contract exploit, these LST positions would still be exposed.
+
+Thus, our oracle approach removes the risk of liquidation due to depeg, but does not remove any LST smart contract exploit risk.
+
+Our approach assumes that arbitrageurs will restore the `market_price` to align with the `theoretical_price` as determine by the stake pool.
+
+Should arbitrage not occur and an LST depeg be sustained - the protocol is at risk of bad debt. In the case of bad debt, losses are socialized amongst all debt positions in the system.
+
+[PreviousOracleschevron-left](https://docs.kamino.finance/risk/oracles) [NextRisk Assessment Frameworkchevron-right](https://docs.kamino.finance/risk/risk-assessment-framework)
+
+Last updated 3 months ago
+
+## Kamino Risk Assessment
+To ensure the ongoing success of the protocol, K-Lend has a comprehensive, ongoing Kamino Risk Assessment Framework (KRAF) that scrutinizes all the dimensions of token risk outlined above.
+
+In addition, KRAF provides risk analysis at the overall protocol level, e.g. liquidations-at-risk, and risk scenario analysis.
+
+KRAF is tailored to be both robust and adaptive, capable of identifying vulnerabilities before they compromise the system. The Risk Council can take action empowered with all the available information.
+
+The KRAF dashboard is available at [https://risk.kamino.financearrow-up-right](https://streamlit.kamino.finance/lending-risk/).
+
+The dashboard provides the following information:
+
+#### [hashtag](https://docs.kamino.finance/risk/risk-assessment-framework\#risk-overview)    Risk Overview
+
+- Summary table of current deposits, borrows, supply and borrow interest rates, utilization ratios, and global caps.
+
+- Quick glance at liquidations-at-risk should a X% token price shock happen.
+
+- Bar plot of total deposits and borrows for each token
+
+- Interest rate curve (supply & borrow) and the current utilization and rates for each token
+
+
+#### [hashtag](https://docs.kamino.finance/risk/risk-assessment-framework\#loans-analysis)    Loans Analysis
+
+- Filterable, tabular view of the status of each loan (current LTV, maximum LTV, Liquidation LTV, deposits, borrows, net value)
+
+- Bar plots per loan of current LTV, maximum LTV, Liquidation LTV, deposits, borrows, net value
+
+
+#### [hashtag](https://docs.kamino.finance/risk/risk-assessment-framework\#detailed-token-decompositions)    Detailed Token Decompositions:
+
+- Bar plot of each loan’s deposits and borrows broken down by token
+
+
+#### [hashtag](https://docs.kamino.finance/risk/risk-assessment-framework\#volatility-risk-analysis)    Volatility Risk Analysis:
+
+- Time series plot of Token prices
+
+- Time series plot of token Parkinson’s realized volatility measure
+
+
+#### [hashtag](https://docs.kamino.finance/risk/risk-assessment-framework\#liquidity-risk-analysis)    Liquidity Risk Analysis
+
+- Time series plot of percentage price impact for buy or sell Jupiter swaps of various USD sizes
+
+
+#### [hashtag](https://docs.kamino.finance/risk/risk-assessment-framework\#price-shock-analysis)    Price Shock Analysis:
+
+- Scenario analysis should a uniform price shock be applied to all tokens
+
+- Scenario analysis should a uniform price shock be applied to individual tokens
+
+- Scenario analysis should a correlation price shock be applied to all tokens
+
+- Scenario analysis applying historic event price shocks to tokens
+
+
+#### [hashtag](https://docs.kamino.finance/risk/risk-assessment-framework\#risk-reduction-analysis)    Risk Reduction Analysis:
+
+- Post-intervention scenario analysis should a uniform price shock be applied to all tokens
+
+- Post-intervention scenario analysis should a uniform price shock be applied to individual tokens
+
+
+Furthermore, the dashboard provides a separate tab that gives a granular breakdown of an individual loan’s status and risk over time.
+
+![Cover](https://docs.kamino.finance/~gitbook/image?url=https%3A%2F%2Fcontent.gitbook.com%2Fcontent%2FSulve9LtGE6gYHNNBDV8%2Fblobs%2Fu7E0wh1FdDYmGFD4mbIA%2FSpaces.png&width=752&dpr=3&quality=100&sign=80bd8c&sv=2)
+
+[https://risk.kamino.finance/](https://risk.kamino.finance/)
+
+[PreviousLST Oracleschevron-left](https://docs.kamino.finance/risk/oracles/lst-oracles) [NextIntroductionchevron-right](https://docs.kamino.finance/risk/liquidity-risk/introduction)
+
+Last updated 1 year ago
+
+## Liquidity Risk Overview
+From the user's perspective, the inherent risk within the protocol fundamentally revolves around the inability to retrieve one's invested capital. This scenario materializes when the deposit token reserve reaches a utilization rate of 100% - and it may arise due to two primary risk factors:
+
+1. Liquidity Risk
+
+2. Insolvency Risk
+
+
+This section explores liquidity risk, which occurs when the demand for borrowing the token is excessively high relative to the available supply.
+
+When a token experiences elevated borrowing demand, the liquidity reserves within the pool could be entirely depleted, rendering lenders incapable of withdrawing their assets. In the absence of bad debt, this situation doesn't inherently lead to financial losses for the lenders—in fact, it does result in exceptionally high interest rates being earned by lenders.
+
+However, given that the protocol is engineered to afford lenders the freedom to withdraw their tokens at their discretion, such liquidity constraints are less than optimal.
+
+[PreviousRisk Assessment Frameworkchevron-left](https://docs.kamino.finance/risk/risk-assessment-framework) [NextInterest Rateschevron-right](https://docs.kamino.finance/risk/liquidity-risk/interest-rates)
+
+## Liquidity Risk Overview
+Interest rates are dictated by the utilization (UUU), of an asset. When UUU is low, it means there is excess supply and low borrow demand. As UUU moves closer to 100%, supply and borrow rates will increase, thus:
+
+- Encouraging lenders to supply into the market
+
+- Encouraging borrowers to repay debt
+
+
+To mitigate the risk of a token reserve reaching 100% utilization, K-Lend employs a Poly-linear interest rate curve.
+
+This approach balances the dual objectives of maximizing interest earned by lenders while effectively managing liquidity risk. The parameters of the interest rate curve are calibrated by the Risk Council to align with a predetermined target utilization rate.
+
+### [hashtag](https://docs.kamino.finance/risk/liquidity-risk/interest-rates\#borrow-interest-rate)    Borrow Interest Rate
+
+The current borrowing rate, BtB\\displaystyle\_tBt​, is determined by the current utilization rate, UtU\\displaystyle\_tUt​, and the discrete function f(Ui)→Bif(U\\displaystyle\_i)\\rightarrow B\\displaystyle\_if(Ui​)→Bi​ mapping utilization to borrow rate as specified knot points.
+
+Bt=BF+BC−BFUC−UF(Ut−UF)B\\displaystyle\_t = B\\displaystyle\_F + \\frac{B\\displaystyle\_C -B\\displaystyle\_F}{U\\displaystyle\_C -U\\displaystyle\_F}(U\\displaystyle\_t -U\\displaystyle\_F)Bt​=BF​+UC​−UF​BC​−BF​​(Ut​−UF​)
+
+Where:
+
+BtB\\displaystyle\_tBt​:= Current borrow interest rate
+
+BCB\\displaystyle\_CBC​:= Borrow interest rate at the ceiling utilization knot point
+
+BFB\\displaystyle\_FBF​:= Borrow interest rate at the floor utilization knot point
+
+UtU\\displaystyle\_tUt​:= Current utilization rate
+
+UCU\\displaystyle\_CUC​:= Utilization rate at the ceiling knot point
+
+UFU\\displaystyle\_FUF​:= Utilization rate at the floor knot point
+
+### [hashtag](https://docs.kamino.finance/risk/liquidity-risk/interest-rates\#supply-interest-rate)    Supply Interest Rate
+
+Due to the fact that K-Lend has only variable rate borrows, as opposed to stable borrow rates, the Supply Rate equation is quite simple:
+
+St=Ut∗Bt(1−Rt)S\\displaystyle\_t = U\\displaystyle\_t \* B\\displaystyle\_t(1 -R\\displaystyle\_t)St​=Ut​∗Bt​(1−Rt​)
+
+Where:
+
+StS\\displaystyle\_tSt​:= Current supply interest rate
+
+BtB\\displaystyle\_tBt​:= Current borrow interest rate
+
+RtR\\displaystyle\_tRt​:= Current Reserve Factor (Protocol take rate)
+
+### [hashtag](https://docs.kamino.finance/risk/liquidity-risk/interest-rates\#curve-example)    Curve Example
+
+![](https://docs.kamino.finance/~gitbook/image?url=https%3A%2F%2Flh4.googleusercontent.com%2Fj3slvo0DEQ0ARx_GoxWEh-SGQhiAQkBnO0xcvZ-Ar5RsyZhLc0qZc8eiFVOwVHu59pdXwACzegX1FPpZ2waDZCXAdlA_MO8ehxlzus8RTV88tWpi6XF2neg2r4T8MMY4GmmlOrs4d1PpsTeZDPyOBxk&width=768&dpr=3&quality=100&sign=73fe3b08&sv=2)
+
+Interest Rate Curve Example
+
+[PreviousIntroductionchevron-left](https://docs.kamino.finance/risk/liquidity-risk/introduction) [NextIntroductionchevron-right](https://docs.kamino.finance/risk/insolvency-risk/introduction)
+
+## Insolvency Risk Overview
+This section explores insolvency risk, which emerges when unliquidated, unhealthy loans accumulate, ultimately generating bad debt within the system.
+
+To ensure the ongoing success of the protocol, it is imperative to dynamically analyse, monitor, and mitigate insolvency risks. This analytical process starts at the token onboarding phase and persists through regular, comprehensive risk assessments encompassing qualitative and quantitative evaluations.
+
+[PreviousInterest Rateschevron-left](https://docs.kamino.finance/risk/liquidity-risk/interest-rates) [NextAsset Risk Frameworkchevron-right](https://docs.kamino.finance/risk/insolvency-risk/asset-risk-framework)
+
+## Asset Risk Framework
+At the token onboarding stage, the Risk Council uses the Asset Risk Framework to conduct an analytical appraisal to determine the risk of an asset.
+
+This framework takes into account the following risk factors:
+
+- [Oracle pricing risk](https://docs.kamino.finance/risk/insolvency-risk/asset-risk-framework/oracle-pricing)
+
+- [Smart contract risk](https://docs.kamino.finance/risk/insolvency-risk/asset-risk-framework/smart-contract-risk)
+
+- [Depeg risk](https://docs.kamino.finance/risk/insolvency-risk/asset-risk-framework/depeg-risk)
+
+- [Counterparty risk](https://docs.kamino.finance/risk/insolvency-risk/asset-risk-framework/counterparty-risk)
+
+- [Market risk](https://docs.kamino.finance/risk/insolvency-risk/market-risk)
+
+
+All of these factors determine how an asset can be used on the protocol, and enables the grading of each asset into one of three tiers: isolated collateral asset, isolated debt asset, and general asset. An asset's risk level also determines its Collateral Max LTV and Borrow Factor parameters.
+
+[PreviousIntroductionchevron-left](https://docs.kamino.finance/risk/insolvency-risk/introduction) [NextOracle Pricingchevron-right](https://docs.kamino.finance/risk/insolvency-risk/asset-risk-framework/oracle-pricing)
+
+## Oracle Pricing Risk
+Oracle Pricing Risk pertains to the accuracy and reliability of the oracle mechanism used for asset valuation in the protocol. The robustness of the oracle can be assessed via the number of price sources, the types of price sources, and the uptime of the price sources.
+
+K-Lend’s oracle risk engine combines various risk practices such as heuristic, and TWAP/EWMA prices, while also maintaining its own oracles alongside those from other providers.
+
+### [hashtag](https://docs.kamino.finance/risk/insolvency-risk/asset-risk-framework/oracle-pricing\#price-bands)    Price Bands
+
+Each stable or soft-pegged asset in K-Lend has a price range within which the smart contract expects the price to fall within. This is referred to as the price-band, and protects from flash-crashes and flash-loan exploits.
+
+For example, USD-pegged stables like USDC and USDH could have a 1% upper or lower band from $1. In this case, if the price is below $0.99 or above $1.01, the price would be rejected. For SOL-pegged assets, price bands would be expressed relative to the SOL price.
+
+### [hashtag](https://docs.kamino.finance/risk/insolvency-risk/asset-risk-framework/oracle-pricing\#twap-and-ewma-prices)    TWAP and EWMA Prices
+
+Similar to price bands, Time Weighted Average Prices (TWAP) and Exponentially Weighted Moving Average (EWMA) prices are resistant to price manipulations because they identify the average price of an asset over time. Since K-Lend uses TWAPs and EWMAs, exploiting the protocol via price manipulation is expensive, as it requires the exploiter not only to manipulate a price, but to sustain it for some period of time relative to the existing TWAP/EWMA intervals.
+
+### [hashtag](https://docs.kamino.finance/risk/insolvency-risk/asset-risk-framework/oracle-pricing\#multiple-providers)    Multiple Providers
+
+K-Lend cross-references oracles from both Pyth and Switchboard, as well as its own Switchboard oracles that ingest feeds from various on-chain and off-chain sources.
+
+[PreviousAsset Risk Frameworkchevron-left](https://docs.kamino.finance/risk/insolvency-risk/asset-risk-framework) [NextSmart Contract Riskchevron-right](https://docs.kamino.finance/risk/insolvency-risk/asset-risk-framework/smart-contract-risk)
+
+## Smart Contract Risk Overview
+When a token’s issuance is the result of a smart contract, this smart contract risk is evaluated by looking at the proven resilience of the smart contract, accepting only those audited rigorously by reputable firms, open source, immutable or multisig and battle tested long enough.
+
+While these factors can reduce risk, they can't eliminate it entirely, making user vigilance and additional measures like bug bounties crucial. The maturity and reliability of a smart contract can be gauged by its usage, community support, and transaction history. Given that smart contract hacks have led to billions in lost funds, tokens with high smart contract risk can be onboarded only with stringent risk mitigation strategies, such as supply caps and/or isolation modes.
+
+[PreviousOracle Pricingchevron-left](https://docs.kamino.finance/risk/insolvency-risk/asset-risk-framework/oracle-pricing) [NextDepeg Riskchevron-right](https://docs.kamino.finance/risk/insolvency-risk/asset-risk-framework/depeg-risk)
+
+## Counterparty Risk Overview
+Counterparty risk qualitatively evaluates the governance of an asset, focusing on the degree of decentralization and control mechanisms.
+
+The risk is gauged based on the level of centralization, which in turn is determined by the number of parties controlling the token's protocol, the number of holders, and the trust placed in the governing entity, project, or community.
+
+[PreviousDepeg Riskchevron-left](https://docs.kamino.finance/risk/insolvency-risk/asset-risk-framework/depeg-risk) [NextMarket Riskchevron-right](https://docs.kamino.finance/risk/insolvency-risk/market-risk)
+
+## Market Risk Overview
+Market risk is a fundamental factor in determining an asset's risk. Market risk in K-Lend is encapsulated in one fundamental question: are liquidators able to profitably liquidate unhealthy loans when required?
+
+For this to happen, liquidators must acquire and then provide the debt token, receive and then sell the collateral token back to their reserve token (typically a USD stablecoin). This process can occur via various mechanisms, such as flash loans or distinct token swap transactions.
+
+With this liquidation process in mind, calibration of risk metrics requires consideration of two key aspects:
+
+1. Asset volatility
+
+2. Asset liquidity
+
+
+Furthermore, this calibration needs to take into account the dynamic nature of markets (particularly cryptocurrency markets).
+
+Consequently, each of the following metrics are analyzed using hourly price data over the short, medium and long term:
+
+- [Token Volatility](https://docs.kamino.finance/risk/insolvency-risk/market-risk/token-volatility)
+
+- [Token Liquidity](https://docs.kamino.finance/risk/insolvency-risk/market-risk/token-liquidity)
+
+- [Trading Volumes](https://docs.kamino.finance/risk/insolvency-risk/market-risk/trading-volumes)
+
+- [Price Impact Analysis](https://docs.kamino.finance/risk/insolvency-risk/market-risk/price-impact-analysis)
+
+- [Price Resilience Analysis](https://docs.kamino.finance/risk/insolvency-risk/market-risk/price-resilience-analysis)
+
+- [Market Capitalization](https://docs.kamino.finance/risk/insolvency-risk/market-risk/market-capitalization)
+
+- [Relation to Other Tokens](https://docs.kamino.finance/risk/insolvency-risk/market-risk/relation-to-other-tokens)
+
+
+[PreviousCounterparty Riskchevron-left](https://docs.kamino.finance/risk/insolvency-risk/asset-risk-framework/counterparty-risk) [NextToken Volatilitychevron-right](https://docs.kamino.finance/risk/insolvency-risk/market-risk/token-volatility)
+
+## Token Volatility Risk
+Since loans become liquidatable only when they reach the liquidation threshold (e.g. 80% LTV), any calibration of Liquidation LTV needs to account for the token volatility of the collateral and debt assets.
+
+Token volatility risk on K-Lend is determined using Parkinson’s Volatility measure, as it takes into account intra-period volatility (not just close-to-close differences). This is well suited to cryptocurrencies as there are no gaps between periods in crypto markets.
+
+Parkinson's Volatility measure\* is calculated by taking the square root of the average of the squared natural log of the ratio between the highest and lowest hourly prices across NNN hourly periods.
+
+Parkinson′svolatilitymeasure=1N∑i=1N(ln(HiLi))2Parkinson's\ volatility \ measure = \\sqrt{\\frac{1}{N}\\sum\_{i=1}^N (ln(\\frac{H\\displaystyle\_i}{L\\displaystyle\_i}))^2}Parkinson′svolatilitymeasure=N1​i=1∑N​(ln(Li​Hi​​))2​
+
+The abrupt onset of extreme volatility can introduce an array of risks that may require rapid adjustments to various protocol parameters. This will be monitored by the Risk Council, and action taken if necessary.
+
+![Cover](https://docs.kamino.finance/~gitbook/image?url=https%3A%2F%2Fcontent.gitbook.com%2Fcontent%2FSulve9LtGE6gYHNNBDV8%2Fblobs%2FlFNJ5g482QA3Vu9vbJbH%2FLive%2520Volatility%2520Analysis.png&width=752&dpr=3&quality=100&sign=239e2334&sv=2)
+
+[Live Volatility Risk Dashboardarrow-up-right](https://risk.kamino.finance/Market_Risk_Analysis#volatility-risk-analysis)
+
+![Cover](https://docs.kamino.finance/~gitbook/image?url=https%3A%2F%2Fcontent.gitbook.com%2Fcontent%2FSulve9LtGE6gYHNNBDV8%2Fblobs%2FuV2gkQ3eU1bvhBeIjV1K%2FPrice%2520Shock%2520Analysis.png&width=752&dpr=3&quality=100&sign=e8c59df1&sv=2)
+
+[Live Price Shock Dashboardarrow-up-right](https://risk.kamino.finance/Price_Shock_Analysis#price-shock-analysis)
+
+> \\* Parkinson, Michael. "The extreme value method for estimating the variance of the rate of return." Journal of business (1980): 61-65.
+
+[PreviousMarket Riskchevron-left](https://docs.kamino.finance/risk/insolvency-risk/market-risk) [NextToken Liquiditychevron-right](https://docs.kamino.finance/risk/insolvency-risk/market-risk/token-liquidity)
+
+## Token Liquidity Insights
+To ensure protocol solvency, the single most crucial metric is maintaining sufficient token liquidity to perform profitable liquidations of unhealthy loans. Token liquidity can come from multiple sources: natively on Solana, cross-chain (e.g. WETH on Ethereum), or via centralized exchanges.
+
+Token liquidity is measured using the following metrics:
+
+- Hourly trading volumes (accounting for wash trading)
+
+- Immediate price impact of token swaps (across a range of USD-valued sizes)
+
+- Price resilience post-token swap
+
+
+![Cover](https://docs.kamino.finance/~gitbook/image?url=https%3A%2F%2Fcontent.gitbook.com%2Fcontent%2FSulve9LtGE6gYHNNBDV8%2Fblobs%2FGslGhiqfF750e9bINOU2%2FLive%2520Liquidity%2520Analysis.png&width=752&dpr=3&quality=100&sign=4ac5f63a&sv=2)
+
+[View Live Liquidity Dashboardarrow-up-right](https://risk.kamino.finance/Market_Risk_Analysis#liquidity-risk-analysis)
+
+[PreviousToken Volatilitychevron-left](https://docs.kamino.finance/risk/insolvency-risk/market-risk/token-volatility) [NextTrading Volumeschevron-right](https://docs.kamino.finance/risk/insolvency-risk/market-risk/trading-volumes)
+
+## Market Activity Overview
+Trading volumes signify the level of market activity and the ease with which the token can be bought or sold, making it a useful indicator of token liquidity. High trading volumes suggest that the market for a token has any number of the following:
+
+- Substantial liquidity
+
+- Narrow bid-ask spreads
+
+- Reduced price slippage
+
+- Continuous trading.
+
+
+All of these characteristics make it easier for market participants to execute orders without significant price fluctuations. Moreover, liquidity attracts larger traders and ensures accurate price discovery, contributing to market stability and overall attractiveness for traders.
+
+[PreviousToken Liquiditychevron-left](https://docs.kamino.finance/risk/insolvency-risk/market-risk/token-liquidity) [NextPrice Impact Analysischevron-right](https://docs.kamino.finance/risk/insolvency-risk/market-risk/price-impact-analysis)
+
+## Price Impact Analysis
+The potential price impact of liquidations is quantified using on-chain data, which is continuously fed into the model.
+
+This data provides the percentage price impact for buy or sell Jupiter swaps of various USD sizes, i.e., using best price execution constrained to a single transaction (which has limited routes due to the maximum number of compute units allowed).
+
+Furthermore, the analysis uses data that allows for a more expansive optimal execution algorithm, with more routes and not limited to a single transaction. This gives a more reliable indication of the price impact suffered on liquidations.
+
+![Cover](https://docs.kamino.finance/~gitbook/image?url=https%3A%2F%2Fcontent.gitbook.com%2Fcontent%2FSulve9LtGE6gYHNNBDV8%2Fblobs%2FypFQoeXH01s7OZPoJqw9%2FPrice%2520Impact%2520Analysis.png&width=752&dpr=3&quality=100&sign=baf1cf55&sv=2)
+
+[View Price Impact Analysisarrow-up-right](https://risk.kamino.finance/Market_Risk_Analysis#liquidity-risk-analysis)
+
+[PreviousTrading Volumeschevron-left](https://docs.kamino.finance/risk/insolvency-risk/market-risk/trading-volumes) [NextPrice Resilience Analysischevron-right](https://docs.kamino.finance/risk/insolvency-risk/market-risk/price-resilience-analysis)
+
+## Price Resilience Analysis
+In addition to analyzing the immediate price impact of a swap, the risk framework also needs to analyze the resilience of an asset price post-swap, e.g. after a large swap or a series of large swaps.
+
+K-Lend uses multiple approaches to assess this resilience over time, including:
+
+- Analyzing the cumulative price impact of multiple large trades
+
+- Measuring how quickly the liquidity in limit order books (Openbook, Phoenix etc.) replenishes after large trades (since LOBs are typically much more reactive than AMM LP pools)
+
+- Calculating the rate at which the price recovers after a large trade (which indicates the market's ability to absorb shocks
+
+- Examining the relationship between trade size and price impact
+
+
+The asset risk framework also employs models inspired by the vast literature on optimal execution and market impact modeling, such as the seminal paper by Almgren-Chriss\*\*, to inform its risk analysis.
+
+> \\*\\* Almgren, R., & Chriss, N. (2000). Optimal Execution of Portfolio Transactions. The Journal of Risk, 3(2), 5-39.
+
+[PreviousPrice Impact Analysischevron-left](https://docs.kamino.finance/risk/insolvency-risk/market-risk/price-impact-analysis) [NextMarket Capitalizationchevron-right](https://docs.kamino.finance/risk/insolvency-risk/market-risk/market-capitalization)
+
+## Market Capitalization Risk Analysis
+The Token Risk Score also considers the asset's circulating market capitalization. Tokens with larger market capitalization are generally considered to be less risky than those with smaller capitalization.
+
+In addition, the framework also takes into account token emissions and token unlocks in its assessment of potential impacts on an asset's circulating market capitalization and liquidity.
+
+[PreviousPrice Resilience Analysischevron-left](https://docs.kamino.finance/risk/insolvency-risk/market-risk/price-resilience-analysis) [NextRelation to Other Tokenschevron-right](https://docs.kamino.finance/risk/insolvency-risk/market-risk/relation-to-other-tokens)
+
+## Token Risk Relationships
+When onboarding a new token, the framework takes into account a new token’s relationship with other tokens.
+
+For example, if the Risk Council seeks to onboard a new SOL liquid staking token, it recognizes that this increases the effective amount of SOL that needs to be liquidated, as well as introducing its own idiosyncratic risks, e.g. staking smart contract risk
+
+[PreviousMarket Capitalizationchevron-left](https://docs.kamino.finance/risk/insolvency-risk/market-risk/market-capitalization) [NextAutomated Deleveragechevron-right](https://docs.kamino.finance/risk/protocol-mechanisms/automated-deleverage)
+
+## Automated Deleverage Overview
+Lenders are the most important participants in the K-Lend protocol and all of the engineering behind the risk engine is aimed at protecting their funds. Bankruptcies (bad debt) situations should be avoided at all costs. Therefore, once identified, risky borrowers and risky assets should be evicted from the system to ensure lenders get their tokens back.
+
+Auto-deleveraging is a novel mechanism introduced by the KLend contributors that can facilitate a protocol-wide deleverage of any asset if the current supply and/or borrow amount is deemed as too risky according to the [risk framework](https://docs.kamino.finance/risk/risk-assessment-framework) [(KRAF)](https://docs.kamino.finance/risk/risk-assessment-framework).
+
+For example, if there is an outsized borrow position on an asset whose market liquidity vanished abruptly, the protocol would suffer a loss when liquidating this asset (this loss would be socialized between the lenders). Instead, auto-deleverage is designed to prevent the protocol from falling into this scenario, facilitating an orderly unwinding of the asset, after which the protocol continues normal operations.
+
+Auto-deleveraging can be triggered by the Risk Council, but can also be automated in the future by taking into account various signals within the protocol. Should a situation similar to that of the [Aave CRVarrow-up-right](https://thedefiant.io/gauntlet-flags-risk-posed-by-usd176m-crv-position-on-aave), or [Solend Whalearrow-up-right](https://decrypt.co/103489/solend-whale-108m-loan-nearly-crashed-solana/) case happen, the Risk Council can trigger the deleveraging module to perform the unwinding of the toxic collateral.
+
+circle-info
+
+Deleveraging can be applied to toxic collateral (unwinding longs) but also to toxic debt (unwinding shorts) or both.
+
+## [hashtag](https://docs.kamino.finance/risk/protocol-mechanisms/automated-deleverage\#deleverage-in-practice)    Deleverage in Practice
+
+### [hashtag](https://docs.kamino.finance/risk/protocol-mechanisms/automated-deleverage\#triggering-auto-deleverage)    Triggering Auto-Deleverage
+
+Should market conditions result in the [KRAF](https://docs.kamino.finance/risk/risk-assessment-framework) indicating a (borrow or deposit) cap change is prudent for `Token_A`, the Risk Council can vote in a multi-sig to initiate automated deleverage.
+
+If the multi-sig vote passes, all affected users will be notified of the deleverage event, and will be given a 72-hour margin call period to take action. If enough borrowers took action and unwound their positions bringing the current levels below the new caps, then the process ends here.
+
+### [hashtag](https://docs.kamino.finance/risk/protocol-mechanisms/automated-deleverage\#what-happens-in-a-deleverage)    What Happens in a Deleverage?
+
+A new, reduced cap is set for the amount of`Asset_A` that is supplied/borrowed. The difference between the current amount and the new cap is the amount that will be auto-deleveraged.
+
+Users subject to deleveraging will see a proportional reduction in the target asset, along with the corresponding tokens in their position. Deleveraging will generally result in a more healthy LTV ratio.
+
+circle-info
+
+Lenders are never affected by auto-deleveraging, only borrowers.
+
+Deleveraging works slightly different depending on whether the caps are adjusted on the Supply or Borrow side:
+
+#### [hashtag](https://docs.kamino.finance/risk/protocol-mechanisms/automated-deleverage\#collateral-deleverage)    Collateral Deleverage
+
+Collateral deleveraging happens when there is too much of `Token_A` backing loans as collateral than can be successfully liquidated. This means that liquidating loans with `Token_A` as collateral would result in losses.
+
+For example, the deposit caps of `Token_A` are lowered from $100M to $80M (thus 20% of `Token_A` collateral must leave the system). All users with `Token_A` supplied as collateral will be notified of the deleverage event. If a user were to be deleveraged, some or all of their `Token_A` supplied would be sold on the market, repaying the debt proportionately.
+
+In addition to the 20% of the `Token_A` deleveraged, an additional deleverage penalty is paid to the liquidator (explained [below](https://docs.kamino.finance/risk/protocol-mechanisms/automated-deleverage#auto-deleverage-penalty)).
+
+circle-info
+
+Note that supply deleverage for a certain asset will often coincide with a borrow deleverage on that same asset, depending on its **current utilization**, and **maximum utilization**. Most likely the triggers for deleveraging are the abrupt loss of market liquidity for that asset, making both supplies and borrows hard to cover.
+
+#### [hashtag](https://docs.kamino.finance/risk/protocol-mechanisms/automated-deleverage\#debt-deleverage)    Debt Deleverage
+
+Debt deleveraging is the reverse. If there is too much `Token_B` debt in the system and prices were to rise, liquidators would not be able to liquidate without a loss to the protocol. When liquidating a debt asset, `Token_B` would have to be bought off the market and repaid into the protocol. However, if such a market buy would incur a slippage higher than the actual debt amount, it's an indicator that a deleverage is needed.
+
+For example, if borrow caps for `Token_B` are lowered from $100M to $80M (thus 20% of `Token_B` debt must leave the system), all users with `Token_B` borrowed will be notified of the deleverage event.
+
+When a user is deleveraged, the liquidator sells a portion of their collateral and covers the debt in `Token_A`. This continues until 20% of the total `Token_A` debt in the protocol is closed. Users affected by deleverating will have their debt repaid by their collateral, but also suffer a deleverage penalty.
+
+The penalty is designed to incentivize the borrowers to take early action, hopefully during the margin call period when no penalty is applied.
+
+## [hashtag](https://docs.kamino.finance/risk/protocol-mechanisms/automated-deleverage\#auto-deleverage-penalty)    Auto-Deleverage Penalty
+
+Deleveraged loans incur a minimum liquidation penalty of `50bps`. The penalty is calculated as a % of the deleverage amount. Thus, if the penalty = `0.5%` and the deleverage amount = `20%`, the user will be subject to a: `0.2 * 0.005 = 0.001 = 0.1%` penalty. Thus, instead of losing eg. 20% of their collateral, they lose 20.1%.
+
+### [hashtag](https://docs.kamino.finance/risk/protocol-mechanisms/automated-deleverage\#penalty-increase-and-calculation)    Penalty Increase & Calculation
+
+The liquidation penalty continually increases until either:
+
+- Maximum penalty threshold is reached
+
+- Target asset deleverage cap is achieved
+
+
+The rate of increase of the liquidation penalty is a function of the user's LTV and the time elapsed since deleveraging was initiated. The liquidation penalty is expressed as follows:
+
+`liquidation_penalty = minimum_liquidation_penalty + (current_ltv * days_since_deleverage_initiated)`
+
+> **1 Hour = 7200 Slots**
+>
+> (Read more about slots [herearrow-up-right](https://docs.solana.com/terminology#slot))
+
+#### [hashtag](https://docs.kamino.finance/risk/protocol-mechanisms/automated-deleverage\#scenario-example)    Scenario example
+
+If:
+
+- `minimum_liquidation_penalty = 50bps (0.5%)`
+
+- `current_ltv = 80%`
+
+- `days_since_deleverage_initiated: 3.4 days`
+
+
+Then:
+
+`liquidation_penalty % = 0.005 + (0.80 * 3.4) = 2.725%`
+
+The maximum penalty that a deleverage can incur is capped at the lowest liquidation penalty of the assets in a user's position.
+
+eg. If a position contains SOL, USDC and WETH, and liquidation penalties are 6%, 8% and 10% respectively for those assets, the deleverage penalty for the position will be capped at 6%.
+
+## [hashtag](https://docs.kamino.finance/risk/protocol-mechanisms/automated-deleverage\#who-gets-deleveraged)    Who Gets Deleveraged?
+
+Once auto-deleveraging begins, a position will be eligible for deleverage if:
+
+- It contains the target asset
+
+
+**AND**
+
+- It has a `current_LTV` that exceeds the `liquidation_LTV` of the target asset
+
+
+circle-info
+
+Once deleveraging begins, the `liquidation_LTV` of the target asset is adopted as the `deleverage_liquidation_LTV`. And`deleverage_liquidation_LTV` will then decrease over time, as outlined below.
+
+If no positions exceed the `liquidation_LTV`, deleveraging will begin starting from the loans with the highest LTV, and continue down until the target reserve cap is reached. As time goes by, the `deleverage_liquidation_LTV` automatically decreases, thus encouraging users to reduce their LTVs to a level reasonably lower than the `deleverage_liquidation_LTV`.
+
+#### [hashtag](https://docs.kamino.finance/risk/protocol-mechanisms/automated-deleverage\#liquidation-ltv-decrease)    Liquidation LTV Decrease
+
+The `deleverage_liquidation_LTV` decreases by the configured rate as slots per bps - e.g. `1 bps per hour` would be `7200 slots per bps` (assuming 2 slots per second)
+
+The calculation for the decrease rates is as follows:
+
+`deleverage_liquidation_LTV = liquidation_ltv (e.g. 0.8) - (0.01 * (slots_since_auto_deleverage_initiated / slots_per_bps)`
+
+Thus:
+
+`deleverage_liquidation_LTV = 0.8 - (0.0001 [i.e. 1bps] * (345600 / 7200) = 79.52%`
+
+## [hashtag](https://docs.kamino.finance/risk/protocol-mechanisms/automated-deleverage\#auto-deleverage-illustration)    Auto-Deleverage Illustration
+
+![](https://docs.kamino.finance/~gitbook/image?url=https%3A%2F%2Flh5.googleusercontent.com%2FUdSLeT7cBRBWSuxCdoInuzh45KEbABvreG2lOlwbCPHgW-8mZ7WMD3JRsPJdga9sZSQ1UfmhWL9OpnViBbmZMMY-K1YnW4bwoGN51yn8MwmDmMvLeubl3oeotJOihLG19O80OULfX1paz3xUZo4RD5w&width=768&dpr=3&quality=100&sign=2beef1de&sv=2)
+
+[PreviousRelation to Other Tokenschevron-left](https://docs.kamino.finance/risk/insolvency-risk/market-risk/relation-to-other-tokens) [NextDaily Capschevron-right](https://docs.kamino.finance/risk/protocol-mechanisms/daily-caps)
+
+Last updated 1 year ago
+
+## Daily Asset Caps
+Daily caps are the amount of an asset that can leave the system over a 24-hour period. There are two caps for each asset reserve:
+
+- New Debt Cap: Net amount of an asset that can be borrowed
+
+- Collateral Withdrawal Cap: Net amount of a collateral that can leave the system
+
+
+Both of these values can be seen in the Info & Risk section of each asset reserve page:
+
+![](https://docs.kamino.finance/~gitbook/image?url=https%3A%2F%2F1016169555-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FSulve9LtGE6gYHNNBDV8%252Fuploads%252FRzlBC3gQApzkYjLZv7VE%252Fimage.png%3Falt%3Dmedia%26token%3D3948b427-6f75-445f-91ae-de767f961fe9&width=768&dpr=3&quality=100&sign=2d9f4db3&sv=2)
+
+USDC Collateral & Debt Caps
+
+### [hashtag](https://docs.kamino.finance/risk/protocol-mechanisms/daily-caps\#net-flows)    Net Flows
+
+The system uses net in/outflows. So, if 10,000 USDC is borrowed, and 10,000 USDC is repaid in the same epoch, the net debt taken in that epoch is 0. The same goes for collateral ouflows.
+
+### [hashtag](https://docs.kamino.finance/risk/protocol-mechanisms/daily-caps\#daily-caps-protection)    Daily Caps Protection
+
+Daily Caps protect the protocol and users in two ways:
+
+1. It prevents an attacker from draining any asset from the system, thus limiting the damage should an oracle exploit occur
+
+2. It means that outsized debt positions can only be built up over time, allowing the protocol to track its impact on system health
+
+
+Daily caps for each asset are determined by the risk framework outlined throughout this document, and are indicated in the UI on each asset reserve page.
+
+[PreviousAutomated Deleveragechevron-left](https://docs.kamino.finance/risk/protocol-mechanisms/automated-deleverage) [NextE-Mode Capschevron-right](https://docs.kamino.finance/risk/protocol-mechanisms/e-mode-caps)
+
+Last updated 1 year ago
+
+## E-Mode Caps Overview
+E-Mode Caps is a novel risk management mechanism that enables each collateral/debt pairing on the protocol to have a unique debt limit.
+
+This introduces a new layer of granularity to risk management in a pool-based lending model.
+
+### [hashtag](https://docs.kamino.finance/risk/protocol-mechanisms/e-mode-caps\#what-does-it-improve)    What Does It Improve?
+
+In the current multi-asset lending pool model (Kamino Lend V1 or Aave V3), if the protocol raises an asset's debt limit, the asset becomes borrowable against all available collateral in the pool.
+
+However, some assets may be more desirable collateral for the protocol than others. For example, SOL collateral typically entails less risk than JUP. In the current model, however, raising the USDC debt limit by $10M would give users the ability to borrow as much USDC against SOL as against JUP.
+
+In this model, borrow caps are essentially constrained by the risk profile of every available collateral in the pool.
+
+### [hashtag](https://docs.kamino.finance/risk/protocol-mechanisms/e-mode-caps\#what-e-mode-caps-enables)    What E-Mode Caps Enables
+
+Instead of having to raise USDC caps for all available collateral, E-Mode Caps allows the protocol to adjust USDC caps for each collateral asset. Thus, the SOL/USDC cap can be raised by $10M, but the JUP/USDC cap can be kept as is.
+
+Thus, caps can be managed more closely and potentially scaled up far more aggressively, specifically against high-quality collateral assets.
+
+### [hashtag](https://docs.kamino.finance/risk/protocol-mechanisms/e-mode-caps\#how-e-mode-works)    How E-Mode Works
+
+Below we'll cover an example with various scenarios in which users can or cannot borrow with E-Mode Caps
+
+circle-info
+
+Note that users do not have to manually enter or exit E-Mode. The system automatically detects whether a user can access an E-Mode or not based on the assets in their loan.
+
+In the Main Market, PYUSD borrow caps are raised, but only via two E-Mode Caps: SOL/PYUSD and wBTC/PYUSD.
+
+The PYUSD borrow cap remains $0 against all other collateral besides SOL and wBTC.
+
+#### [hashtag](https://docs.kamino.finance/risk/protocol-mechanisms/e-mode-caps\#scenarios-where-you-can-borrow-pyusd)    Scenarios Where You CAN Borrow PYUSD:
+
+- Loan with only SOL Supplied
+
+
+
+  - Can borrow PYUSD
+
+
+- Loan with only wBTC Supplied
+
+
+
+  - Can borrow PYUSD
+
+
+**Scenarios Where You CANNOT Borrow PYUSD:**
+
+E-Mode Caps support single asset & single collateral combinations. Any positions that do not contain the single collateral and single debt assets in an E-Mode grouping will not have access to that E-Mode borrow limit.
+
+Some examples:
+
+- Loan with both SOL and wBTC Supplied
+
+
+
+  - User is not able to borrow PYUSD, as E-Mode Caps are not "intra-collateral"
+
+  - One E-Mode Cap = One Collateral/Debt Combination
+
+
+- Loan with SOL and any another collateral supplied
+
+- Loan with SOL supplied and USDC Borrowed
+
+
+### [hashtag](https://docs.kamino.finance/risk/protocol-mechanisms/e-mode-caps\#how-to-use-e-mode-caps)    How To Use E-Mode Caps
+
+E-Mode Caps are automatically enabled when you contain the relevant collateral, or collateral/debt combination.
+
+Eg. If you only have SOL supplied, you will automatically be able to borrow PYUSD via the SOL/PYUSD E-Mode grouping.
+
+#### [hashtag](https://docs.kamino.finance/risk/protocol-mechanisms/e-mode-caps\#what-if-i-have-other-assets-supplied-borrowed)    What If I Have Other Assets Supplied/Borrowed?
+
+If you want to access E-Mode borrow capacity but your loan contains assets outside of that E-Mode, you will need to either remove those assets from the position, or open a loan from a different wallet.
+
+Multiple Loans are coming to Kamino Lend V2 - but in the meantime, users will have to keep loans from the same market in separate wallets.
+
+[PreviousDaily Capschevron-left](https://docs.kamino.finance/risk/protocol-mechanisms/daily-caps) [NextInsurance Fundchevron-right](https://docs.kamino.finance/risk/insurance-fund)
+
+Last updated 1 year ago
+
+## Insurance Fund Overview
+Kamino Lend does not have an insurance fund to cover bad debt. Note that no bad debt has ever been incurred on Kamino Lend since its launch in November 2023.
+
+[PreviousE-Mode Capschevron-left](https://docs.kamino.finance/risk/protocol-mechanisms/e-mode-caps)
+
+Last updated 1 year ago
+
+## Kamino DeFi Products
+Kamino offers a suite of products that combine a variety of DeFi primitives to power sophisticated strategies - each wrapped into an accessible, user-centric interface.
+
+Kamino has built **two core primitives**:
+
+- [Automated Liquidity Vaults](https://docs.kamino.finance/products/liquidity)
+
+- [Kamino Lend](https://docs.kamino.finance/products/borrow-lend)
+
+
+These primitives combine to power these **one-click products**:
+
+- [Multiply Vaults](https://docs.kamino.finance/products/multiply)
+
+- [Long/Short Vaults](https://docs.kamino.finance/products/long-short)
+
+
+[PreviousKamino Lend Litepaperchevron-left](https://docs.kamino.finance/kamino-lend-litepaper) [NextMultiplychevron-right](https://docs.kamino.finance/products/multiply)
+
+Last updated 1 year ago
+
+## Leverage Yield Positions
+Multiply allows a user to open a leverage position where they can increase their exposure to a yield-bearing asset by borrowing the underlying asset. (eg. increase exposure to JitoSOL by borrowing SOL). This is enabled by two K-Lend mechanisms: eMode and flash loans.
+
+circle-info
+
+Because Multiply opens a debt position, users can be liquidated. Higher leverage leaves less buffer to avoid liquidation. Liquidations can occur in case of 1) sustained borrow rates that are higher than the staking APYs or 2) LST smart contract exploits
+
+### [hashtag](https://docs.kamino.finance/products/multiply/how-it-works\#what-is-emode)    What is eMode?
+
+Multiply vaults also take advantage of Elevation Mode (eMode), a K-Lend mechanism that allows for higher loan-to-value ratios (i.e. higher leverage) between assets that are pegged in price.
+
+For example, in a **JitoSOL/SOL Multiply vault**, JitoSOL is supplied, and SOL is borrowed. This position is then looped up to a target leverage amount. Typically, these assets have a 75% LTV, allowing for 4x leverage. However, with eMode, their LTV can be raised to 90%, allowing for up to 10x leverage.
+
+### [hashtag](https://docs.kamino.finance/products/multiply/how-it-works\#how-do-i-know-i-am-earning-yield)    How do I know I am earning yield?
+
+As long as the yield on your yield-bearing asset is higher than the borrow APU, you will have a **positive Net APY**. While your Net APY is positive, your position's SOL balance should be increasing.
+
+### [hashtag](https://docs.kamino.finance/products/multiply/how-it-works\#where-does-the-yield-come-from)    Where does the yield come from?
+
+There are two sources of yield, depending on the vault you are using:
+
+- SOL staking yield, from tokens like mSOL, JitoSOL and bSOL
+
+- Market making yield, earned on kTokens via trading fees in Kamino liquidity vaults
+
+
+Some vaults also combine these two sources (eg. kTokens like kJitoSOL-SOL), thus earning staking and market making yield.
+
+### [hashtag](https://docs.kamino.finance/products/multiply/how-it-works\#how-do-flash-loans-work)    How do flash loans work?
+
+Flash loans are a DeFi innovation that enables you to take a loan without posting collateral, given that the loan is repaid within that same transaction.
+
+In multiply, a user inputs their **deposit amount** and **target leverage** (Multiplier) amount. Using these values, the protocol can identify how much SOL needs to be borrowed in the flash loan. Then:
+
+1. SOL is borrowed
+
+2. SOL is swapped to target asset (eg. JitoSOL)
+
+3. Target asset is supplied in K-Lend
+
+4. SOL is borrowed against target asset
+
+5. Borrowed SOL is used to repay the initial flash loan
+
+6. Position is open at target leverage
+
+
+### [hashtag](https://docs.kamino.finance/products/multiply/how-it-works\#what-are-the-fees)    What are the fees?
+
+Every action in Multiply uses the K-Lend flash loans mechanism, which incurs a 0.001% fee. Users also pay the borrow APY on the debt asset in their position - note that **this is already factored into the Net APY.** Multiply txns also entail swaps via Jupiter, which may incur some slippage costs.
+
+### [hashtag](https://docs.kamino.finance/products/multiply/how-it-works\#what-about-liquidations)    What about liquidations?
+
+A Multiply position can be liquidated **if the borrow interest rate is higher than the LST yield for a sustained period of time,** thus increasing your debt relative to the LST enough to reach the liquidation threshold. Liquidation can also occur if the LST platform's smart contract is exploited.
+
+circle-check
+
+Due to a change in our LST oracle infrastructure, LST depegs can no longer cause liquidations for Multiply positions. Read more here: [LST Oracles](https://docs.kamino.finance/risk/oracles/lst-oracles)
+
+### [hashtag](https://docs.kamino.finance/products/multiply/how-it-works\#how-does-ktoken-multiply-work)    How does kToken Multiply work?
+
+Taking a leverage position using a kToken in Multiply works very similar to a standard leverage position. The two key differences are:
+
+1. Exposure to the price of two assets on the collateral side, instead of one
+
+2. Exposure to market-making yield in addition to staking yield
+
+
+### [hashtag](https://docs.kamino.finance/products/multiply/how-it-works\#multiply-example)    Multiply Example
+
+A user has 1000 SOL. They deposit their SOL into a JitoSOL/SOL Multiply vault. They set an 8x Multiplier.
+
+**Now, let's say:**
+
+- `JitoSOL/SOL price ratio = 1.2`
+
+- `JitoSOL APY = 7%`
+
+- `SOL borrow rate = 6%`
+
+
+**Thus, user's position:**
+
+User made a 1000 SOL Deposit, with 8x leverage
+
+- `Total SOL Exposure: 1000 * 8 =``8000 SOL collateral`
+
+
+`(Note: 8000 SOL = 6666 JitoSOL)`
+
+- `Total SOL Debt = Total Exposure - Initial Deposit
+Total SOL Debt = 8000 - 1000 =``7000 SOL debt`
+
+- `LTV: Debt / Collateral
+LTV: 7000 / 8000 =``87.5% LTV`
+
+
+`JitoSOL APY = 7% :: 8000 * 7% = 560 SOL - Earned from Staking APY`
+
+`Borrow APY = 6% :: 7000 * 6% = 420 SOL - Paid in Borrow Rate`
+
+`Net SOL Earned`` = 560 - 420 = 140 SOL`
+
+`Net APY = Net SOL Earned / Initial Deposit = 140 / 1000 =``14%`
+
+[PreviousMultiplychevron-left](https://docs.kamino.finance/products/multiply) [NextOpening a Positionchevron-right](https://docs.kamino.finance/products/multiply/opening-a-position)
+
+Last updated 8 months ago
+
+## Kamino Multiply Position
+### [hashtag](https://docs.kamino.finance/products/multiply/opening-a-position\#id-1.-select-a-vault-in-multiply)    1\. Select a vault in Multiply
+
+![](https://docs.kamino.finance/~gitbook/image?url=https%3A%2F%2F741543836-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDGxGrFuaWUFzMv9IjZMP%252Fuploads%252F7LWIT40kgPZi6IPwW9ur%252FKamino%2520Multiply%2520-%2520Open%2520mSOL%2520Multiply%2520Vault.jpg%3Falt%3Dmedia%26token%3Dcd01b797-fd06-4c3c-a2e0-dfb6ad05210b&width=768&dpr=3&quality=100&sign=cafda707&sv=2)
+
+### [hashtag](https://docs.kamino.finance/products/multiply/opening-a-position\#id-2.-select-your-deposit-token-token-amount-and-multiply-amount)    2\. Select your deposit token, token amount, and multiply amount
+
+You can deposit either the underlying asset (eg. SOL), or the yield-bearing asset (eg. JLP or JitoSOL). Kamino's smart contract will auto-swap your assets as needed.
+
+For SOL Multiply, your position value is displayed in SOL. For JLP Multiply, your position value is displayed in USD.
+
+![](https://docs.kamino.finance/~gitbook/image?url=https%3A%2F%2F741543836-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDGxGrFuaWUFzMv9IjZMP%252Fuploads%252FtOpPTKyWbD3IyGFBD22I%252Fimage.png%3Falt%3Dmedia%26token%3D4b5d2c25-cb7e-4faa-8eef-feb9442cbaf0&width=768&dpr=3&quality=100&sign=82a15448&sv=2)
+
+circle-info
+
+Note that your **Net APY** is the **key indicator** of the yield in the position. Net APY accounts for all yield earned and interest paid in the position: asset yield and supply interest earned, and borrow fees paid.
+
+- If **Net APY is higher than the underlying asset's APY**, your position will be **earning yield**
+
+- If **Net APY is below the underlying asset's APY**, you will be **paying interest** for your position to remain open
+
+
+### [hashtag](https://docs.kamino.finance/products/multiply/opening-a-position\#id-3.-view-the-simulation-of-your-estimated-position-and-projected-earnings-in-the-overview-and-my-posi)    3\. View the simulation of your estimated position & projected earnings in the Overview and My Position tabs
+
+- The Overview tab shows a simulation of your position, as well as the estimated yield it will earn based on historical data.
+
+- For example, if the average APY over the past 180 days was 10%, your "Estimated Net Earnings" will be 10% for the 180-day period. This allows you to get an idea of the yields you can expect.
+
+
+![](https://docs.kamino.finance/~gitbook/image?url=https%3A%2F%2F741543836-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDGxGrFuaWUFzMv9IjZMP%252Fuploads%252FvR41vmOxTNGf75tFhde5%252Fimage.png%3Falt%3Dmedia%26token%3Df0f54039-df1d-425f-8f21-55cf8c56966a&width=768&dpr=3&quality=100&sign=17577522&sv=2)
+
+- In the My Position tab, you can see an in-depth simulation of your estimated position values before completing your deposit.
+
+
+![](https://docs.kamino.finance/~gitbook/image?url=https%3A%2F%2F741543836-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDGxGrFuaWUFzMv9IjZMP%252Fuploads%252FOfbkeMGSTRVX86xmC7LB%252Fimage.png%3Falt%3Dmedia%26token%3Df1814523-6de2-433a-aa7d-6560b474f7be&width=768&dpr=3&quality=100&sign=ee02dab1&sv=2)
+
+[PreviousHow It Workschevron-left](https://docs.kamino.finance/products/multiply/how-it-works) [NextManaging a Positionchevron-right](https://docs.kamino.finance/products/multiply/managing-a-position)
+
+Last updated 12 months ago
+
+## Manage Your Position
+### [hashtag](https://docs.kamino.finance/products/multiply/managing-a-position\#id-1.-monitor-your-position-in-the-overview-and-my-position-tabs)    1\. Monitor your position in the Overview and My Position tabs
+
+![](https://docs.kamino.finance/~gitbook/image?url=https%3A%2F%2F741543836-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDGxGrFuaWUFzMv9IjZMP%252Fuploads%252F9hSviLEZ6VwK0LCwFQHN%252Fimage.png%3Falt%3Dmedia%26token%3D9e5ef6ea-c7d3-4ac1-8163-d065aca4447b&width=768&dpr=3&quality=100&sign=527adc11&sv=2)
+
+circle-info
+
+Note that your **Net APY** is the **key indicator** of the yield in the position. Net APY accounts for all values in the position: staking rate, borrow rate, and supply rate.
+
+- If **Net APY is positive**, your position will be **earning yield**
+
+- If **Net APY is negative**, you will be **paying interest** for your position to remain open
+
+
+### [hashtag](https://docs.kamino.finance/products/multiply/managing-a-position\#id-2.-use-the-manage-module-to-manage-your-position)    2\. Use the Manage module to manage your position
+
+Adjust Leverage
+
+Adjust Size
+
+You can adjust your Multiply leverage at any time. This will adjust the amount of collateral and debt in your position, and will **change your LTV.**
+
+**Lower leverage = lower LTV**
+
+**Higher leverage = higher LTV**
+
+While your position is open, you can add to, or withdraw from your position as you see fit.
+
+circle-info
+
+Adjusting position size has no impact on the leverage and risk of your position
+
+![](https://docs.kamino.finance/~gitbook/image?url=https%3A%2F%2F741543836-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDGxGrFuaWUFzMv9IjZMP%252Fuploads%252FAB7WyXJyq9bqUrr61y0b%252Fimage.png%3Falt%3Dmedia%26token%3Dd4e97dbf-75d7-45ea-9884-32ecae8fc46a&width=768&dpr=3&quality=100&sign=8f6d44e3&sv=2)
+
+[PreviousOpening a Positionchevron-left](https://docs.kamino.finance/products/multiply/opening-a-position) [NextUnwinding a Positionchevron-right](https://docs.kamino.finance/products/multiply/unwinding-a-position)
+
+Last updated 1 year ago
+
+## Unwinding Multiply Positions
+Multiply positions can be unwound in a variety of ways, either via single-click solutions, or manual workflows.
+
+Below we cover how to unwind the two Multiply position types:
+
+[Unwinding SOL Multiplychevron-right](https://docs.kamino.finance/products/multiply/unwinding-a-position/unwinding-sol-multiply) [Unwinding JLP Multiplychevron-right](https://docs.kamino.finance/products/multiply/unwinding-a-position/unwinding-jlp-multiply)
+
+[PreviousManaging a Positionchevron-left](https://docs.kamino.finance/products/multiply/managing-a-position) [NextUnwinding SOL Multiplychevron-right](https://docs.kamino.finance/products/multiply/unwinding-a-position/unwinding-sol-multiply)
+
+Last updated 12 months ago
+
+## Unwind SOL Multiply Positions
+SOL Multiply positions can be unwound via:
+
+1. Multiply UI
+
+2. Loan Dashboard UI
+
+
+Each interface has a one-click and a manual solution to unwinding. Kamino charges no fees on any of the unwinding solutions mentioned below.
+
+## [hashtag](https://docs.kamino.finance/products/multiply/unwinding-a-position/unwinding-sol-multiply\#unwind-via-multiply-ui)    Unwind Via Multiply UI
+
+#### [hashtag](https://docs.kamino.finance/products/multiply/unwinding-a-position/unwinding-sol-multiply\#one-click-solution-adjusting-leverage)    One-Click Solution: Adjusting Leverage
+
+You can unwind your position in the Multiply UI using the `Adjust Leverage`functionality. Moving to a lower leverage amount will simultaneously reduce your debt and collateral, thus lowering your position LTV.
+
+Here's a guide on adjusting leverage:
+
+spaces%2FDGxGrFuaWUFzMv9IjZMP%2Fuploads%2FV16fXZM1Hwn5RugZn57K%2FmSOL%20-%20Multiply%20-%20Adjust%20Leverage.mp4
+
+PausePlay
+
+% buffered00:00
+
+00:14
+
+Exit fullscreenEnter fullscreenGo to original URL
+
+Your browser does not support HTML5 videos.
+
+Auto-adjusting SOL Multiply Leverage via Multiply UI
+
+#### [hashtag](https://docs.kamino.finance/products/multiply/unwinding-a-position/unwinding-sol-multiply\#manual-solution-manage-collateral-and-debt)    Manual Solution: Manage Collateral & Debt
+
+The manual route is to:
+
+- Withdraw collateral
+
+- Swap into debt token
+
+- Repay debt
+
+
+This can be done via the `Manage Collateral` and `Manage Debt` functionalities, and the Swap can be done via Kamino's free, in-app Swap.
+
+Here's a guide:
+
+spaces%2FDGxGrFuaWUFzMv9IjZMP%2Fuploads%2FIot11mOAvyJZ7akc14J4%2FmSOL%20-%20Multiply%20-%20Manual%20Repay.mp4
+
+PausePlay
+
+% buffered00:00
+
+00:38
+
+Exit fullscreenEnter fullscreenGo to original URL
+
+Your browser does not support HTML5 videos.
+
+Manually adjusting SOL Multiply Leverage via Multiply UI
+
+## [hashtag](https://docs.kamino.finance/products/multiply/unwinding-a-position/unwinding-sol-multiply\#unwind-via-loan-dashboard)    Unwind Via Loan Dashboard
+
+The Loan Dashboard provides an additional interface to manage your Multiply position. As in the Multiply UI, you can unwind via the Loan Dashboard using a one-click solution, or a manual workflow.
+
+To access the Loan Dashboard from Multiply, click on the manage dropdown, and select Loan Dashboard at the bottom.
+
+#### [hashtag](https://docs.kamino.finance/products/multiply/unwinding-a-position/unwinding-sol-multiply\#one-click-solution-repay-with-collateral)    One-Click Solution: Repay With Collateral
+
+You can unwind your position in the Loan Dashboard using the `Repay With Collateral` functionality. Repaying debt with collateral has the exact same impact as Adjusting Leverage in the Multiply UI.
+
+To do so, you simply click to manage your debt token, and select to repay with collateral. This will simultaneously reduce your debt and collateral, thus lowering your position LTV.
+
+Here's a guide:
+
+spaces%2FDGxGrFuaWUFzMv9IjZMP%2Fuploads%2FFu30QK4WxiRr8VXSkWT0%2FmSOL%20-%20Loan%20Dashboard%20-%20Repay%20w%20Collateral.mp4
+
+PausePlay
+
+% buffered00:00
+
+00:22
+
+Exit fullscreenEnter fullscreenGo to original URL
+
+Your browser does not support HTML5 videos.
+
+Auto-adjusting SOL Multiply Leverage via Loan Dashboard
+
+#### [hashtag](https://docs.kamino.finance/products/multiply/unwinding-a-position/unwinding-sol-multiply\#manual-solution-manage-collateral-and-debt-1)    Manual Solution: Manage Collateral & Debt
+
+As via the Multiply interface, you can manually unwind via the Loan Dashboard by:
+
+- Withdrawing collateral
+
+- Swapping into the debt token
+
+- Repaying debt
+
+
+When selecting your repay amount, you'll see a simulation of new LTV of your position.
+
+Here's a guide:
+
+spaces%2FDGxGrFuaWUFzMv9IjZMP%2Fuploads%2FXMVPzvMQKCw4bnR5uVBD%2FmSOL%20-%20Loan%20Dashboard%20-%20Repay%20Manual.mp4
+
+PausePlay
+
+% buffered00:00
+
+00:38
+
+Exit fullscreenEnter fullscreenGo to original URL
+
+Your browser does not support HTML5 videos.
+
+Manually adjusting SOL Multiply Leverage via Loan Dashboard
+
+[PreviousUnwinding a Positionchevron-left](https://docs.kamino.finance/products/multiply/unwinding-a-position) [NextUnwinding JLP Multiplychevron-right](https://docs.kamino.finance/products/multiply/unwinding-a-position/unwinding-jlp-multiply)
+
+Last updated 12 months ago
+
+## Multiply Vault Risks
+circle-check
+
+Due to a change in our LST oracle infrastructure, LST depegs can no longer cause liquidations for Multiply positions. Read more here: [LST Oracles](https://docs.kamino.finance/risk/oracles/lst-oracles)
+
+### [hashtag](https://docs.kamino.finance/products/multiply/risks\#liquidation-risk)    Liquidation Risk
+
+Multiply vaults open a debt position, which means your position can be liquidated if your loan-to-value ratio is above the liquidation threshold. In SOL Multiply, this can occur **if the borrow interest rate is higher than the LST yield for a sustained period of time.** In JLP Multiply, this can occur if JLP drops in value relative to USD, such that it reaches your liquidation threshold.
+
+### [hashtag](https://docs.kamino.finance/products/multiply/risks\#depeg-risk)    Depeg Risk
+
+Multiply does not have any depeg risk. Please read about Kamino's [LST Oracles](https://docs.kamino.finance/risk/oracles/lst-oracles) for more info.
+
+### [hashtag](https://docs.kamino.finance/products/multiply/risks\#deleveraging)    Deleveraging
+
+Kamino has an auto-deleverage mechanism that can systematically unwind debt and collateral in the protocol to ensure that there is a safe amount of any given asset on the balance sheet.
+
+Deleveraging happens automatically, and typically leaves your position with a safer LTV. However, you are advised to check the Kamino socials regularly, where you will be notified of any margin call period before deleveraging begins.
+
+[Read more about auto-deleverage](https://docs.kamino.finance/risk/protocol-mechanisms/automated-deleverage)
+
+### [hashtag](https://docs.kamino.finance/products/multiply/risks\#socialized-losses)    Socialized Losses
+
+If K-Lend incurs bad debt, the debt will be proportionally distributed amongst all users in the system. This will push all positions closer to their liquidation threshold, and may even lead to liquidation. To provide a buffer, you are advised to manage their position in such a way that extreme interest rates would not lead to liquidations.
+
+### [hashtag](https://docs.kamino.finance/products/multiply/risks\#smart-contract-risk)    Smart Contract Risk
+
+Liquid-staking tokens like JitoSOL and mSOL, and LP tokens like JLP, are issued by smart contracts outside of Kamino. Users are encouraged to do their own research regarding the safety of any products beyond Kamino.
+
+[PreviousUnwinding JLP Multiplychevron-left](https://docs.kamino.finance/products/multiply/unwinding-a-position/unwinding-jlp-multiply) [NextManaging Riskchevron-right](https://docs.kamino.finance/products/multiply/managing-risk)
+
+Last updated 12 months ago
+
+## Risk Management Basics
+Multiply positions are **leveraged debt positions** that can be liquidated if borrow rates exceed staking rates for an extended period, or in the case of JLP, if JLP drops too much in value relative to USD.
+
+circle-check
+
+Due to a change in our LST oracle infrastructure, LST depegs can no longer cause liquidations for Multiply positions. Read more here: [LST Oracles](https://docs.kamino.finance/risk/oracles/lst-oracles)
+
+## [hashtag](https://docs.kamino.finance/products/multiply/managing-risk\#parameter-overview)    Parameter Overview
+
+### [hashtag](https://docs.kamino.finance/products/multiply/managing-risk\#sol-multiply)    SOL Multiply
+
+The risk of a SOL Multiply position is indicated primarily by the Net APY.
+
+If Net APY is below the LST APY, or completely negative, it means you are paying more interest than you are earning.
+
+Should this become extremely severe, and remain negative for extended periods, positions can be pushed towards liquidation.
+
+#### [hashtag](https://docs.kamino.finance/products/multiply/managing-risk\#how-do-i-view-historical-risk)    How Do I View Historical Risk?
+
+In each Multiply Vault, Kamino clearly shows the Net APY over time at various leverage levels. Historically, Net APYs are positive, and spikes in borrow rates are promptly flattened by market activity.
+
+![](https://docs.kamino.finance/~gitbook/image?url=https%3A%2F%2F741543836-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDGxGrFuaWUFzMv9IjZMP%252Fuploads%252FLYNPHGbql9Y8clX4bvRz%252FScreenshot%25202025-02-03%2520at%252021.49.57.png%3Falt%3Dmedia%26token%3D319e1f30-8e6f-476e-a2e8-a7b4a5ba07eb&width=768&dpr=3&quality=100&sign=c5dcca02&sv=2)
+
+Example of Net APY Chart in SOL Multiply
+
+### [hashtag](https://docs.kamino.finance/products/multiply/managing-risk\#jlp-multiply)    JLP Multiply
+
+The risk of a JLP Multiply position is primarily indicated by two values:
+
+- Loan-to-value (LTV)
+
+- Liquidation Price
+
+
+#### [hashtag](https://docs.kamino.finance/products/multiply/managing-risk\#loan-to-value-ltv)    Loan-to-value (LTV)
+
+The LTV of your position expresses your **debt as a percentage of your collateral**. A higher LTV means a riskier position. If your LTV reaches the liquidation threshold (indicated by the "x% from liquidation sub-value"), your position is eligible for liquidation - at which point ~2% of your collateral can be liquidated
+
+#### [hashtag](https://docs.kamino.finance/products/multiply/managing-risk\#liquidation-price)    Liquidation Price
+
+Liquidation price is the **JLP Price** at which your position will be eligible for liquidation. This means that, if JLP drops in value relative to USD, you position can be liquidated when it reaches this price.
+
+## [hashtag](https://docs.kamino.finance/products/multiply/managing-risk\#adjusting-parameters)    Adjusting Parameters
+
+Managing a multiply position is simple:
+
+- If you lower your leverage, your position is safer, and has a larger buffer to liquidation
+
+- If you increase your leverage, your position becomes riskier, and has less buffer to liquidation
+
+
+circle-info
+
+Adjusting your position size (i.e. depositing/withdrawing) has little to no effect on the risk of your position
+
+### [hashtag](https://docs.kamino.finance/products/multiply/managing-risk\#increasing-leverage)    Increasing Leverage
+
+Increasing your leverage will move your position closer to liquidation. When you increase your leverage amount, you will see **the following values increase**:
+
+- Total Collateral
+
+- Total Debt
+
+- LTV Ratio
+
+- Liquidation Price
+
+- Multiplier
+
+
+Net APY will then typically increase, though this may depend on the `staking rate - borrow rate` equation, as well as your position size.
+
+### [hashtag](https://docs.kamino.finance/products/multiply/managing-risk\#decreasing-leverage)    Decreasing Leverage
+
+When you decrease your leverage, the exact opposite will happen: your position becomes safer, and **the following values will decrease**:
+
+- Total Collateral
+
+- Total Debt
+
+- LTV Ratio
+
+- Liquidation Price
+
+- Multiplier
+
+
+Net APY will then typically decrease, though this may vary depending on current rates and your position size.
+
+[PreviousRiskschevron-left](https://docs.kamino.finance/products/multiply/risks) [NextBorrow/Lendchevron-right](https://docs.kamino.finance/products/borrow-lend)
+
+Last updated 12 months ago
+
+## Kamino Borrow/Lend Overview
+Kamino Lend powers automated products like Multiply and Long/Short, and can also be used as a stand-alone borrow/lend market.
+
+K-Lend has a rich suite of features that enable capital efficiency, while having a sophisticated risk engine to protect both borrowers and lenders.
+
+This section will cover the basics on how to use the Borrow/Lend market - for an in-depth look at Kamino Lend, please see the following:
+
+- [Risk Docs](https://docs.kamino.finance/risk/)
+
+- [Litepaper](https://docs.kamino.finance/kamino-lend-litepaper)
+
+- [Live Risk Dashboardarrow-up-right](https://risk.kamino.finance/)
+
+
+### [hashtag](https://docs.kamino.finance/products/borrow-lend\#k-lend-overview)    K-Lend Overview
+
+The Kamino Lend interface consists of the following pages:
+
+**List View** \- Overview of lending pool
+
+**Market Page**\- Detailed look at the market for each asset in K-Lend
+
+**Loan Dashboard** \- Overview of a user's position
+
+**Risk Analysis** \- Simulate market movement impact on your loan
+
+[PreviousManaging Riskchevron-left](https://docs.kamino.finance/products/multiply/managing-risk) [NextPosition Risk & Liquidationschevron-right](https://docs.kamino.finance/products/borrow-lend/position-risk-and-liquidations)
+
+Last updated 1 year ago
+
+## Kamino Lend Overview
+Kamino Lend uses an overcollateralized Borrow/Lend model. Any debt position on Kamino requires more collateral deposited than debt taken. The ratio between the collateral and debt is called the `loan-to-value (LTV) ratio.`
+
+LTV ratio is an expression of the health of your position, and gives an indication of your liquidation risk. [Read more here](https://docs.kamino.finance/products/borrow-lend/position-risk-and-liquidations/position-risk)
+
+If your debt position reaches the Liquidation LTV threshold, it becomes eligible for liquidation.
+
+### [hashtag](https://docs.kamino.finance/products/borrow-lend/position-risk-and-liquidations\#partial-liquidations)    Partial Liquidations
+
+Instead of liquidations closing a borrower’s position in its entirety, K-Lend enables soft liquidations that settle, for example, 20% of a user’s debt. In this scenario, users who are only slightly over the liquidation LTV are not severely punished - whereas users who far exceed the liquidation LTV can be liquidated to a greater degree.
+
+### [hashtag](https://docs.kamino.finance/products/borrow-lend/position-risk-and-liquidations\#dynamic-liquidation-penalties)    Dynamic Liquidation Penalties
+
+Liquidation penalties have been traditionally high in DeFi to make up for low speeds, high gas fees, and network/market volatility. If a liquidator catches a falling knife and cannot liquidate those assets quickly, then they lose money. As a result, liquidation penalties have typically been 5-10% or more.
+
+On K-Lend, liquidation penalties start at 2% and are capped at 10%. If the most efficient liquidators execute liquidations as soon as possible, borrowers are subject only to a 2% penalty. The liquidation penalty increases as the loan LTV increases, until the loan is liquidated. This system is designed to reward the most efficient liquidators, while simultaneously softening the blow to borrowers.
+
+**Example: Instant Liquidation**
+
+User A’s loan reaches the liquidation LTV of 80%. The liquidator triggers the liquidation shortly after the loan is eligible. The liquidator repays 20% of the debt and receives 20.4% (0.2 \* 0.02) of User A’s collateral. User A now has less collateral, less debt, and a lower LTV, and their loan position remains active.
+
+**Example: Eventual Liquidation**
+
+User B’s loan reaches the liquidation threshold of 80% LTV. The liquidator doesn't act instantly and the liquidation penalty rises to 10% as the loan reaches a 90% LTV. At that point the liquidator steps in and liquidates the position. He repays 20% of the debt and receives 22% (0.2 \* 0.1) of User B’s collateral.
+
+[PreviousBorrow/Lendchevron-left](https://docs.kamino.finance/products/borrow-lend) [NextPosition Riskchevron-right](https://docs.kamino.finance/products/borrow-lend/position-risk-and-liquidations/position-risk)
+
+Last updated 2 months ago
+
+## Position Risk Overview
+Position risk is expressed via a Loan-to-value ratio, which is the ratio between the debt and collateral within your Kamino Lend position.
+
+Loan-to-value ratio is calculated as follows:
+
+`risk_adjusted_debt_value / collateral_value * 100`
+
+"Risk-adjusted debt value" is a value that accounts for the "risk" of a debt asset within the protocol. It is calculated using the [Borrow Factor](https://docs.kamino.finance/products/borrow-lend/position-risk-and-liquidations/borrow-factors) assigned to the asset.
+
+Borrowers have three different `LTV_ratios` that expresses the risk of their position:
+
+- **LTV (or Current LTV)** = Current position health
+
+- **Max LTV** = Borrowing limit of your position - gives a buffer between Liquidation LTV
+
+- **Liquidation LTV** = The LTV at which your position becomes eligible for liquidation
+
+
+[PreviousPosition Risk & Liquidationschevron-left](https://docs.kamino.finance/products/borrow-lend/position-risk-and-liquidations) [NextBorrow Factorschevron-right](https://docs.kamino.finance/products/borrow-lend/position-risk-and-liquidations/borrow-factors)
+
+Last updated 1 year ago
+
+## Borrow Factors Overview
+## [hashtag](https://docs.kamino.finance/products/borrow-lend/position-risk-and-liquidations/borrow-factors\#borrow-factors)    Borrow Factors
+
+Borrow factors (BFs) are risk-adjusted borrow values assigned to each asset on K-Lend. This determines the borrowing capacity of a debt asset within a loan, based on its [Asset Risk Score](https://docs.kamino.finance/risk/liquidity-risk/introduction).
+
+This is parallel to loan-to-value ratios (LTVs), which indicate borrowing limits from the collateral asset perspective.
+
+K-Lend combines LTV and BF to express a weighted borrowing capacity based on the asset composition of a position. This allows the protocol much more flexibility in assessing the risk of each position on the platform.
+
+For example, let’s assume you want to supply $100 of SOL as collateral and borrow either USDC or BONK:
+
+- SOL is a widely circulating collateral asset, and its maximum LTV ratio = 80%
+
+- USDC is deemed a less risky asset than BONK.
+
+
+
+  - USDC Borrow Factor = 1
+
+  - BONK Borrow Factor = 2
+
+
+- Borrow capacity is expressed as: (Collateral Amount \* Collateral LTV) / Borrow Factor
+
+- USDC borrow capacity against SOL = ($100 \* 80%) / 1 = $80
+
+- For BONK, due to a BF of 2, you can borrow up to $40.
+
+
+Similar to the above expression of risk-adjusted borrowing capacity, the liquidation point of any loan is also calculated as a weighted expression of LTV and borrow factor.
+
+[PreviousPosition Riskchevron-left](https://docs.kamino.finance/products/borrow-lend/position-risk-and-liquidations/position-risk) [NextFeeschevron-right](https://docs.kamino.finance/products/borrow-lend/fees)
+
+Last updated 1 year ago
+
+## Borrow/Lend Fees Overview
+### [hashtag](https://docs.kamino.finance/products/borrow-lend/fees\#interest-rate-spreads)    Interest Rate Spreads
+
+Asset(s)
+
+Market
+
+Interest Rate Spreads
+
+SOL
+
+Main Market
+
+11%
+
+USDC
+
+Main Market
+
+15%
+
+USDT
+
+Main Market
+
+15%
+
+mSOL
+
+Main Market
+
+15%
+
+JitoSOL
+
+Main Market
+
+15%
+
+bSOL
+
+Main Market
+
+15%
+
+wETH
+
+Main Market
+
+15%
+
+tBTC
+
+Main Market
+
+15%
+
+JTO
+
+Main Market
+
+15%
+
+UXD
+
+Main Market
+
+15%
+
+USDH
+
+Main Market
+
+15%
+
+USDC
+
+JLP Market
+
+20%
+
+USDC
+
+Altcoins Market
+
+20%
+
+WIF
+
+Altcoins Market
+
+20%
+
+BONK
+
+Altcoins Market
+
+20%
+
+PYTH
+
+Altcoins Market
+
+20%
+
+JUP
+
+Altcoins Market
+
+20%
+
+JTO
+
+Altcoins Market
+
+20%
+
+### [hashtag](https://docs.kamino.finance/products/borrow-lend/fees\#liquidation-penalties)    Liquidation Penalties
+
+Liquidation penalties can be viewed [here](https://docs.kamino.finance/products/borrow-lend/fees#liquidation-penalties)
+
+[PreviousBorrow Factorschevron-left](https://docs.kamino.finance/products/borrow-lend/position-risk-and-liquidations/borrow-factors) [NextCross & Isolated Modeschevron-right](https://docs.kamino.finance/products/borrow-lend/cross-and-isolated-modes)
+
+Last updated 6 months ago
+
+## Cross & Isolated Mode
+Kamino Lend now supports two position modes: Isolated Mode and Cross Mode. The introduction of loan modes enables a more tailored borrowing experience depending on a borrower's desired loan composition.
+
+![](https://docs.kamino.finance/~gitbook/image?url=https%3A%2F%2F741543836-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDGxGrFuaWUFzMv9IjZMP%252Fuploads%252FojR0cdQ6NKGgPUp4N0D7%252Fkamino-lend-v2-isolated-cross-loan-modes.jpg%3Falt%3Dmedia%26token%3D3bd85258-1307-4003-8693-6a3c3f423fb9&width=768&dpr=3&quality=100&sign=27c965fa&sv=2)
+
+### [hashtag](https://docs.kamino.finance/products/borrow-lend/cross-and-isolated-modes\#cross-and-isolated-mode)    Cross & Isolated Mode
+
+#### [hashtag](https://docs.kamino.finance/products/borrow-lend/cross-and-isolated-modes\#cross-mode)    Cross Mode
+
+Cross Mode is the default position mode in Kamino Lend. In Cross Mode, a user can have multiple collateral assets and debt assets in the same position. This allows a user to deploy multiple assets as collateral in a single position, and similarly enables them to borrow multiple assets in a position.
+
+Cross Mode positions will typically have less overall borrow capacity and more conservative risk parameters than Isolated positions.
+
+#### [hashtag](https://docs.kamino.finance/products/borrow-lend/cross-and-isolated-modes\#isolated-mode)    Isolated Mode
+
+Isolated Mode is a new feature that allows customized risk configurations for specific collateral/debt combinations in a single market. Isolated Mode is available when a borrower wants to maintain a position with a single collateral, and single debt asset.
+
+In Isolated Mode a borrower can access more borrow capacity, as well as less restrictive risk parameters. Isolated Mode will be available for certain asset combinations.
+
+#### [hashtag](https://docs.kamino.finance/products/borrow-lend/cross-and-isolated-modes\#why-borrow-in-each-mode)    Why Borrow in Each Mode?
+
+- Cross: Users wants to Cross Collateralize (Multiply collateral/debt assets in the same loan)
+
+- Isolated: User wants to use a single collateral asset and borrow only one assets—they want deeper liquidity and a higher LTV
+
+
+### [hashtag](https://docs.kamino.finance/products/borrow-lend/cross-and-isolated-modes\#how-it-works)    How It Works
+
+Users will now see a Position Mode toggle in the UI.
+
+![](https://docs.kamino.finance/~gitbook/image?url=https%3A%2F%2F741543836-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDGxGrFuaWUFzMv9IjZMP%252Fuploads%252F6LJYTvKTbFaCnACd7aCi%252FCross_isolated_mode_v2.png%3Falt%3Dmedia%26token%3D096098f6-b365-4528-b860-5f742af38786&width=768&dpr=3&quality=100&sign=fddb2b95&sv=2)
+
+Cross and Isolated Toggle
+
+Loans will always be in Cross Mode by default, and in most cases Cross Mode will be the only mode available.
+
+Isolated Mode will only be available when a user wants to borrow an eligible debt asset against an eligible collateral asset. Once a user toggles into Isolated Mode, they instantly have access to more liquidity and/or a higher LTV.
+
+#### [hashtag](https://docs.kamino.finance/products/borrow-lend/cross-and-isolated-modes\#toggling-between-modes)    Toggling Between Modes
+
+- If a user is in Isolated Mode and wants to toggle into Cross Mode they can do so freely, as long as there is enough liquidity in Cross Mode to support their position. If there is not enough liquidity, Cross Mode will be unavailable.
+
+- If a user is in Cross Mode and wants to toggle into Isolated Mode, they need to have an eligible collateral/debt combination.
+
+
+### [hashtag](https://docs.kamino.finance/products/borrow-lend/cross-and-isolated-modes\#available-isolated-pairs)    Available Isolated Pairs
+
+Isolated Mode is in Beta, and limited pairs are currently available. More pairs will be added over time
+
+Available Pairs:
+
+- SOL/PYUSD (Main Market)
+
+- USDC/USDT (Main Market)
+
+- LST/SOL Pairs (Main Market)
+
+
+[PreviousFeeschevron-left](https://docs.kamino.finance/products/borrow-lend/fees) [NextSupplying Assetschevron-right](https://docs.kamino.finance/products/borrow-lend/supplying-assets)
+
+Last updated 1 year ago
+
+## Supply and Withdraw Assets
+Supplying into K-Lend is a simple process:
+
+### [hashtag](https://docs.kamino.finance/products/borrow-lend/supplying-assets\#supply-steps)    Supply Steps
+
+1. Go to Borrow/Lend
+
+2. Choose the asset you want to supply
+
+
+circle-check
+
+Supply APY indicates **how much yield you will earn** by depositing an asset (this does not account for staking APY or kToken fee APY)
+
+1. Click the **Supply button** in the Lending list
+
+
+![](https://docs.kamino.finance/~gitbook/image?url=https%3A%2F%2F741543836-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDGxGrFuaWUFzMv9IjZMP%252Fuploads%252FtluDQ7rScA3z8gfL1OBf%252Fimage.png%3Falt%3Dmedia%26token%3D72deb295-29f7-45d8-a6a6-0ddd268ce174&width=768&dpr=3&quality=100&sign=239905fc&sv=2)
+
+1. In the **Supply pop-up**, select your supply amount and click Supply
+
+
+![](https://docs.kamino.finance/~gitbook/image?url=https%3A%2F%2F741543836-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDGxGrFuaWUFzMv9IjZMP%252Fuploads%252Fum8nHxguU3zVBXyPOvGT%252FScreenshot%25202023-10-23%2520at%252016.19.03.png%3Falt%3Dmedia%26token%3Dc8b18d8e-b9f9-4296-a4bb-61f5ab4abcd6&width=768&dpr=3&quality=100&sign=cc33ea2a&sv=2)
+
+1. If you want to **get more info** about the market for a specific asset, you can click on the asset to go to its Market page, as seen below:
+
+
+![](https://docs.kamino.finance/~gitbook/image?url=https%3A%2F%2F741543836-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDGxGrFuaWUFzMv9IjZMP%252Fuploads%252FvCTNr52JG6nacWyYFsrp%252FScreenshot%25202023-10-23%2520at%252016.21.54.png%3Falt%3Dmedia%26token%3Dafaa907c-9f4e-4c72-81bf-2aed84745dad&width=768&dpr=3&quality=100&sign=274d34ad&sv=2)
+
+Once supplied, you will see your **Position Details** appear at the top of the Borrow/Lend page:
+
+![](https://docs.kamino.finance/~gitbook/image?url=https%3A%2F%2F741543836-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDGxGrFuaWUFzMv9IjZMP%252Fuploads%252FMgRqUMidkb61GSTDC76O%252FScreenshot%25202023-10-23%2520at%252016.57.47.png%3Falt%3Dmedia%26token%3D1b0bff56-faa4-4807-a95f-a4d8c56916c7&width=768&dpr=3&quality=100&sign=a0eea81&sv=2)
+
+### [hashtag](https://docs.kamino.finance/products/borrow-lend/supplying-assets\#withdrawing)    Withdrawing
+
+If you want to withdraw an asset, you can click on the hamburger menu for an asset in Position Details (as picture above), and click Withdraw.
+
+Alternatively, you can also click on the deposit button in the list view; and when in the deposit screen, simply click on the dropdown and select Withdraw:
+
+![](https://docs.kamino.finance/~gitbook/image?url=https%3A%2F%2F741543836-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDGxGrFuaWUFzMv9IjZMP%252Fuploads%252FCwTUfsIAs85f7C9JQzRM%252FScreenshot%25202023-10-23%2520at%252016.45.56.png%3Falt%3Dmedia%26token%3D577d2ec8-5b4d-40f9-b1c3-1fd2e921290c&width=768&dpr=3&quality=100&sign=37dcb55d&sv=2)
+
+[PreviousCross & Isolated Modeschevron-left](https://docs.kamino.finance/products/borrow-lend/cross-and-isolated-modes) [NextBorrowing Assetschevron-right](https://docs.kamino.finance/products/borrow-lend/borrowing-assets)
+
+Last updated 1 year ago
+
+## Borrowing Assets Overview
+Once you have supplied an asset as collateral into K-Lend, you can start borrowing. Borrowing consists of the following steps:
+
+1. Select the asset you want to borrow, then click on the **Borrow button.**
+
+
+circle-info
+
+Borrow APY indicates how much yearly interest you will have to pay on your debt
+
+1. Input the amount you want to borrow, then review the impact it will have on your LTV. You can borrow up to a maximum LTV amount, which is determined by the specific assets you are supplying/borrowing.
+
+A higher LTV moves your position closer to liquidation, whereas a lower LTV makes your position safer from liquidation.
+
+
+![](https://docs.kamino.finance/~gitbook/image?url=https%3A%2F%2F741543836-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDGxGrFuaWUFzMv9IjZMP%252Fuploads%252F6lse3EehmAiohtcpsi4o%252FScreenshot%25202023-10-23%2520at%252017.07.40.png%3Falt%3Dmedia%26token%3D1b610587-fbec-4d0f-bf0d-d3b882df8fe2&width=768&dpr=3&quality=100&sign=53eb329d&sv=2)
+
+The impact of a borrowing action on your position will also be reflected in the **Position Details** at the top of the lending market. For example:
+
+![](https://docs.kamino.finance/~gitbook/image?url=https%3A%2F%2F741543836-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDGxGrFuaWUFzMv9IjZMP%252Fuploads%252F78nK1Q9tqhd4eg5lBPxp%252FScreenshot%25202023-10-23%2520at%252017.16.15.png%3Falt%3Dmedia%26token%3D66b57912-6534-4f70-9a91-510ee1a37a8c&width=768&dpr=3&quality=100&sign=3dda1632&sv=2)
+
+circle-info
+
+Note that **borrowing entails liquidation risk**. If your borrowed assets increase in value compared to your collateral, or your collateral loses value compared to your debt, you move closer to liquidation.
+
+Read more about liquidations.
+
+Check the next section for a closer look at loan management:
+
+[PreviousSupplying Assetschevron-left](https://docs.kamino.finance/products/borrow-lend/supplying-assets) [NextBorrow Incentiveschevron-right](https://docs.kamino.finance/products/borrow-lend/borrowing-assets/borrow-incentives)
+
+Last updated 1 year ago
+
+## Borrowing Incentives Overview
+To grow productive asset usage on Kamino, asset issuers often provide borrow incentives for borrows of a specific debt asset againts a specific collateral asset. This scales borrows of certain assets, while encouraging collateral inflows of others.
+
+In each of the incentives-specific guides below, we cover:
+
+- How Borrow Rewards work
+
+- How APYs are calculated
+
+
+[CASH Borrow Incentiveschevron-right](https://docs.kamino.finance/products/borrow-lend/borrowing-assets/borrow-incentives/cash-borrow-incentives) [cbBTC/USDC Borrow Incentiveschevron-right](https://docs.kamino.finance/products/borrow-lend/borrowing-assets/borrow-incentives/cbbtc-usdc-borrow-incentives)
+
+[PreviousBorrowing Assetschevron-left](https://docs.kamino.finance/products/borrow-lend/borrowing-assets) [NextCASH Borrow Incentiveschevron-right](https://docs.kamino.finance/products/borrow-lend/borrowing-assets/borrow-incentives/cash-borrow-incentives)
+
+Last updated 4 months ago
+
+## CASH Borrow Rewards
+Via the CASH Growth Initiative, Kamino is collaborating with Phantom to scale CASH Borrows on Kamino.
+
+Below, we'll dive into the technicalities of how CASH borrow rewards work. However, in a nutshell, rewards work as follows:
+
+Users earn incentives on CASH borrows, against specific collateral assets (PSOL, USDC and SyrupUSDC in this case). The more CASH you borrow against an eligible collateral asset, the more incentives you earn.
+
+## [hashtag](https://docs.kamino.finance/products/borrow-lend/borrowing-assets/borrow-incentives/cash-borrow-incentives\#borrow-incentives-explained)    Borrow Incentives Explained
+
+**Collateral:** PSOL
+
+**Debt:** USDC
+
+In this scenario, borrow incentives are allocated according to the amount of CASH borrowed against PSOL. Reward amounts will scale as the total amount of CASH debt taken against PSOL collateral increases.
+
+**Rewards Criteria**
+
+- A position must contain PSOL collateral and CASH debt
+
+- In a position with multiple collateral/debt assets, only the weighted amount of CASH borrowed against PSOL is considered
+
+
+**Rewards Calculation**
+
+There are two APY values to consider:
+
+- **Max APY**
+This is the value shown in the market list, and refers to the maximum possible APY a user can earn on their debt:
+`farm apy = total rewards per year / total CASH debt backed by PSOL in market`
+
+
+This is displayed as a blue value below the Supply APY of the Collateral Asset, as well as under the Borrow APY of the Debt Asset, shown below:
+
+![](https://docs.kamino.finance/~gitbook/image?url=https%3A%2F%2F741543836-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDGxGrFuaWUFzMv9IjZMP%252Fuploads%252F5vRXp6XUjkJYL3tpS2Si%252FScreenshot%25202025-06-23%2520at%252016.13.33.png%3Falt%3Dmedia%26token%3Df5bef558-c523-4d6c-b897-45288a7fb82f&width=768&dpr=3&quality=100&sign=8f783962&sv=2)
+
+- **User APY**
+This is the actual rewards a user is earning on their debt based on their collateral/debt composition:
+`user apy = farm apy * ( user CASH debt backed by PSOL / total user CASH debt )`
+Where `user CASH debt backed by PSOL` is calculated as:
+`user CASH debt backed by PSOL = user PSOL collateral / user total collateral * total user CASH debt`
+
+
+This is displayed as a blue value below the Borrow APY of the Debt Asset in the Position Overview of your active loan, and will display the actual APYs you are earning based on your exact position shown below:
+
+![](https://docs.kamino.finance/~gitbook/image?url=https%3A%2F%2F741543836-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDGxGrFuaWUFzMv9IjZMP%252Fuploads%252F0spFjKYjd2PVUAWxfGz3%252FScreenshot%25202025-06-23%2520at%252016.14.20.png%3Falt%3Dmedia%26token%3D66475ecb-acfc-4489-a78e-e8a810f91b01&width=768&dpr=3&quality=100&sign=98394821&sv=2)
+
+A user’s reward amount thus considers the weighted amount of CASH borrowed against PSOL in their position, in relation to total CASH borrowed against PSOL in the market.
+
+We’ll cover a few examples below:
+
+## [hashtag](https://docs.kamino.finance/products/borrow-lend/borrowing-assets/borrow-incentives/cash-borrow-incentives\#borrow-incentives-examples)    Borrow Incentives Examples
+
+circle-info
+
+Let’s assume the Current Farm APY (i.e. Max Possible APY) = 10%
+
+**Example #1:**
+Position with only PSOL collateral and CASH Debt
+
+- PSOL Collateral = $100
+
+- CASH Debt = $50
+
+
+`user apy = farm apy * ( user CASH debt backed by PSOL / total user CASH debt )``user apy = 10% * ( 50 / 50)``user apy = 10%`
+
+In this scenario, the user earns the Maximum APY value on their debt. With `50 CASH Debt` debt, the user would earn `5 CASH` annually. At a `10% Borrow APY`, for example, their CASH rewards would offset 100% of their annual borrow cost.
+
+**Example #2:**
+Position with SOL and PSOL collateral, and CASH Debt
+
+- SOL Collateral = $50
+
+- PSOL Collateral = $100
+
+- CASH Debt = $50
+
+
+In this scenario, we first calculate how much of the user’s CASH debt is backed by PSOL:
+
+`user CASH debt backed by PSOL = ( user PSOL collateral / user total collateral ) * total user CASH debt``user CASH debt backed by PSOL = (100 / 150) * 50``user CASH debt backed by PSOL = 33.33`
+
+This means, out of the total `50 CASH` debt, `33.33 CASH` is backed by the PSOL collateral. We can then calculate the user’s APY:
+
+`user apy = farm apy * ( user CASH debt backed by PSOL / total user CASH debt )``user apy = 10% * ( 33.33 / 50 )``user apy = 6.6%`
+
+In this scenario, the user earns a `6.6% APY` value on their debt. With `50 CASH` debt, the user would earn `3.3 CASH` annually. At a `10% Borrow APY`, for example, their CASH rewards would offset 66% of their annual borrow cost.
+
+**Example #3:**
+Position with PSOL collateral, and CASH and USDT Debt
+
+- PSOL Collateral = $100
+
+- CASH Debt = $50
+
+- USDT Debt = $20
+
+
+In this scenario, the user is borrowing at a 70% LTV, but is earning rewards on only the CASH portion of their debt. In practice this comes down to the same calculation as Example #1, where the user earns:
+
+`user apy = farm apy * ( user CASH debt backed by PSOL / total user CASH debt )``user apy = 10% * ( 50 / 50)``user apy = 10%`
+
+In this case, the user earns `10% APY`, but only on the CASH portion of their debt, so `5 CASH` annually. Were the user to switch their USDT debt to CASH, they would be earning `7 CASH` annually.
+
+This rewards initiative thus encourages users not only to deploy PSOL into Kamino, but to borrow CASH against it, thus leading to a net increase in CASH borrow activity.
+
+[PreviousBorrow Incentiveschevron-left](https://docs.kamino.finance/products/borrow-lend/borrowing-assets/borrow-incentives) [NextcbBTC/USDC Borrow Incentiveschevron-right](https://docs.kamino.finance/products/borrow-lend/borrowing-assets/borrow-incentives/cbbtc-usdc-borrow-incentives)
+
+Last updated 4 months ago
+
+## cbBTC USDC Borrow Incentives
+Kamino launched the cbBTC Growth Initiative to rapidly accelerate cbBTC adoption on the platform, while aggressively scaling USDC borrows.
+
+Users are thus rewarded for the amount of USDC they borrow against cbBTC on Kamino.
+
+Below, we dive into the rewards mechanism in depth, using three borrow scenarios as examples.
+
+## [hashtag](https://docs.kamino.finance/products/borrow-lend/borrowing-assets/borrow-incentives/cbbtc-usdc-borrow-incentives\#borrow-incentives-explained)    Borrow Incentives Explained
+
+**Collateral:** cbBTC
+
+**Debt:** USDC
+
+In this scenario, borrow incentives are allocated according to the amount of USDC borrowed against cbBTC. Reward amounts will scale as the total amount of USDC debt taken against cbBTC collateral increases.
+
+**Rewards Criteria**
+
+- A position must contain cbBTC collateral and USDC debt
+
+- In a position with multiple collateral/debt assets, only the weighted amount of USDC borrowed against cbBTC is considered
+
+
+**Rewards Calculation**
+
+There are two APY values to consider:
+
+- **Max APY**
+This is the value shown in the market list, and refers to the maximum possible APY a user can earn on their debt:
+`farm apy = total rewards per year / total USDC debt backed by cbBTC in market`
+
+
+This is displayed as a blue value below the Supply APY of the Collateral Asset, as well as under the Borrow APY of the Debt Asset, shown below:
+
+![](https://docs.kamino.finance/~gitbook/image?url=https%3A%2F%2F741543836-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDGxGrFuaWUFzMv9IjZMP%252Fuploads%252F5vRXp6XUjkJYL3tpS2Si%252FScreenshot%25202025-06-23%2520at%252016.13.33.png%3Falt%3Dmedia%26token%3Df5bef558-c523-4d6c-b897-45288a7fb82f&width=768&dpr=3&quality=100&sign=8f783962&sv=2)
+
+- **User APY**
+This is the actual rewards a user is earning on their debt based on their collateral/debt composition:
+`user apy = farm apy * ( user USDC debt backed by cbBTc / total user USDC debt )`
+Where `user USDC debt backed by cbBTC` is calculated as:
+`user USDC debt backed by cbBTC = user cbBTC collateral / user total collateral * total user USDC debt`
+
+
+This is displayed as a blue value below the Borrow APY of the Debt Asset in the Position Overview of your active loan, and will display the actual APYs you are earning based on your exact position shown below:
+
+![](https://docs.kamino.finance/~gitbook/image?url=https%3A%2F%2F741543836-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDGxGrFuaWUFzMv9IjZMP%252Fuploads%252F0spFjKYjd2PVUAWxfGz3%252FScreenshot%25202025-06-23%2520at%252016.14.20.png%3Falt%3Dmedia%26token%3D66475ecb-acfc-4489-a78e-e8a810f91b01&width=768&dpr=3&quality=100&sign=98394821&sv=2)
+
+A user’s reward amount thus considers the weighted amount of USDC borrowed against cbBTC in their position, in relation to total USDC borrowed against cbBTC in the market.
+
+We’ll cover a few examples below:
+
+## [hashtag](https://docs.kamino.finance/products/borrow-lend/borrowing-assets/borrow-incentives/cbbtc-usdc-borrow-incentives\#borrow-incentives-examples)    Borrow Incentives Examples
+
+circle-info
+
+Let’s assume the Current Farm APY (i.e. Max Possible APY) = 10%
+
+**Example #1:**
+Position with only cbBTC collateral and USDC Debt
+
+- cbBTC Collateral = $100
+
+- USDC Debt = $50
+
+
+`user apy = farm apy * ( user USDC debt backed by cbBTC / total user USDC debt )``user apy = 10% * ( 50 / 50)``user apy = 10%`
+
+In this scenario, the user earns the Maximum APY value on their debt. With `50 USDC Debt` debt, the user would earn `5 USDC` annually. At a `10% Borrow APY`, for example, their USDC rewards would offset 100% of their annual borrow cost.
+
+**Example #2:**
+Position with SOL and cbBTC collateral, and USDC Debt
+
+- SOL Collateral = $50
+
+- cbBTC Collateral = $100
+
+- USDC Debt = $50
+
+
+In this scenario, we first calculate how much of the user’s USDC debt is backed by cbBTC:
+
+`user USDC debt backed by cbBTC = ( user cbBTC collateral / user total collateral ) * total user USDC debt``user USDC debt backed by cbBTC = (100 / 150) * 50``user USDC debt backed by cbBTC = 33.33`
+
+This means, out of the total `50 USDC` debt, `33.33 USDC` is backed by the cbBTC collateral. We can then calculate the user’s APY:
+
+`user apy = farm apy * ( user USDC debt backed by cbBTC / total user USDC debt )``user apy = 10% * ( 33.33 / 50 )``user apy = 6.6%`
+
+In this scenario, the user earns a `6.6% APY` value on their debt. With `50 USDC` debt, the user would earn `3.3 USDC` annually. At a `10% Borrow APY`, for example, their USDC rewards would offset 66% of their annual borrow cost.
+
+**Example #3:**
+Position with cbBTC collateral, and USDC and USDT Debt
+
+- cbBTC Collateral = $100
+
+- USDC Debt = $50
+
+- USDT Debt = $20
+
+
+In this scenario, the user is borrowing at a 70% LTV, but is earning rewards on only the USDC portion of their debt. In practice this comes down to the same calculation as Example #1, where the user earns:
+
+`user apy = farm apy * ( user USDC debt backed by cbBTC / total user USDC debt )``user apy = 10% * ( 50 / 50)``user apy = 10%`
+
+In this case, the user earns `10% APY`, but only on the USDC portion of their debt, so `5 USDC` annually. Were the user to switch their USDT debt to USDC, they would be earning `7 USDC` annually.
+
+This rewards initiative thus encourages users not only to deploy cbBTC into Kamino, but to borrow USDC against it, thus leading to a net increase in borrow activity on the protocol, and potentially attracting additional USDC deposits.
+
+[PreviousCASH Borrow Incentiveschevron-left](https://docs.kamino.finance/products/borrow-lend/borrowing-assets/borrow-incentives/cash-borrow-incentives) [NextLong/Shortchevron-right](https://docs.kamino.finance/products/long-short)
+
+Last updated 4 months ago
+
+## Long Short Strategies
+[PreviouscbBTC/USDC Borrow Incentiveschevron-left](https://docs.kamino.finance/products/borrow-lend/borrowing-assets/borrow-incentives/cbbtc-usdc-borrow-incentives) [NextLiquiditychevron-right](https://docs.kamino.finance/products/liquidity)
+
+## Kamino Liquidity Vaults
+Automated liquidity vaults were Kamino's first product, launched in August 2022, and it remains the leading LP primitive on Solana. Kamino liquidity vaults issue kTokens to depositors, which are yield-bearing LP tokens that are accepted as collateral in K-Lend.
+
+These kTokens form the basis of powerful DeFi strategies such as leveraged liquidity provision, or delta-neutral liquidity provision, as outlined in the [kToken Collateral](https://docs.kamino.finance/products/borrow-lend/ktoken-collateral) section.
+
+For a comprehensive look at Kamino's Liquidity Vaults, see the [Liquidity Docs](https://docs.kamino.finance/automated-liquidity/).
+
+[PreviousLong/Shortchevron-left](https://docs.kamino.finance/products/long-short) [NextUsing Squadschevron-right](https://docs.kamino.finance/products/using-squads)
+
+Last updated 2 years ago
+
+## Kamino and Squads Integration
+Kamino is integrated with the Squads product suite, which enables any Squads Multisig to deposit into Kamino via the Squads X browser extension.
+
+Below we walk through the Squads setup and how to use Kamino with Squads.
+
+### [hashtag](https://docs.kamino.finance/products/using-squads\#squads-x-setup)    Squads X Setup
+
+To get started with Squads X, two things are required:
+
+1. Squads Multisig
+
+2. Squads Business Subscription ($49 Monthly)
+
+
+Once the above is in place, you can start your Squads X setup - which will enable your multisig to interact with Kamino:
+
+1. Download Squads X browser extension: [squads.so/extensionarrow-up-right](https://squads.so/extension)
+
+2. Generate an access code on Squads, and paste it into your Squads X extension
+
+3. Set up your password
+
+4. Paste your Squads X key into Squads
+
+5. Execute the "Add Squads X" transaction on your Squad
+
+
+Here's a video guide:
+
+spaces%2FDGxGrFuaWUFzMv9IjZMP%2Fuploads%2F6j2L4RfWufQ0Snrv38EF%2Fcreating%20a%20squads%20x%20wallet.mp4
+
+PausePlay
+
+% buffered00:00
+
+00:00
+
+UnmuteMute
+
+Exit fullscreenEnter fullscreenGo to original URL
+
+Your browser does not support HTML5 videos.
+
+Squads X Setup Guide
+
+Once this is done, you can head over to Kamino.
+
+### [hashtag](https://docs.kamino.finance/products/using-squads\#using-squads-on-kamino)    Using Squads on Kamino
+
+#### [hashtag](https://docs.kamino.finance/products/using-squads\#step-1-fee-relayer-setup)    Step 1: Fee Relayer Setup
+
+Before making your first Squads transaction on Kamino, you can enable the Squads X fee relayer
+
+Enabling the Fee Relayer allows any gas fees to be paid directly from your Squads SOL balance, enabling a much smoother transaction UX
+
+1. When prompted to enable fee relayer, you will be redirected to your Squads Settings
+
+2. Click to enable Fee Relayer
+
+3. In your Squads Transactions, execute the fee relayer transaction
+
+
+#### [hashtag](https://docs.kamino.finance/products/using-squads\#step-2-depositing-into-kamino)    Step 2: Depositing into Kamino
+
+Once fee relayer is enabled, you can go ahead and deposit into Kamino with Squads X
+
+1. Select your deposit amount and confirm the transaction
+
+2. Go to your Squads Transactions and execute the Kamino transaction
+
+
+Once executed, you'll see your deposit live in the Kamino UI
+
+Here's a video guide:
+
+spaces%2FDGxGrFuaWUFzMv9IjZMP%2Fuploads%2FO4ITnlBqvoXOPmlixk7P%2Fdepositing%20into%20kamino%20with%20squads.mp4
+
+PausePlay
+
+% buffered00:00
+
+00:00
+
+UnmuteMute
+
+Exit fullscreenEnter fullscreenGo to original URL
+
+Your browser does not support HTML5 videos.
+
+Squads X Kamino Usage Guide
+
+[PreviousLiquiditychevron-left](https://docs.kamino.finance/products/liquidity) [NextToken Infochevron-right](https://docs.kamino.finance/kmno/token-info)
+
+Last updated 10 months ago
+
+## KMNO Staking Overview
+KMNO Staking rewards long-term users of the protocol.
+
+By staking your KMNO, you can boost your points earnings. Over time, your staking multiplier will increase, enabling you to boost your points up to 300%.
+
+Staking goes live upon the KMNO launch, April 30th at 12PM UTC
+
+## [hashtag](https://docs.kamino.finance/kmno/staking\#staking-overview)    Staking Overview
+
+To stake your KMNO, you can go the KMNO staking page, and click "stake". For every $1 of KMNO staked, you earn 3x points per day.
+
+In addition, staking will instantly earn you the Base Staking Boost of 30%. Over time, your Staking Multiplier will increase as you remain staked, thus increasing your Total Staking Boost over time.
+
+#### [hashtag](https://docs.kamino.finance/kmno/staking\#key-values)    Key Values:
+
+- Base Staking Boost: 30% - Default boost earned by staking
+
+- Daily Multiplier: 0.5% - Rate by which staking boost increases per day as you remain staked
+
+- Staking Multiplier: Total multiplier you have accumulated by remaining staked over time
+
+- Total Staking Boost: Total staking boost you receive, consisting of base and multiplier
+
+- Max Boost: The maximum total boost you can accrue is 300%
+
+
+See here for examples of how these boosts work in practice.
+
+## [hashtag](https://docs.kamino.finance/kmno/staking\#how-staking-boost-works)    How Staking Boost Works
+
+For every 1 KMNO staked, your Staking Boost applies to 2 of your points per day. The more points per day you earn, and the more KMNO you have staked over time, the higher your boosted points.
+
+The formula for boosted points is as follows:
+
+`kmno_staked * 2 * total_staking_boost`
+
+For example, if you have 1000 KMNO staked, your staking boost will apply to a maximum of 2000 of your points per day.
+
+With a 50% staking boost, you can earn a maximum of:
+
+`1000 * 2 * 50% = 1000 max additional points`
+
+The amount of points that can be boosted is capped to your points per day. Eg. in the above scenario, if a user was only earning 500 points per day, the 50% staking boost would only apply to those 500 points.
+
+In this case, the user would earn:
+
+`500 * 50% = 250 additional points`
+
+circle-info
+
+Note that the staking boost only applies to points per day earned by having active positions in Kamino. It does not apply to your points earned from staking KMNO.
+
+## [hashtag](https://docs.kamino.finance/kmno/staking\#staking-multiplier)    Staking Multiplier
+
+KMNO staking is aimed at rewarding long-term users. Every day a user remains staked, their staking multiplier will increase by 0.5%. If a user keeps the same amount staked for a year, their Staking Multiplier will be at 182.5%.
+
+The maximum staking multiplier is 270% - which can be achieved by keeping the same amount staked for exactly 540 days. Additional deposits will increase the duration needed to achieve maximum boost - as explained below:
+
+### [hashtag](https://docs.kamino.finance/kmno/staking\#staking-multiplier-decrease)    Staking Multiplier Decrease
+
+Staking Multiplier will decrease when a user stakes more KMNO
+
+**For example:**
+
+- User has 1000 KMNO staked
+
+- Staking Multiplier = 50%
+
+- User stakes an additional 2000 KMNO
+
+- New stake balance = 3000 KMNO
+
+
+Their new Staking Multiplier can be calculated as:
+
+`current_staking_multiplier * (1 - additional_stake / new_stake_balance)`
+
+`50% * (1 - 2000/3000) = 17%`
+
+Thus, Staking Multiplier decreases proportionally to the additional amount of KMNO staked.
+
+## [hashtag](https://docs.kamino.finance/kmno/staking\#staking-scenario-examples)    Staking Scenario Examples
+
+### [hashtag](https://docs.kamino.finance/kmno/staking\#scenario-1-basic-staking-example)    Scenario 1: Basic Staking Example
+
+- User A earns 1,000,000 points per day (from protocol positions + loyalty boost)
+
+- User A stakes their 200,000 KMNO
+
+- KMNO Price = $0.2
+
+
+The moment User A stakes their KMNO, they earn the 30% Base Staking Boost.
+
+This boost applies to a maximum 200,000 \* 2 = 400,000 points per day (ppd)
+
+Thus, max Staking Points Boost: 400,000 \* 30% = 120,000 ppd
+
+In addition, User A also earns 3x points per day for every USD of KMNO staked
+
+200,000 \* 0.2 \* 3 = 120,000 ppd
+
+**Total Points Per Day**
+
+Thus, the moment User A stakes their 200,000 KMNO, they earn a total 240,000 ppd - and a total 1,240,000 ppd
+
+### [hashtag](https://docs.kamino.finance/kmno/staking\#scenario-2-continuous-staking-for-90-days)    Scenario 2: Continuous Staking For 90 Days
+
+- User A earns 1,000,000 points per day (from protocol positions + loyalty boost)
+
+- User A has kept his 200,000 KMNO staked for 90 days
+
+- KMNO price is now at $0.25
+
+
+User A has staked for 90 days, with the Daily Multiplier of 0.5%, User A now has a Staking Multiplier of 45%.
+
+Combined with the 30% Base Staking Boost, User A is now earning a Total Staking Boost of 30 + 45 = 75%
+
+This boost applies to a maximum 200,000 \* 2 = 400,000 points per day (ppd)
+
+Thus, max Staking Points Boost: 400,000 \* 75% = 300,000 ppd
+
+In addition, User A earns 3x points per USD of KMNO Staked: 200,000 \* 0.25 \* 3 = 150,000 ppd
+
+**Total Points Per Day**
+
+Thus, after remaining staked for 90 days, User A earns a total 450,000 additional ppd - and a total 1,450,000 ppd
+
+### [hashtag](https://docs.kamino.finance/kmno/staking\#scenario-3-staking-additional-kmno)    Scenario 3: Staking Additional KMNO
+
+User A decides he wants to maximize his staking boost, so he buys more KMNO from the market and wants to stake it
+
+- User A earns 1,000,000 ppd (from protocol positions + loyalty boost)
+
+- User A has kept his 200,000 KMNO staked for 90 days
+
+
+
+  - Because of staking, User A has accrued Staking Multiplier of 45%
+
+
+- KMNO price is now at $0.25
+
+- User A buys another 100,000 KMNO and stakes it
+
+
+Based on [Scenario #2](https://docs.kamino.finance/kmno/staking#scenario-2-continuous-staking-for-90-days) above, User A is currently earning 1,450,000 ppd
+
+**Additional Stake**
+
+With the additional stake, their Staking Multiplier will decrease as follows:
+
+`current_staking_multiplier * (1 - additional_stake / new_stake_balance)`
+
+So: 0.45 \* (1 - 100,000 / 300,000) = 0.3 = 30%
+
+Due to the additional stake, the Staking Multiplier decreased from 45% -> 30%
+
+As result, total staking boost is now 30% + 30% = 60%
+
+**Additional Stake Impact**
+
+The total KMNO staked is now 300,000, thus the staking boost applies to a maximum 600,000 points per day: 600,000 \* 0.6 = 360,000 ppd
+
+In addition, User A earn 3x points per USD of KMNO staked = 300,000 \* 0.25 \* 0.3 = 225,000 ppd
+
+**Total Points Per Day**
+
+Thus, after remaining staked for 90 days, then staking an additional 100,000 KMNO, User A earns a total 825,000 additional ppd - and a total 1,825,000 ppd
+
+### [hashtag](https://docs.kamino.finance/kmno/staking\#scenario-4-staking-for-maximum-boost)    Scenario 4: Staking for Maximum Boost
+
+User A now remains staked for another 540 days, and is now earning the maximum boost of 300%
+
+- User A earns 1,000,000 ppd (from protocol positions + loyalty boost)
+
+- User A has kept his 300,000 KMNO staked for 540 days
+
+
+
+  - Because of staking, User A has accrued the max multiplier of 270%
+
+
+- KMNO price is at $0.25
+
+
+This boost applies to a maximum 300,000 \* 2 = 600,000 ppd
+
+Thus, max Staking Points Boost: 600,000 \* 300% = 1,800,000 ppd
+
+In addition, User A earns 3x points per USD of KMNO Staked: 300,000 \* 0.25 \* 3 = 225,000 ppd
+
+**Total Points Per Day**
+
+Thus, after achieving the maximum boost, User A earns a total 2,025,000 additional ppd - and a total 3,025,000 ppd
+
+### [hashtag](https://docs.kamino.finance/kmno/staking\#scenario-5-withdrawing-and-staking-more-than-points-earning)    Scenario 5: Withdrawing & Staking More Than Points Earning
+
+User A has 300,000 KMNO staked, now decides to withdraw 200,000 KMNO
+
+- User A earns 1,000,000 ppd (from protocol positions + loyalty boost)
+
+- User A now has 100,000 KMNO stake remaining
+
+- KMNO price is at $0.25
+
+
+Unstaking does not impact Staking Multiplier, so User A still has a Total Staking Boost of 300%
+
+This boost applies to a maximum 100,000 \* 2 = 200,000 ppd
+
+Thus, max Staking Points Boost: 200,000 \* 300% = 600,000 ppd
+
+In addition, User A earns 3x points per USD of KMNO Staked: 100,000 \* 0.25 \* 3 = 75,000 ppd
+
+**Total Points Per Day**
+
+Thus, after unstaking 200,000 KMNO, User A earns a total 675,000 additional ppd - and a total 1,675,000 ppd
+
+### [hashtag](https://docs.kamino.finance/kmno/staking\#scenario-6-more-kmno-staked-vs-points-per-day)    Scenario 6: More KMNO Staked vs Points Per Day
+
+What happens when a user has more KMNO staked than they are earning points per day?
+
+User A withdraws funds. They used to earn 1,000,000 points per day, now they are earning 100,000
+
+- User A now earns 100,000 ppd (from protocol positions + loyalty boost)
+
+- User A has 100,000 KMNO stake
+
+- User A has the maximum staking boost of 300%
+
+- KMNO price is at $0.25
+
+
+The staking boost applies to a maximum 100,000 \* 2 = 200,000 points per day (ppd)
+
+Thus, max Staking Points Boost: 200,000 \* 300% = 600,000 ppd
+
+**However - User A is only earning 100,000 ppd**
+
+As a result, the staking boost only applies to the 100,000 points per day that User A is earning.
+
+Thus: User A Staking Points Boost: 100,000 \* 300% = 300,000 ppd
+
+circle-info
+
+In essence, you can only boost the points that you are earning. If your amount of KMNO staked allows you to boost 200,000 points, but you are only earning 100,000 points, then only that 100,000 points will be boosted.
+
+[PreviousToken Infochevron-left](https://docs.kamino.finance/kmno/token-info) [NextPointschevron-right](https://docs.kamino.finance/kmno/points)
+
+Last updated 1 year ago
+
+## Kamino Points Program
+Kamino's Points program will have various Seasons, coinciding with multiple rounds of $KMNO token drops. Each season will be unique in its approach.
+
+### [hashtag](https://docs.kamino.finance/kmno/points/seasons\#why-seasons)    Why Seasons?
+
+Seasons are a good way of rewarding long-term protocol usage while incentivizing growth in different parts of the Kamino product suite. We have a huge line-up of exciting products in the pipeline, and we'll incentivize users to grow their usage patterns as we grow the protocol.
+
+### [hashtag](https://docs.kamino.finance/kmno/points/seasons\#will-every-season-look-more-or-less-the-same)    Will every Season look more or less the same?
+
+Definitely not! Just as we anticipate huge product growth, we foresee the points program growing substantially over time.
+
+Each season will have:
+
+- Different duration
+
+- New mechanics
+
+- Unique airdrop schedules
+
+- Different allocation
+
+
+### [hashtag](https://docs.kamino.finance/kmno/points/seasons\#how-many-seasons-will-there-be)    How many Seasons will there be?
+
+At least 3
+
+[PreviousRates & Boostschevron-left](https://docs.kamino.finance/kmno/points/rates-and-boosts) [NextSeason 1chevron-right](https://docs.kamino.finance/kmno/points/seasons/season-1)
+
+Last updated 1 year ago
+
+## Kamino Points Season 1
+Season 1 of Kamino Points initiates the next phase of Kamino Finance.
+
+This season will be focused on rewarding our existing users, while incentivizing new users to explore our product suite. We've designed the points system to be completely dynamic, enabling us to reward certain behaviors on the protocol.
+
+Season 1 will run for ~3 months, culminating in the $KMNO Genesis Airdrop in late Q1 / early Q2 2024.
+
+### [hashtag](https://docs.kamino.finance/kmno/points/seasons/season-1\#how-it-works)    How It Works
+
+Using ANY product on Kamino earns points - from Borrow/Lend, to Liquidity Vaults, to Multiply and Long/Short.
+
+**Default Point Rates:**
+
+- Kamino Lend Supply: 1 point per dollar per day
+
+- Kamino Lend Borrow: 1 point per dollar per day
+
+- Kamino Liquidity Vaults: 1 point per dollar per day
+
+
+**Boosted Rates:**
+
+- SOL, USDC, USDT, USDH Supply: 3 points per dollar per day
+
+- SOL, USDC, USDT, USDH Borrow: 5 points per dollar per day
+
+- Vault Boosts will follow soon
+
+
+### [hashtag](https://docs.kamino.finance/kmno/points/seasons/season-1\#ecosystem-boosts)    Ecosystem Boosts
+
+Boosts can be assigned to any action/product on the protocol - but it can also be awarded for using other Solana ecosystem products or holding certain NFTs.
+
+Stay tuned in [Telegramarrow-up-right](https://t.me/+z4XqPSCki-hhMDc0) for more news on points boosts!
+
+### [hashtag](https://docs.kamino.finance/kmno/points/seasons/season-1\#limitations)    Limitations
+
+We want to encourage users to explore our products, and use them to serve their financial needs. We've designed the boost system to achieve this, while adding some limitations on less productive usage. [Read here](https://docs.kamino.finance/kmno/points/rates-and-boosts#limitations-on-farming) for more.
+
+### [hashtag](https://docs.kamino.finance/kmno/points/seasons/season-1\#airdrop)    Airdrop
+
+Season 1 will culminate in the Genesis Airdrop, which is planned for Q1/Q2 2024. More news will follow.
+
+[PreviousSeasonschevron-left](https://docs.kamino.finance/kmno/points/seasons) [NextSeason 2chevron-right](https://docs.kamino.finance/kmno/points/seasons/season-2)
+
+Last updated 1 year ago
+
+## Kamino Points Season 2
+Season 2 of Kamino Points is the next phase of growth for the protocol
+
+This season will be focused on rapidly growing the Kamino user base, and encouraging users to explore the Kamino product suite. We've designed the points system to be completely dynamic, enabling us to reward certain behaviors on the protocol.
+
+Season 2 will run for ~3 months following the $KMNO Genesis event in April.
+
+### [hashtag](https://docs.kamino.finance/kmno/points/seasons/season-2\#how-it-works)    How It Works
+
+Using almost any products on Kamino will earn points - from Borrow/Lend, to Liquidity Vaults, to Multiply and Long/Short.
+
+**Default Point Rates:**
+
+- Kamino Lend Supply: 1 point per dollar per day
+
+- Kamino Lend Borrow: 1 point per dollar per day
+
+- Kamino Liquidity Vaults: 1 point per dollar per day
+
+
+**Boosted Rates:**
+
+Various actions on the protocol receive boosted points, enabling users to earn more points than the default rates above. These boosts are dynamic, and can always be tracked on the [Rates & Boosts tabarrow-up-right](https://app.kamino.finance/points?seasonTab=season2&tab=boost&breakdownSortBy%5B0%5D%5Bid%5D=totalPoints&breakdownSortBy%5B0%5D%5Bdesc%5D=true&leaderboardSortBy%5B0%5D%5Bid%5D=liquidityPoints&leaderboardSortBy%5B0%5D%5Bdesc%5D=true&currentPointBoostsSortBy%5B0%5D%5Bid%5D=boost&currentPointBoostsSortBy%5B0%5D%5Bdesc%5D=true&pointsAllocationSortBy%5B0%5D%5Bid%5D=points&pointsAllocationSortBy%5B0%5D%5Bdesc%5D=true&page=1&pageSize=50).
+
+### [hashtag](https://docs.kamino.finance/kmno/points/seasons/season-2\#staking-boosts)    Staking Boosts
+
+Once KMNO staking is live, users will be able to stake their KMNO tokens to earn boosted points. Points boosts can be multiplied over time, up to a maximum of 200%. For more info on KMNO staking, [read here](https://docs.kamino.finance/kmno/staking).
+
+### [hashtag](https://docs.kamino.finance/kmno/points/seasons/season-2\#limitations)    Limitations
+
+We want to encourage users to explore our products, and use them to serve their financial needs. We've designed the boost system to achieve this, while adding some limitations on less productive usage. [Read here](https://docs.kamino.finance/kmno/points/rates-and-boosts#limitations-on-farming) for more.
+
+### [hashtag](https://docs.kamino.finance/kmno/points/seasons/season-2\#airdrop)    Airdrop
+
+Season 1 will culminate in the Genesis Airdrop, which is planned for Q1/Q2 2024. More news will follow.
+
+[PreviousSeason 1chevron-left](https://docs.kamino.finance/kmno/points/seasons/season-1) [NextSDK & Smart Contractschevron-right](https://docs.kamino.finance/build-on-kamino/sdk-and-smart-contracts)
+
+Last updated 1 year ago
+
+## Kamino SDK Overview
+### [hashtag](https://docs.kamino.finance/build-on-kamino/sdk-and-smart-contracts\#github-repo)    Github Repo
+
+[**Kamino Codebase** arrow-up-right](https://github.com/Kamino-Finance)
+
+### [hashtag](https://docs.kamino.finance/build-on-kamino/sdk-and-smart-contracts\#sdk)    SDK
+
+[**Lending SDK** arrow-up-right](https://github.com/Kamino-Finance/klend-sdk)
+
+[**Liquidity SDK** arrow-up-right](https://github.com/hubbleprotocol/hubble-common)
+
+### [hashtag](https://docs.kamino.finance/build-on-kamino/sdk-and-smart-contracts\#reading-kamino-smart-contracts-data)    Reading Kamino Smart contracts data:
+
+#### [hashtag](https://docs.kamino.finance/build-on-kamino/sdk-and-smart-contracts\#kamino-lend-program)    **Kamino Lend Program:**
+
+- Program ID: [GzFgdRJXmawPhGeBsyRCDLx4jAKPsvbUqoqitzppkzkWarrow-up-right](https://solscan.io/account/GzFgdRJXmawPhGeBsyRCDLx4jAKPsvbUqoqitzppkzkW)
+
+- Multisig: [6hhBGCtmg7tPWUSgp3LG6X2rsmYWAc4tNsA6G4CnfQbMarrow-up-right](https://solscan.io/account/6hhBGCtmg7tPWUSgp3LG6X2rsmYWAc4tNsA6G4CnfQbM)
+
+
+#### [hashtag](https://docs.kamino.finance/build-on-kamino/sdk-and-smart-contracts\#kamino-liquidity-program)    Kamino Liquidity Program:
+
+- Program ID: [E35i5qn7872eEmBt15e5VGhziUBzCTm43XCSWvDoQNNvarrow-up-right](https://solscan.io/account/E35i5qn7872eEmBt15e5VGhziUBzCTm43XCSWvDoQNNv)
+
+- Multisig: [BccSdKrSsjw4XKKjTPKak2wur1C9dMX3tmXoFwFAU7oharrow-up-right](https://solscan.io/account/BccSdKrSsjw4XKKjTPKak2wur1C9dMX3tmXoFwFAU7oh)
+
+
+#### [hashtag](https://docs.kamino.finance/build-on-kamino/sdk-and-smart-contracts\#kamino-vaults-program)    Kamino Vaults Program:
+
+- Program ID: [Cyjb5r4P1j1YPEyUemWxMZKbTpBiyNQML1S1YpPvi9xEarrow-up-right](https://solscan.io/account/Cyjb5r4P1j1YPEyUemWxMZKbTpBiyNQML1S1YpPvi9xE)
+
+- Multisig: [8ksXVE6SMSjQ9sPbj2XQ4Uxx6b7aXh9kHeq4nXMD2tDnarrow-up-right](https://solscan.io/account/8ksXVE6SMSjQ9sPbj2XQ4Uxx6b7aXh9kHeq4nXMD2tDn)
+
+
+### [hashtag](https://docs.kamino.finance/build-on-kamino/sdk-and-smart-contracts\#interacting-with-the-smart-contracts)    Interacting with the Smart Contracts:
+
+#### [hashtag](https://docs.kamino.finance/build-on-kamino/sdk-and-smart-contracts\#web-app)    [Web Apparrow-up-right](https://kamino.finance/)
+
+Kamino runs its own front-end for the Kamino smart contracts, accessible by anyone with an internet connection, and within an allowed jurisdiction.
+
+#### [hashtag](https://docs.kamino.finance/build-on-kamino/sdk-and-smart-contracts\#idl)    [IDLarrow-up-right](https://explorer.solana.com/address/6LtLpnUFNByNXLyCoK9wA2MykKAmQNZKBdY8s47dehDc/anchor-program)
+
+Write Python/C++/Rust programs to interact with the smart contracts using the on-chain IDL
+
+[PreviousSeason 2chevron-left](https://docs.kamino.finance/kmno/points/seasons/season-2) [NextDeveloper Documentationchevron-right](https://docs.kamino.finance/build-on-kamino/developer-documentation)
+
+Last updated 6 months ago
+
+## Kamino Developer Docs
+[PreviousSDK & Smart Contractschevron-left](https://docs.kamino.finance/build-on-kamino/sdk-and-smart-contracts) [NextBug Bountychevron-right](https://docs.kamino.finance/build-on-kamino/bug-bounty)
+
+## Kamino Bug Bounty
+Kamino offers bounties for reporting security issues.
+
+Report issues to [security@kamino.financeenvelope](mailto:security@kamino.finance) and make sure to include your GitHub username.
+
+### [hashtag](https://docs.kamino.finance/build-on-kamino/bug-bounty\#full-info)    Full Info
+
+[![Logo](https://docs.kamino.finance/~gitbook/image?url=https%3A%2F%2Fgithub.com%2Ffluidicon.png&width=20&dpr=3&quality=100&sign=76c51601&sv=2)audits/docs/SECURITY.md at master · Kamino-Finance/auditsGitHubchevron-right](https://github.com/Kamino-Finance/audits/blob/master/docs/SECURITY.md)
+
+### [hashtag](https://docs.kamino.finance/build-on-kamino/bug-bounty\#overview)    Overview
+
+**Smart Contracts**
+
+Critical
+
+Up to USD $500,000
+
+High
+
+USD $100,000
+
+Medium
+
+USD $10,000
+
+Low
+
+USD $2,500
+
+**Websites and Applications**
+
+Critical
+
+Up to USD $50,000
+
+High
+
+USD $10,000
+
+Medium
+
+USD $5,000
+
+Low
+
+USD $500
+
+[PreviousDeveloper Documentationchevron-left](https://docs.kamino.finance/build-on-kamino/developer-documentation) [NextBrand Assetschevron-right](https://docs.kamino.finance/build-on-kamino/brand-assets)
+
+Last updated 8 months ago
+
+## Kamino Brand Assets
+file-archive
+
+191KB
+
+[Kamino Brand Assets.zip](https://741543836-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FDGxGrFuaWUFzMv9IjZMP%2Fuploads%2FoLh7AgjwIVV3ryDx0QzT%2FKamino%20Brand%20Assets.zip?alt=media&token=42b26bb8-1e71-475e-bac9-a9579814b667)
+
+archive
+
+downloadDownload [arrow-up-right-from-squareOpen](https://741543836-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FDGxGrFuaWUFzMv9IjZMP%2Fuploads%2FoLh7AgjwIVV3ryDx0QzT%2FKamino%20Brand%20Assets.zip?alt=media&token=42b26bb8-1e71-475e-bac9-a9579814b667)
+
+[PreviousBug Bountychevron-left](https://docs.kamino.finance/build-on-kamino/bug-bounty)
+
+Last updated 1 year ago
+
+## kTokens as Collateral
+Kamino Lend can take concentrated liquidity (CLMM) LP positions as collateral, making it the first protocol in DeFi that allows users to provide leverage CLMM liquidity across a wide range of strategies.
+
+These LP tokens, called kTokens, are minted when depositing into Kamino's automated liquidity vaults.
+
+circle-check
+
+**LP yield is always auto-compounded** When your kToken is deposited in Kamino Lend, it will continue to earn all the yield from the LP position. kTokens are built to be the ultimate yield-bearing collateral asset.
+
+## [hashtag](https://docs.kamino.finance/products/borrow-lend/ktoken-collateral\#how-it-works)    How it Works
+
+- When you deposit into any of Kamino's liquidity vaults, you receive a kToken in return, which represents the value of your liquidity position. All the fees & incentives you earn in the liquidity position (trading fees, DEX incentives, and Kamino incentives) are auto-compounded into your kTokens
+
+- kTokens can be deposited as collateral into Kamino Lend, just like any other token like SOL or USDC. While deposited, you continue to earn the yield from the liquidity
+
+- You can borrow assets against these kTokens to loop your liquidity, or even borrow assets to remain delta-neutral
+
+
+## [hashtag](https://docs.kamino.finance/products/borrow-lend/ktoken-collateral\#ktoken-lending-strategies)    kToken Lending Strategies
+
+The ability to use kTokens as collateral creates a wide range of strategies for users. We'll cover some of these below:
+
+Yield Loop
+
+Delta Neutral
+
+SOL Long
+
+circle-check
+
+This kToken strategy type will soon be automated in a one-click Multiply vault
+
+**Description**
+
+Deposit a SOL or stablecoin kToken & borrow the underlying asset to loop yield with minimal liquidation risk
+
+**Applicable kTokens**
+
+Any with price exposure to a single asset (eg. mSOL-SOL, UXD-USDC, bSOL-JitoSOL etc.)
+
+**Example: mSOL-SOL**
+
+If you deposit into the mSOL-SOL vault on Kamino, you receive the kmSOL-SOL kToken. You can then deposit this kToken into Kamino Lend. If you borrow SOL, you maintain SOL-only exposure in the position.
+
+The borrowed SOL can then be redeposited into the mSOL-SOL vault, which means you mint more kmSOL-SOL tokens. These kToken can once again be deposited into K-Lend to borrow more SOL.
+
+As long as the liquidity vault yield remains higher than the borrow APY of SOL, your position earns positive Net APY.
+
+**Strategy Benefits**
+
+- Minimal liquidation risk
+
+- Boosted yield
+
+
+**Strategy Risk**
+
+- Asset depeg risk
+
+
+**Description**
+
+Deposit a blue-chip kToken & borrow the volatile asset to leverage exposure
+
+**Applicable kTokens**
+
+Any with a volatile-stable asset pairing (eg. SOL-USDC, tBTC-USDC, mSOL-USDC etc.)
+
+**Example: SOL-USDC**
+
+If you deposit into the SOL-USDC vault on Kamino, you receive the kSOL-USDC kToken. You can then deposit this kToken into Kamino Lend. If you borrow the correct amount of SOL, you can maintain delta-neutral exposure.
+
+circle-info
+
+Delta-neutral means that you do not have exposure to price movements. If you are delta-neutral with SOL-USDC, it means your position value is minimally impacted by SOL price action.
+
+Maintaining a delta-neutral position requires you to consistently monitor and adjust your SOL borrow position to remain delta-neutral. This is **NOT** a passive strategy.
+
+If you do remain delta-neutral you can earn the transaction fees on a vault while minimizing the impact of impermanent loss. This is a particularly valuable strategy for vaults like SOL-USDC that tend to earn the highest yields in DeFi
+
+**Strategy Benefits**
+
+- High yield earnings
+
+- No exposure to price movements
+
+
+**Strategy Risk**
+
+- Requires consistent manual management
+
+
+Just like supplying SOL to borrow USDC, and acquire more SOL to loop your SOL exposure, you can do the same with kTokens.
+
+**Applicable kTokens**
+
+Any SOL-only kTokens (eg. mSOL-SOL, JitoSOL-SOL, JitoSOL-bSOL etc.)
+
+**Example: JitoSOL-bSOL**
+
+If you deposit into the JitoSOL-bSOL vault on Kamino, you receive the kJitoSOL-bSOL kToken. You can then deposit this kToken into Kamino Lend. If you borrow USDC, swap it back into either SOL token, and redeposit into the vault, you can redeposit the kTokens into Kamino.
+
+This has the same effect of looping a token using the Long/Short vaults.
+
+circle-exclamation
+
+These positions are high-effort to manage, and should not be viewed as a passive liquidity strategy
+
+**Strategy Benefits**
+
+- Earn yield while long
+
+
+**Strategy Risks**
+
+- Liquidation Risk - just like in a standard leverage long, you can be liquidated
+
+- Exposure to both assets in the kToken (thus the position entails depeg risk)
+
+
+### [hashtag](https://docs.kamino.finance/products/borrow-lend/ktoken-collateral\#current-lp-tokens-accepted-as-collateral)    Current LP tokens accepted as collateral:
+
+UXD-USDC
+
+JitoSOL-SOL
+
+mSOL-SOL
+
+bSOL-SOL
+
+Last updated 2 years ago
+

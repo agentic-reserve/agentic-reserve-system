@@ -1,0 +1,72 @@
+# Solana Agent Kit
+
+## Docs
+
+- [MCP Adapter](https://docs.sendai.fun/docs/v2/adapters/mcp/mcp-adapter-intro.md): Create a Model Context Protocol server for the Solana Agent Kit
+- [n8n Integration](https://docs.sendai.fun/docs/v2/adapters/n8n/n8n-adapter-intro.md): Integrate Solana Agent Kit with n8n workflows
+- [null](https://docs.sendai.fun/docs/v2/devrel-agents/jito.md)
+- [Crossmint Solana Agent](https://docs.sendai.fun/docs/v2/examples/embedded-wallets/crossmint.md): Modern web application with Crossmint wallet integration for Solana Agent Kit
+- [Para Plugin Example](https://docs.sendai.fun/docs/v2/examples/embedded-wallets/para.md): Integration example of Solana Agent Kit with Para plugins
+- [Phantom Agent Starter](https://docs.sendai.fun/docs/v2/examples/embedded-wallets/phantom.md): Modern Chat Agent with Phantom wallet integration for Solana Agent Kit
+- [Privy Agent Tanstack Starter](https://docs.sendai.fun/docs/v2/examples/embedded-wallets/privy.md): Modern web application with Privy wallet integration for Solana Agent Kit
+- [Privy Server wallet NextJS Starter](https://docs.sendai.fun/docs/v2/examples/embedded-wallets/privy-server-wallet.md): Modern Next.js 15 starter with Privy authentication and Solana Agent Kit
+- [Privy App Kit - React Native](https://docs.sendai.fun/docs/v2/examples/embedded-wallets/react-native.md): Mobile chat application for Solana blockchain interaction with React Native and Privy
+- [Turnkey Agent Starter](https://docs.sendai.fun/docs/v2/examples/embedded-wallets/turnkey.md): Modern web application with Turnkey wallet integration for Solana Agent Kit
+- [Introduction](https://docs.sendai.fun/docs/v2/fraction/intro.md): Split any transaction into fractions on Solana with automated revenue distribution
+- [Fraction SDK](https://docs.sendai.fun/docs/v2/fraction/sdk.md): TypeScript SDK for integrating with the Fraction protocol on Solana
+- [Adrena Protocol Integration](https://docs.sendai.fun/docs/v2/integrations/defi-integration/adrena.md): Learn how to use perpetual trading functionality with Adrena Protocol
+- [AllDomains Integration](https://docs.sendai.fun/docs/v2/integrations/defi-integration/alldomains.md): Manage and resolve domains across multiple TLDs on Solana
+- [Allora Integration](https://docs.sendai.fun/docs/v2/integrations/defi-integration/allora.md): Learn how to use Allora price inference and topic functionality
+- [deBridge Integration](https://docs.sendai.fun/docs/v2/integrations/defi-integration/debridge.md): Learn how to use cross-chain bridging functionality with deBridge protocol
+- [DexScreener Integration](https://docs.sendai.fun/docs/v2/integrations/defi-integration/dexscreener.md): Learn how to use DexScreener and Jupiter token lookup functionality
+- [Drift Protocol Integration](https://docs.sendai.fun/docs/v2/integrations/defi-integration/drift.md): Manage Drift user accounts, vaults, and trading on Solana
+- [Flash Trade Integration](https://docs.sendai.fun/docs/v2/integrations/defi-integration/flashtrade.md): Leverage trading on Flash.Trade with position management
+- [null](https://docs.sendai.fun/docs/v2/integrations/defi-integration/fluxbeam.md)
+- [Jupiter Exchange Swaps](https://docs.sendai.fun/docs/v2/integrations/defi-integration/jupiter_exchange_swaps.md): Learn how to swap tokens using Jupiter Exchange integration
+- [Launch Token on Pump.fun](https://docs.sendai.fun/docs/v2/integrations/defi-integration/launch_pumpfun.md): Learn how to launch tokens on Pump.fun with custom metadata and liquidity
+- [Manifest Trading Integration](https://docs.sendai.fun/docs/v2/integrations/defi-integration/manifest_market.md): Learn how to use Manifest protocol for market making and trading
+- [Mayan Cross chain Swap](https://docs.sendai.fun/docs/v2/integrations/defi-integration/mayan.md): Learn how to perform cross-chain token swaps using Mayan Finance
+- [Meteora Pool Creation](https://docs.sendai.fun/docs/v2/integrations/defi-integration/meteora.md): Learn how to create DLMM and Dynamic AMM pools with Meteora
+- [OKX DEX Integration](https://docs.sendai.fun/docs/v2/integrations/defi-integration/okx.md): Learn how to use OKX DEX features with Solana Agent Kit
+- [OpenBook Market Creation](https://docs.sendai.fun/docs/v2/integrations/defi-integration/openbook_market.md): Create and configure markets on OpenBook DEX
+- [Orca Whirlpool Integration](https://docs.sendai.fun/docs/v2/integrations/defi-integration/orca_whirlpool.md): Learn how to interact with Orca Whirlpools for concentrated liquidity
+- [Pyth Price Feeds](https://docs.sendai.fun/docs/v2/integrations/defi-integration/pyth.md): Fetch real-time price data from Pyth Network oracles
+- [Ranger Protocol](https://docs.sendai.fun/docs/v2/integrations/defi-integration/ranger.md): Learn how to interact with Ranger Protocol for perpetual trading operations
+- [Raydium Pools & Launchlab](https://docs.sendai.fun/docs/v2/integrations/defi-integration/raydium_pools.md): Create liquidity pools and launch tokens on Raydium using AMM V4, CLMM, CPMM, and Launchlab
+- [Sanctum](https://docs.sendai.fun/docs/v2/integrations/defi-integration/sanctum.md): Learn how to interact with Sanctum for LST (Liquid Staking Token) operations
+- [Solana Name Service (SNS)](https://docs.sendai.fun/docs/v2/integrations/defi-integration/sns.md): Register and manage your .SOL domains using SNS
+- [SolutioFi Token Management](https://docs.sendai.fun/docs/v2/integrations/defi-integration/solutiofi.md): Learn how to manage tokens using SolutioFi protocol integration
+- [Switchboard Feed Simulation](https://docs.sendai.fun/docs/v2/integrations/defi-integration/switchboard.md): Learn how to simulate Switchboard oracle price feeds
+- [Voltr Vault Integration](https://docs.sendai.fun/docs/v2/integrations/defi-integration/voltr.md): Learn how to interact with Voltr vaults for deposits, withdrawals, and position management
+- [Wormhole Integration](https://docs.sendai.fun/docs/v2/integrations/defi-integration/wormhole.md): Learn how to use Wormhole for cross-chain operations with Solana Agent Kit
+- [Crossmint](https://docs.sendai.fun/docs/v2/integrations/misc/crossmint.md): Purchase physical products from Amazon and Shopify using Solana USDC
+- [3Land NFT Integration](https://docs.sendai.fun/docs/v2/integrations/nft-management/3land_create_manage.md): Create and manage NFT collections on 3.land
+- [Deploy NFT Collection](https://docs.sendai.fun/docs/v2/integrations/nft-management/deploy_collection.md): Learn how to deploy NFT collections on Solana
+- [Magic Eden NFT Marketplace](https://docs.sendai.fun/docs/v2/integrations/nft-management/magiceden.md): Complete guide for interacting with Magic Eden marketplace - listing, bidding, and discovering NFTs
+- [Mint NFT](https://docs.sendai.fun/docs/v2/integrations/nft-management/mint_nft.md): Learn how to mint NFTs into collections on Solana
+- [Tensor NFT Marketplace](https://docs.sendai.fun/docs/v2/integrations/nft-management/tensor_nft.md): List and manage NFTs on Tensor Trade
+- [Elfa AI Integration](https://docs.sendai.fun/docs/v2/integrations/non-financial/elfa_ai.md): Learn how to use Elfa AI features with Solana Agent Kit for social media intelligence
+- [Gib Work Task Creation](https://docs.sendai.fun/docs/v2/integrations/non-financial/gibwork_bounties.md): Create and manage bounties on Gib Work platform
+- [Jupiter SOL Staking](https://docs.sendai.fun/docs/v2/integrations/solana-blinks/jupsol_staking.md): Stake SOL tokens to receive jupSOL through Jupiter Protocol
+- [Lulo USDC Lending](https://docs.sendai.fun/docs/v2/integrations/solana-blinks/lulo.md): Earn yield by lending USDC through Lulo protocol
+- [SEND Arcade Games](https://docs.sendai.fun/docs/v2/integrations/solana-blinks/send_arcade_rps.md): Play Rock Paper Scissors on Solana to win SEND tokens
+- [Solayer SOL Restaking](https://docs.sendai.fun/docs/v2/integrations/solana-blinks/solayer_restaking.md): Restake SOL to receive sSOL through Solayer Protocol
+- [Squads Protocol Multisig](https://docs.sendai.fun/docs/v2/integrations/squads/squads_operations.md): Create and manage 2-of-2 multisig accounts using Squads Protocol
+- [Check Token Balances](https://docs.sendai.fun/docs/v2/integrations/token-operations/balance_check.md): Learn how to check SOL and SPL token balances for any wallet
+- [CoinGecko Market Data Integration](https://docs.sendai.fun/docs/v2/integrations/token-operations/coingecko.md): Learn how to fetch market data, token information, and trends using CoinGecko
+- [Deploy SPL Token](https://docs.sendai.fun/docs/v2/integrations/token-operations/deploy_spl_metaplex.md): Learn how to deploy SPL tokens with Metaplex metadata
+- [Token Data Retrieval](https://docs.sendai.fun/docs/v2/integrations/token-operations/rugcheck_token_retrieval.md): Fetch token data using Jupiter API and DexScreener
+- [Stake SOL](https://docs.sendai.fun/docs/v2/integrations/token-operations/stake_sol.md): Learn how to stake SOL using Jupiter Validator
+- [TipLink Creation and Transfer](https://docs.sendai.fun/docs/v2/integrations/token-operations/tiplink_operations.md): Create and manage TipLinks for SOL and SPL token transfers on Solana
+- [Transfer Tokens](https://docs.sendai.fun/docs/v2/integrations/token-operations/transfer_assets.md): Learn how to transfer SOL and SPL tokens to other wallets
+- [Introduction to Solana Agent Kit v2](https://docs.sendai.fun/docs/v2/introduction.md): The open-source toolkit – now more modular and plug-and-play with embedded wallet support
+- [Blinks Plugin](https://docs.sendai.fun/docs/v2/plugins/blinks/blinks-plugin-intro.md): Quick, fun interactions on Solana using Solana blinks
+- [DeFi Plugin](https://docs.sendai.fun/docs/v2/plugins/defi/defi-plugin-intro.md): Interact with DeFi protocols on the Solana blockchain
+- [Misc Plugin](https://docs.sendai.fun/docs/v2/plugins/misc/misc-plugin-intro.md): Miscellaneous tools and actions for the Solana blockchain
+- [NFT Plugin](https://docs.sendai.fun/docs/v2/plugins/nft/nft-plugin-intro.md): Interact with NFTs on the Solana blockchain
+- [Token Plugin](https://docs.sendai.fun/docs/v2/plugins/token/token-plugin-intro.md): Interact with, create and transfer tokens on the Solana blockchain
+- [null](https://docs.sendai.fun/docs/v2/setup/embedded-wallets.md)
+- [null](https://docs.sendai.fun/docs/v2/setup/keypair.md)
+- [null](https://docs.sendai.fun/docs/v2/setup/quickstart.md)
+- [null](https://docs.sendai.fun/docs/v2/setup/react-native.md)
+- [null](https://docs.sendai.fun/docs/v2/using-llms/overview.md)

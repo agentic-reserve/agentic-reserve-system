@@ -1,0 +1,24 @@
+[package]
+name = "service-marketplace"
+version = "0.1.0"
+description = "Service Marketplace - Agent service listings and transactions"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "service_marketplace"
+
+[features]
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+cpi = ["no-entrypoint"]
+default = []
+
+[dependencies]
+anchor-lang = { workspace = true }
+anchor-spl = { workspace = true }
+
+[dev-dependencies]
+proptest = { workspace = true }
+solana-program-test = { workspace = true }

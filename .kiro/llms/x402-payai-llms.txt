@@ -1,0 +1,127 @@
+# https://docs.payai.network/v1/x402/introduction llms-full.txt
+
+## Seamless Stablecoin Payments
+[Skip to main content](https://docs.payai.network/v1/x402/introduction#content-area)
+
+🎉 x402 is now live on Solana!
+
+[PayAI Documentation home page![light logo](https://mintcdn.com/payai/5qfSiAZ8fprQfq8o/logo/light.png?fit=max&auto=format&n=5qfSiAZ8fprQfq8o&q=85&s=875c44971979f30e59697bdc15321832)![dark logo](https://mintcdn.com/payai/5qfSiAZ8fprQfq8o/logo/dark.png?fit=max&auto=format&n=5qfSiAZ8fprQfq8o&q=85&s=eb06bc05838918e9251071a6d440bfd8)](https://docs.payai.network/)
+
+Search...
+
+Ctrl K
+
+Search...
+
+Navigation
+
+x402 V1
+
+x402 V1 Introduction
+
+[Docs](https://docs.payai.network/introduction) [V1 (Legacy)](https://docs.payai.network/v1/x402/introduction)
+
+- [Github](https://github.com/PayAINetwork)
+- [Support](https://discord.gg/eWJRwMpebQ)
+
+##### x402 V1
+
+- [x402 V1 Introduction](https://docs.payai.network/v1/x402/introduction)
+- [Quickstart](https://docs.payai.network/v1/x402/quickstart)
+
+##### x402 Merchants (V1)
+
+- [Merchant Introduction](https://docs.payai.network/v1/x402/servers/introduction)
+- Typescript
+
+- Python
+
+
+##### x402 Clients (V1)
+
+- [Client Introduction](https://docs.payai.network/v1/x402/clients/introduction)
+- Typescript
+
+- Python
+
+
+##### x402 Facilitator (V1)
+
+- [Facilitator Introduction](https://docs.payai.network/v1/x402/facilitators/introduction)
+- [Supported Networks](https://docs.payai.network/v1/x402/supported-networks)
+
+##### x402 Reference (V1)
+
+- [x402 Reference](https://docs.payai.network/v1/x402/reference)
+
+##### X402 Echo Merchant (V1)
+
+- [Introduction](https://docs.payai.network/v1/x402-echo/introduction)
+- [Getting started](https://docs.payai.network/v1/x402-echo/getting-started)
+
+On this page
+
+- [What is x402?](https://docs.payai.network/v1/x402/introduction#what-is-x402)
+- [Why x402?](https://docs.payai.network/v1/x402/introduction#why-x402)
+- [Benefits](https://docs.payai.network/v1/x402/introduction#benefits)
+- [How it works (high level)](https://docs.payai.network/v1/x402/introduction#how-it-works-high-level)
+- [Getting started](https://docs.payai.network/v1/x402/introduction#getting-started)
+- [Need help?](https://docs.payai.network/v1/x402/introduction#need-help)
+
+**Legacy Documentation**: This is the V1 version of x402 documentation. For the latest V2 documentation with updated headers, network formats (CAIP-2), and improved schema, please visit the [main x402 documentation](https://docs.payai.network/x402/introduction).
+
+![x402](https://mintcdn.com/payai/mg1pvJPl2NNq9wNO/images/x402/x402-1.webp?fit=max&auto=format&n=mg1pvJPl2NNq9wNO&q=85&s=3adb59297326a36c2422e271a45c4ade)
+
+## [​](https://docs.payai.network/v1/x402/introduction\#what-is-x402)  What is x402?
+
+x402 is an open payment protocol that brings stablecoin payments to plain HTTP.It revives the `HTTP 402 Payment Required` status so that servers can charge for APIs and digital content seamlessly.Clients (human users or AI agents) can pay programmatically to access resources without accounts, API keys, or complex authentication.
+
+Learn more about the x402 project at [x402.org](https://x402.org/).
+
+## [​](https://docs.payai.network/v1/x402/introduction\#why-x402)  Why x402?
+
+Legacy payment rails weren’t built for the web’s speed or for machine-to-machine use.They are slow, costly, and require sign-ups and keys.x402 embeds payment into the web’s native request–response flow, enabling instant, global, usage-based payments with minimal integration—ideal for humans and autonomous agents alike.
+
+## [​](https://docs.payai.network/v1/x402/introduction\#benefits)  Benefits
+
+- Simple HTTP integration using status code 402
+- Pay-per-request and other usage-based pricing
+- Micropayments with stablecoins (e.g., USDC on Solana)
+- Agent-native: AI agents can discover and pay automatically
+- Zero friction: no accounts, API keys, or session management
+
+## [​](https://docs.payai.network/v1/x402/introduction\#how-it-works-high-level)  How it works (high level)
+
+1. A buyer (client) requests a resource from a seller (server).
+2. If payment is required, the seller responds with 402 and payment instructions.
+3. The buyer constructs and sends a payment payload.
+4. The seller verifies and settles the payment (often via a facilitator) and then returns the resource.
+
+![x402 sequence diagram](https://mintcdn.com/payai/mg1pvJPl2NNq9wNO/images/x402-sequence-diagram.svg?fit=max&auto=format&n=mg1pvJPl2NNq9wNO&q=85&s=4386711b36dc1b125e45096054710728)
+
+## [​](https://docs.payai.network/v1/x402/introduction\#getting-started)  Getting started
+
+[**Quickstart** \\
+\\
+Quickly get started buying/selling your first service!](https://docs.payai.network/v1/x402/quickstart)
+
+## [​](https://docs.payai.network/v1/x402/introduction\#need-help)  Need help?
+
+[**Join our Community** \\
+\\
+Have questions or want to connect with other developers? Join our Discord server.](https://discord.gg/eWJRwMpebQ)
+
+Was this page helpful?
+
+YesNo
+
+[Next](https://docs.payai.network/v1/x402/quickstart)
+
+Ctrl+I
+
+Assistant
+
+Responses are generated using AI and may contain mistakes.
+
+![x402 sequence diagram](https://mintcdn.com/payai/mg1pvJPl2NNq9wNO/images/x402-sequence-diagram.svg?w=840&fit=max&auto=format&n=mg1pvJPl2NNq9wNO&q=85&s=bd2a43e0a1f629ccd84cb079229c1253)
+

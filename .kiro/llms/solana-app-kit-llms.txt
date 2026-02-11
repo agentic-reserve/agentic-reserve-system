@@ -1,0 +1,22 @@
+# Solana App Kit
+
+## Docs
+
+- [Introduction](https://docs.solanaappkit.com/docs/introduction.md): Open-source React Native scaffold for building iOS and Android crypto mobile apps with seamless Solana protocol integrations
+- [Data Module](https://docs.solanaappkit.com/docs/modules/data-module.md): Comprehensive blockchain data fetching and management for Solana assets, tokens, NFTs, and market information
+- [Mercuryo Module](https://docs.solanaappkit.com/docs/modules/mercuryo.md): Fiat-to-crypto on-ramp and crypto-to-fiat off-ramp functionality through Mercuryo's payment gateway, offering seamless crypto purchases with multiple payment methods.
+- [Meteora Module](https://docs.solanaappkit.com/docs/modules/meteora.md): Dynamic Liquidity Markets (DLMM) integration with token creation, swapping, and liquidity management
+- [MoonPay Module](https://docs.solanaappkit.com/docs/modules/moonpay.md): Seamless fiat on-ramp integration for purchasing cryptocurrency with credit cards and Apple Pay
+- [NFT Module](https://docs.solanaappkit.com/docs/modules/nft.md): Complete NFT functionality for buying, selling, and managing digital collectibles with Tensor integration
+- [Modules Overview](https://docs.solanaappkit.com/docs/modules/overview.md): Complete guide to all available modules in the Solana App Kit
+- [Pumpfun Module](https://docs.solanaappkit.com/docs/modules/pumpfun.md): Complete meme token ecosystem with token launching, trading, and automated market making via Pump.fun and PumpSwap
+- [Raydium Module](https://docs.solanaappkit.com/docs/modules/raydium.md): Professional token launching and swapping with Raydium's advanced Launchpad and AMM platform
+- [SendAI Module](https://docs.solanaappkit.com/docs/modules/solana-agent-kit.md): AI-powered Solana interactions with intelligent chat interfaces and automated blockchain operations
+- [Swap Module](https://docs.solanaappkit.com/docs/modules/swap.md): Unified token swapping interface with multi-DEX integration for optimal trading on Solana
+- [TokenMill Module](https://docs.solanaappkit.com/docs/modules/tokenmill.md): Comprehensive token creation and lifecycle management with advanced bonding curves, staking, and vesting capabilities
+- [Embedded wallets Module](https://docs.solanaappkit.com/docs/modules/wallet-providers.md): Unified wallet integration supporting Privy, Dynamic, Turnkey, and Mobile Wallet Adapter with comprehensive transaction management
+- [Repository Structure](https://docs.solanaappkit.com/docs/repo-structure.md): Comprehensive guide to understanding and navigating the Solana App Kit codebase organization
+- [Server Overview](https://docs.solanaappkit.com/docs/server/overview.md): Comprehensive backend server for the Solana App Kit, providing token management, social features, real-time messaging, and various API endpoints for interacting with the Solana blockchain.
+- [Solana Service](https://docs.solanaappkit.com/docs/server/services/solana.md): Comprehensive transaction handling service for the Solana blockchain, featuring Jito bundles and priority fee mechanisms for optimized transaction processing.
+- [Setup Guide](https://docs.solanaappkit.com/docs/setup.md): Complete installation and configuration guide for setting up your Solana App Kit development environment
+- [Vibe Coding setup](https://docs.solanaappkit.com/docs/using-llms/cursor-setup.md): Using Docs in Cursor - Learn how to set up Cursor IDE and MCP with Solana App Kit documentation

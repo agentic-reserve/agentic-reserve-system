@@ -1,0 +1,154 @@
+# Birdeye Documentation Documentation
+
+## Guides
+- [Dashboard - Audit Log](https://docs.birdeye.so/docs/dashboard-audit-log.md)
+- [Dashboard - Billing History](https://docs.birdeye.so/docs/dashboard-billing-history.md)
+- [Dashboard - Metrics](https://docs.birdeye.so/docs/dashboard-metrics.md)
+- [Dashboard - Packages](https://docs.birdeye.so/docs/dashboard-packages.md)
+- [Dashboard - Payment Methods](https://docs.birdeye.so/docs/dashboard-payment-methods.md)
+- [Dashboard - Security](https://docs.birdeye.so/docs/dashboard-security.md)
+- [BDS — Getting Started](https://docs.birdeye.so/docs/bds-getting-started.md)
+- [Manage your Dashboard](https://docs.birdeye.so/docs/manage-your-dashboard.md)
+- [Dashboard - Overview](https://docs.birdeye.so/docs/overview-1.md)
+- [Welcome to Birdeye Data Services](https://docs.birdeye.so/docs/birdeye-data-services-bds.md)
+- [Check-Out Policy](https://docs.birdeye.so/docs/check-out-policy.md): Effective Date: 2025-02-05
+- [Contact](https://docs.birdeye.so/docs/enterprise-contact.md)
+- [🔒 Security Data Glossary](https://docs.birdeye.so/docs/security-data.md): camelCase for v1, v2. sanke_case for v3 and above for the same term
+- [Terms Of Services](https://docs.birdeye.so/docs/terms.md): Version: 2025-04-11
+- [Advanced Centralized Exchange Liquidity](https://docs.birdeye.so/docs/advanced-cex-liquidity.md): Welcome to the Advanced version of the Centralized Exchange Liquidity Dashboard. This enhanced tool provides deeper insights into market liquidity dynamics by aggregating data from multiple exchanges, empowering traders and analysts with comprehensive information to make informed decisions.
+- [Birdeye Account](https://docs.birdeye.so/docs/birdeye-account.md)
+- [Birdeye Bots](https://docs.birdeye.so/docs/birdeye-bots.md)
+- [Alert - Notification Settings](https://docs.birdeye.so/docs/alert-notification-settings.md)
+- [Brand Assets](https://docs.birdeye.so/docs/brand-assets.md)
+- [Insights](https://docs.birdeye.so/docs/insights.md): The Insight page serves as a comprehensive hub for assessing the cryptocurrency market. It consolidates a variety of data points—ranging from total market capitalization, total value locked (TVL), and trading volume, to more advanced analytics like market sentiment trends, token screener tools, and visualized token performances. By blending key metrics with intuitive data visualization and analysis features, Insight helps users form a clearer picture of the entire crypto landscape.
+- [Market Data](https://docs.birdeye.so/docs/market-data.md): Our platform provides comprehensive multi-market data for cryptocurrency tokens, pulling information from both decentralized exchanges (DEX) and centralized exchanges (CEX). This allows users to monitor and analyze token performance across different exchange types in real-time, providing a holistic view of the market landscape.
+- [PRO SUBSCRIPTION](https://docs.birdeye.so/docs/pro-subscription.md)
+- [Pricing](https://docs.birdeye.so/docs/pricing-2.md)
+- [Scaled UI Amount Extension](https://docs.birdeye.so/docs/scaled-ui-amount-extension.md): Under Development
+- [Security Check](https://docs.birdeye.so/docs/security.md): The Security Check feature ensures that users are aware of potential risks associated with tokens by evaluating them against a set of security criteria. Each criterion is carefully designed to highlight aspects that may indicate a token’s safety or risks.
+- [Third-party Swap Function](https://docs.birdeye.so/docs/third-party-swap-function.md)
+- [Token Info Update Service](https://docs.birdeye.so/docs/token-info-update-service.md)
+- [Wallet Integration](https://docs.birdeye.so/docs/wallet-integration.md): Instructions for Wallet Providers to Integrate Their Wallets into Birdeye
+- [Web3 Wallet Log-in](https://docs.birdeye.so/docs/web3-wallet-log-in.md)
+- [Bug Bounty Program](https://docs.birdeye.so/docs/bug-bounty-program.md)
+- [Overview](https://docs.birdeye.so/docs/overview.md)
+- [Data Coverage](https://docs.birdeye.so/docs/data-coverage.md)
+- [Rate Limiting](https://docs.birdeye.so/docs/rate-limiting.md)
+- [Per API rate limit](https://docs.birdeye.so/docs/per-api-rate-limit.md)
+- [Supported networks](https://docs.birdeye.so/docs/supported-networks.md)
+- [Batch Token CU Cost](https://docs.birdeye.so/docs/batch-token-cu-cost.md)
+- [🧮 Dynamic Compute Unit Cost](https://docs.birdeye.so/docs/dynamic-cu-cost.md)
+- [Compute Unit Cost](https://docs.birdeye.so/docs/compute-unit-cost.md)
+- [Data Accessibility by Packages](https://docs.birdeye.so/docs/data-accessibility-by-packages.md)
+- [AMM Coverage](https://docs.birdeye.so/docs/amm-coverage.md)
+- [Data Coverage](https://docs.birdeye.so/docs/data-coverage-1.md)
+- [CU carry-over policy](https://docs.birdeye.so/docs/cu-carry-over-policy.md)
+- [Payment](https://docs.birdeye.so/docs/payment.md)
+- [Overage Charge rule](https://docs.birdeye.so/docs/overage-charge-rule.md)
+- [Service cancellation rules](https://docs.birdeye.so/docs/service-cancellation-rules.md)
+- [Trending tokens](https://docs.birdeye.so/docs/trending-tokens.md): Retrieve a dynamic list of trending tokens.
+- [API Sample Request/Response](https://docs.birdeye.so/docs/premium-apis-1.md)
+- [Pricing](https://docs.birdeye.so/docs/pricing.md)
+- [Subscription Changes](https://docs.birdeye.so/docs/subscription-changes.md): Birdeye Data Services offers flexible subscription plans to support your evolving data needs. Whether you're upgrading for additional capacity, downgrading to adjust scope, or reactivating a paused account, the process is designed to be seamless and immediate.
+- [WebSocket](https://docs.birdeye.so/docs/websocket.md)
+- [SUBSCRIBE_BASE_QUOTE_PRICE](https://docs.birdeye.so/docs/subscribe_base_quote_price.md)
+- [SUBSCRIBE_LARGE_TRADE_TXS](https://docs.birdeye.so/docs/subscribe_large_trade_txs.md)
+- [SUBSCRIBE_NEW_PAIR](https://docs.birdeye.so/docs/subscribe_new_pair.md)
+- [SUBSCRIBE_TOKEN_NEW_LISTING](https://docs.birdeye.so/docs/subscribe_token_new_listing.md)
+- [SUBSCRIBE_TOKEN_STATS](https://docs.birdeye.so/docs/subscribe_token_stats.md)
+- [SUBSCRIBE_TXS](https://docs.birdeye.so/docs/subscribe_txs.md)
+- [SUBSCRIBE_WALLET_TXS](https://docs.birdeye.so/docs/subscribe_wallet_txs.md)
+- [SUBSCRIBE_PRICE (OHLCV)](https://docs.birdeye.so/docs/subscribe-price.md)
+- [WebSocket metrics](https://docs.birdeye.so/docs/websocket-metrics.md)
+
+## API Reference
+- [All Time Trades (Single)](https://docs.birdeye.so/reference/get-defi-v3-all-time-trades-single.md): Get all time trades or follow duration transactions for one token.
+- [All Time Trades (Multiple)](https://docs.birdeye.so/reference/post-defi-v3-all-time-trades-multiple.md): Get all time trades or follow duration transactions for multiple tokens. Max to 20 tokens
+- [Wallet - Token Balance (Beta)](https://docs.birdeye.so/reference/get-v1-wallet-token_balance.md): Retrieve the balance of a token in a wallet.
+- [Wallet - Balance Change](https://docs.birdeye.so/reference/get-wallet-v2-balance-change.md): Retrieve the balance change history of a wallet.
+- [Token - Transfer Total](https://docs.birdeye.so/reference/post-token-v1-transfer-total.md): Return a total number of token transfer transactions for a specified token with various filters like time range, amount, value or source/destination wallet
+- [Token - Transfer List](https://docs.birdeye.so/reference/post-token-v1-transfer.md): Return a list of token transfer transactions for a specified token. Provide standardized transaction data such as sender, receiver, amount, value, timestamp, and transaction hash
+- [Wallet - Tokens Balance](https://docs.birdeye.so/reference/post-wallet-v2-token-balance.md): Retrieve the balances of a list of tokens in a wallet.
+- [Wallet - Transfer total](https://docs.birdeye.so/reference/post-wallet-v2-transfer-total.md): Retrieve total transfer of the wallet.
+- [Wallet - Transfer](https://docs.birdeye.so/reference/post-wallet-v2-transfer.md): Retrieve list transfer of the wallet.
+- [Supported Networks](https://docs.birdeye.so/reference/get-defi-networks.md): Retrieve a list of all supported networks.
+- [Trades - Latest Block Number](https://docs.birdeye.so/reference/get-defi-v3-txs-latest-block.md): Retrieve the latest block number of trades on a chain
+- [Token - Creation Token Info](https://docs.birdeye.so/reference/get-defi-token_creation_info.md): Retrieve the creation transaction information of a specified token
+- [Token - Trending List](https://docs.birdeye.so/reference/get-defi-token_trending.md): Retrieve a dynamic and up-to-date list of trending tokens based on specified sorting criteria.
+- [Token - Holder](https://docs.birdeye.so/reference/get-defi-v3-token-holder.md): Retrieve a list of top holders of a specified token.
+- [Token - Holder Distribution](https://docs.birdeye.so/reference/get-holder-v1-distribution.md): Retrieve distribution statistics for token holders based on their share of the total supply. Set include_list=true to return the wallet list for the specified range.
+- [Token - Holder (Batch)](https://docs.birdeye.so/reference/post-token-v1-holder-batch.md): Retrieve the token balance held by a list of wallet owners.
+- [Meme Token Detail - Single](https://docs.birdeye.so/reference/get-defi-v3-token-meme-detail-single.md): Get detail of given meme token
+- [Meme Token - List](https://docs.birdeye.so/reference/get-defi-v3-token-meme-list.md): Get list of meme tokens
+- [Price - Historical by unix time](https://docs.birdeye.so/reference/get-defi-historical_price_unix.md): Retrieve historical price by unix timestamp.
+- [Price - Historical](https://docs.birdeye.so/reference/get-defi-history_price.md): Retrieve historical price line chart of a specified token.
+- [Price - Multiple](https://docs.birdeye.so/reference/get-defi-multi_price.md): Retrieve the latest price information for multiple tokens. Maximum 100 tokens
+- [OHLCV - Base/Quote](https://docs.birdeye.so/reference/get-defi-ohlcv-base_quote.md): Retrieve candlestick data in OHLCV format of a specified base-quote pair. Maximum 1000 records.
+- [OHLCV - Pair](https://docs.birdeye.so/reference/get-defi-ohlcv-pair.md): Retrieve candlestick data in OHLCV format of a specified pair. Maximum 1000 records.
+- [OHLCV](https://docs.birdeye.so/reference/get-defi-ohlcv.md): Retrieve candlestick data in OHLCV format of a specified token. Maximum 1000 records.
+- [Price Volume - Single](https://docs.birdeye.so/reference/get-defi-price_volume-single.md): Retrieve price and volume updates of a specified token.
+- [Price](https://docs.birdeye.so/reference/get-defi-price.md): Retrieve the latest price information for a specified token.
+- [OHLCV V3 - Pair](https://docs.birdeye.so/reference/get-defi-v3-ohlcv-pair.md): Retrieve candlestick data in OHLCV format of a specified pair. Maximum 5000 records. Compared to v1: Added 1s, 15s, and 30s intervals and no candle padding
+- [OHLCV V3](https://docs.birdeye.so/reference/get-defi-v3-ohlcv.md): Retrieve candlestick data in OHLCV format of a specified token. Maximum 5000 records. Compared to v1: Added 1s, 15s, and 30s intervals and no candle padding
+- [Price - Multiple](https://docs.birdeye.so/reference/post-defi-multi_price.md): Retrieve the latest price information for multiple tokens. Maximum 100 tokens
+- [Price Volume - Multi](https://docs.birdeye.so/reference/post-defi-price_volume-multi.md): Retrieve price and volume updates of multiple tokens. Maximum 50 tokens.
+- [Search - Token, market Data](https://docs.birdeye.so/reference/get-defi-v3-search.md): Search for tokens and market data by providing a name, symbol, token address, or market address.
+- [Utils - Credits Usage of current account](https://docs.birdeye.so/reference/get-utils-v1-credits.md): Retrieve credit usage of current account.
+- [Token - Security](https://docs.birdeye.so/reference/get-defi-token_security.md): Retrieve security information of a specified token.
+- [Token - Overview](https://docs.birdeye.so/reference/get-defi-token_overview.md): Retrieve stats of a specified token.
+- [Pair - Pair Overview (Multiple)](https://docs.birdeye.so/reference/get-defi-v3-pair-overview-multiple.md): Retrieve stats of multiple pairs. Maximum 20 addresses.
+- [Pair - Pair Overview (Single)](https://docs.birdeye.so/reference/get-defi-v3-pair-overview-single.md): Retrieve stats of a specified pair.
+- [Price stats (Single)](https://docs.birdeye.so/reference/get-defi-v3-price-stats-single.md): Get the price stats (current price, high/low, percentage change) by time frame for one token
+- [Token - Liquidity (Multiple)](https://docs.birdeye.so/reference/get-defi-v3-token-exit-liquidity-multiple.md): Provides multiple tokens' liquidity value based on USD, native tokens, and other high-liquidity assets to confirm on-chain pools have real liquidity prior to user trades. Maximum 50 addresses.
+- [Token - Liquidity (Single)](https://docs.birdeye.so/reference/get-defi-v3-token-exit-liquidity.md): Provides a liquidity value based on USD, native tokens, and other high-liquidity assets to confirm on-chain pools have real liquidity prior to user trades.
+- [Token - Market Data (Multiple)](https://docs.birdeye.so/reference/get-defi-v3-token-market-data-multiple.md): Retrieve market data of multiple tokens. Maximum 20 addresses.
+- [Token - Market Data (Single)](https://docs.birdeye.so/reference/get-defi-v3-token-market-data.md): Retrieve market data of a specified token.
+- [Token - Metadata (Multiple)](https://docs.birdeye.so/reference/get-defi-v3-token-meta-data-multiple.md): Retrieve metadata of multiple tokens. Maximum 50 addresses.
+- [Token - Metadata (Single)](https://docs.birdeye.so/reference/get-defi-v3-token-meta-data-single.md): Retrieve metadata of a specified token.
+- [Token - Trade Data (Multiple)](https://docs.birdeye.so/reference/get-defi-v3-token-trade-data-multiple.md): Retrieve trade data of multiple tokens. Maximum 20 addresses.
+- [Token - Trade Data (Single)](https://docs.birdeye.so/reference/get-defi-v3-token-trade-data-single.md): Retrieve trade data of a specified token.
+- [Price stats (Multiple)](https://docs.birdeye.so/reference/post-defi-v3-price-stats-multiple.md): Get the price stats (current price, high/low, percentage change) by time frame for multiple tokens. Max to 20 tokens
+- [Token - List (V1)](https://docs.birdeye.so/reference/get-defi-tokenlist.md): Retrieve a list of tokens on a specified chain.
+- [Token - All Market List](https://docs.birdeye.so/reference/get-defi-v2-markets.md): Retrieve a list of markets for a specified token.
+- [Token - New listing](https://docs.birdeye.so/reference/get-defi-v2-tokens-new_listing.md): Retrieve a list of newly listed tokens.
+- [Token - List (V3) Scroll](https://docs.birdeye.so/reference/get-defi-v3-token-list-scroll.md): Retrieve up to 5,000 tokens per batch. For the first request, apply any filter parameters except scroll_id. For subsequent requests, provide only the scroll_id parameter using the next_scroll_id value returned previously. Limited to 1 scroll_id per account per 30 seconds.
+- [Token - List (V3)](https://docs.birdeye.so/reference/get-defi-v3-token-list.md): Retrieve a list of tokens on a specified chain.
+- [Trades - Pair Seek By Time](https://docs.birdeye.so/reference/get-defi-txs-pair-seek_by_time.md): Retrieve a list of trades of a specified pair with time bound option.
+- [Trades - Pair](https://docs.birdeye.so/reference/get-defi-txs-pair.md): Retrieve a list of trades of a specified pair.
+- [Trades - Token Seek By Time](https://docs.birdeye.so/reference/get-defi-txs-token-seek_by_time.md): Retrieve a list of trades of a specified token with time bound option.
+- [Trades - Token](https://docs.birdeye.so/reference/get-defi-txs-token.md): Retrieve a list of trades of a specified token.
+- [Token - Mint/Burn](https://docs.birdeye.so/reference/get-defi-v3-token-mint-burn-txs.md): Retrieve the mint/burn transaction list of a specified token. Only support solana
+- [Trades - Token Filtered By Volume (V3)](https://docs.birdeye.so/reference/get-defi-v3-token-txs-by-volume.md): Retrieve a list of trades with various filters of a specified token with volume (value).
+- [Trades - Token (V3)](https://docs.birdeye.so/reference/get-defi-v3-token-txs.md): Retrieve a list of trades with various filters of a specified token.
+- [Trades - Recent (V3)](https://docs.birdeye.so/reference/get-defi-v3-txs-recent.md): Retrieve a list of recent trades.
+- [Trades - All (V3)](https://docs.birdeye.so/reference/get-defi-v3-txs.md): Retrieve a list of trades with various filters.
+- [Trader - Trades Seek By Time](https://docs.birdeye.so/reference/get-trader-txs-seek_by_time.md): Retrieve a list of trades of a trader with time bound option.
+- [Token - Top traders](https://docs.birdeye.so/reference/get-defi-v2-tokens-top_traders.md): Retrieve a list of top traders of a specified token.
+- [Trader - Gainers/Losers](https://docs.birdeye.so/reference/get-trader-gainers-losers.md): Retrieve detailed information about top gainers/losers
+- [Wallet Supported Networks](https://docs.birdeye.so/reference/get-v1-wallet-list_supported_chain.md): Retrieve a list of all wallet supported networks.
+- [Wallet Portfolio (Beta)](https://docs.birdeye.so/reference/get-v1-wallet-token_list.md): Retrieve the portfolio of a wallet.
+- [Wallet - Transaction History (Beta)](https://docs.birdeye.so/reference/get-v1-wallet-tx_list.md): Retrieve the transaction history of a wallet.
+- [Wallet - Current Net Worth](https://docs.birdeye.so/reference/get-wallet-v2-current-net-worth.md): Retrieve current net worth and portfolio of a wallet.
+- [Wallet - Net Worth Details](https://docs.birdeye.so/reference/get-wallet-v2-net-worth-details.md): Retrieve asset details of a wallet on a specific date
+- [Wallet - Net Worth Chart](https://docs.birdeye.so/reference/get-wallet-v2-net-worth.md): Retrieve historical net worth of a wallet by dates.
+- [Wallet - PnL (Per Wallet)](https://docs.birdeye.so/reference/get-wallet-v2-pnl-multiple.md): Retrieve PnL of list wallet
+- [Wallet - PnL](https://docs.birdeye.so/reference/get-wallet-v2-pnl-summary.md): Retrieve PnL of a wallet
+- [Wallet - PnL (Per Token)](https://docs.birdeye.so/reference/get-wallet-v2-pnl.md): Retrieve PnL of a wallet
+- [Wallet - Current Net Worth Summary (Multiple)](https://docs.birdeye.so/reference/post-wallet-v2-net-worth-summary-multiple.md): Retrieve current net worth of multiple wallets. Maximum 100 wallets.
+- [Wallet - PnL Details](https://docs.birdeye.so/reference/post-wallet-v2-pnl-details.md): Retrieve PnL of a wallet broken down to each token
+- [Wallet - First Tx Funded](https://docs.birdeye.so/reference/post-wallet-v2-tx-first-funded.md): Retrieve the first tx fund of the wallet.
+- [Base-Quote OHLCV](https://docs.birdeye.so/reference/base-quote-ohlcv.md): SUBSCRIBE_BASE_QUOTE_PRICE
+- [New Pair](https://docs.birdeye.so/reference/new-pair.md): SUBSCRIBE_NEW_PAIR
+- [New Token Listing](https://docs.birdeye.so/reference/new-token-listing.md): SUBSCRIBE_TOKEN_NEW_LISTING
+- [Token/Pair OHLCV](https://docs.birdeye.so/reference/subscribe_price-ohlcv.md): SUBSCRIBE_PRICE
+- [Token Stats](https://docs.birdeye.so/reference/token-stats.md): SUBSCRIBE_TOKEN_STATS
+- [Token/Pair Transactions](https://docs.birdeye.so/reference/tokenpair-transactions.md): SUBSCRIBE_TXS
+- [Track Large Transactions](https://docs.birdeye.so/reference/track-large-transactions.md): SUBSCRIBE_LARGE_TRADE_TXS
+- [Wallet Transactions](https://docs.birdeye.so/reference/wallet-transactions.md): SUBSCRIBE_WALLET_TXS
+
+## Changelog
+- [2026.01.30 - Release HyperEVM support & dynamic intervals stats](https://docs.birdeye.so/changelog/20260130-release-hyperevm-support-dynamic-intervals-stats.md)
+- [2026.01.23 - Release Mantle support](https://docs.birdeye.so/changelog/20260123-release-mantle-support.md)
+- [2026.01.21 - Release LFJ Token Mill support on Monad](https://docs.birdeye.so/changelog/20260121-release-lfj-token-mill-support-on-monad.md)
+- [2026.01.20 - Release token holder distribution on Solana](https://docs.birdeye.so/changelog/20260120-release-token-holder-distribution-on-solana.md)
+- [2026.01.14 - Release Fogo WebSocket support](https://docs.birdeye.so/changelog/20260114-release-fogo-websocket-support.md)

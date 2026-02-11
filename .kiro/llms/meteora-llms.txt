@@ -1,0 +1,205 @@
+# Meteora Documentation
+
+## Docs
+
+- [Alpha Vault Formulas](https://docs.meteora.ag/anti-sniper-suite/alpha-vault/alpha-vault-formulas.md)
+- [Alpha Vault Modes](https://docs.meteora.ag/anti-sniper-suite/alpha-vault/alpha-vault-modes.md)
+- [What's Alpha Vault?](https://docs.meteora.ag/anti-sniper-suite/alpha-vault/what-is-alpha-vault.md)
+- [Fee Market Cap Scheduler Math](https://docs.meteora.ag/anti-sniper-suite/fee-market-cap-scheduler/fee-market-cap-scheduler-math.md)
+- [What's Fee Market Cap Scheduler?](https://docs.meteora.ag/anti-sniper-suite/fee-market-cap-scheduler/what-is-fee-market-cap-scheduler.md)
+- [Fee Time Scheduler Math](https://docs.meteora.ag/anti-sniper-suite/fee-time-scheduler/fee-time-scheduler-math.md)
+- [What's Fee Time Scheduler?](https://docs.meteora.ag/anti-sniper-suite/fee-time-scheduler/what-is-fee-time-scheduler.md)
+- [Anti Sniper Suite](https://docs.meteora.ag/anti-sniper-suite/home.md): Sniping tokens is a feature. Choose to turn it on or off with Meteora's Anti Sniper Suite.
+- [Rate Limiter Math](https://docs.meteora.ag/anti-sniper-suite/rate-limiter/rate-limiter-math.md)
+- [What's Rate Limiter?](https://docs.meteora.ag/anti-sniper-suite/rate-limiter/what-is-rate-limiter.md)
+- [get_alpha_vault_configs](https://docs.meteora.ag/api-reference/alpha-vault/get_alpha_vault_configs.md)
+- [get_alpha_vaults](https://docs.meteora.ag/api-reference/alpha-vault/get_alpha_vaults.md)
+- [get_all_analytics](https://docs.meteora.ag/api-reference/analytics/get_all_analytics.md)
+- [get_apy_by_time_range](https://docs.meteora.ag/api-reference/apy/get_apy_by_time_range.md): Returns APY information for a specific token mint within a given time range
+- [get_apy_state](https://docs.meteora.ag/api-reference/apy/get_apy_state.md): Returns APY (Annual Percentage Yield) information for strategies associated with a specific token mint
+- [Overview](https://docs.meteora.ag/api-reference/damm-v1/overview.md): <Tip>**All DAMM V1 APIs have ratelimit of 10 Requests per second or 10 RPS.**</Tip>
+- [Overview](https://docs.meteora.ag/api-reference/damm-v2/overview.md): <Tip>**All DAMM V2 APIs have ratelimit of 10 Requests per second or 10 RPS.**</Tip>
+- [Overview](https://docs.meteora.ag/api-reference/dlmm/overview.md): <Tip>**All DLMM APIs have ratelimit of 30 Requests per second or 30 RPS.**</Tip>
+- [Overview](https://docs.meteora.ag/api-reference/dynamic-vault/overview.md): <Tip>**Dynamic Vault APIs have no ratelimit.**</Tip>
+- [get_fee_configs](https://docs.meteora.ag/api-reference/fee-configs/get_fee_configs.md)
+- [Schemas](https://docs.meteora.ag/api-reference/home.md)
+- [all](https://docs.meteora.ag/api-reference/liquidity-book-pairs/all.md)
+- [all_by_groups](https://docs.meteora.ag/api-reference/liquidity-book-pairs/all_by_groups.md)
+- [all_by_groups_metadata](https://docs.meteora.ag/api-reference/liquidity-book-pairs/all_by_groups_metadata.md)
+- [all_with_pagination](https://docs.meteora.ag/api-reference/liquidity-book-pairs/all_with_pagination.md)
+- [get_pair](https://docs.meteora.ag/api-reference/liquidity-book-pairs/get_pair.md)
+- [get_pair_fee_bps_by_days](https://docs.meteora.ag/api-reference/liquidity-book-pairs/get_pair_fee_bps_by_days.md)
+- [get_pair_positions_lock](https://docs.meteora.ag/api-reference/liquidity-book-pairs/get_pair_positions_lock.md)
+- [get_pair_swap_records](https://docs.meteora.ag/api-reference/liquidity-book-pairs/get_pair_swap_records.md)
+- [get_pair_tvl_by_days](https://docs.meteora.ag/api-reference/liquidity-book-pairs/get_pair_tvl_by_days.md)
+- [get_pair_volume_by_days](https://docs.meteora.ag/api-reference/liquidity-book-pairs/get_pair_volume_by_days.md)
+- [get_single_group_pair](https://docs.meteora.ag/api-reference/liquidity-book-pairs/get_single_group_pair.md)
+- [get_claim_fees](https://docs.meteora.ag/api-reference/liquidity-book-positions/get_claim_fees.md)
+- [get_claim_rewards](https://docs.meteora.ag/api-reference/liquidity-book-positions/get_claim_rewards.md)
+- [get_deposits](https://docs.meteora.ag/api-reference/liquidity-book-positions/get_deposits.md)
+- [get_position](https://docs.meteora.ag/api-reference/liquidity-book-positions/get_position.md)
+- [get_position_v2](https://docs.meteora.ag/api-reference/liquidity-book-positions/get_position_v2.md)
+- [get_withdraws](https://docs.meteora.ag/api-reference/liquidity-book-positions/get_withdraws.md)
+- [filter_and_get_pool_info](https://docs.meteora.ag/api-reference/pools/filter_and_get_pool_info.md)
+- [get_all_pool_configs](https://docs.meteora.ag/api-reference/pools/get_all_pool_configs.md)
+- [get_global_metrics](https://docs.meteora.ag/api-reference/pools/get_global_metrics.md)
+- [get_pool](https://docs.meteora.ag/api-reference/pools/get_pool.md)
+- [get_pool_metrics](https://docs.meteora.ag/api-reference/pools/get_pool_metrics.md)
+- [get_pool_vesting_liquidity](https://docs.meteora.ag/api-reference/pools/get_pool_vesting_liquidity.md)
+- [get_pool_vesting_list](https://docs.meteora.ag/api-reference/pools/get_pool_vesting_list.md)
+- [get_pools](https://docs.meteora.ag/api-reference/pools/get_pools.md)
+- [get_pools_by_a_vault_lp](https://docs.meteora.ag/api-reference/pools/get_pools_by_a_vault_lp.md)
+- [get_pools_metrics](https://docs.meteora.ag/api-reference/pools/get_pools_metrics.md)
+- [get_pools_with_farm](https://docs.meteora.ag/api-reference/pools/get_pools_with_farm.md)
+- [grouped_pools](https://docs.meteora.ag/api-reference/pools/grouped_pools.md)
+- [list_pools](https://docs.meteora.ag/api-reference/pools/list_pools.md)
+- [get_protocol_metrics](https://docs.meteora.ag/api-reference/protocol-metrics/get_protocol_metrics.md)
+- [Overview](https://docs.meteora.ag/api-reference/stake2earn/overview.md): <Tip>**Stake2earn APIs have no ratelimit.**</Tip>
+- [filter_vaults](https://docs.meteora.ag/api-reference/vaults/filter_vaults.md)
+- [get_all_vaults](https://docs.meteora.ag/api-reference/vaults/get_all_vaults.md)
+- [get_one_vault](https://docs.meteora.ag/api-reference/vaults/get_one_vault.md)
+- [get_vault_addresses](https://docs.meteora.ag/api-reference/vaults/get_vault_addresses.md): Returns a list of vault addresses with their associated information
+- [get_vault_info](https://docs.meteora.ag/api-reference/vaults/get_vault_info.md): Returns detailed information about all monitored vaults including their states, strategies, and performance metrics
+- [get_vault_state](https://docs.meteora.ag/api-reference/vaults/get_vault_state.md): Returns the current state of a specific vault identified by its token mint address
+- [get_virtual_price](https://docs.meteora.ag/api-reference/virtual-price/get_virtual_price.md): Returns virtual price information for a specific strategy within a vault
+- [get_wallet_earning](https://docs.meteora.ag/api-reference/wallet/get_wallet_earning.md)
+- [Overview](https://docs.meteora.ag/developer-guide/guides/alpha-vault/overview.md)
+- [Example Scripts](https://docs.meteora.ag/developer-guide/guides/alpha-vault/typescript-sdk/example-scripts.md): Alpha Vault
+- [Getting Started](https://docs.meteora.ag/developer-guide/guides/alpha-vault/typescript-sdk/getting-started.md): Alpha Vault
+- [Examples](https://docs.meteora.ag/developer-guide/guides/damm-v1/cpi/examples.md): DAMM v1
+- [Farm Integration](https://docs.meteora.ag/developer-guide/guides/damm-v1/farming-sdk/farm-integration.md): DAMM v1 with Farm
+- [Getting Started](https://docs.meteora.ag/developer-guide/guides/damm-v1/farming-sdk/getting-started.md): DAMM v1 with Farm
+- [Overview](https://docs.meteora.ag/developer-guide/guides/damm-v1/overview.md)
+- [Pool Fee Configs](https://docs.meteora.ag/developer-guide/guides/damm-v1/pool-fee-configs.md)
+- [Example Scripts](https://docs.meteora.ag/developer-guide/guides/damm-v1/typescript-sdk/example-scripts.md): DAMM v1
+- [Getting Started](https://docs.meteora.ag/developer-guide/guides/damm-v1/typescript-sdk/getting-started.md): DAMM v1
+- [SDK Functions](https://docs.meteora.ag/developer-guide/guides/damm-v1/typescript-sdk/sdk-functions.md): DAMM v1
+- [Integration](https://docs.meteora.ag/developer-guide/guides/damm-v2/go-sdk/integration.md): DAMM v2
+- [Overview](https://docs.meteora.ag/developer-guide/guides/damm-v2/overview.md)
+- [Pool Fee Configs](https://docs.meteora.ag/developer-guide/guides/damm-v2/pool-fee-configs.md)
+- [Integration](https://docs.meteora.ag/developer-guide/guides/damm-v2/rust-sdk/integration.md): DAMM v2
+- [Getting Started](https://docs.meteora.ag/developer-guide/guides/damm-v2/typescript-sdk/getting-started.md): DAMM v2
+- [SDK Functions](https://docs.meteora.ag/developer-guide/guides/damm-v2/typescript-sdk/sdk-functions.md): DAMM v2
+- [Bonding Curve Configs](https://docs.meteora.ag/developer-guide/guides/dbc/bonding-curve-configs.md)
+- [Integration](https://docs.meteora.ag/developer-guide/guides/dbc/go-sdk/integration.md): DBC
+- [Overview](https://docs.meteora.ag/developer-guide/guides/dbc/overview.md)
+- [Integration](https://docs.meteora.ag/developer-guide/guides/dbc/rust-sdk/integration.md): DBC
+- [Example Scripts](https://docs.meteora.ag/developer-guide/guides/dbc/typescript-sdk/example-scripts.md): DBC
+- [Getting Started](https://docs.meteora.ag/developer-guide/guides/dbc/typescript-sdk/getting-started.md): DBC
+- [SDK Functions](https://docs.meteora.ag/developer-guide/guides/dbc/typescript-sdk/sdk-functions.md): DBC
+- [Examples](https://docs.meteora.ag/developer-guide/guides/dlmm/cpi/examples.md): DLMM
+- [Overview](https://docs.meteora.ag/developer-guide/guides/dlmm/overview.md)
+- [Getting Started](https://docs.meteora.ag/developer-guide/guides/dlmm/typescript-sdk/getting-started.md): DLMM
+- [SDK Functions](https://docs.meteora.ag/developer-guide/guides/dlmm/typescript-sdk/sdk-functions.md): DLMM
+- [Overview](https://docs.meteora.ag/developer-guide/guides/dynamic-fee-sharing/overview.md)
+- [Getting Started](https://docs.meteora.ag/developer-guide/guides/dynamic-fee-sharing/typescript-sdk/getting-started.md): Dynamic Fee Sharing
+- [SDK Functions](https://docs.meteora.ag/developer-guide/guides/dynamic-fee-sharing/typescript-sdk/sdk-functions.md): Dynamic Fee Sharing
+- [Vault Periphery](https://docs.meteora.ag/developer-guide/guides/dynamic-vault/affiliate/vault-periphery.md): Dynamic Vault
+- [Overview](https://docs.meteora.ag/developer-guide/guides/dynamic-vault/overview.md)
+- [Integration](https://docs.meteora.ag/developer-guide/guides/dynamic-vault/rust-sdk/integration.md): Dynamic Vault
+- [Getting Started](https://docs.meteora.ag/developer-guide/guides/dynamic-vault/typescript-sdk/getting-started.md): Dynamic Vault
+- [Quickstart](https://docs.meteora.ag/developer-guide/guides/dynamic-vault/typescript-sdk/quickstart.md): Dynamic Vault
+- [SDK Functions](https://docs.meteora.ag/developer-guide/guides/dynamic-vault/typescript-sdk/sdk-functions.md): Dynamic Vault
+- [Overview](https://docs.meteora.ag/developer-guide/guides/presale-vault/overview.md)
+- [Getting Started](https://docs.meteora.ag/developer-guide/guides/presale-vault/typescript-sdk/getting-started.md): Presale Vault
+- [CPI Examples](https://docs.meteora.ag/developer-guide/guides/stake2earn/cpi/examples.md): Stake2Earn
+- [Overview](https://docs.meteora.ag/developer-guide/guides/stake2earn/overview.md)
+- [Example Scripts](https://docs.meteora.ag/developer-guide/guides/stake2earn/typescript-sdk/example-scripts.md): Stake2Earn
+- [Getting Started](https://docs.meteora.ag/developer-guide/guides/stake2earn/typescript-sdk/getting-started.md): Stake2Earn
+- [Overview](https://docs.meteora.ag/developer-guide/guides/zap/overview.md)
+- [Getting Started](https://docs.meteora.ag/developer-guide/guides/zap/typescript-sdk/getting-started.md): Zap
+- [SDK Functions](https://docs.meteora.ag/developer-guide/guides/zap/typescript-sdk/sdk-functions.md): Zap
+- [Overview](https://docs.meteora.ag/developer-guide/home.md): Everything you need to know to get started building on Meteora
+- [Actions](https://docs.meteora.ag/developer-guide/invent/actions.md): Do any onchain actions on Meteora's programs with Meteora Invent
+- [Fun Launch](https://docs.meteora.ag/developer-guide/invent/scaffolds/fun-launch.md): Build a Launchpad platform for launching tokens with Meteora's Dynamic Bonding Curve Program in just a few steps
+- [DAMM v1 Launch Pool](https://docs.meteora.ag/developer-guide/quick-launch/damm-v1-launch-pool.md): Configure and Launch a DAMM v1 Pool on Meteora using nothing but a configuration file and a few CLI commands
+- [DAMM v2 Launch Pool](https://docs.meteora.ag/developer-guide/quick-launch/damm-v2-launch-pool.md): Configure and Launch a DAMM v2 Pool on Meteora using nothing but a configuration file and a few CLI commands
+- [DBC Token Launch Pool](https://docs.meteora.ag/developer-guide/quick-launch/dbc-token-launch-pool.md): Configure and Launch a DBC Token Pool on Meteora using nothing but a configuration file and a few CLI commands
+- [DLMM Launch Pool](https://docs.meteora.ag/developer-guide/quick-launch/dlmm-launch-pool.md): Configure and Launch a DLMM Pool on Meteora using nothing but a configuration file and a few CLI commands
+- [Integrate with DAMM v2](https://docs.meteora.ag/developer-guide/trading-terminals/integrate-with-damm-v2.md): Everything you need to know to integrate with Meteora's DAMM v2 Program
+- [Integrate with DBC](https://docs.meteora.ag/developer-guide/trading-terminals/integrate-with-dbc.md): Everything you need to know to integrate with Meteora's DBC Program
+- [Build with Meteora](https://docs.meteora.ag/index.md)
+- [Cookies Notice and Policy](https://docs.meteora.ag/legal/cookies-notice-and-policy.md)
+- [MiCAR White Paper - MET Token](https://docs.meteora.ag/legal/mica.md): White Paper in accordance with Article 6 of the Markets in Crypto Assets Regulation (MiCAR) for the European Union (EU) & European Economic Area (EEA)
+- [Privacy Policy](https://docs.meteora.ag/legal/privacy-policy.md)
+- [Stake2Earn Terms of Service](https://docs.meteora.ag/legal/stake2earn-terms-of-service.md)
+- [Terms of Service](https://docs.meteora.ag/legal/terms-of-service.md)
+- [Airdrop Disclaimer](https://docs.meteora.ag/met/airdrop-disclaimer.md): Important Disclaimers And Acknowledgement of Terms of Use for the Airdrop Checker
+- [Airdrop Terms and Conditions](https://docs.meteora.ag/met/airdrop-terms-and-conditions.md): Terms and Conditions for $MET Airdrop Campaign
+- [FAQ](https://docs.meteora.ag/met/faq.md): Frequently asked questions about the Meteora Token Generation Event (TGE)
+- [Protocol Revenues](https://docs.meteora.ag/met/protocol-revenues.md): MET Protocol Revenues - How Meteora generates revenue
+- [Tokenomics](https://docs.meteora.ag/met/tokenomics.md): MET Tokenomics - Everything about $MET
+- [We Build Liquidity Pools](https://docs.meteora.ag/overview/home.md)
+- [What's Dynamic Fee Sharing?](https://docs.meteora.ag/overview/other-products/dynamic-fee-sharing/what-is-dynamic-fee-sharing.md): Dynamic Fee Sharing is a program that allows you to dynamically configure sharing of fees.
+- [Algorithm to Find Optimal Yield Allocations](https://docs.meteora.ag/overview/other-products/dynamic-vault/algorithm-to-find-optimal-yield-allocations.md)
+- [Design Goals](https://docs.meteora.ag/overview/other-products/dynamic-vault/design-goals.md)
+- [Operation Fee Calculation](https://docs.meteora.ag/overview/other-products/dynamic-vault/operation-fee-calculation.md)
+- [Rebalance Crank](https://docs.meteora.ag/overview/other-products/dynamic-vault/rebalance-crank.md)
+- [Risk Management](https://docs.meteora.ag/overview/other-products/dynamic-vault/risk-management.md)
+- [What's Dynamic Vault?](https://docs.meteora.ag/overview/other-products/dynamic-vault/what-is-dynamic-vault.md): Dynamic Vault is DeFi's first dynamic yield infrastructure.
+- [What's Hermes?](https://docs.meteora.ag/overview/other-products/dynamic-vault/what-is-hermes.md)
+- [What's Presale Vault?](https://docs.meteora.ag/overview/other-products/presale-vault/what-is-presale-vault.md): Presale Vault allows users to contribute using any SPL token and later claim their allocated presale tokens once the presale concludes.
+- [What's Stake2Earn?](https://docs.meteora.ag/overview/other-products/stake2earn/what-is-stake2earn.md): Stake2Earn allows you to fee share trading fees generated from DAMM v1 pools with top token stakers.
+- [What's Zap?](https://docs.meteora.ag/overview/other-products/zap/what-is-zap.md): Zap is a wrapper program that allows you to zap in/out of your position through Meteora AMMs or Jupiter.
+- [Additional Yield From Dynamic Vaults](https://docs.meteora.ag/overview/products/damm-v1/additional-yield-from-dynamic-vaults.md)
+- [DAMM v1 Fee and APY Calculation](https://docs.meteora.ag/overview/products/damm-v1/damm-v1-fee-and-apy-calculation.md)
+- [DAMM v1 Formulas](https://docs.meteora.ag/overview/products/damm-v1/damm-v1-formulas.md)
+- [LST Pools](https://docs.meteora.ag/overview/products/damm-v1/lst-pools.md)
+- [Pools with Farms](https://docs.meteora.ag/overview/products/damm-v1/pools-with-farms.md)
+- [Stable Pools](https://docs.meteora.ag/overview/products/damm-v1/stable-pools.md)
+- [What's DAMM v1?](https://docs.meteora.ag/overview/products/damm-v1/what-is-damm-v1.md): Meteora's Dynamic Automated Market Maker v1 (DAMM v1) is a constant product AMM program integrated with Dynamic Vaults.
+- [DAMM v2 Fee Calculation](https://docs.meteora.ag/overview/products/damm-v2/damm-v2-fee-calculation.md)
+- [DAMM v2 Formulas](https://docs.meteora.ag/overview/products/damm-v2/damm-v2-formulas.md)
+- [What's DAMM v2?](https://docs.meteora.ag/overview/products/damm-v2/what-is-damm-v2.md): Meteora's Dynamic Automated Market Maker v2 (DAMM v2) gives liquidity providers access to a constant-product AMM pool with precise liquidity concentration all in real time.
+- [Bonding Curve Formulas](https://docs.meteora.ag/overview/products/dbc/bonding-curve-formulas.md)
+- [DBC Config Key](https://docs.meteora.ag/overview/products/dbc/dbc-config-key.md)
+- [DBC Fee Calculation](https://docs.meteora.ag/overview/products/dbc/dbc-fee-calculation.md)
+- [What's DBC?](https://docs.meteora.ag/overview/products/dbc/what-is-dbc.md): Dynamic Bonding Curve (DBC) is a universal virtual curve that allows you to create tokens with unique price dynamics.
+- [DLMM Concepts](https://docs.meteora.ag/overview/products/dlmm/dlmm-concepts.md)
+- [DLMM Farming Rewards](https://docs.meteora.ag/overview/products/dlmm/dlmm-farming-rewards.md)
+- [DLMM Fee Calculation](https://docs.meteora.ag/overview/products/dlmm/dlmm-fee-calculation.md)
+- [DLMM Formulas](https://docs.meteora.ag/overview/products/dlmm/dlmm-formulas.md)
+- [Strategies and Use Cases](https://docs.meteora.ag/overview/products/dlmm/strategies-and-use-cases.md)
+- [Token 2022 Extensions](https://docs.meteora.ag/overview/products/dlmm/token-2022-extensions.md)
+- [What's DLMM?](https://docs.meteora.ag/overview/products/dlmm/what-is-dlmm.md): Meteora's Dynamic Liquidity Market Maker (DLMM) gives liquidity providers access to dynamic fees and precise liquidity concentration all in real-time.
+- [Alpha Vault](https://docs.meteora.ag/resources/audits/alpha-vault.md)
+- [DAMM v1](https://docs.meteora.ag/resources/audits/damm-v1.md)
+- [DAMM v2](https://docs.meteora.ag/resources/audits/damm-v2.md)
+- [DBC](https://docs.meteora.ag/resources/audits/dbc.md)
+- [DLMM](https://docs.meteora.ag/resources/audits/dlmm.md)
+- [Dynamic Fee Sharing](https://docs.meteora.ag/resources/audits/dynamic-fee-sharing.md)
+- [Dynamic Vault](https://docs.meteora.ag/resources/audits/dynamic-vault.md)
+- [Overview](https://docs.meteora.ag/resources/audits/overview.md)
+- [Presale Vault](https://docs.meteora.ag/resources/audits/presale-vault.md)
+- [Stake2Earn](https://docs.meteora.ag/resources/audits/stake2earn.md)
+- [Zap](https://docs.meteora.ag/resources/audits/zap.md)
+- [Dashboards](https://docs.meteora.ag/resources/community/dashboards.md)
+- [Tools](https://docs.meteora.ag/resources/community/tools.md)
+- [Brand Kit](https://docs.meteora.ag/resources/miscellaneous/brand-kit.md)
+- [How to create a Liquidity Pool](https://docs.meteora.ag/user-guide/guides/how-to-create-a-pool.md): User Guide
+- [How to Swap Tokens on Meteora](https://docs.meteora.ag/user-guide/guides/how-to-swap-tokens.md): User Guide
+- [How to use DAMM v2](https://docs.meteora.ag/user-guide/guides/how-to-use-damm-v2.md): User Guide
+- [How to use DLMM](https://docs.meteora.ag/user-guide/guides/how-to-use-dlmm.md): User Guide
+- [Becoming a Liquidity Provider](https://docs.meteora.ag/user-guide/usage/becoming-a-liquidity-provider.md): User Guide
+- [Getting Started](https://docs.meteora.ag/user-guide/usage/getting-started.md): User Guide
+- [Staying Safe on Meteora](https://docs.meteora.ag/user-guide/usage/staying-safe.md): User Guide
+
+
+## Optional
+
+- [App](https://app.meteora.ag)
+- [Support](https://discord.com/invite/meteora)
+- [Join the LP Army!](https://lparmy.com)
+- [App](https://app.meteora.ag)
+- [Support](https://discord.com/invite/meteora)
+- [Join the LP Army!](https://lparmy.com)
+- [GitHub](https://github.com/MeteoraAg)
+- [Faucet](https://faucet.raccoons.dev/)
+- [Support](https://discord.com/invite/meteora)
+- [Developer Updates](https://t.me/meteora_dev)
+- [API Status](https://t.me/meteora_dev)
+- [GitHub](https://github.com/MeteoraAg)
+- [Faucet](https://faucet.raccoons.dev/)
+- [Support](https://discord.com/invite/meteora)
+- [Developer Updates](https://t.me/meteora_dev)
+- [API Status](https://t.me/meteora_dev)
