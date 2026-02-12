@@ -243,16 +243,15 @@ export class ICRCalculator {
   async getCurrentICR(): Promise<ICRSnapshot> {
     try {
       // Try cache first
-      const cached = await this.redis.get(this.REDIS_KEY);
+      const cached = await getCachedData<any>(this.REDIS_KEY, this.REDIS_TTL);
       
       if (cached) {
-        const data = JSON.parse(cached);
         console.log('✅ ICR retrieved from cache');
         return {
-          timestamp: new Date(data.timestamp),
-          icrValue: data.icrValue,
-          confidenceInterval: data.confidenceInterval,
-          sources: data.sources
+          timestamp: new Date(cached.timestamp),
+          icrValue: cached.icrValue,
+          confidenceInterval: cached.confidenceInterval,
+          sources: cached.sources
         };
       }
     } catch (error) {
