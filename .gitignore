@@ -18,6 +18,10 @@ yarn-debug.log*
 yarn-error.log*
 *.log
 
+# Build output
+dist/
+build/
+
 # OS
 .DS_Store
 Thumbs.db
