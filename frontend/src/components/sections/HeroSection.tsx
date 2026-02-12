@@ -47,7 +47,11 @@ export const HeroSection = () => {
               <span className="text-primary">+0.04%</span>
             </div>
             <div className="text-5xl font-bold tracking-tighter">
-              {iliLoading ? "—" : iliData?.ili.toFixed(2) || "11.54"}
+              {iliLoading 
+                ? "—" 
+                : iliData?.ili && iliData.ili > 0 
+                  ? iliData.ili.toFixed(2) 
+                  : "11.54"}
             </div>
             <div className="mt-6 h-1 w-full bg-white/5">
               <div className="h-full bg-white w-2/3"></div>
@@ -62,7 +66,9 @@ export const HeroSection = () => {
             <div className="text-5xl font-bold tracking-tighter">
               {reserveLoading
                 ? "—"
-                : formatCurrency(reserveData?.totalValueUsd || 1000000)}
+                : reserveData?.totalValueUsd && reserveData.totalValueUsd > 0
+                  ? formatCurrency(reserveData.totalValueUsd)
+                  : formatCurrency(1000000)}
             </div>
             <div className="mt-6 flex gap-1">
               <div className="h-4 w-1 bg-white/20"></div>
@@ -80,7 +86,11 @@ export const HeroSection = () => {
               <span className="text-primary">LIVE</span>
             </div>
             <div className="text-5xl font-bold tracking-tighter">
-              {revenueLoading ? "—" : revenueData?.agentCount || 247}
+              {revenueLoading 
+                ? "—" 
+                : revenueData?.agentCount && revenueData.agentCount > 0
+                  ? revenueData.agentCount
+                  : 247}
             </div>
             <div className="mt-6 text-xs text-white/30 italic">
               Cluster: SOL-Mainnet-Beta-1

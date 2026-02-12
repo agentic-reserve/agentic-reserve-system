@@ -19,7 +19,7 @@ export const SystemPulseSection = () => {
   const [animatedValue, setAnimatedValue] = useState(11.54);
 
   useEffect(() => {
-    if (iliData?.ili) {
+    if (iliData?.ili && iliData.ili > 0) {
       setAnimatedValue(iliData.ili);
     }
   }, [iliData]);
