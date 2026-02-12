@@ -2,7 +2,7 @@
 name: ars-backend
 version: 1.0.0
 description: Official heartbeat for the ARS Backend API. Reports liveness, capabilities, and current operational status.
-homepage: https://ars-ebon.vercel.app
+homepage: https://ars-fawn.vercel.app/
 ---
 
 # ARS Backend Agent Heartbeat
