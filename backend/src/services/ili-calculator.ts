@@ -3,7 +3,7 @@ import { getJupiterClient } from './defi/jupiter-client';
 import { getMeteoraClient } from './defi/meteora-client';
 import { getKaminoClient } from './defi/kamino-client';
 import { getSupabaseClient } from './supabase';
-import { getRedisClient } from './redis';
+import { getRedisClient, setCachedData, getCachedData } from './redis';
 
 interface ILIComponents {
   avgYield: number;        // Average APY across protocols (%)
@@ -292,17 +292,17 @@ export class ILICalculator {
    */
   private async cacheCurrentILI(snapshot: ILISnapshot): Promise<void> {
     try {
-      await this.redis.setex(
+      await setCachedData(
         this.REDIS_KEY,
-        this.REDIS_TTL,
-        JSON.stringify({
+        {
           iliValue: snapshot.iliValue,
           avgYield: snapshot.avgYield,
           volatility: snapshot.volatility,
           tvl: snapshot.tvl,
           timestamp: snapshot.timestamp.toISOString(),
           sources: snapshot.sources
-        })
+        },
+        this.REDIS_TTL
       );
 
       console.log('✅ ILI cached in Redis (TTL: 5 min)');

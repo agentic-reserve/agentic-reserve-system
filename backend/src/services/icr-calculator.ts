@@ -1,6 +1,6 @@
 import { getKaminoClient } from './defi/kamino-client';
 import { getSupabaseClient } from './supabase';
-import { getRedisClient } from './redis';
+import { getRedisClient, setCachedData, getCachedData } from './redis';
 
 interface ICRData {
   protocol: string;
@@ -219,15 +219,15 @@ export class ICRCalculator {
    */
   private async cacheCurrentICR(snapshot: ICRSnapshot): Promise<void> {
     try {
-      await this.redis.setex(
+      await setCachedData(
         this.REDIS_KEY,
-        this.REDIS_TTL,
-        JSON.stringify({
+        {
           icrValue: snapshot.icrValue,
           confidenceInterval: snapshot.confidenceInterval,
           timestamp: snapshot.timestamp.toISOString(),
           sources: snapshot.sources
-        })
+        },
+        this.REDIS_TTL
       );
 
       console.log('✅ ICR cached in Redis (TTL: 10 min)');
