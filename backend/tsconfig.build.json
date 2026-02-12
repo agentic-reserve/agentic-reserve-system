@@ -26,6 +26,7 @@
     "src/services/payment/**/*",
     "src/services/helius/**/*",
     "src/services/helius-client.ts",
+    "src/services/upstash-redis.ts",
     "src/services/defi/kamino-client-real.ts",
     "src/services/defi/lulo-client.ts",
     "src/services/memory/wallet-registration.ts",
