@@ -13,11 +13,26 @@ const API_BASE_URL =
 
 const api = axios.create({
   baseURL: API_BASE_URL,
-  timeout: 10000,
+  timeout: 30000, // Increased to 30 seconds for cold starts
   headers: {
     "Content-Type": "application/json",
   },
 });
+
+// Add response interceptor for better error handling
+api.interceptors.response.use(
+  (response) => response,
+  (error) => {
+    if (error.code === 'ECONNABORTED') {
+      console.warn('API request timeout - backend may be cold starting');
+    } else if (error.response?.status === 503) {
+      console.warn('Backend service temporarily unavailable');
+    } else {
+      console.error('API Error:', error.message);
+    }
+    return Promise.reject(error);
+  }
+);
 
 export const apiService = {
   // ILI
