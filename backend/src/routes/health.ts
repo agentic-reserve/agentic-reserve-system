@@ -171,12 +171,13 @@ router.get('/', async (req: Request, res: Response) => {
     errorRate: `${(metricsService.getErrorRate() * 100).toFixed(2)}%`,
   };
 
-  // Overall status
-  const allHealthy = Object.values(healthStatus.dependencies).every(
-    (dep: any) => dep.status === 'healthy'
+  // Overall status - only check critical dependencies
+  const criticalDeps = ['supabase', 'redis'];
+  const allCriticalHealthy = criticalDeps.every(
+    (depName) => healthStatus.dependencies[depName]?.status === 'healthy'
   );
 
-  if (!allHealthy || capacity.atCapacity) {
+  if (!allCriticalHealthy || capacity.atCapacity) {
     healthStatus.status = 'degraded';
     res.status(503);
   }
