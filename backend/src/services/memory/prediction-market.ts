@@ -1,5 +1,5 @@
 import { supabase } from '../supabase';
-import { getRedisClient } from '../redis';
+import { getRedisClient, setCachedData, getCachedData } from '../redis';
 
 /**
  * Prediction Market Service
@@ -106,8 +106,7 @@ export class PredictionMarketService {
     };
 
     // Cache for 5 minutes
-    const redis = await redisClient;
-    await redis.setEx(cacheKey, 300, JSON.stringify(market));
+    await setCachedData(cacheKey, market, 300);
 
     return market;
   }
@@ -153,8 +152,7 @@ export class PredictionMarketService {
     }));
 
     // Cache for 5 minutes
-    const redis = await redisClient;
-    await redis.setEx(cacheKey, 300, JSON.stringify(snapshots));
+    await setCachedData(cacheKey, snapshots, 300);
 
     return snapshots;
   }

@@ -318,18 +318,17 @@ export class ILICalculator {
   async getCurrentILI(): Promise<ILISnapshot> {
     try {
       // Try cache first
-      const cached = await this.redis.get(this.REDIS_KEY);
+      const cached = await getCachedData<any>(this.REDIS_KEY, this.REDIS_TTL);
       
       if (cached) {
-        const data = JSON.parse(cached);
         console.log('✅ ILI retrieved from cache');
         return {
-          timestamp: new Date(data.timestamp),
-          iliValue: data.iliValue,
-          avgYield: data.avgYield,
-          volatility: data.volatility,
-          tvl: data.tvl,
-          sources: data.sources
+          timestamp: new Date(cached.timestamp),
+          iliValue: cached.iliValue,
+          avgYield: cached.avgYield,
+          volatility: cached.volatility,
+          tvl: cached.tvl,
+          sources: cached.sources
         };
       }
     } catch (error) {

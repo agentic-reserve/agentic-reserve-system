@@ -1,6 +1,8 @@
 import axios, { AxiosInstance } from 'axios';
 import { config } from '../../config';
-import { getRedisClient } from '../redis';
+import { getRedisClient, getCachedData, setCachedData } from '../redis';
+import { Redis } from '@upstash/redis';
+import { RedisClientType } from 'redis';
 
 /**
  * Solana Token Addresses for Birdeye API
@@ -116,9 +118,9 @@ export class BirdeyeClient {
   ): Promise<T> {
     try {
       if (this.redisInitialized && this.redis) {
-        const cached = await this.redis.get(key);
+        const cached = await getCachedData<T>(key, ttl);
         if (cached) {
-          return JSON.parse(cached);
+          return cached;
         }
       }
     } catch (error) {
@@ -129,7 +131,7 @@ export class BirdeyeClient {
 
     try {
       if (this.redisInitialized && this.redis) {
-        await this.redis.setEx(key, ttl, JSON.stringify(data));
+        await setCachedData(key, data, ttl);
       }
     } catch (error) {
       console.warn('Redis cache write error:', error);
@@ -456,7 +458,11 @@ export class BirdeyeClient {
     for (const key of keys) {
       try {
         if (this.redisInitialized && this.redis) {
-          await this.redis.del(key);
+          if (this.redis instanceof Redis) {
+            await this.redis.del(key);
+          } else {
+            await (this.redis as RedisClientType).del(key);
+          }
         }
       } catch (error) {
         console.warn(`Failed to clear cache key ${key}:`, error);
