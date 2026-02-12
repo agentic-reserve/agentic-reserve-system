@@ -313,8 +313,8 @@ UPSTASH_REDIS_TOKEN=<redis-token>
 - This Report: `/PRODUCTION_READINESS.md`
 
 ### Contact
-- Production URL: https://ars-backend-production.up.railway.app
-- Health Check: https://ars-backend-production.up.railway.app/health
+- Production URL: https://agentic-reserve-system-production.up.railway.app
+- Health Check: https://agentic-reserve-system-production.up.railway.app/health
 
 ## Conclusion
 
