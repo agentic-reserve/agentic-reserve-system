@@ -2,7 +2,7 @@
 name: ARS Backend API
 version: 1.0.0
 description: Expert knowledge for interacting with the Agentic Reserve System (ARS) backend API, including real-time oracle data, privacy features, and DeFi integrations.
-homepage: https://ars-fawn.vercel.app/
+homepage: https://agenticreserve.dev/
 ---
 
 # ARS Backend API Skill
@@ -19,7 +19,7 @@ You are an expert at using the ARS (Agentic Reserve System) backend API. This sy
 
 ## Base URL
 
-- Production: `https://agentic-reserve-system-production.up.railway.app`
+- Production: `https://api.agenticreserve.dev`
 - All endpoints: `/api/v1/`
 
 ## Authentication

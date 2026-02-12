@@ -2,7 +2,7 @@
 name: ars-backend
 version: 1.0.0
 description: Official heartbeat for the ARS Backend API. Reports liveness, capabilities, and current operational status.
-homepage: https://ars-fawn.vercel.app/
+homepage: https://agenticreserve.dev/
 ---
 
 # ARS Backend Agent Heartbeat
@@ -67,14 +67,14 @@ The backend currently supports:
 
 Primary health check (fast):
 ```bash
-GET https://agentic-reserve-system-production.up.railway.app/health
+GET https://api.agenticreserve.dev/health
 Response: {"status":"ok","timestamp":"..."}
 Time: <50ms
 ```
 
 Extended health check (with dependencies):
 ```bash
-GET https://agentic-reserve-system-production.up.railway.app/api/v1/health
+GET https://api.agenticreserve.dev/api/v1/health
 Response: {"status":"ok|degraded","dependencies":{...}}
 Time: ~433ms (may timeout)
 ```
