@@ -20,8 +20,13 @@ export const config = {
   },
   
   redis: {
-    url: process.env.REDIS_URL || 'redis://localhost:6379',
+    url: process.env.REDIS_URL,
     password: process.env.REDIS_PASSWORD || '',
+    // Upstash Redis REST API configuration
+    upstash: {
+      url: process.env.UPSTASH_REDIS_REST_URL,
+      token: process.env.UPSTASH_REDIS_REST_TOKEN,
+    },
     // Connection pooling configuration for Memory Service cache layer
     pool: {
       min: parseInt(process.env.REDIS_POOL_MIN || '10', 10),
