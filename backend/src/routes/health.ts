@@ -1,6 +1,8 @@
 import { Router, Request, Response } from 'express';
 import { supabase } from '../services/supabase';
-import { redisClient } from '../services/redis';
+import { getRedisClient } from '../services/redis';
+import { Redis } from '@upstash/redis';
+import { RedisClientType } from 'redis';
 import { memoryEventEmitter } from '../services/memory/event-emitter';
 import { getCapacityUtilization } from '../middleware/capacity-check';
 import { logger } from '../services/memory/logger';
@@ -67,10 +69,21 @@ router.get('/', async (req: Request, res: Response) => {
 
   // Check Redis connection
   try {
+    const redisClient = await getRedisClient();
+    
     if (redisClient) {
-      await redisClient.ping();
+      // Test connection
+      if (redisClient instanceof Redis) {
+        // Upstash Redis - test with a simple get
+        await redisClient.get('health:check');
+      } else {
+        // Standard Redis - use ping
+        await (redisClient as RedisClientType).ping();
+      }
+      
       healthStatus.dependencies.redis = {
         status: 'healthy',
+        type: redisClient instanceof Redis ? 'upstash' : 'standard',
         connectionPool: {
           max: 50, // From config
           active: 'unknown', // Would need connection pool monitoring
