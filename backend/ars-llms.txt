@@ -5,7 +5,7 @@ ARS is a decentralized reserve system on Solana that manages ARU (Agentic Reserv
 
 ## Base URL
 - Development: http://localhost:4000
-- Production: https://ars-backend-production.up.railway.app
+- Production: https://agentic-reserve-system-production.up.railway.app
 
 ## API Version
 v1 - All endpoints prefixed with `/api/v1/`

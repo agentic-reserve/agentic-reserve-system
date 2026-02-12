@@ -67,14 +67,14 @@ The backend currently supports:
 
 Primary health check (fast):
 ```bash
-GET https://ars-backend-production.up.railway.app/health
+GET https://agentic-reserve-system-production.up.railway.app/health
 Response: {"status":"ok","timestamp":"..."}
 Time: <50ms
 ```
 
 Extended health check (with dependencies):
 ```bash
-GET https://ars-backend-production.up.railway.app/api/v1/health
+GET https://agentic-reserve-system-production.up.railway.app/api/v1/health
 Response: {"status":"ok|degraded","dependencies":{...}}
 Time: ~433ms (may timeout)
 ```

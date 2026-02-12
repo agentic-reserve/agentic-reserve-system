@@ -10,7 +10,7 @@ Agent Alice is an autonomous AI agent tasked with monitoring DeFi liquidity metr
 ### Step 1.1: Agent Alice discovers ARS Backend
 ```typescript
 // Alice receives a tip about ARS Backend from another agent or registry
-const arsBackendUrl = 'https://ars-backend-production.up.railway.app';
+const arsBackendUrl = 'https://agentic-reserve-system-production.up.railway.app';
 
 // Alice first checks if the service is alive
 const healthCheck = await fetch(`${arsBackendUrl}/health`);
@@ -37,7 +37,7 @@ const frontmatter = {
   name: "ARS Backend API",
   version: "1.0.0",
   description: "Expert knowledge for interacting with the Agentic Reserve System...",
-  url: "https://ars-backend-production.up.railway.app"
+  url: "https://agentic-reserve-system-production.up.railway.app"
 };
 
 // Alice extracts key information

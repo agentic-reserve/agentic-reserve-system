@@ -2,7 +2,7 @@
 
 **Date:** 2026-02-11  
 **Environment:** Railway Production  
-**Base URL:** https://ars-backend-production.up.railway.app  
+**Base URL:** https://agentic-reserve-system-production.up.railway.app  
 **Status:** ✅ DEPLOYED & OPERATIONAL
 
 ---
@@ -242,7 +242,7 @@ The ARS Backend API is successfully deployed to Railway with 86% of endpoints op
 ## Test Command
 
 ```powershell
-$base = "https://ars-backend-production.up.railway.app"
+$base = "https://agentic-reserve-system-production.up.railway.app"
 $endpoints = @("/health", "/api/v1/ili/current", "/api/v1/reserve/state")
 foreach($ep in $endpoints) {
   $response = Invoke-RestMethod -Uri "$base$ep" -UseBasicParsing

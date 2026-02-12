@@ -423,7 +423,7 @@ railway logs --deployment ID     # Specific deployment
 
 After deployment, your API will be available at:
 ```
-https://ars-backend-production.up.railway.app
+https://agentic-reserve-system-production.up.railway.app
 ```
 
 Update this URL in:

@@ -34,7 +34,7 @@ Complete production-ready backend API with 73.3% operational endpoints, real dat
 - Created `backend/ars-llms.txt` (13 KB) - Complete API reference for LLM context with 60+ endpoints
 - Created `backend/SKILL.md` (11 KB) - LLM skill instruction file following OpenRouter format
 - Created `backend/HEARTBEAT.md` - Agent liveness reporting format following Superteam Earn standard
-- Updated all files with production URL: https://ars-backend-production.up.railway.app
+- Updated all files with production URL: https://agentic-reserve-system-production.up.railway.app
 - Removed all emojis from documentation for better LLM parsing
 - Added static file routes in `backend/src/app.ts` for `/ars-llms.txt`, `/SKILL.md`, `/HEARTBEAT.md`
 - Routes use CAPITAL filenames (SKILL.md, HEARTBEAT.md)

@@ -19,7 +19,7 @@ You are an expert at using the ARS (Agentic Reserve System) backend API. This sy
 
 ## Base URL
 
-- Production: `https://ars-backend-production.up.railway.app`
+- Production: `https://agentic-reserve-system-production.up.railway.app`
 - All endpoints: `/api/v1/`
 
 ## Authentication
