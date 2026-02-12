@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ARS Monitoring - System Pulse</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Configuration -->
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#0dccf2",
+              "background-light": "#f5f8f8",
+              "background-dark": "#0b0f10", // Slightly darker to match "Strictly black" request better while keeping theme spirit
+              "surface-dark": "#101f22",
+            },
+            fontFamily: {
+              "display": ["Space Grotesk", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "9999px"},
+            backgroundImage: {
+                'grid-pattern': "linear-gradient(to right, #1a2c30 1px, transparent 1px), linear-gradient(to bottom, #1a2c30 1px, transparent 1px)",
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        /* Custom Utilities for the specific aesthetic */
+        .glass-panel {
+            background: rgba(16, 31, 34, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        
+        .grid-bg {
+            background-size: 40px 40px;
+            mask-image: linear-gradient(to bottom, black 40%, transparent 100%);
+            -webkit-mask-image: linear-gradient(to bottom, black 40%, transparent 100%);
+        }
+
+        .scan-line {
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(to right, transparent, #0dccf2, transparent);
+            opacity: 0.3;
+            animation: scan 4s linear infinite;
+        }
+
+        @keyframes scan {
+            0% { transform: translateY(0); opacity: 0; }
+            50% { opacity: 0.5; }
+            100% { transform: translateY(100vh); opacity: 0; }
+        }
+        
+        .pulse-dot {
+            box-shadow: 0 0 0 0 rgba(13, 204, 242, 0.7);
+            transform: scale(1);
+            animation: pulse-cyan 2s infinite;
+        }
+
+        @keyframes pulse-cyan {
+            0% {
+                transform: scale(0.95);
+                box-shadow: 0 0 0 0 rgba(13, 204, 242, 0.7);
+            }
+            70% {
+                transform: scale(1);
+                box-shadow: 0 0 0 10px rgba(13, 204, 242, 0);
+            }
+            100% {
+                transform: scale(0.95);
+                box-shadow: 0 0 0 0 rgba(13, 204, 242, 0);
+            }
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display min-h-screen selection:bg-primary selection:text-black overflow-x-hidden">
+<!-- Background Grid Effect -->
+<div class="fixed inset-0 pointer-events-none z-0">
+<div class="absolute inset-0 bg-grid-pattern opacity-[0.15] grid-bg"></div>
+<div class="scan-line absolute top-0 left-0 w-full z-10"></div>
+</div>
+<!-- Header -->
+<header class="fixed top-0 w-full z-50 border-b border-primary/20 glass-panel">
+<div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+<!-- Branding -->
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 bg-primary/20 border border-primary flex items-center justify-center rounded">
+<span class="material-icons text-primary text-sm">token</span>
+</div>
+<span class="text-xl font-bold tracking-tight text-white">ARS <span class="text-slate-500 font-light text-sm ml-1">MONITORING</span></span>
+</div>
+<!-- Navigation Pills -->
+<nav class="hidden md:flex items-center gap-1 bg-surface-dark/50 p-1 rounded-full border border-white/5">
+<a class="px-6 py-1.5 text-xs font-medium bg-primary text-background-dark rounded-full shadow-[0_0_15px_rgba(13,204,242,0.3)] transition-all" href="#">SYSTEM</a>
+<a class="px-6 py-1.5 text-xs font-medium text-slate-400 hover:text-white hover:bg-white/5 rounded-full transition-all" href="#">METRICS</a>
+<a class="px-6 py-1.5 text-xs font-medium text-slate-400 hover:text-white hover:bg-white/5 rounded-full transition-all" href="#">AGENTS</a>
+<a class="px-6 py-1.5 text-xs font-medium text-slate-400 hover:text-white hover:bg-white/5 rounded-full transition-all" href="#">PRIVACY</a>
+</nav>
+<!-- Status Indicator -->
+<div class="flex items-center gap-3 border-l border-white/10 pl-6 h-8">
+<div class="flex items-center gap-2">
+<span class="relative flex h-2.5 w-2.5">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-primary pulse-dot"></span>
+</span>
+<span class="text-xs font-bold tracking-wider text-primary">LIVE</span>
+</div>
+<div class="text-[10px] text-slate-500 font-mono hidden lg:block">UPTIME 99.99%</div>
+</div>
+</div>
+</header>
+<!-- Main Content -->
+<main class="relative z-10 pt-28 pb-20 px-6 max-w-7xl mx-auto flex flex-col gap-8">
+<!-- Hero Section: ILI Index -->
+<section class="w-full flex flex-col items-center justify-center py-12 relative">
+<!-- Decorative Elements -->
+<div class="absolute top-0 left-0 w-32 h-32 border-l border-t border-primary/20 rounded-tl-3xl"></div>
+<div class="absolute top-0 right-0 w-32 h-32 border-r border-t border-primary/20 rounded-tr-3xl"></div>
+<h1 class="text-sm font-bold tracking-[0.2em] text-slate-500 mb-6 uppercase flex items-center gap-2">
+<span class="w-2 h-2 bg-primary/50 rounded-full"></span>
+                Internet Liquidity Index (ILI)
+            </h1>
+<div class="relative group cursor-default">
+<!-- Massive Value -->
+<div class="text-9xl md:text-[10rem] font-bold text-transparent bg-clip-text bg-gradient-to-b from-white to-slate-500 leading-none tracking-tighter select-none" style="text-shadow: 0 0 80px rgba(13,204,242,0.15);">
+                    11.54
+                </div>
+<!-- Trend Indicator -->
+<div class="absolute -right-12 top-8 flex flex-col items-start opacity-80">
+<div class="flex items-center text-primary text-lg font-bold">
+<span class="material-icons text-sm mr-1">arrow_outward</span>
+                        +2.4%
+                    </div>
+<span class="text-[10px] text-slate-500 uppercase tracking-wider">24H Change</span>
+</div>
+</div>
+<!-- Sub-Metrics Row -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 mt-12 w-full max-w-4xl">
+<!-- ICR Card -->
+<div class="group border border-white/10 bg-surface-dark/50 p-5 rounded-lg hover:border-primary/50 transition-colors duration-300 relative overflow-hidden">
+<div class="absolute top-0 right-0 p-3 opacity-20 group-hover:opacity-100 transition-opacity">
+<span class="material-icons text-primary">ssid_chart</span>
+</div>
+<div class="text-xs text-slate-400 uppercase tracking-wider mb-1">Interest Cover Ratio</div>
+<div class="text-3xl font-bold text-white group-hover:text-primary transition-colors">500 <span class="text-sm font-normal text-slate-500">bps</span></div>
+<div class="w-full bg-white/5 h-1 mt-3 rounded-full overflow-hidden">
+<div class="bg-primary h-full w-[75%]"></div>
+</div>
+</div>
+<!-- VHR Card -->
+<div class="group border border-white/10 bg-surface-dark/50 p-5 rounded-lg hover:border-primary/50 transition-colors duration-300 relative overflow-hidden">
+<div class="absolute top-0 right-0 p-3 opacity-20 group-hover:opacity-100 transition-opacity">
+<span class="material-icons text-primary">speed</span>
+</div>
+<div class="text-xs text-slate-400 uppercase tracking-wider mb-1">Velocity Health Ratio</div>
+<div class="text-3xl font-bold text-white group-hover:text-primary transition-colors">2.0<span class="text-2xl">x</span></div>
+<div class="w-full bg-white/5 h-1 mt-3 rounded-full overflow-hidden">
+<div class="bg-primary h-full w-[90%]"></div>
+</div>
+</div>
+<!-- TVL Card -->
+<div class="group border border-white/10 bg-surface-dark/50 p-5 rounded-lg hover:border-primary/50 transition-colors duration-300 relative overflow-hidden">
+<div class="absolute top-0 right-0 p-3 opacity-20 group-hover:opacity-100 transition-opacity">
+<span class="material-icons text-primary">lock</span>
+</div>
+<div class="text-xs text-slate-400 uppercase tracking-wider mb-1">Total Value Locked</div>
+<div class="text-3xl font-bold text-white group-hover:text-primary transition-colors">$1.53<span class="text-2xl">B</span></div>
+<div class="w-full bg-white/5 h-1 mt-3 rounded-full overflow-hidden">
+<div class="bg-primary h-full w-[60%]"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Real-Time System Health Module -->
+<section class="grid grid-cols-1 lg:grid-cols-2 gap-6 w-full">
+<!-- Left: Operational Status -->
+<div class="border border-white/10 bg-surface-dark/30 rounded-lg p-6 relative backdrop-blur-sm">
+<div class="absolute top-0 left-0 w-1 h-full bg-primary rounded-l-lg"></div>
+<div class="flex justify-between items-start mb-6 border-b border-white/5 pb-4">
+<div>
+<h2 class="text-lg font-bold text-white flex items-center gap-2">
+<span class="material-icons text-primary text-base">dns</span>
+                            SYSTEM STATUS
+                        </h2>
+<p class="text-xs text-slate-400 mt-1">Real-time dependency verification</p>
+</div>
+<span class="bg-primary/10 text-primary border border-primary/20 px-3 py-1 rounded text-xs font-bold tracking-wider">
+                        OPERATIONAL
+                    </span>
+</div>
+<div class="space-y-4">
+<!-- Service 1 -->
+<div class="flex items-center justify-between p-3 bg-white/5 rounded border border-white/5 hover:border-primary/30 transition-colors">
+<div class="flex items-center gap-3">
+<div class="w-2 h-2 rounded-full bg-green-500 shadow-[0_0_8px_rgba(34,197,94,0.5)]"></div>
+<span class="text-sm font-medium text-slate-200">Supabase Database</span>
+</div>
+<div class="flex items-center gap-2 text-green-400 text-xs uppercase font-bold tracking-wider">
+<span class="material-icons text-sm">check_circle</span>
+                            Connected
+                        </div>
+</div>
+<!-- Service 2 -->
+<div class="flex items-center justify-between p-3 bg-white/5 rounded border border-white/5 hover:border-primary/30 transition-colors">
+<div class="flex items-center gap-3">
+<div class="w-2 h-2 rounded-full bg-green-500 shadow-[0_0_8px_rgba(34,197,94,0.5)]"></div>
+<span class="text-sm font-medium text-slate-200">Redis Cluster</span>
+</div>
+<div class="flex items-center gap-2 text-green-400 text-xs uppercase font-bold tracking-wider">
+<span class="material-icons text-sm">check_circle</span>
+                            Connected
+                        </div>
+</div>
+<!-- Service 3 -->
+<div class="flex items-center justify-between p-3 bg-white/5 rounded border border-white/5 hover:border-primary/30 transition-colors">
+<div class="flex items-center gap-3">
+<div class="w-2 h-2 rounded-full bg-green-500 shadow-[0_0_8px_rgba(34,197,94,0.5)]"></div>
+<span class="text-sm font-medium text-slate-200">Solana RPC Node</span>
+</div>
+<div class="flex items-center gap-2 text-green-400 text-xs uppercase font-bold tracking-wider">
+<span class="material-icons text-sm">check_circle</span>
+                            Synced
+                        </div>
+</div>
+</div>
+</div>
+<!-- Right: Performance Gauges -->
+<div class="border border-white/10 bg-surface-dark/30 rounded-lg p-6 relative backdrop-blur-sm">
+<div class="flex justify-between items-start mb-6 border-b border-white/5 pb-4">
+<div>
+<h2 class="text-lg font-bold text-white flex items-center gap-2">
+<span class="material-icons text-primary text-base">speed</span>
+                            PERFORMANCE
+                        </h2>
+<p class="text-xs text-slate-400 mt-1">Network throughput &amp; latency</p>
+</div>
+<button class="text-slate-500 hover:text-primary transition-colors">
+<span class="material-icons text-sm">refresh</span>
+</button>
+</div>
+<div class="grid grid-cols-2 gap-6 h-[calc(100%-4rem)]">
+<!-- Gauge 1: Cache Hit Rate -->
+<div class="flex flex-col items-center justify-center p-4 bg-white/5 rounded border border-white/5">
+<div class="relative w-24 h-24 mb-3 flex items-center justify-center">
+<!-- Circular Progress SVG -->
+<svg class="transform -rotate-90 w-24 h-24">
+<circle class="text-slate-700" cx="48" cy="48" fill="transparent" r="40" stroke="currentColor" stroke-width="6"></circle>
+<circle class="text-primary" cx="48" cy="48" fill="transparent" r="40" stroke="currentColor" stroke-dasharray="251.2" stroke-dashoffset="36.4" stroke-width="6"></circle>
+</svg>
+<span class="absolute text-xl font-bold text-white">85.5%</span>
+</div>
+<span class="text-xs text-slate-400 font-medium uppercase tracking-wider">Cache Hit Rate</span>
+<span class="text-[10px] text-slate-500 mt-1">Target: &gt;80%</span>
+</div>
+<!-- Gauge 2: Response Time -->
+<div class="flex flex-col items-center justify-center p-4 bg-white/5 rounded border border-white/5">
+<div class="relative w-24 h-24 mb-3 flex items-center justify-center">
+<!-- Circular Progress SVG -->
+<svg class="transform -rotate-90 w-24 h-24">
+<circle class="text-slate-700" cx="48" cy="48" fill="transparent" r="40" stroke="currentColor" stroke-width="6"></circle>
+<circle class="text-green-400" cx="48" cy="48" fill="transparent" r="40" stroke="currentColor" stroke-dasharray="251.2" stroke-dashoffset="100" stroke-width="6"></circle>
+</svg>
+<div class="absolute flex flex-col items-center">
+<span class="text-xl font-bold text-white">196</span>
+<span class="text-[10px] text-slate-400">ms</span>
+</div>
+</div>
+<span class="text-xs text-slate-400 font-medium uppercase tracking-wider">Response Time</span>
+<span class="text-[10px] text-slate-500 mt-1">Global Avg</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Decorative Footer Map Hint -->
+<div class="w-full mt-4 border-t border-white/10 pt-4 flex justify-between items-end opacity-50">
+<div class="text-[10px] text-slate-600 font-mono">
+                ARS_VER_4.2.0 // SOLANA_MAINNET // SECURE_CONNECTION
+            </div>
+<div class="h-12 w-32 relative overflow-hidden rounded bg-surface-dark border border-white/5 grayscale opacity-50">
+<!-- Abstract Map Representation -->
+<img alt="Abstract dark world map grid representation" class="object-cover w-full h-full opacity-40" data-alt="Abstract dark world map grid representation" data-location="Global Network" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDOh0Pd10DSVHlnkgveoyF8rL4qo5EKrT1BBNHRznwsaGnxUS3Wb0hOcYs2r8ly6XAVL_6oYD8rFX--xAhdfzraboS_ixDX_DvuN1a9DUmwoUQnv9mnVxsGpHHdK77VdZaQPESNCDa8edG8QmaDHlME3EWZXJWgLwKejxQwi_AlkWQ9mBwTA6CAPro0bhOr4T7YC8IkmarBOEBXew0akKTkfEG-Doi7KARmm38rE4EV94HZoKlJsT2iRGbMFf7jvdLl_sL5wkCLXg"/>
+</div>
+</div>
+</main>
+</body></html>

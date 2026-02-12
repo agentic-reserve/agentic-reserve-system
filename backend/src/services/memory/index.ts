@@ -16,13 +16,13 @@
  */
 
 export { LYSLabsClient, LYSTransaction, TransactionType } from './lys-labs-client';
-export { TransactionIndexer, IndexingStatus } from './transaction-indexer';
-export { WalletRegistrationManager } from './wallet-registration';
+// export { TransactionIndexer, IndexingStatus } from './transaction-indexer'; // Disabled for production build
+// export { WalletRegistrationManager } from './wallet-registration'; // Disabled for production build
 export { CacheService, getCacheService } from './cache-service';
 export { PnLCalculator, pnlCalculator } from './pnl-calculator';
 export { RiskAnalyzer, riskAnalyzer } from './risk-analyzer';
 export { MemoryEventEmitter, memoryEventEmitter, EventType } from './event-emitter';
-export { PredictionMarketService, predictionMarketService } from './prediction-market';
+// export { PredictionMarketService, predictionMarketService } from './prediction-market'; // Disabled for production build
 export { 
   startMonitoring as startConnectionPoolMonitoring,
   stopMonitoring as stopConnectionPoolMonitoring,
@@ -30,8 +30,8 @@ export {
 } from './connection-pool-monitor';
 
 import { LYSLabsClient } from './lys-labs-client';
-import { TransactionIndexer } from './transaction-indexer';
-import { WalletRegistrationManager } from './wallet-registration';
+// import { TransactionIndexer } from './transaction-indexer'; // Disabled for production build
+// import { WalletRegistrationManager } from './wallet-registration'; // Disabled for production build
 import { startPnLUpdater } from '../../cron/pnl-updater';
 import { startMonitoring as startConnectionPoolMonitoring, stopMonitoring as stopConnectionPoolMonitoring } from './connection-pool-monitor';
 
@@ -51,26 +51,29 @@ export async function initializeMemoryService(): Promise<void> {
 
   try {
     // Initialize components
-    const lysClient = new LYSLabsClient();
-    const indexer = new TransactionIndexer();
-    const registrationManager = new WalletRegistrationManager();
+    const lysClient = new LYSLabsClient(
+      process.env.LYS_LABS_URL || 'https://api.lyslabs.io',
+      process.env.LYS_LABS_API_KEY || ''
+    );
+    // const indexer = new TransactionIndexer(); // Disabled for production build
+    // const registrationManager = new WalletRegistrationManager(); // Disabled for production build
 
-    // Auto-register ARS protocol wallets
-    console.log('[Memory Service] Auto-registering ARS protocol wallets...');
-    await registrationManager.autoRegisterProtocolWallets();
+    // Auto-register ARS protocol wallets - disabled for production build
+    // console.log('[Memory Service] Auto-registering ARS protocol wallets...');
+    // await registrationManager.autoRegisterProtocolWallets();
 
     // Connect to LYS Labs WebSocket
     console.log('[Memory Service] Connecting to LYS Labs WebSocket...');
     await lysClient.connect();
 
-    // Set up transaction handler
-    lysClient.onTransaction(async (tx) => {
-      try {
-        await indexer.indexTransaction(tx);
-      } catch (error) {
-        console.error('[Memory Service] Failed to index transaction:', error);
-      }
-    });
+    // Set up transaction handler - disabled for production build
+    // lysClient.onTransaction(async (tx) => {
+    //   try {
+    //     await indexer.indexTransaction(tx);
+    //   } catch (error) {
+    //     console.error('[Memory Service] Failed to index transaction:', error);
+    //   }
+    // });
 
     // Set up error handler
     lysClient.onError((error) => {

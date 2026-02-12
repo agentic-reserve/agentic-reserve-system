@@ -1,6 +1,8 @@
 import { WebSocketServer, WebSocket } from 'ws';
 import { Server } from 'http';
-import { supabase } from './supabase';
+import { getSupabaseClient } from './supabase';
+
+const supabase = getSupabaseClient();
 
 interface Client {
   ws: WebSocket;

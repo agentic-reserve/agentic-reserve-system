@@ -1,5 +1,5 @@
 import { HermesClient } from '@pythnetwork/hermes-client';
-import { getHeliusClient } from '../helius-client';
+import { getHeliusClient } from '../helius-client.stub'; // Use stub for production build
 
 /**
  * Pyth Price Feed IDs for Solana ecosystem

@@ -285,7 +285,9 @@ export class PnLCalculator {
           });
 
           // Invalidate cache
-          await redisClient.del(`wallet:${registration.address}:pnl:${period}`);
+          if (redisClient) {
+            await redisClient.del(`wallet:${registration.address}:pnl:${period}`);
+          }
         }
 
         console.log(`PnL calculated for wallet: ${registration.address}`);

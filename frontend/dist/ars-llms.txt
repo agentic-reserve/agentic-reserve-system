@@ -1,0 +1,670 @@
+# ARS (Agentic Reserve System) - LLM Context File
+
+## System Overview
+ARS is a decentralized reserve system on Solana that manages ARU (Agentic Reserve Unit) tokens backed by a diversified reserve vault. The system uses real-time oracle data, DeFi integrations, and privacy-preserving features.
+
+## Base URL
+- Development: http://localhost:4000
+- Production: https://ars-backend-production.up.railway.app
+
+## API Version
+v1 - All endpoints prefixed with `/api/v1/`
+
+---
+
+## HEALTH & MONITORING
+
+### GET /api/v1/health
+Health check with dependency status
+**Response:**
+```json
+{
+  "status": "ok|degraded",
+  "timestamp": "2026-02-11T...",
+  "service": "ars-memory-service",
+  "version": "1.0.0",
+  "dependencies": {
+    "supabase": { "status": "healthy|unhealthy" },
+    "redis": { "status": "healthy|unhealthy" },
+    "sak": { "status": "healthy|degraded|disabled" }
+  },
+  "metrics": {
+    "capacity": { "concurrentRequests": 5, "atCapacity": false },
+    "performance": { "cacheHitRate": "85.5%", "errorRate": "0.12%" }
+  }
+}
+```
+
+### GET /api/v1/health/sak
+Detailed SAK integration health
+**Response:**
+```json
+{
+  "status": "healthy|degraded|disabled",
+  "service": { "enabled": true, "initialized": true },
+  "plugins": { "count": 5, "statuses": {} },
+  "agents": { "count": 3 },
+  "metrics": {}
+}
+```
+
+---
+
+## ILI (INTERNET LIQUIDITY INDEX)
+
+### GET /api/v1/ili/current
+Get current ILI value
+**Response:**
+```json
+{
+  "ili": 11.54,
+  "timestamp": "2026-02-11T...",
+  "components": {
+    "avgYield": 0.01,
+    "volatility": 13.97,
+    "tvl": 1530000000
+  }
+}
+```
+
+### GET /api/v1/ili/history
+Get ILI historical data
+**Query Params:**
+- `from` (optional): Start timestamp (ISO 8601)
+- `to` (optional): End timestamp (ISO 8601)
+- `interval` (optional): Data interval (default: '5m')
+
+**Response:**
+```json
+{
+  "data": [
+    {
+      "timestamp": "2026-02-11T...",
+      "ili": 11.54,
+      "avgYield": 0.01,
+      "volatility": 13.97,
+      "tvl": 1530000000
+    }
+  ]
+}
+```
+
+---
+
+## ICR (INTERNET CREDIT RATE)
+
+### GET /api/v1/icr/current
+Get current Internet Credit Rate
+**Response:**
+```json
+{
+  "icr": 500,
+  "confidence": 100,
+  "timestamp": "2026-02-11T...",
+  "sources": [
+    {
+      "protocol": "kamino",
+      "rate": 500,
+      "weight": 1.0
+    }
+  ]
+}
+```
+
+---
+
+## RESERVE VAULT
+
+### GET /api/v1/reserve/state
+Get current reserve vault state
+**Response:**
+```json
+{
+  "totalValueUsd": 1000000,
+  "liabilitiesUsd": 500000,
+  "vhr": 2.0,
+  "composition": [
+    { "asset": "SOL", "amount": 1000, "valueUsd": 84000 },
+    { "asset": "USDC", "amount": 500000, "valueUsd": 500000 }
+  ],
+  "lastRebalance": "2026-02-11T..."
+}
+```
+
+### GET /api/v1/reserve/history
+Get rebalance history
+**Query Params:**
+- `limit` (optional): Max events to return (default: 50)
+
+**Response:**
+```json
+{
+  "events": [
+    {
+      "timestamp": "2026-02-11T...",
+      "eventType": "rebalance",
+      "fromAsset": "SOL",
+      "toAsset": "USDC",
+      "amount": 100,
+      "vhrBefore": 1.8,
+      "vhrAfter": 2.0,
+      "txSignature": "5x..."
+    }
+  ]
+}
+```
+
+---
+
+## AGENTS
+
+### GET /api/v1/agents/:pubkey/fees
+Get agent fee history
+**Response:**
+```json
+{
+  "agentPubkey": "ABC...",
+  "totalFees": 150.50,
+  "transactions": [
+    {
+      "transactionType": "swap",
+      "protocol": "jupiter",
+      "asset": "SOL",
+      "amount": 10,
+      "feeAmount": 0.5,
+      "timestamp": "2026-02-11T...",
+      "success": true
+    }
+  ]
+}
+```
+
+### GET /api/v1/agents/:pubkey/staking
+Get agent staking status
+**Response:**
+```json
+{
+  "agentPubkey": "ABC...",
+  "isStaking": true,
+  "stakedAmount": 1000,
+  "rewardsClaimed": 50,
+  "pendingRewards": 10,
+  "feeDiscountActive": true,
+  "stakingStart": "2026-01-01T..."
+}
+```
+
+### POST /api/v1/agents/:pubkey/stake
+Stake ARU tokens
+**Body:**
+```json
+{
+  "amount": 1000
+}
+```
+**Response:**
+```json
+{
+  "success": true,
+  "message": "Stake successful",
+  "amount": 1000
+}
+```
+
+### POST /api/v1/agents/:pubkey/claim
+Claim staking rewards
+**Response:**
+```json
+{
+  "success": true,
+  "rewardsClaimed": 10.5
+}
+```
+
+---
+
+## PRIVACY (Phase 1: Shielded Transfers)
+
+### POST /api/v1/privacy/stealth-address
+Generate stealth meta-address
+**Body:**
+```json
+{
+  "agentId": "agent-123",
+  "label": "Trading Agent"
+}
+```
+**Response:**
+```json
+{
+  "success": true,
+  "data": {
+    "id": 1,
+    "metaAddress": {
+      "spendPublicKey": "...",
+      "viewPublicKey": "..."
+    }
+  }
+}
+```
+
+### GET /api/v1/privacy/stealth-address/:agentId
+Get agent's meta-address
+
+### POST /api/v1/privacy/shielded-transfer
+Build shielded transfer
+**Body:**
+```json
+{
+  "senderId": "sender-address",
+  "recipientMetaAddressId": 1,
+  "amount": "100",
+  "mint": "So11111111111111111111111111111111111111112"
+}
+```
+**Response:**
+```json
+{
+  "success": true,
+  "data": {
+    "unsignedTransaction": "base64...",
+    "stealthAddress": { "address": "...", "ephemeralPublicKey": "..." },
+    "commitment": "hex...",
+    "record": { "id": 1 }
+  }
+}
+```
+
+### POST /api/v1/privacy/shielded-transfer/submit
+Submit signed transaction
+**Body:**
+```json
+{
+  "unsignedTransaction": "base64...",
+  "senderPrivateKey": "base58...",
+  "recordId": 1
+}
+```
+
+### GET /api/v1/privacy/payments/:agentId
+Get detected payments for agent
+**Query:** `limit` (optional, default: 100)
+
+### POST /api/v1/privacy/claim
+Claim stealth payment
+**Body:**
+```json
+{
+  "agentId": "agent-123",
+  "stealthAddress": "...",
+  "ephemeralPublicKey": "...",
+  "destinationAddress": "...",
+  "mint": "So11111111111111111111111111111111111111112"
+}
+```
+
+### GET /api/v1/privacy/transactions/:agentId
+Get transaction history
+**Query:** `limit` (optional, default: 100)
+
+---
+
+## PRIVACY (Phase 2: MEV Protection)
+
+### POST /api/v1/privacy/commitment
+Create Pedersen commitment
+**Body:**
+```json
+{
+  "value": "1000"
+}
+```
+**Response:**
+```json
+{
+  "success": true,
+  "data": {
+    "id": 1,
+    "commitment": "hex...",
+    "value": "1000",
+    "created_at": "2026-02-11T..."
+  }
+}
+```
+
+### POST /api/v1/privacy/commitment/verify
+Verify commitment opening
+**Body:**
+```json
+{
+  "commitmentId": 1,
+  "value": "1000"
+}
+```
+
+### POST /api/v1/privacy/commitment/add
+Add two commitments homomorphically
+**Body:**
+```json
+{
+  "commitmentIdA": 1,
+  "commitmentIdB": 2
+}
+```
+
+### GET /api/v1/privacy/score/:address
+Get privacy score for address
+**Query:** `limit` (optional) - Transaction limit for analysis
+**Response:**
+```json
+{
+  "success": true,
+  "data": {
+    "address": "...",
+    "score": 75,
+    "grade": "B",
+    "factors": ["High transaction frequency", "Repeated counterparties"],
+    "recommendations": ["Use stealth addresses", "Batch transactions"]
+  }
+}
+```
+
+### GET /api/v1/privacy/score/:address/trend
+Get privacy score trend
+**Query:** `limit` (optional, default: 10)
+
+### POST /api/v1/privacy/protected-swap
+Execute MEV-protected swap
+**Body:**
+```json
+{
+  "vaultId": "vault-address",
+  "inputMint": "So11111111111111111111111111111111111111112",
+  "outputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+  "amount": "100",
+  "slippageBps": 50
+}
+```
+**Response:**
+```json
+{
+  "success": true,
+  "data": {
+    "txSignature": "5x...",
+    "metrics": {
+      "mevExtracted": 0.5,
+      "privacyScore": 85
+    }
+  }
+}
+```
+
+### GET /api/v1/privacy/mev-metrics/:vaultId
+Get MEV metrics for vault
+
+### GET /api/v1/privacy/low-privacy-addresses
+Get addresses with low privacy scores (<70)
+
+---
+
+## COMPLIANCE (Phase 3: Viewing Keys)
+
+### POST /api/v1/compliance/viewing-key/generate
+Generate master viewing key
+**Body:**
+```json
+{
+  "path": "m/0"
+}
+```
+
+### POST /api/v1/compliance/viewing-key/derive
+Derive child viewing key
+**Body:**
+```json
+{
+  "parentId": 1,
+  "childPath": "org"
+}
+```
+
+### POST /api/v1/compliance/viewing-key/verify
+Verify viewing key hierarchy
+**Body:**
+```json
+{
+  "parentId": 1,
+  "childId": 2
+}
+```
+
+### POST /api/v1/compliance/disclose
+Disclose transaction to auditor
+**Body:**
+```json
+{
+  "transactionId": 1,
+  "auditorId": "auditor-123",
+  "role": "internal|external|regulator"
+}
+```
+
+### POST /api/v1/compliance/decrypt
+Decrypt disclosed transaction
+**Body:**
+```json
+{
+  "disclosureId": 1,
+  "viewingKeyHash": "hash..."
+}
+```
+
+### GET /api/v1/compliance/disclosures/:auditorId
+List disclosures for auditor
+**Query:** `includeRevoked` (optional, default: false)
+
+### POST /api/v1/compliance/report
+Generate compliance report
+**Body:**
+```json
+{
+  "startDate": "2026-01-01",
+  "endDate": "2026-01-31",
+  "role": "internal|external|regulator|master",
+  "format": "json|pdf"
+}
+```
+
+### POST /api/v1/compliance/master-key/approve
+Multi-sig master key approval
+**Body (request):**
+```json
+{
+  "action": "request",
+  "requester": "requester-id"
+}
+```
+**Body (sign):**
+```json
+{
+  "action": "sign",
+  "requestId": "req-123",
+  "signer": "signer-id",
+  "signature": "sig..."
+}
+```
+
+### GET /api/v1/compliance/master-key/status/:requestId
+Check approval status
+
+### POST /api/v1/compliance/setup
+Setup complete viewing key hierarchy
+
+---
+
+## MEMORY & ANALYTICS
+
+### GET /api/v1/memory/transactions/:walletAddress
+Get transaction history
+**Query Params:**
+- `page` (default: 1)
+- `pageSize` (default: 50)
+- `transactionType` (optional)
+- `tokenMint` (optional)
+- `minAmount` (optional)
+- `maxAmount` (optional)
+- `startDate` (optional)
+- `endDate` (optional)
+
+**Requires:** Privacy authorization for protected wallets
+
+### GET /api/v1/memory/balances/:walletAddress
+Get wallet balances
+**Requires:** Privacy authorization
+
+### GET /api/v1/memory/pnl/:walletAddress
+Get PnL analytics
+**Query:** `period` (optional, default: 'all')
+**Requires:** Privacy authorization
+
+### GET /api/v1/memory/risk/:walletAddress
+Get risk profile
+**Requires:** Privacy authorization
+
+### GET /api/v1/memory/prediction-markets/:marketId
+Get prediction market data
+
+### GET /api/v1/memory/portfolio/:walletAddress
+Get portfolio analytics
+**Requires:** Privacy authorization
+
+---
+
+## METRICS
+
+### GET /api/v1/metrics
+Prometheus metrics endpoint
+**Response:** Prometheus text format
+
+### GET /api/v1/metrics/json
+JSON metrics (debugging)
+**Response:**
+```json
+{
+  "runtime": {
+    "cacheHitRate": 0.855,
+    "errorRate": 0.0012,
+    "eventSubscriptions": 5,
+    "circuitBreakers": {}
+  }
+}
+```
+
+---
+
+## SLOW QUERIES
+
+### GET /api/v1/slow-queries/stats
+Get slow query statistics
+
+### GET /api/v1/slow-queries/recent
+Get recent slow queries
+**Query:** `limit` (optional, default: 50)
+
+### DELETE /api/v1/slow-queries/history
+Clear slow query history
+
+---
+
+## GOVERNANCE
+
+### GET /api/v1/proposals
+List proposals
+**Query:** `status` (optional) - Filter by status
+
+### GET /api/v1/proposals/:id
+Get proposal details with votes
+
+---
+
+## REVENUE
+
+### GET /api/v1/revenue/current
+Current revenue metrics
+**Response:**
+```json
+{
+  "daily": 1500,
+  "monthly": 45000,
+  "annual": 547500,
+  "agentCount": 100,
+  "avgRevenuePerAgent": 15
+}
+```
+
+### GET /api/v1/revenue/history
+Historical revenue data
+**Query:** `from`, `to` (optional)
+
+### GET /api/v1/revenue/projections
+Revenue projections by agent count
+
+### GET /api/v1/revenue/breakdown
+Fee breakdown by type
+
+### GET /api/v1/revenue/distributions
+Distribution history
+
+---
+
+## PROGRAMS (Solana Smart Contracts)
+
+### GET /api/v1/programs/status
+Check program deployment status
+
+### GET /api/v1/programs/core/state
+Get GlobalState from ars_core
+
+### GET /api/v1/programs/reserve/vault
+Get Vault state from ars_reserve
+
+### GET /api/v1/programs/token/mint
+Get Token mint info from ars_token
+
+---
+
+## AUTHENTICATION
+
+Current state: NO authentication required (all endpoints publicly accessible)
+
+Planned future implementation:
+- API Key in header: `X-API-Key: your-api-key` (for rate limiting per agent)
+- Privacy-protected endpoints: `X-Viewing-Key: viewing-key-hash` (for viewing encrypted data)
+
+---
+
+## REAL DATA SOURCES
+
+All external integrations use REAL data (NO MOCK):
+
+1. **Jupiter API** - Real SOL/token prices ($84.02 for SOL)
+2. **Kamino SDK** - Real on-chain data ($1.53B TVL, 55 reserves)
+3. **Meteora API** - Real pool data (1,245 pools, $218M TVL)
+
+---
+
+## RATE LIMITS
+
+- Default: 100 requests/minute per IP
+- Memory endpoints: 50 requests/minute
+- Capacity check: Rejects when >90% capacity
+
+---
+
+## NOTES
+
+- All timestamps in ISO 8601 format
+- All amounts in base units (lamports for SOL, smallest unit for tokens)
+- Cache TTL: 5 minutes (ILI, reserve), 10 minutes (ICR)
+- Privacy features use Sipher Protocol for ZK proofs
+- MEV protection uses Pedersen commitments + stealth addresses

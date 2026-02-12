@@ -100,7 +100,9 @@ async function monitorPools(): Promise<void> {
     // Check Redis connection health
     const redisStart = Date.now();
     try {
-      await redisClient.ping();
+      if (redisClient) {
+        await redisClient.ping();
+      }
       const redisDuration = Date.now() - redisStart;
       metricsService.observeHistogram('memory_redis_ping_duration_seconds', redisDuration / 1000);
     } catch (error) {

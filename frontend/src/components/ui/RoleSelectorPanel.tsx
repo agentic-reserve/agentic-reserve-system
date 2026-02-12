@@ -63,7 +63,7 @@ export const RoleSelectorPanel = () => {
   };
 
   return (
-    <div className="border border-white/10 bg-white/[0.02] max-w-lg mx-auto lg:mx-0">
+    <div className="border border-white/10 bg-white/[0.02] max-w-lg mx-auto">
       {/* Role Toggle */}
       <div
         className="flex border-b border-white/10 p-1"

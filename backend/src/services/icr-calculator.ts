@@ -108,10 +108,10 @@ export class ICRCalculator {
       const markets = await kamino.getMarkets();
 
       for (const market of markets) {
-        if (market.borrowApy > 0 && market.totalBorrow > 0) {
+        if (market.borrowAPY > 0 && market.totalBorrow > 0) {
           rates.push({
             protocol: 'kamino',
-            rate: market.borrowApy * 100, // Convert to basis points
+            rate: market.borrowAPY * 100, // Convert to basis points
             tvl: market.totalBorrow,
             weight: 0 // Will be calculated later
           });

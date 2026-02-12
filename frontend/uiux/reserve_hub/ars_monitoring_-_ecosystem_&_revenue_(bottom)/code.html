@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ARS Monitoring - Ecosystem &amp; Revenue</title>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Configuration -->
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#0dccf2",
+              "background-light": "#f5f8f8", // Not used due to strict dark mode requirement
+              "background-dark": "#101f22",
+              "surface-dark": "#162a2d",
+              "surface-darker": "#0b1618",
+            },
+            fontFamily: {
+              "display": ["Space Grotesk", "sans-serif"],
+              "mono": ["Space Mono", "monospace"] // Fallback for tabular data if needed
+            },
+            borderRadius: {
+              "DEFAULT": "0.125rem", 
+              "lg": "0.25rem", 
+              "xl": "0.5rem", 
+              "full": "0.75rem"
+            },
+          },
+        },
+      }
+    </script>
+<!-- Google Fonts: Space Grotesk -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Icons -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        /* Custom Scrollbar for activity feed */
+        .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+        }
+        .scrollbar-hide {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        
+        /* Pulse Animation for Live Status */
+        @keyframes pulse-ring {
+            0% { transform: scale(0.33); }
+            80%, 100% { opacity: 0; }
+        }
+        @keyframes pulse-dot {
+            0% { transform: scale(0.8); }
+            50% { transform: scale(1); }
+            100% { transform: scale(0.8); }
+        }
+        .ring-container {
+            position: relative;
+        }
+        .circle {
+            width: 8px;
+            height: 8px;
+            background-color: #0dccf2;
+            border-radius: 50%;
+            position: absolute;
+            top: 2px;
+            left: 2px;
+        }
+        .ringring {
+            border: 3px solid #0dccf2;
+            border-radius: 30px;
+            height: 16px;
+            width: 16px;
+            position: absolute;
+            left: -2px;
+            top: -2px;
+            animation: pulse-ring 1.25s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+        }
+        
+        /* Grid background pattern */
+        .bg-grid-pattern {
+            background-image: linear-gradient(to right, #0dccf205 1px, transparent 1px),
+                              linear-gradient(to bottom, #0dccf205 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+    </style>
+</head>
+<body class="bg-background-dark text-slate-300 font-display min-h-screen flex flex-col relative overflow-x-hidden">
+<!-- Background Decoration -->
+<div class="fixed inset-0 pointer-events-none z-0 bg-grid-pattern opacity-50"></div>
+<div class="fixed top-0 right-0 w-[500px] h-[500px] bg-primary/5 rounded-full blur-[120px] pointer-events-none"></div>
+<!-- Main Content Container -->
+<main class="relative z-10 w-full max-w-7xl mx-auto px-6 py-12 space-y-12">
+<!-- Section 1: Agent Ecosystem Overview -->
+<section>
+<div class="flex items-center justify-between mb-6">
+<h2 class="text-xl font-semibold tracking-wide uppercase text-white flex items-center gap-2">
+<span class="w-1 h-6 bg-primary"></span>
+                    Agent Ecosystem Overview
+                </h2>
+<div class="flex items-center gap-2 text-xs text-primary/80 bg-primary/10 px-3 py-1 rounded border border-primary/20">
+<div class="ring-container w-3 h-3 relative mr-2">
+<div class="ringring"></div>
+<div class="circle"></div>
+</div>
+                    SYSTEM OPERATIONAL
+                </div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+<!-- Metric Card 1: Total Agents -->
+<div class="bg-surface-dark border border-slate-800 rounded-lg p-5 hover:border-primary/50 transition-colors group">
+<div class="text-slate-400 text-sm font-medium mb-1 uppercase tracking-wider">Total Agents</div>
+<div class="text-3xl font-bold text-white group-hover:text-primary transition-colors">1,248</div>
+<div class="text-xs text-emerald-400 mt-2 flex items-center gap-1">
+<span class="material-icons text-xs">trending_up</span>
+                        +12 this week
+                    </div>
+</div>
+<!-- Metric Card 2: Active Now -->
+<div class="bg-surface-dark border border-slate-800 rounded-lg p-5 hover:border-primary/50 transition-colors group relative overflow-hidden">
+<div class="absolute top-0 right-0 w-16 h-16 bg-primary/5 rounded-bl-full -mr-8 -mt-8"></div>
+<div class="text-slate-400 text-sm font-medium mb-1 uppercase tracking-wider flex items-center gap-2">
+                        Active Now
+                        <span class="flex h-2 w-2 relative">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+</span>
+</div>
+<div class="text-3xl font-bold text-white group-hover:text-primary transition-colors">842</div>
+<div class="text-xs text-slate-500 mt-2">67% Utilization Rate</div>
+</div>
+<!-- Metric Card 3: 24h Fees -->
+<div class="bg-surface-dark border border-slate-800 rounded-lg p-5 hover:border-primary/50 transition-colors group">
+<div class="text-slate-400 text-sm font-medium mb-1 uppercase tracking-wider">24h Fees</div>
+<div class="text-3xl font-bold text-white group-hover:text-primary transition-colors">$142,390</div>
+<div class="text-xs text-emerald-400 mt-2 flex items-center gap-1">
+<span class="material-icons text-xs">north_east</span>
+                        +5.4% vs yesterday
+                    </div>
+</div>
+<!-- Metric Card 4: Staked ARU -->
+<div class="bg-surface-dark border border-slate-800 rounded-lg p-5 hover:border-primary/50 transition-colors group">
+<div class="text-slate-400 text-sm font-medium mb-1 uppercase tracking-wider">Staked ARU</div>
+<div class="text-3xl font-bold text-white group-hover:text-primary transition-colors">4.2M</div>
+<div class="w-full bg-slate-800 h-1 mt-4 rounded-full overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 78%"></div>
+</div>
+<div class="text-xs text-slate-500 mt-1 text-right">78% of Supply</div>
+</div>
+</div>
+</section>
+<!-- Section 2: Split Layout - Activity Feed & Revenue -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+<!-- Left Column: Activity Feed (Span 4) -->
+<div class="lg:col-span-4 flex flex-col h-full bg-surface-dark border border-slate-800 rounded-lg overflow-hidden">
+<div class="p-4 border-b border-slate-800 flex justify-between items-center bg-surface-darker">
+<h3 class="font-semibold text-white uppercase tracking-wider text-sm flex items-center gap-2">
+<span class="material-icons text-primary text-sm">history</span>
+                        Live Activity Feed
+                    </h3>
+<span class="text-[10px] text-primary bg-primary/10 px-2 py-0.5 rounded border border-primary/20">REAL-TIME</span>
+</div>
+<div class="flex-1 overflow-y-auto max-h-[400px] p-2 space-y-2 relative">
+<!-- Gradient overlay for bottom fade -->
+<div class="absolute bottom-0 left-0 right-0 h-12 bg-gradient-to-t from-surface-dark to-transparent pointer-events-none z-10"></div>
+<!-- Item 1 -->
+<div class="bg-background-dark/50 border border-slate-800/50 p-3 rounded hover:border-primary/30 transition-all group cursor-default">
+<div class="flex justify-between items-start mb-1">
+<span class="text-primary text-xs font-bold uppercase">Shielded Transfer</span>
+<span class="text-slate-500 text-[10px]">Just now</span>
+</div>
+<div class="flex justify-between items-center text-sm">
+<span class="text-slate-300 font-mono text-xs">0x8a...4f2b</span>
+<span class="text-white font-medium">1,250 ARS</span>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="bg-background-dark/50 border border-slate-800/50 p-3 rounded hover:border-primary/30 transition-all group cursor-default">
+<div class="flex justify-between items-start mb-1">
+<span class="text-emerald-400 text-xs font-bold uppercase">Token Swap</span>
+<span class="text-slate-500 text-[10px]">2s ago</span>
+</div>
+<div class="flex justify-between items-center text-sm">
+<span class="text-slate-300 font-mono text-xs">0x4c...9e1a</span>
+<span class="text-white font-medium">500 USDC <span class="text-slate-500">→</span> ARS</span>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="bg-background-dark/50 border border-slate-800/50 p-3 rounded hover:border-primary/30 transition-all group cursor-default">
+<div class="flex justify-between items-start mb-1">
+<span class="text-primary text-xs font-bold uppercase">Node Stake</span>
+<span class="text-slate-500 text-[10px]">15s ago</span>
+</div>
+<div class="flex justify-between items-center text-sm">
+<span class="text-slate-300 font-mono text-xs">Agent-102</span>
+<span class="text-white font-medium">+5,000 ARU</span>
+</div>
+</div>
+<!-- Item 4 -->
+<div class="bg-background-dark/50 border border-slate-800/50 p-3 rounded hover:border-primary/30 transition-all group cursor-default opacity-80">
+<div class="flex justify-between items-start mb-1">
+<span class="text-primary text-xs font-bold uppercase">Shielded Transfer</span>
+<span class="text-slate-500 text-[10px]">42s ago</span>
+</div>
+<div class="flex justify-between items-center text-sm">
+<span class="text-slate-300 font-mono text-xs">0x1b...cc88</span>
+<span class="text-white font-medium">250 ARS</span>
+</div>
+</div>
+<!-- Item 5 -->
+<div class="bg-background-dark/50 border border-slate-800/50 p-3 rounded hover:border-primary/30 transition-all group cursor-default opacity-60">
+<div class="flex justify-between items-start mb-1">
+<span class="text-emerald-400 text-xs font-bold uppercase">Token Swap</span>
+<span class="text-slate-500 text-[10px]">1m ago</span>
+</div>
+<div class="flex justify-between items-center text-sm">
+<span class="text-slate-300 font-mono text-xs">0x99...aa12</span>
+<span class="text-white font-medium">1.2 ETH <span class="text-slate-500">→</span> ARS</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Revenue & Economics (Span 8) -->
+<div class="lg:col-span-8 space-y-6">
+<!-- Revenue Chart Card -->
+<div class="bg-surface-dark border border-slate-800 rounded-lg p-6 relative">
+<div class="flex justify-between items-center mb-6">
+<div>
+<h3 class="text-lg font-semibold text-white uppercase tracking-wider">Protocol Revenue</h3>
+<p class="text-sm text-slate-500">Daily revenue accumulation (30D)</p>
+</div>
+<div class="flex gap-2">
+<button class="px-3 py-1 text-xs font-medium text-white bg-primary rounded hover:bg-primary/80 transition-colors">30D</button>
+<button class="px-3 py-1 text-xs font-medium text-slate-400 bg-surface-darker border border-slate-700 rounded hover:text-white transition-colors">90D</button>
+<button class="px-3 py-1 text-xs font-medium text-slate-400 bg-surface-darker border border-slate-700 rounded hover:text-white transition-colors">YTD</button>
+</div>
+</div>
+<!-- Chart Placeholder using CSS shapes/gradients -->
+<div class="h-64 w-full relative flex items-end gap-1 overflow-hidden" data-alt="Area chart showing an upward trend in revenue over 30 days, colored in primary blue gradient on dark background">
+<!-- Y-Axis Lines -->
+<div class="absolute inset-0 flex flex-col justify-between text-xs text-slate-600 pointer-events-none z-0">
+<div class="border-b border-slate-800 w-full h-0 pb-2">15k</div>
+<div class="border-b border-slate-800 w-full h-0 pb-2">10k</div>
+<div class="border-b border-slate-800 w-full h-0 pb-2">5k</div>
+<div class="border-b border-slate-800 w-full h-0 pb-2">0</div>
+</div>
+<!-- Chart Bars simulating area chart -->
+<div class="w-full h-full flex items-end justify-between gap-1 z-10 px-4 pb-2">
+<!-- Simulated Data Points -->
+<div class="w-1/12 bg-primary/20 h-[30%] rounded-t-sm hover:bg-primary/40 transition-all relative group"><div class="hidden group-hover:block absolute bottom-full mb-2 left-1/2 -translate-x-1/2 bg-surface-darker border border-primary text-primary text-xs px-2 py-1 rounded whitespace-nowrap">$4,200</div></div>
+<div class="w-1/12 bg-primary/20 h-[45%] rounded-t-sm hover:bg-primary/40 transition-all relative group"><div class="hidden group-hover:block absolute bottom-full mb-2 left-1/2 -translate-x-1/2 bg-surface-darker border border-primary text-primary text-xs px-2 py-1 rounded whitespace-nowrap">$6,100</div></div>
+<div class="w-1/12 bg-primary/20 h-[40%] rounded-t-sm hover:bg-primary/40 transition-all relative group"><div class="hidden group-hover:block absolute bottom-full mb-2 left-1/2 -translate-x-1/2 bg-surface-darker border border-primary text-primary text-xs px-2 py-1 rounded whitespace-nowrap">$5,800</div></div>
+<div class="w-1/12 bg-primary/20 h-[55%] rounded-t-sm hover:bg-primary/40 transition-all relative group"><div class="hidden group-hover:block absolute bottom-full mb-2 left-1/2 -translate-x-1/2 bg-surface-darker border border-primary text-primary text-xs px-2 py-1 rounded whitespace-nowrap">$7,500</div></div>
+<div class="w-1/12 bg-primary/30 h-[60%] rounded-t-sm hover:bg-primary/40 transition-all relative group"><div class="hidden group-hover:block absolute bottom-full mb-2 left-1/2 -translate-x-1/2 bg-surface-darker border border-primary text-primary text-xs px-2 py-1 rounded whitespace-nowrap">$8,200</div></div>
+<div class="w-1/12 bg-primary/40 h-[50%] rounded-t-sm hover:bg-primary/50 transition-all relative group"><div class="hidden group-hover:block absolute bottom-full mb-2 left-1/2 -translate-x-1/2 bg-surface-darker border border-primary text-primary text-xs px-2 py-1 rounded whitespace-nowrap">$7,100</div></div>
+<div class="w-1/12 bg-primary/50 h-[70%] rounded-t-sm hover:bg-primary/60 transition-all relative group"><div class="hidden group-hover:block absolute bottom-full mb-2 left-1/2 -translate-x-1/2 bg-surface-darker border border-primary text-primary text-xs px-2 py-1 rounded whitespace-nowrap">$9,800</div></div>
+<div class="w-1/12 bg-primary/60 h-[75%] rounded-t-sm hover:bg-primary/70 transition-all relative group"><div class="hidden group-hover:block absolute bottom-full mb-2 left-1/2 -translate-x-1/2 bg-surface-darker border border-primary text-primary text-xs px-2 py-1 rounded whitespace-nowrap">$10,400</div></div>
+<div class="w-1/12 bg-primary/70 h-[65%] rounded-t-sm hover:bg-primary/80 transition-all relative group"><div class="hidden group-hover:block absolute bottom-full mb-2 left-1/2 -translate-x-1/2 bg-surface-darker border border-primary text-primary text-xs px-2 py-1 rounded whitespace-nowrap">$9,100</div></div>
+<div class="w-1/12 bg-primary/80 h-[85%] rounded-t-sm hover:bg-primary/90 transition-all relative group"><div class="hidden group-hover:block absolute bottom-full mb-2 left-1/2 -translate-x-1/2 bg-surface-darker border border-primary text-primary text-xs px-2 py-1 rounded whitespace-nowrap">$11,800</div></div>
+<div class="w-1/12 bg-primary/90 h-[95%] rounded-t-sm hover:bg-primary transition-all relative group shadow-[0_0_15px_rgba(13,204,242,0.5)]"><div class="hidden group-hover:block absolute bottom-full mb-2 left-1/2 -translate-x-1/2 bg-surface-darker border border-primary text-primary text-xs px-2 py-1 rounded whitespace-nowrap">$13,200</div></div>
+</div>
+</div>
+</div>
+<!-- Projection Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="bg-surface-dark border border-slate-800 rounded-lg p-5 flex items-center justify-between">
+<div>
+<p class="text-xs text-slate-500 uppercase font-bold tracking-wider mb-1">Projected Annual Revenue</p>
+<p class="text-2xl font-bold text-white">$5.2M</p>
+</div>
+<div class="h-10 w-10 rounded-full bg-surface-darker border border-slate-700 flex items-center justify-center text-primary">
+<span class="material-icons text-xl">account_balance_wallet</span>
+</div>
+</div>
+<div class="bg-surface-dark border border-slate-800 rounded-lg p-5 flex items-center justify-between">
+<div>
+<p class="text-xs text-slate-500 uppercase font-bold tracking-wider mb-1">Current Staking APY</p>
+<p class="text-2xl font-bold text-white">12.4%</p>
+</div>
+<div class="h-10 w-10 rounded-full bg-surface-darker border border-slate-700 flex items-center justify-center text-primary">
+<span class="material-icons text-xl">percent</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 3: Governance Snapshot -->
+<section>
+<h2 class="text-xl font-semibold tracking-wide uppercase text-white mb-6 flex items-center gap-2">
+<span class="w-1 h-6 bg-slate-500"></span>
+                Governance Snapshot
+            </h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Proposal 1 -->
+<div class="bg-surface-dark border border-slate-800 rounded-lg p-6 relative overflow-hidden group hover:border-slate-600 transition-colors">
+<div class="absolute top-0 right-0 p-3">
+<span class="inline-flex items-center px-2.5 py-0.5 rounded text-xs font-medium bg-primary/10 text-primary border border-primary/20">
+                             ACTIVE
+                         </span>
+</div>
+<div class="mb-4">
+<span class="text-xs font-mono text-slate-500 mb-1 block">GP-12</span>
+<h3 class="text-lg font-medium text-white group-hover:text-primary transition-colors">Adjust Agent Slashing Parameters</h3>
+<p class="text-sm text-slate-400 mt-2 line-clamp-2">Proposal to increase the slashing penalty for malicious agent behavior from 5% to 8% to enhance network security.</p>
+</div>
+<div class="space-y-3">
+<div class="flex justify-between text-xs text-slate-400 uppercase font-bold">
+<span>Votes (For/Against)</span>
+<span>Total Quorum: 42%</span>
+</div>
+<div class="flex h-3 w-full bg-surface-darker rounded overflow-hidden">
+<div class="bg-emerald-500 h-full" style="width: 80%"></div>
+<div class="bg-rose-500 h-full" style="width: 20%"></div>
+</div>
+<div class="flex justify-between text-xs">
+<span class="text-emerald-400">80% YES</span>
+<span class="text-rose-400">20% NO</span>
+</div>
+</div>
+<div class="mt-6 pt-4 border-t border-slate-800 flex items-center gap-2 text-xs text-slate-500">
+<span class="material-icons text-sm">timer</span>
+                        Ends in: <span class="text-white font-mono">14h 20m 12s</span>
+</div>
+</div>
+<!-- Proposal 2 -->
+<div class="bg-surface-dark border border-slate-800 rounded-lg p-6 relative overflow-hidden group hover:border-slate-600 transition-colors">
+<div class="absolute top-0 right-0 p-3">
+<span class="inline-flex items-center px-2.5 py-0.5 rounded text-xs font-medium bg-slate-700/50 text-slate-300 border border-slate-600/50">
+                             PENDING QUEUE
+                         </span>
+</div>
+<div class="mb-4">
+<span class="text-xs font-mono text-slate-500 mb-1 block">GP-13</span>
+<h3 class="text-lg font-medium text-white group-hover:text-primary transition-colors">Integrate Layer-2 Bridge Support</h3>
+<p class="text-sm text-slate-400 mt-2 line-clamp-2">Technical specification for deploying ARS protocol bridge contracts on Optimism and Arbitrum networks.</p>
+</div>
+<div class="space-y-3 opacity-50">
+<div class="flex justify-between text-xs text-slate-400 uppercase font-bold">
+<span>Votes (For/Against)</span>
+<span>Total Quorum: 0%</span>
+</div>
+<div class="flex h-3 w-full bg-surface-darker rounded overflow-hidden">
+<div class="bg-slate-700 h-full w-full"></div>
+</div>
+<div class="flex justify-between text-xs">
+<span class="text-slate-500">0% YES</span>
+<span class="text-slate-500">0% NO</span>
+</div>
+</div>
+<div class="mt-6 pt-4 border-t border-slate-800 flex items-center gap-2 text-xs text-slate-500">
+<span class="material-icons text-sm">schedule</span>
+                        Starts in: <span class="text-white font-mono">2d 04h 00m</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Minimal Footer -->
+<footer class="border-t border-slate-800/50 pt-8 pb-4 mt-8">
+<div class="flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-600">
+<div class="flex items-center gap-4">
+<span class="font-bold text-slate-500">ARS PROTOCOL</span>
+<span>v2.4.1-beta</span>
+<span class="flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+                        All Systems Normal
+                    </span>
+</div>
+<div class="flex gap-6">
+<a class="hover:text-primary transition-colors" href="#">Documentation</a>
+<a class="hover:text-primary transition-colors" href="#">Terms of Service</a>
+<a class="hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-primary transition-colors" href="#">GitHub</a>
+</div>
+</div>
+<div class="text-center mt-6 text-[10px] text-slate-700 font-mono">
+                BLOCK: 18,242,901  |  GAS: 12 GWEI  |  UTC: 2023-10-27 14:30:22
+            </div>
+</footer>
+</main>
+</body></html>

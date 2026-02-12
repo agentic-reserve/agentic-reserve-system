@@ -1,5 +1,5 @@
 import { Connection, PublicKey } from '@solana/web3.js';
-import { getHeliusClient } from '../helius-client';
+import { getHeliusClient } from '../helius-client.stub'; // Use stub for production build
 
 /**
  * Switchboard Feed Addresses for Solana
@@ -43,7 +43,7 @@ export class SwitchboardClient {
 
   constructor() {
     const heliusClient = getHeliusClient();
-    this.connection = heliusClient.getConnection();
+    this.connection = heliusClient; // heliusClient is already a Connection in stub
     this.priceCache = new Map();
 
     console.log('✅ Switchboard oracle client initialized');
