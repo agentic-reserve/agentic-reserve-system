@@ -73,6 +73,10 @@ class MetricsSupabaseClient {
     return this.client.rpc(fn, args);
   }
 
+  channel(name: string) {
+    return this.client.channel(name);
+  }
+
   get storage() {
     return this.client.storage;
   }

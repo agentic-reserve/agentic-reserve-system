@@ -16,13 +16,14 @@ export const HeroSection = () => {
   };
 
   return (
-    <section className="relative pt-24 pb-12 border-b border-white/10">
+    <section className="relative pt-16 pb-12 border-b border-white/10">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-12">
           <div>
-            <h1 className="text-7xl md:text-[5rem] font-bold leading-[0.9] tracking-tighter uppercase">
-              Agentic <br />
-              Reserve System
+            <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-[5rem] font-bold leading-[0.9] tracking-tighter uppercase">
+              <span className="whitespace-nowrap">Agentic Reserve</span>
+              <br />
+              System
             </h1>
             <p className="mt-8 text-white/40 max-w-xl text-lg leading-relaxed">
               Institutional-grade autonomous reserve management on Solana.
@@ -32,7 +33,7 @@ export const HeroSection = () => {
           </div>
 
           {/* Role Selector Panel */}
-          <div className="lg:pt-8">
+          <div className="lg:pt-0">
             <RoleSelectorPanel />
           </div>
         </div>

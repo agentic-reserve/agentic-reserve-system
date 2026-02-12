@@ -5,7 +5,7 @@ import { memoryEventEmitter } from '../services/memory/event-emitter';
 import { getCapacityUtilization } from '../middleware/capacity-check';
 import { logger } from '../services/memory/logger';
 import { metricsService } from '../services/memory/metrics';
-import { sakService } from '../services/sak';
+// import { sakService } from '../services/sak'; // Disabled for production build
 import { config } from '../config';
 
 const router = Router();
@@ -98,36 +98,37 @@ router.get('/', async (req: Request, res: Response) => {
     message: 'WebSocket status monitoring not implemented',
   };
 
-  // SAK integration status
-  if (config.sak.enabled) {
-    try {
-      const sakStatus = sakService.getStatus();
-      const sakHealth = sakService.getHealthStatus();
-      
-      healthStatus.dependencies.sak = {
-        status: sakStatus.healthy ? 'healthy' : (sakStatus.initialized ? 'degraded' : 'unhealthy'),
-        enabled: sakStatus.enabled,
-        initialized: sakStatus.initialized,
-        pluginCount: sakStatus.pluginCount,
-        agentCount: sakStatus.agentCount,
-        overall: sakHealth?.overall || 'unknown',
-        plugins: sakHealth?.plugins ? Object.keys(sakHealth.plugins).length : 0,
-        networkConnection: sakHealth?.network?.connection || 'unknown',
-      };
-      
-      if (!sakStatus.healthy) {
-        healthStatus.status = 'degraded';
-      }
-    } catch (error: any) {
-      healthStatus.dependencies.sak = {
-        status: 'unhealthy',
-        error: error.message,
-        enabled: config.sak.enabled,
-      };
-      healthStatus.status = 'degraded';
-      logger.error('SAK health check error', error, { requestId: req.requestId });
-    }
-  } else {
+  // SAK integration status - disabled for production build
+  // if (config.sak.enabled) {
+  //   try {
+  //     const sakStatus = sakService.getStatus();
+  //     const sakHealth = sakService.getHealthStatus();
+  //     
+  //     healthStatus.dependencies.sak = {
+  //       status: sakStatus.healthy ? 'healthy' : (sakStatus.initialized ? 'degraded' : 'unhealthy'),
+  //       enabled: sakStatus.enabled,
+  //       initialized: sakStatus.initialized,
+  //       pluginCount: sakStatus.pluginCount,
+  //       agentCount: sakStatus.agentCount,
+  //       overall: sakHealth?.overall || 'unknown',
+  //       plugins: sakHealth?.plugins ? Object.keys(sakHealth.plugins).length : 0,
+  //       networkConnection: sakHealth?.network?.connection || 'unknown',
+  //     };
+  //     
+  //     if (!sakStatus.healthy) {
+  //       healthStatus.status = 'degraded';
+  //     }
+  //   } catch (error: any) {
+  //     healthStatus.dependencies.sak = {
+  //       status: 'unhealthy',
+  //       error: error.message,
+  //       enabled: config.sak.enabled,
+  //     };
+  //     healthStatus.status = 'degraded';
+  //     logger.error('SAK health check error', error, { requestId: req.requestId });
+  //   }
+  // } else {
+  if (!config.sak.enabled) {
     healthStatus.dependencies.sak = {
       status: 'disabled',
       enabled: false,
@@ -207,6 +208,15 @@ router.get('/sak', async (req: Request, res: Response) => {
     });
   }
 
+  // SAK detailed status - disabled for production build
+  return res.json({
+    status: 'disabled',
+    enabled: false,
+    message: 'SAK integration is disabled in production build',
+    timestamp: new Date().toISOString(),
+  });
+
+  /*
   try {
     const sakStatus = sakService.getStatus();
     const sakHealth = sakService.getHealthStatus();
@@ -267,6 +277,7 @@ router.get('/sak', async (req: Request, res: Response) => {
       enabled: config.sak.enabled,
     });
   }
+  */
 });
 
 export default router;

@@ -4,21 +4,21 @@ import { WebSocketService } from './services/websocket';
 import { PolicyExecutor } from './services/policy-executor';
 import { initializeCronJobs, runInitialUpdates } from './cron';
 import { config } from './config';
-import { sakService } from './services/sak';
+// import { sakService } from './services/sak'; // Disabled for production build
 
 async function startServer() {
   try {
     const app = createApp();
     const server = http.createServer(app);
 
-    // Initialize SAK service
-    if (config.sak.enabled) {
-      console.log('🔧 Initializing Solana Agent Kit (SAK) integration...');
-      await sakService.initialize();
-      console.log('✅ SAK integration initialized successfully');
-    } else {
-      console.log('⚠️  SAK integration is disabled');
-    }
+    // Initialize SAK service - disabled for production build
+    // if (config.sak.enabled) {
+    //   console.log('🔧 Initializing Solana Agent Kit (SAK) integration...');
+    //   await sakService.initialize();
+    //   console.log('✅ SAK integration initialized successfully');
+    // } else {
+    //   console.log('⚠️  SAK integration is disabled');
+    // }
 
     // Initialize WebSocket service
     const wsService = new WebSocketService(server);
@@ -40,11 +40,11 @@ async function startServer() {
       console.log(`🏛️ Policy executor monitoring proposals`);
       console.log(`⏰ Cron jobs active: ILI (5min), ICR (10min)`);
       
-      // SAK status
-      if (config.sak.enabled) {
-        const sakStatus = sakService.getStatus();
-        console.log(`🤖 SAK integration: ${sakStatus.healthy ? '✅ Healthy' : '❌ Unhealthy'} (${sakStatus.pluginCount} plugins)`);
-      }
+      // SAK status - disabled for production build
+      // if (config.sak.enabled) {
+      //   const sakStatus = sakService.getStatus();
+      //   console.log(`🤖 SAK integration: ${sakStatus.healthy ? '✅ Healthy' : '❌ Unhealthy'} (${sakStatus.pluginCount} plugins)`);
+      // }
     });
 
     // Graceful shutdown
@@ -53,12 +53,12 @@ async function startServer() {
       policyExecutor.stop();
       wsService.close();
       
-      // Shutdown SAK service
-      if (config.sak.enabled) {
-        console.log('🔧 Shutting down SAK integration...');
-        await sakService.shutdown();
-        console.log('✅ SAK integration shutdown completed');
-      }
+      // Shutdown SAK service - disabled for production build
+      // if (config.sak.enabled) {
+      //   console.log('🔧 Shutting down SAK integration...');
+      //   await sakService.shutdown();
+      //   console.log('✅ SAK integration shutdown completed');
+      // }
       
       server.close(() => {
         console.log('HTTP server closed');
@@ -71,12 +71,12 @@ async function startServer() {
       policyExecutor.stop();
       wsService.close();
       
-      // Shutdown SAK service
-      if (config.sak.enabled) {
-        console.log('🔧 Shutting down SAK integration...');
-        await sakService.shutdown();
-        console.log('✅ SAK integration shutdown completed');
-      }
+      // Shutdown SAK service - disabled for production build
+      // if (config.sak.enabled) {
+      //   console.log('🔧 Shutting down SAK integration...');
+      //   await sakService.shutdown();
+      //   console.log('✅ SAK integration shutdown completed');
+      // }
       
       server.close(() => {
         console.log('HTTP server closed');

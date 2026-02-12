@@ -1,4 +1,4 @@
-import { Helius } from 'helius-sdk';
+import { Helius } from 'helius-sdk/dist/esm/rpc/index.js';
 import { Keypair, PublicKey, Transaction, LAMPORTS_PER_SOL } from '@solana/web3.js';
 import bs58 from 'bs58';
 import { config } from '../../config';

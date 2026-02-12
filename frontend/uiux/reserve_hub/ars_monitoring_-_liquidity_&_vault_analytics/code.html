@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ARS Monitoring - Liquidity &amp; Vault Analytics</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#0dccf2",
+                        "background-light": "#f5f8f8",
+                        "background-dark": "#101f22",
+                        "surface-dark": "#16282c",
+                        "surface-dark-lighter": "#1c3237",
+                        "border-dark": "#254045",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+                },
+            },
+        }
+    </script>
+<style>
+        /* Custom scrollbar for table */
+        ::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #101f22; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #254045; 
+            border-radius: 2px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #0dccf2; 
+        }
+        .zebra-stripe:nth-child(even) {
+            background-color: rgba(255,255,255, 0.02);
+        }
+        /* Chart grid lines */
+        .chart-grid-line {
+            stroke: #254045;
+            stroke-dasharray: 4, 4;
+            stroke-width: 1;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-800 dark:text-slate-200 font-display antialiased min-h-screen p-4 md:p-8 flex flex-col items-center">
+<!-- Main Container -->
+<main class="w-full max-w-7xl mx-auto space-y-6">
+<!-- Header Section -->
+<header class="flex justify-between items-end border-b border-border-dark pb-4 mb-8">
+<div>
+<h2 class="text-xs font-bold text-primary tracking-[0.2em] uppercase mb-1">System Status</h2>
+<h1 class="text-3xl font-light text-white tracking-tight">ARS <span class="text-slate-500">Monitoring</span></h1>
+</div>
+<div class="flex items-center gap-2 text-xs font-mono text-slate-400">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+                LIVE FEED • BLOCK 24,981,002
+            </div>
+</header>
+<!-- Liquidity Metrics Section -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+<!-- Left: Main Chart (Span 8) -->
+<div class="lg:col-span-8 bg-surface-dark border border-border-dark rounded-lg p-6 flex flex-col h-[420px]">
+<div class="flex justify-between items-start mb-6">
+<div>
+<h3 class="text-sm font-medium text-slate-300 uppercase tracking-wide">Liquidity Metrics Timeline</h3>
+<p class="text-xs text-slate-500 mt-1">24h Inter-Liquidity Index (ILI) Trend</p>
+</div>
+<!-- Timeframe Toggles -->
+<div class="flex bg-background-dark border border-border-dark rounded overflow-hidden">
+<button class="px-3 py-1 text-xs font-medium text-slate-400 hover:text-white hover:bg-white/5 transition-colors">1H</button>
+<button class="px-3 py-1 text-xs font-medium bg-primary text-background-dark">24H</button>
+<button class="px-3 py-1 text-xs font-medium text-slate-400 hover:text-white hover:bg-white/5 transition-colors">7D</button>
+</div>
+</div>
+<!-- Chart Area -->
+<div class="relative flex-1 w-full h-full">
+<!-- SVG Chart -->
+<svg class="w-full h-full overflow-visible" preserveaspectratio="none" viewbox="0 0 800 300">
+<!-- Defs for Gradient -->
+<defs>
+<lineargradient id="chartFill" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="#ffffff" stop-opacity="0.1"></stop>
+<stop offset="100%" stop-color="#ffffff" stop-opacity="0"></stop>
+</lineargradient>
+</defs>
+<!-- Horizontal Grid Lines -->
+<line class="chart-grid-line" x1="0" x2="800" y1="0" y2="0"></line>
+<line class="chart-grid-line" opacity="0.5" x1="0" x2="800" y1="75" y2="75"></line>
+<line class="chart-grid-line" opacity="0.5" x1="0" x2="800" y1="150" y2="150"></line>
+<line class="chart-grid-line" opacity="0.5" x1="0" x2="800" y1="225" y2="225"></line>
+<line class="chart-grid-line" x1="0" x2="800" y1="300" y2="300"></line>
+<!-- Chart Path -->
+<path d="M0,250 C50,240 100,260 150,220 C200,180 250,200 300,150 C350,100 400,120 450,80 C500,40 550,60 600,100 C650,140 700,120 750,50 L800,40" fill="none" stroke="#94a3b8" stroke-linejoin="round" stroke-width="2"></path>
+<!-- Area Fill -->
+<path d="M0,250 C50,240 100,260 150,220 C200,180 250,200 300,150 C350,100 400,120 450,80 C500,40 550,60 600,100 C650,140 700,120 750,50 L800,40 L800,300 L0,300 Z" fill="url(#chartFill)"></path>
+<!-- Active Point Indicator -->
+<circle cx="600" cy="100" fill="#0dccf2" r="4" stroke="#101f22" stroke-width="2"></circle>
+<line opacity="0.5" stroke="#0dccf2" stroke-dasharray="2,2" stroke-width="1" x1="600" x2="600" y1="100" y2="300"></line>
+</svg>
+<!-- Tooltip Overlay (Static for design) -->
+<div class="absolute top-[25%] left-[75%] transform -translate-x-1/2 bg-background-dark border border-primary/30 p-2 rounded shadow-xl backdrop-blur-sm bg-opacity-90">
+<div class="flex items-center gap-2 mb-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+<span class="text-[10px] text-slate-400 uppercase tracking-wider">Current ILI</span>
+</div>
+<div class="text-lg font-mono text-white font-bold leading-none">0.8924</div>
+</div>
+</div>
+<!-- X Axis Labels -->
+<div class="flex justify-between mt-2 text-[10px] text-slate-500 font-mono uppercase">
+<span>00:00</span>
+<span>04:00</span>
+<span>08:00</span>
+<span>12:00</span>
+<span>16:00</span>
+<span>20:00</span>
+<span>23:59</span>
+</div>
+</div>
+<!-- Right: Metric Mini Cards (Span 4) -->
+<div class="lg:col-span-4 flex flex-col gap-4 h-[420px]">
+<!-- Card 1: Avg Yield -->
+<div class="flex-1 bg-surface-dark border border-border-dark rounded-lg p-5 flex flex-col justify-between group hover:border-primary/50 transition-colors cursor-default">
+<div class="flex justify-between items-start">
+<span class="text-xs text-slate-400 uppercase font-medium tracking-wider">Avg Yield (APY)</span>
+<span class="material-icons-outlined text-slate-600 group-hover:text-primary transition-colors text-lg">trending_up</span>
+</div>
+<div>
+<div class="text-3xl font-light text-white mb-1">4.2%</div>
+<div class="text-xs font-mono text-primary flex items-center gap-1">
+<span class="material-icons-outlined text-[10px]">north</span>
+                            0.45% vs 24h
+                        </div>
+</div>
+</div>
+<!-- Card 2: Volatility -->
+<div class="flex-1 bg-surface-dark border border-border-dark rounded-lg p-5 flex flex-col justify-between group hover:border-primary/50 transition-colors cursor-default">
+<div class="flex justify-between items-start">
+<span class="text-xs text-slate-400 uppercase font-medium tracking-wider">Volatility Index</span>
+<span class="material-icons-outlined text-slate-600 group-hover:text-primary transition-colors text-lg">timeline</span>
+</div>
+<div>
+<div class="text-3xl font-light text-white mb-1">0.85</div>
+<div class="text-xs font-mono text-emerald-400 flex items-center gap-1">
+<span class="bg-emerald-400/10 px-1 rounded text-[10px] uppercase">Low Risk</span>
+</div>
+</div>
+</div>
+<!-- Card 3: Normalized TVL -->
+<div class="flex-1 bg-surface-dark border border-border-dark rounded-lg p-5 flex flex-col justify-between group hover:border-primary/50 transition-colors cursor-default">
+<div class="flex justify-between items-start">
+<span class="text-xs text-slate-400 uppercase font-medium tracking-wider">Normalized TVL</span>
+<span class="material-icons-outlined text-slate-600 group-hover:text-primary transition-colors text-lg">savings</span>
+</div>
+<div>
+<div class="text-3xl font-light text-white mb-1">$14.5M</div>
+<div class="text-xs font-mono text-slate-500 flex items-center gap-1">
+                            Stable across pools
+                        </div>
+</div>
+</div>
+</div>
+</section>
+<!-- Reserve Vault Composition Section -->
+<section class="bg-surface-dark border border-border-dark rounded-lg overflow-hidden">
+<div class="border-b border-border-dark px-6 py-4 flex justify-between items-center bg-surface-dark-lighter">
+<h3 class="text-sm font-medium text-white uppercase tracking-wide flex items-center gap-2">
+<span class="material-icons-outlined text-primary text-base">pie_chart</span>
+                    Reserve Vault Composition
+                </h3>
+<button class="text-xs text-primary border border-primary/30 rounded px-2 py-1 hover:bg-primary/10 transition-colors uppercase font-mono">
+                    View Contract
+                </button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12">
+<!-- Left: Donut Chart Visualization (Span 5) -->
+<div class="md:col-span-5 p-8 flex flex-col items-center justify-center border-b md:border-b-0 md:border-r border-border-dark relative bg-gradient-to-br from-surface-dark to-background-dark">
+<div class="relative w-64 h-64">
+<!-- SVG Donut Chart -->
+<svg class="w-full h-full transform -rotate-90" viewbox="0 0 100 100">
+<!-- Background Circle -->
+<circle cx="50" cy="50" fill="transparent" r="40" stroke="#1c3237" stroke-width="12"></circle>
+<!-- Segments (Calculated dashes) 
+                                 Circumference = 2 * pi * 40 ≈ 251.2
+                            -->
+<!-- Segment 1: USDC (45%) -->
+<circle class="hover:opacity-80 transition-opacity cursor-pointer" cx="50" cy="50" fill="transparent" r="40" stroke="#0dccf2" stroke-dasharray="113 251.2" stroke-dashoffset="0" stroke-width="12"></circle>
+<!-- Segment 2: SOL (30%) -->
+<circle class="hover:opacity-80 transition-opacity cursor-pointer" cx="50" cy="50" fill="transparent" r="40" stroke="#cbd5e1" stroke-dasharray="75.3 251.2" stroke-dashoffset="-115" stroke-width="12"></circle>
+<!-- Segment 3: BTC (15%) -->
+<circle class="hover:opacity-80 transition-opacity cursor-pointer" cx="50" cy="50" fill="transparent" r="40" stroke="#64748b" stroke-dasharray="37.6 251.2" stroke-dashoffset="-192" stroke-width="12"></circle>
+<!-- Segment 4: ETH (10%) -->
+<circle class="hover:opacity-80 transition-opacity cursor-pointer" cx="50" cy="50" fill="transparent" r="40" stroke="#334155" stroke-dasharray="25.1 251.2" stroke-dashoffset="-231" stroke-width="12"></circle>
+</svg>
+<!-- Center Text -->
+<div class="absolute inset-0 flex flex-col items-center justify-center pointer-events-none">
+<span class="text-xs text-slate-400 uppercase tracking-widest mb-1">Total Value</span>
+<span class="text-2xl font-bold text-white tracking-tighter tabular-nums">$1.00M</span>
+</div>
+</div>
+<!-- Legend -->
+<div class="flex gap-4 mt-6 text-xs font-mono">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-sm bg-primary"></span>
+<span class="text-slate-300">USDC</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-sm bg-slate-300"></span>
+<span class="text-slate-300">SOL</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-sm bg-slate-500"></span>
+<span class="text-slate-300">BTC</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-sm bg-slate-700"></span>
+<span class="text-slate-300">ETH</span>
+</div>
+</div>
+</div>
+<!-- Right: High Density Table (Span 7) -->
+<div class="md:col-span-7 bg-surface-dark">
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="text-[10px] uppercase tracking-wider text-slate-500 border-b border-border-dark bg-surface-dark-lighter">
+<th class="px-6 py-3 font-medium">Asset Name</th>
+<th class="px-6 py-3 font-medium text-right">Balance</th>
+<th class="px-6 py-3 font-medium text-right">Weight (%)</th>
+<th class="px-6 py-3 font-medium text-right">Value ($)</th>
+</tr>
+</thead>
+<tbody class="text-xs font-mono text-slate-300">
+<!-- Row 1 -->
+<tr class="zebra-stripe hover:bg-white/5 transition-colors cursor-pointer border-b border-border-dark/50 group">
+<td class="px-6 py-4 flex items-center gap-3">
+<div class="w-6 h-6 rounded-full bg-blue-500 flex items-center justify-center text-[8px] font-bold text-white">
+                                            $
+                                        </div>
+<div class="flex flex-col">
+<span class="text-white font-bold group-hover:text-primary transition-colors">USDC</span>
+<span class="text-[10px] text-slate-500">USD Coin</span>
+</div>
+</td>
+<td class="px-6 py-4 text-right tabular-nums">450,000.00</td>
+<td class="px-6 py-4 text-right tabular-nums">
+<div class="inline-block w-16 h-1.5 bg-background-dark rounded-full overflow-hidden align-middle mr-2">
+<div class="h-full bg-primary w-[45%]"></div>
+</div>
+                                        45.0%
+                                    </td>
+<td class="px-6 py-4 text-right text-white font-medium tabular-nums">$450,000.00</td>
+</tr>
+<!-- Row 2 -->
+<tr class="zebra-stripe hover:bg-white/5 transition-colors cursor-pointer border-b border-border-dark/50 group">
+<td class="px-6 py-4 flex items-center gap-3">
+<div class="w-6 h-6 rounded-full bg-purple-500 flex items-center justify-center text-[8px] font-bold text-white">
+                                            S
+                                        </div>
+<div class="flex flex-col">
+<span class="text-white font-bold group-hover:text-primary transition-colors">SOL</span>
+<span class="text-[10px] text-slate-500">Solana</span>
+</div>
+</td>
+<td class="px-6 py-4 text-right tabular-nums">2,142.85</td>
+<td class="px-6 py-4 text-right tabular-nums">
+<div class="inline-block w-16 h-1.5 bg-background-dark rounded-full overflow-hidden align-middle mr-2">
+<div class="h-full bg-slate-300 w-[30%]"></div>
+</div>
+                                        30.0%
+                                    </td>
+<td class="px-6 py-4 text-right text-white font-medium tabular-nums">$300,000.00</td>
+</tr>
+<!-- Row 3 -->
+<tr class="zebra-stripe hover:bg-white/5 transition-colors cursor-pointer border-b border-border-dark/50 group">
+<td class="px-6 py-4 flex items-center gap-3">
+<div class="w-6 h-6 rounded-full bg-orange-500 flex items-center justify-center text-[8px] font-bold text-white">
+                                            B
+                                        </div>
+<div class="flex flex-col">
+<span class="text-white font-bold group-hover:text-primary transition-colors">wBTC</span>
+<span class="text-[10px] text-slate-500">Bitcoin</span>
+</div>
+</td>
+<td class="px-6 py-4 text-right tabular-nums">5.12</td>
+<td class="px-6 py-4 text-right tabular-nums">
+<div class="inline-block w-16 h-1.5 bg-background-dark rounded-full overflow-hidden align-middle mr-2">
+<div class="h-full bg-slate-500 w-[15%]"></div>
+</div>
+                                        15.0%
+                                    </td>
+<td class="px-6 py-4 text-right text-white font-medium tabular-nums">$150,000.00</td>
+</tr>
+<!-- Row 4 -->
+<tr class="zebra-stripe hover:bg-white/5 transition-colors cursor-pointer border-b border-border-dark/50 group">
+<td class="px-6 py-4 flex items-center gap-3">
+<div class="w-6 h-6 rounded-full bg-slate-600 flex items-center justify-center text-[8px] font-bold text-white">
+                                            E
+                                        </div>
+<div class="flex flex-col">
+<span class="text-white font-bold group-hover:text-primary transition-colors">wETH</span>
+<span class="text-[10px] text-slate-500">Ethereum</span>
+</div>
+</td>
+<td class="px-6 py-4 text-right tabular-nums">58.82</td>
+<td class="px-6 py-4 text-right tabular-nums">
+<div class="inline-block w-16 h-1.5 bg-background-dark rounded-full overflow-hidden align-middle mr-2">
+<div class="h-full bg-slate-700 w-[10%]"></div>
+</div>
+                                        10.0%
+                                    </td>
+<td class="px-6 py-4 text-right text-white font-medium tabular-nums">$100,000.00</td>
+</tr>
+<!-- Row 5 (Small dust) -->
+<tr class="zebra-stripe hover:bg-white/5 transition-colors cursor-pointer group opacity-60">
+<td class="px-6 py-4 flex items-center gap-3">
+<div class="w-6 h-6 rounded-full bg-teal-600 flex items-center justify-center text-[8px] font-bold text-white">
+                                            T
+                                        </div>
+<div class="flex flex-col">
+<span class="text-white font-bold group-hover:text-primary transition-colors">USDT</span>
+<span class="text-[10px] text-slate-500">Tether</span>
+</div>
+</td>
+<td class="px-6 py-4 text-right tabular-nums">0.02</td>
+<td class="px-6 py-4 text-right tabular-nums">
+<div class="inline-block w-16 h-1.5 bg-background-dark rounded-full overflow-hidden align-middle mr-2">
+<div class="h-full bg-slate-800 w-[0%]"></div>
+</div>
+                                        &lt;0.01%
+                                    </td>
+<td class="px-6 py-4 text-right text-white font-medium tabular-nums">$0.02</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Background Decoration Image -->
+<div class="fixed top-0 left-0 w-full h-full pointer-events-none z-[-1] opacity-5 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-primary via-background-dark to-background-dark" data-alt="Abstract subtle radial gradient background acting as ambient light"></div>
+</body></html>

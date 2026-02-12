@@ -62,9 +62,10 @@ export interface BirdeyeOHLCV {
  */
 export class BirdeyeClient {
   private client: AxiosInstance;
-  private redis: ReturnType<typeof getRedisClient>;
+  private redis: Awaited<ReturnType<typeof getRedisClient>>;
   private cacheTTL: number = 60; // 60 seconds for market data
   private rateLimitDelay: number = 100; // 100ms between requests
+  private redisInitialized: boolean = false;
 
   constructor() {
     const apiKey = config.apis.birdeyeApiKey;
@@ -82,9 +83,20 @@ export class BirdeyeClient {
       timeout: 10000,
     });
 
-    this.redis = getRedisClient();
+    // Initialize redis asynchronously
+    this.initRedis();
 
     console.log('✅ Birdeye API client initialized');
+  }
+
+  private async initRedis() {
+    try {
+      this.redis = await getRedisClient();
+      this.redisInitialized = true;
+    } catch (error) {
+      console.warn('Redis initialization failed for Birdeye client:', error);
+      this.redisInitialized = false;
+    }
   }
 
   /**
@@ -103,9 +115,11 @@ export class BirdeyeClient {
     ttl: number = this.cacheTTL
   ): Promise<T> {
     try {
-      const cached = await this.redis.get(key);
-      if (cached) {
-        return JSON.parse(cached);
+      if (this.redisInitialized && this.redis) {
+        const cached = await this.redis.get(key);
+        if (cached) {
+          return JSON.parse(cached);
+        }
       }
     } catch (error) {
       console.warn('Redis cache read error:', error);
@@ -114,7 +128,9 @@ export class BirdeyeClient {
     const data = await fetcher();
 
     try {
-      await this.redis.setex(key, ttl, JSON.stringify(data));
+      if (this.redisInitialized && this.redis) {
+        await this.redis.setEx(key, ttl, JSON.stringify(data));
+      }
     } catch (error) {
       console.warn('Redis cache write error:', error);
     }
@@ -439,7 +455,9 @@ export class BirdeyeClient {
 
     for (const key of keys) {
       try {
-        await this.redis.del(key);
+        if (this.redisInitialized && this.redis) {
+          await this.redis.del(key);
+        }
       } catch (error) {
         console.warn(`Failed to clear cache key ${key}:`, error);
       }

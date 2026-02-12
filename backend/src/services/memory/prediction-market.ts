@@ -106,7 +106,8 @@ export class PredictionMarketService {
     };
 
     // Cache for 5 minutes
-    await redisClient.setex(cacheKey, 300, JSON.stringify(market));
+    const redis = await redisClient;
+    await redis.setEx(cacheKey, 300, JSON.stringify(market));
 
     return market;
   }
@@ -152,7 +153,8 @@ export class PredictionMarketService {
     }));
 
     // Cache for 5 minutes
-    await redisClient.setex(cacheKey, 300, JSON.stringify(snapshots));
+    const redis = await redisClient;
+    await redis.setEx(cacheKey, 300, JSON.stringify(snapshots));
 
     return snapshots;
   }
@@ -287,8 +289,9 @@ export class PredictionMarketService {
     if (snapshotError) throw snapshotError;
 
     // Invalidate cache
-    await redisClient.del(`market:${resolution.marketAddress}:current`);
-    await redisClient.del(`market:${resolution.marketAddress}:history:*`);
+    const redis = await redisClient;
+    await redis.del(`market:${resolution.marketAddress}:current`);
+    await redis.del(`market:${resolution.marketAddress}:history:*`);
 
     console.log(`Market ${resolution.marketAddress} resolved with outcome: ${resolution.finalOutcome}`);
   }
@@ -348,7 +351,8 @@ export class PredictionMarketService {
     if (snapshotError) throw snapshotError;
 
     // Invalidate cache
-    await redisClient.del(`market:${marketAddress}:current`);
+    const redis = await redisClient;
+    await redis.del(`market:${marketAddress}:current`);
 
     console.log(`Market ${marketAddress} updated with confidence score: ${confidenceScore}`);
   }
