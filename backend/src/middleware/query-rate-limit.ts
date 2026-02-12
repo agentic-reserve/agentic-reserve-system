@@ -1,5 +1,7 @@
 import { Request, Response, NextFunction } from 'express';
-import { redisClient } from '../services/redis';
+import { getRedisClient } from '../services/redis';
+import { Redis } from '@upstash/redis';
+import { RedisClientType } from 'redis';
 
 /**
  * Rate limiter for memory query API
@@ -22,13 +24,27 @@ export async function queryRateLimit(
     const windowSeconds = 60; // 1 minute window
     const maxRequests = 100;
 
+    const redisClient = await getRedisClient();
+
     // Get current request count
-    const currentCount = await redisClient.get(rateLimitKey);
-    const count = currentCount ? parseInt(currentCount, 10) : 0;
+    let count = 0;
+    if (redisClient instanceof Redis) {
+      const currentCount = await redisClient.get<string>(rateLimitKey);
+      count = currentCount ? parseInt(currentCount, 10) : 0;
+    } else {
+      const currentCount = await (redisClient as RedisClientType).get(rateLimitKey);
+      count = currentCount ? parseInt(currentCount, 10) : 0;
+    }
 
     if (count >= maxRequests) {
       // Rate limit exceeded
-      const ttl = await redisClient.ttl(rateLimitKey);
+      let ttl = windowSeconds;
+      if (redisClient instanceof Redis) {
+        ttl = await redisClient.ttl(rateLimitKey) || windowSeconds;
+      } else {
+        ttl = await (redisClient as RedisClientType).ttl(rateLimitKey);
+      }
+      
       res.status(429).json({
         error: 'Rate limit exceeded',
         limit: maxRequests,
@@ -41,16 +57,27 @@ export async function queryRateLimit(
     // Increment counter
     if (count === 0) {
       // First request in window - set with expiry
-      await redisClient.setex(rateLimitKey, windowSeconds, '1');
+      if (redisClient instanceof Redis) {
+        await redisClient.set(rateLimitKey, '1', { ex: windowSeconds });
+      } else {
+        await (redisClient as RedisClientType).setEx(rateLimitKey, windowSeconds, '1');
+      }
     } else {
       // Increment existing counter
       await redisClient.incr(rateLimitKey);
     }
 
     // Add rate limit headers
+    let ttl = windowSeconds;
+    if (redisClient instanceof Redis) {
+      ttl = await redisClient.ttl(rateLimitKey) || windowSeconds;
+    } else {
+      ttl = await (redisClient as RedisClientType).ttl(rateLimitKey);
+    }
+    
     res.setHeader('X-RateLimit-Limit', maxRequests.toString());
     res.setHeader('X-RateLimit-Remaining', (maxRequests - count - 1).toString());
-    res.setHeader('X-RateLimit-Reset', (Date.now() + (await redisClient.ttl(rateLimitKey)) * 1000).toString());
+    res.setHeader('X-RateLimit-Reset', (Date.now() + ttl * 1000).toString());
 
     next();
   } catch (error: any) {

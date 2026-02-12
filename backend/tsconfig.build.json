@@ -29,6 +29,7 @@
     "src/services/upstash-redis.ts",
     "src/services/defi/kamino-client-real.ts",
     "src/services/defi/lulo-client.ts",
+    "src/services/oracle-health-monitor.ts",
     "src/services/memory/wallet-registration.ts",
     "src/services/memory/transaction-indexer.ts",
     "src/services/memory/graceful-degradation.ts",

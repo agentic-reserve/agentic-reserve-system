@@ -1,5 +1,7 @@
 import { getOracleAggregator } from './oracles/oracle-aggregator';
-import { createClient } from 'redis';
+import { getRedisClient, setCachedData } from './redis';
+import { Redis } from '@upstash/redis';
+import { RedisClientType } from 'redis';
 import { config } from '../config';
 
 /**
@@ -7,12 +9,11 @@ import { config } from '../config';
  * Monitors the health of all oracle sources and stores metrics
  */
 export class OracleHealthMonitor {
-  private redisClient: ReturnType<typeof createClient>;
+  private redisClient: RedisClientType | Redis | null = null;
   private aggregator: ReturnType<typeof getOracleAggregator>;
   private monitoringInterval: NodeJS.Timeout | null = null;
 
   constructor() {
-    this.redisClient = createClient({ url: config.redis.url });
     this.aggregator = getOracleAggregator();
   }
 
@@ -20,7 +21,7 @@ export class OracleHealthMonitor {
    * Initialize the health monitor
    */
   async initialize(): Promise<void> {
-    await this.redisClient.connect();
+    this.redisClient = await getRedisClient();
     console.log('✅ Oracle health monitor initialized');
   }
 
@@ -91,17 +92,21 @@ export class OracleHealthMonitor {
     const key = `oracle:health:${timestamp}`;
     const ttl = 24 * 60 * 60; // 24 hours
 
-    await this.redisClient.setEx(key, ttl, JSON.stringify(health));
+    await setCachedData(key, health, ttl);
 
     // Store current health status
-    await this.redisClient.set('oracle:health:current', JSON.stringify({
+    await setCachedData('oracle:health:current', {
       ...health,
       timestamp,
-    }));
+    }, ttl);
 
     // Update uptime metrics
     await this.updateUptimeMetrics(health);
   }
+
+  /**
+   * Update uptime metrics for each oracle
+   */
 
   /**
    * Update uptime metrics for each oracle

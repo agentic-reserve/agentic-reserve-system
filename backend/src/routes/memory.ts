@@ -1,6 +1,6 @@
 import { Router, Request, Response } from 'express';
 import { supabase } from '../services/supabase';
-import { redisClient } from '../services/redis';
+import { getRedisClient, setCachedData, getCachedData } from '../services/redis';
 import crypto from 'crypto';
 import { checkPrivacyAuthorization } from '../middleware/privacy-auth';
 import { queryRateLimit } from '../middleware/query-rate-limit';
@@ -32,22 +32,24 @@ async function cacheFirst<T>(
 ): Promise<T> {
   try {
     // Check cache
-    const cached = await redisClient.get(cacheKey);
+    const cached = await getCachedData<T>(cacheKey, CACHE_TTL);
     if (cached) {
-      return JSON.parse(cached);
+      return cached;
     }
 
     // Cache miss - query database
     const result = await queryFn();
 
     // Store in cache
-    await redisClient.setex(cacheKey, CACHE_TTL, JSON.stringify(result));
+    await setCachedData(cacheKey, result, CACHE_TTL);
 
     return result;
   } catch (error) {
     // Fall back to direct query on cache failure
     console.error('Cache error, falling back to direct query:', error);
     return queryFn();
+  }
+}
   }
 }
 
